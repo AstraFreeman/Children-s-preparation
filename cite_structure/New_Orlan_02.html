@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навчальний Арканоїд</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1e1e2f;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 2px solid #fff;
+            background-color: #333;
+            margin-top: 10px;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0095dd;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #006bb3;
+        }
+        .info-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 10px;
+            width: 90%;
+        }
+        .info {
+            padding: 10px;
+            background-color: #2e2e3f;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #questionField {
+            flex: 3;
+        }
+        #infoField {
+            flex: 1;
+        }
+        .question-image {
+            margin-top: 10px;
+            max-width: 90%;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+        .win-image {
+            display: none;
+            margin-top: 20px;
+            max-width: 90%;
+            border: 3px solid gold;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div class="controls">
+        <button id="startButton">Старт</button>
+        <button id="stopButton">Стоп</button>
+    </div>
+    <img id="questionImage" class="question-image" style="display: none;" alt="Зображення питання">
+    <img id="winImage" class="win-image" src="image/Cossack.jpg" alt="Зображення перемоги">
+    <div class="info-container">
+        <div class="info" id="questionField">Питання з’являться тут...</div>
+        <div class="info" id="infoField">Гра готова до запуску</div>
+    </div>
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        const questionField = document.getElementById('questionField');
+        const infoField = document.getElementById('infoField');
+        const questionImage = document.getElementById('questionImage');
+        const winImage = document.getElementById('winImage');
+
+        canvas.width = 800;
+        canvas.height = 600;
+
+        const paddle = { x: canvas.width / 2 - 75, y: canvas.height - 30, width: 150, height: 20, dx: 7 };
+        const ball = { x: canvas.width / 2, y: paddle.y - 10, radius: 10, dx: 4, dy: -4, isMoving: false };
+
+        const questions = [
+            { text: "Церква в Суботові", answer: "Богдан Хмельницький", alternatives: ["Родова усипальниця", "5 грн", "1648"], image: "image/new_mak_1.jpg" },
+            { text: "Собор в нововізантійському стилі", answer: "Володимирський собор", alternatives: ["Збудовано до 900-річчя хрещення Русі"], image: "image/new_mak_2.jpg" },
+            { text: "Собор Святого Юра", answer: "Львів", alternatives: ["збудований в стилі бароко", "Пов'язанаий з А. Шептицьким"], image: "image/new_mak_3.jpg" },
+            { text: "Харків", answer: "Покровський собор", alternatives: ["2 пол. XVII ст.", "Народне зодчество"], image: "image/new_mak_4.jpg" },
+            { text: "Київ", answer: "Андріївська церква", alternatives: ["Українська автокефальна церква", "Відвідини Києва Єлизаветою Петрівною"], image: "image/new_mak_5.jpg" },
+            { text: "Троїцька соборна церква", answer: "Новомосковськ", alternatives: ["козацьким коштом", "Пов'язана з романом Собор"], image: "image/new_mak_6.jpg" }
+        ];
+
+        const blocks = [];
+        const rows = 3, cols = 7, blockWidth = 100, blockHeight = 40;
+        const colors = ["#FF0000", "#FFA500", "#FFFF00", "#008000", "#00FFFF", "#0000FF", "#800080"];
+        let currentQuestionIndex = 0;
+
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                const questionIndex = Math.floor(j / (cols / questions.length));
+                blocks.push({
+                    x: j * (blockWidth + 10) + 35,
+                    y: i * (blockHeight + 10) + 30,
+                    width: blockWidth,
+                    height: blockHeight,
+                    color: colors[j % colors.length],
+                    questionIndex: questionIndex,
+                    isActive: true
+                });
+            }
+        }
+
+        function drawPaddle() {
+            ctx.fillStyle = '#0095DD';
+            ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
+        }
+
+        function drawBall() {
+            ctx.beginPath();
+            ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
+            ctx.fillStyle = '#f00';
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        
+        function drawBlocks() {
+            blocks.forEach(block => {
+                if (block.isActive) {
+                    ctx.fillStyle = block.color;
+                    ctx.fillRect(block.x, block.y, block.width, block.height);
+
+                    ctx.fillStyle = 'black';
+                    ctx.font = '10px Arial';
+                    ctx.textAlign = 'center';
+                    const question = questions[block.questionIndex];
+                    ctx.fillText(question.answer, block.x + block.width / 2, block.y + block.height / 2 + 4);
+                }
+            });
+        }
+
+        function updateBall() {
+            if (!ball.isMoving) return;
+            ball.x += ball.dx; ball.y += ball.dy;
+
+            if (ball.x + ball.radius > canvas.width || ball.x - ball.radius < 0) ball.dx *= -1;
+            if (ball.y - ball.radius < 0) ball.dy *= -1;
+            if (ball.y + ball.radius > canvas.height) {
+                alert('Гру завершено. Спробуйте знову!');
+                document.location.reload();
+            }
+
+            if (ball.x > paddle.x && ball.x < paddle.x + paddle.width && ball.y + ball.radius > paddle.y) ball.dy *= -1;
+
+            blocks.forEach(block => {
+                if (block.isActive && ball.x > block.x && ball.x < block.x + block.width && ball.y - ball.radius < block.y + block.height && ball.y + ball.radius > block.y) {
+                    ball.dy *= -1;
+                    if (block.questionIndex === currentQuestionIndex) {
+                        block.isActive = false;
+                        infoField.textContent = `Правильно: ${questions[currentQuestionIndex].answer}`;
+                        currentQuestionIndex = (currentQuestionIndex + 1) % questions.length;
+
+                        const nextQuestion = questions[currentQuestionIndex];
+                        questionField.textContent = nextQuestion.text;
+                        questionImage.src = nextQuestion.image;
+                        questionImage.style.display = 'block';
+
+                        if (blocks.every(b => !b.isActive)) {
+                            winImage.style.display = 'block';
+                            infoField.textContent = 'Вітаємо, ви перемогли!';
+                            clearInterval(gameInterval);
+                        }
+                    } else {
+                        infoField.textContent = "Це не правильна відповідь!";
+                    }
+                }
+            });
+        }
+
+        function render() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawPaddle(); drawBall(); drawBlocks();
+        }
+
+        let gameInterval;
+        document.getElementById('startButton').addEventListener('click', () => {
+            if (!gameInterval) {
+                ball.isMoving = true;
+                const firstQuestion = questions[currentQuestionIndex];
+                questionField.textContent = firstQuestion.text;
+                questionImage.src = firstQuestion.image;
+                questionImage.style.display = 'block';
+                infoField.textContent = 'Гра запущена!';
+                gameInterval = setInterval(() => { updateBall(); render(); }, 16);
+            }
+        });
+
+        document.getElementById('stopButton').addEventListener('click', () => {
+            clearInterval(gameInterval);
+            gameInterval = null;
+            infoField.textContent = 'Гру зупинено.';
+        });
+
+        canvas.addEventListener('mousemove', e => {
+            const rect = canvas.getBoundingClientRect();
+            paddle.x = Math.min(Math.max(e.clientX - rect.left - paddle.width / 2, 0), canvas.width - paddle.width);
+        });
+
+        render();
+    </script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Історична Вікторина</title>
+    <style>
+        /* Основний стиль сторінки */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: linear-gradient(to bottom, #74b9ff, #0984e3);
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #pauseMenu {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 10;
+        }
+
+        #pauseMenu button {
+            margin-top: 10px;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        #gameArea {
+            position: relative;
+            width: 90%;
+            max-width: 600px;
+            height: 70vh;
+            border: 3px solid #ffffff;
+            border-radius: 15px;
+            background: linear-gradient(to bottom, #dfe6e9, #b2bec3);
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .question {
+            position: absolute;
+            font-size: 1em;
+            background: #ff7675;
+            padding: 10px 15px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in;
+        }
+
+        #stats {
+            margin-top: 10px;
+            font-size: 1em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #74b9ff;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        button:hover {
+            background: #0984e3;
+            transform: scale(1.1);
+        }
+
+        button:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        #winMessage, #loseMessage {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.5em;
+            background: #55efc4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        #loseMessage {
+            background: #ff7675;
+        }
+    </style>
+</head>
+<body>
+    <h1>Історична Вікторина</h1>
+    <div id="gameArea"></div>
+    <input type="text" id="input" placeholder="Введіть відповідь..." disabled>
+    <div id="stats">
+        <p>Рахунок: <span id="score">0</span></p>
+        <p>Життя: <span id="lives">3</span></p>
+    </div>
+
+    <div id="pauseMenu">
+        <h2>Гра на паузі</h2>
+        <button id="resumeButton">Продовжити</button>
+    </div>
+
+    <div id="controls">
+        <button id="startButton">Розпочати Гру</button>
+        <button id="restartButton" disabled>Перезапустити</button>
+        <button id="exitButton">Вийти</button>
+    </div>
+    <div id="winMessage">Вітаємо! Ви виграли!</div>
+    <div id="loseMessage">Гру завершено! У вас закінчилися життя.</div>
+
+    <script>
+        const questions = [
+            { question: "Укладення ченцем Нестором першої редакції «Повісті минулих літ", answer: "1113" },
+            { question: "Утворення Галицько-Волинського князівства", answer: "1199" },
+            { question: "Рік хрещення Русі", answer: "988" },
+            { question: "Коли була заснована Київська Русь?", answer: "882" },
+            { question: "Битва біля річки Альта", answer: "1068" },
+            { question: "Перша літописна згадка назви «Україна»", answer: "1187" }            
+        ];
+
+        const gameArea = document.getElementById("gameArea");
+        const inputElement = document.getElementById("input");
+        const scoreElement = document.getElementById("score");
+        const livesElement = document.getElementById("lives");
+        const startButton = document.getElementById("startButton");
+        const restartButton = document.getElementById("restartButton");
+        const exitButton = document.getElementById("exitButton");
+        const pauseMenu = document.getElementById("pauseMenu");
+        const winMessage = document.getElementById("winMessage");
+        const loseMessage = document.getElementById("loseMessage");
+
+        let activeQuestions = [];
+        let score = 0;
+        let lives = 3;
+        let gameInterval;
+        let dropInterval;
+
+        function startGame() {
+            resetGame();
+            inputElement.disabled = false;
+            inputElement.focus();
+            startButton.disabled = true;
+            restartButton.disabled = false;
+
+            addQuestion(); // Перше запитання одразу
+            gameInterval = setInterval(addQuestion, 5000);
+            dropInterval = setInterval(moveQuestions, 50);
+        }
+
+        function resetGame() {
+            activeQuestions.forEach(q => q.element.remove());
+            activeQuestions = [];
+            score = 0;
+            lives = 3;
+            scoreElement.textContent = score;
+            livesElement.textContent = lives;
+            clearInterval(gameInterval);
+            clearInterval(dropInterval);
+            inputElement.value = "";
+            winMessage.style.display = "none";
+            loseMessage.style.display = "none";
+        }
+
+        function addQuestion() {
+            if (activeQuestions.length >= 5) return;
+
+            const randomIndex = Math.floor(Math.random() * questions.length);
+            const questionData = questions[randomIndex];
+            const questionElement = document.createElement("div");
+            questionElement.classList.add("question");
+            questionElement.textContent = questionData.question;
+
+            const startX = Math.random() * (gameArea.offsetWidth - 150);
+            questionElement.style.left = `${startX}px`;
+            questionElement.style.top = `0px`;
+
+            gameArea.appendChild(questionElement);
+
+            activeQuestions.push({
+                question: questionData.question,
+                answer: questionData.answer,
+                element: questionElement,
+                top: 0
+            });
+        }
+
+        function moveQuestions() {
+            activeQuestions.forEach((q, index) => {
+                q.top += 1;
+                q.element.style.top = `${q.top}px`;
+
+                if (q.top > gameArea.offsetHeight) {
+                    q.element.remove();
+                    activeQuestions.splice(index, 1);
+                    loseLife();
+                }
+            });
+        }
+
+        function loseLife() {
+            lives--;
+            livesElement.textContent = lives;
+            if (lives <= 0) {
+                endGame(false);
+            }
+        }
+
+        inputElement.addEventListener("input", () => {
+            const input = inputElement.value.trim();
+            const matchedQuestionIndex = activeQuestions.findIndex(q => q.answer.toLowerCase() === input.toLowerCase());
+
+            if (matchedQuestionIndex !== -1) {
+                const matchedQuestion = activeQuestions[matchedQuestionIndex];
+                matchedQuestion.element.remove();
+                activeQuestions.splice(matchedQuestionIndex, 1);
+
+                score++;
+                scoreElement.textContent = score;
+                inputElement.value = "";
+
+                if (score >= 10) {
+                    endGame(true);
+                }
+            }
+        });
+
+        function pauseGame() {
+            isPaused = true;
+            pauseMenu.style.display = "block";
+            clearInterval(gameInterval);
+            clearInterval(dropInterval);
+        }
+
+        function resumeGame() {
+            isPaused = false;
+            pauseMenu.style.display = "none";
+            gameInterval = setInterval(addQuestion, 5000);
+            dropInterval = setInterval(moveQuestions, 50);
+        }
+
+
+        function endGame(isWin) {
+            clearInterval(gameInterval);
+            clearInterval(dropInterval);
+            activeQuestions.forEach(q => q.element.remove());
+            activeQuestions = [];
+            inputElement.disabled = true;
+
+            if (isWin) {
+                winMessage.style.display = "block";
+            } else {
+                loseMessage.style.display = "block";
+            }
+
+            restartButton.disabled = true;
+            startButton.disabled = false;
+        }
+
+        startButton.addEventListener("click", startGame);
+        restartButton.addEventListener("click", () => {
+            resetGame();
+            startGame();
+        });
+        exitButton.addEventListener("click", () => {
+            resetGame();
+            alert("Ви вийшли з гри. До зустрічі!");
+        });
+    </script>
+</body>
+</html>
