@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Історична гра</title>
+    <style>
+        :root {
+            --bg-color: #f4f4f9;
+            --text-color: #333;
+            --accent-color: #007bff;
+            --card-bg: #fff;
+            --card-shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background-image: url('Crstm_SI_Omega.jpg'); /* Замінити на реальне посилання на новорічний фон */
+            background-size: cover;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 8px var(--card-shadow);
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .image-placeholder img {
+            border-radius: 8px;
+            max-width: 100%;
+        }
+
+        .password-block {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid var(--accent-color);
+            border-radius: 5px;
+            background-color: #e6f7ff;
+            display: none;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            font-family: 'Arial', sans-serif;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button.selected {
+            background-color: #00b300;
+            color: white;
+        }
+
+        .theme-selector {
+            margin: 20px 0;
+        }
+
+        .theme-selector button {
+            margin: 0 5px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Історична гра: Зимова версія</h1>
+        <div class="theme-selector">
+            <button onclick="setTheme('light')">Світла тема</button>
+            <button onclick="setTheme('dark')">Темна тема</button>
+        </div>
+
+        <div class="question" id="question1">
+            <p><strong> 1. Цього року Хмельницький став гетьманом</strong></p>
+            <input type="text" id="answer1" placeholder="Введіть рік">
+        </div>
+
+        <div class="question" id="question2" data-selected-answer="">
+            <p><strong>2. Панщина</strong></p>
+            <div class="option-buttons">
+                <button onclick="selectAnswer(this, 'Кріпацтво', 'question2')">система суспільних відносин, за якої землевласник мав право на особу</button>
+                <button onclick="selectAnswer(this, 'Відробіток', 'question2')">обов’язкову працю селянина власним реманентом у господарстві землевласника</button>
+                <button onclick="selectAnswer(this, 'Ющенко', 'question2')">велике шляхетське багатогалузеве господарство</button>
+            </div>
+        </div>
+
+        <div class="question" id="question3" data-selected-answer="">
+            <p><strong>3. Територія Гетьманщини за довговором 1649 р. Яка назва договору?</strong></p>
+            <div class="image-placeholder">
+                <img src="Crstm_SI_Omega_1.png" alt="Ілюстрація">
+            </div>
+            <div class="option-buttons">
+                <button onclick="selectAnswer(this, 'Переяславська рада', 'question3')">Переяславська рада</button>
+                <button onclick="selectAnswer(this, 'Білоцерківський', 'question3')">Білоцерківський</button>
+                <button onclick="selectAnswer(this, 'Зборівський', 'question3')">Зборівський</button>
+            </div>
+        </div>
+
+        <button onclick="checkAnswers()">Перевірити відповіді</button>
+
+        <div class="password-block" id="passwordBlock">
+            <p>Пароль для наступного рівня: <strong id="password"></strong></p>
+        </div>
+        <footer>
+            © 2024 Історична гра. Усі права захищені.
+        </footer>
+    </div>
+
+    <script>
+        function setTheme(theme) {
+            if (theme === 'light') {
+                document.documentElement.style.setProperty('--bg-color', '#f4f4f9');
+                document.documentElement.style.setProperty('--text-color', '#333');
+                document.documentElement.style.setProperty('--accent-color', '#007bff');
+            } else if (theme === 'dark') {
+                document.documentElement.style.setProperty('--bg-color', '#333');
+                document.documentElement.style.setProperty('--text-color', '#f4f4f9');
+                document.documentElement.style.setProperty('--accent-color', '#ff9800');
+            }
+        }
+
+        let correctAnswers = 0;
+
+        function selectAnswer(button, answer, questionId) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => btn.classList.remove('selected'));
+            button.classList.add('selected');
+            document.getElementById(questionId).dataset.selectedAnswer = answer;
+        }
+
+        function checkAnswers() {
+            correctAnswers = 0;
+            const answer1 = document.getElementById('answer1').value.trim();
+            const selectedAnswer2 = document.getElementById('question2').dataset.selectedAnswer;
+            const selectedAnswer3 = document.getElementById('question3').dataset.selectedAnswer;
+
+            if (answer1 === '1648') correctAnswers++;
+            if (selectedAnswer2 === 'Відробіток') correctAnswers++;
+            if (selectedAnswer3 === 'Зборівський') correctAnswers++;
+
+            if (correctAnswers === 3) {
+                document.getElementById('password').textContent = 'Богдан Хмельницький';
+                document.getElementById('passwordBlock').style.display = 'block';
+            } else {
+                alert('Не всі відповіді правильні. Спробуйте ще раз!');
+            }
+        }
+    </script>
+</body>
+</html>

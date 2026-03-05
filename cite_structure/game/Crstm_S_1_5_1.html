@@ -1,0 +1,288 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Історична гра</title>
+    <style>
+        :root {
+            --bg-color: #e6ffe6;
+            --text-color: #333;
+            --accent-color: #007bff;
+            --card-bg: #f4fff4;
+            --card-shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 8px var(--card-shadow);
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .question, .table-container {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid var(--accent-color);
+            padding: 8px;
+            text-align: center;
+        }
+
+        .draggable {
+            cursor: move;
+            padding: 5px;
+            background-color: #f0f0f0;
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+
+        .dropzone {
+            border: 2px dashed var(--accent-color);
+            padding: 10px;
+            min-height: 30px;
+            border-radius: 5px;
+            background: #fff;
+        }
+
+        .highlight {
+            background-color: #d4edda;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 1rem;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .image-placeholder img {
+            border-radius: 8px;
+            max-width: 100%;
+        }
+
+        .result {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            background-color: #e6f7ff;
+        }
+
+        .result img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        #secret-container {
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Історична гра</h1>
+
+        <!-- Завдання 1 -->
+        <div class="question">
+            <p><strong>1. Введіть відповіді на запитання:</strong></p>
+            <p>1. Остаточна ліквідація гетьманства </p>
+            <input type="text" id="task1_answer1">
+            <p>2. Остаточна ліквідація царським урядом Запорозької Січі</p>
+            <input type="text" id="task1_answer2">
+            <p>3. Ухвалення Конституції Пилипа Орлика</p>
+            <input type="text" id="task1_answer3">
+        </div>
+
+        <!-- Завдання 2 -->
+        <div class="table-container">
+            <p><strong>2. Співвіднесіть запитання та відповіді:</strong></p>
+            <table>
+                <tr>
+                    <th>Запитання</th>
+                    <th>Відповідь</th>
+                    <th>Варіанти відповідей</th>
+                </tr>
+                <tr>
+                    <td>1. Козацько-селянські повстання 1620-х - 1630-х рр.</td>
+                    <td class="dropzone" data-correct="Тарасова ніч"></td>
+                    <td class="draggable" draggable="true">Тарасова ніч</td>
+                </tr>
+                <tr>
+                    <td>2. «Коліївщина»</td>
+                    <td class="dropzone" data-correct="Холодний Яр"></td>
+                    <td class="draggable" draggable="true">Холодний Яр</td>
+                </tr>
+                <tr>
+                    <td>3. «Руїна»</td>
+                    <td class="dropzone" data-correct="Чигрине, Чигрине..."></td>
+                    <td class="draggable" draggable="true">Чигрине, Чигрине...</td>
+                </tr>
+                <tr>
+                    <td>4. «Доба героїчних походів»</td>
+                    <td class="dropzone" data-correct="Гамалія"></td>
+                    <td class="draggable" draggable="true">Гамалія</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="dropzone"></td>
+                    <td class="draggable" draggable="true">В Путивлі-граді вранці-рано...</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Завдання 3 -->
+        <div class="question">
+            <p><strong>3. З яким гетьманом пов'язане зображення?</strong></p>
+            <div class="image-placeholder">
+                <img src="Crstm_SI_1_5.jpg" alt="Ілюстрація">
+            </div>
+            <button onclick="checkButtonAnswer(this, 'Іван Мазепа')">Іван Мазепа</button>
+            <button onclick="checkButtonAnswer(this, 'Данило Апостол')">Данило Апостол</button>
+            <button class="correct" onclick="checkButtonAnswer(this, 'Кирило Розумовський')">Кирило Розумовський</button>
+            <button onclick="checkButtonAnswer(this, 'Петро Сагайдачний')">Петро Сагайдачний</button>
+        </div>
+
+        <button onclick="checkAllAnswers()">Перевірити відповіді</button>
+        <div id="final-result" class="result">
+            <p>Пароль: <strong>повстання</strong></p>
+            <img src="Crstm_SI_Omega_2.jpg" alt="Фінальне зображення">
+        </div>
+
+        <div id="secret-container">
+            <p><strong>Правильні відповіді:</strong></p>
+            <ul>
+                <li>Остаточна ліквідація гетьманства: 1764</li>
+                <li>Остаточна ліквідація Запорозької Січі: 1775</li>
+                <li>Ухвалення Конституції Пилипа Орлика: 1710</li>
+            </ul>
+        </div>
+
+        <input type="password" id="secret-code" placeholder="Введіть код">
+        <button onclick="revealSecret()">Відкрити секрет</button>
+
+        <footer>© 2024 Історична гра. Усі права захищені.</footer>
+    </div>
+
+    <script>
+        let draggedItem = null;
+
+        document.querySelectorAll('.draggable').forEach(item => {
+            item.addEventListener('dragstart', () => draggedItem = item);
+        });
+
+        document.querySelectorAll('.dropzone').forEach(zone => {
+            zone.addEventListener('dragover', e => e.preventDefault());
+            zone.addEventListener('drop', function() {
+                if (this.childNodes.length === 0) {
+                    this.appendChild(draggedItem);
+                }
+            });
+        });
+
+        const correctTask1Answers = ['1764', '1775', '1710'];
+        const correctTask3Answers = ['Кирило Розумовський'];
+
+        function checkButtonAnswer(button, correctAnswer) {
+            const userAnswer = button.textContent.trim();
+            if (userAnswer === correctAnswer) {
+                button.style.backgroundColor = 'green';
+            } else {
+                button.style.backgroundColor = 'red';
+            }
+        }
+
+        function checkAllAnswers() {
+            let allCorrect = true;
+
+            // Перевірка відповідей на завдання 1
+            const task1Answers = [
+                document.getElementById('task1_answer1').value.trim(),
+                document.getElementById('task1_answer3').value.trim()
+            ];
+
+            task1Answers.forEach((answer, index) => {
+                if (answer !== correctTask1Answers[index]) {
+                    allCorrect = false;
+                }
+            });
+
+            // Перевірка відповідей на завдання 2
+            document.querySelectorAll('.dropzone').forEach((zone, index) => {
+                const userAnswer = zone.textContent.trim();
+                if (userAnswer !== correctTask2Answers[index]) {
+                 allCorrect = false;
+                }
+            });
+
+            if (allCorrect) {
+                document.getElementById('final-result').style.display = 'block';
+            } else {
+                alert('Не всі відповіді правильні. Спробуйте ще раз.');
+            }
+        }
+
+        function revealSecret() {
+            const code = document.getElementById('secret-code').value.trim();
+            if (code === 'L0v3 H1sT0r') {
+                document.getElementById('secret-container').style.display = 'block';
+            } else {
+                alert('Невірний код. Спробуйте ще раз.');
+            }
+        }
+    </script>
+</body>
+</html>

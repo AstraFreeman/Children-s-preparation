@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Історична гра</title>
+    <style>
+        :root {
+            --bg-color: #ff0000;
+            --text-color: #ffffff;
+            --accent-color: #8b0000;
+            --card-bg: #b22222;
+            --card-shadow: rgba(139, 0, 0, 0.5);
+            --correct-bg: #ff6347;
+            --incorrect-bg: #ff4500;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background-image: url('Crstm_SB_5.jpg'); /* Замінити на реальне посилання на новорічний фон */
+            background-size: cover;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 8px var(--card-shadow);
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--text-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            background: rgba(255, 99, 71, 0.8);
+        }
+
+        .image-placeholder img {
+            border-radius: 8px;
+            max-width: 100%;
+        }
+
+        .password-block {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid var(--accent-color);
+            border-radius: 5px;
+            background-color: var(--correct-bg);
+            display: none;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            font-family: 'Arial', sans-serif;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #ff6347;
+        }
+
+        button.selected {
+            background-color: #ff4500;
+            color: white;
+        }
+
+        .sortable {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sortable li {
+            background-color: #ff7f7f;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+            cursor: move;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sortable .number {
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .sortable.correct {
+            background-color: var(--correct-bg);
+        }
+
+        .sortable.incorrect {
+            background-color: var(--incorrect-bg);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #ffdab9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Історична гра: Зимова версія</h1>
+        <div class="theme-selector">
+            <button onclick="setTheme('light')">Світла тема</button>
+            <button onclick="setTheme('dark')">Темна тема</button>
+        </div>
+
+        <div class="question" id="question1">
+            <p><strong>1. Роки існування Гетьманщини</strong></p>
+            <input type="text" id="answer1" placeholder="від Хмлн до Рзмв">
+        </div>
+
+        <div class="question" id="question2">
+            <p><strong>2. Гайдамацький та опришківський рухи у ХVІІІ ст. були спрямовані проти експлуатації українського селянства</strong></p>
+            <div class="option-buttons">
+                <button onclick="selectAnswer(this, 'Автономія', 'MRK')">російським дворянством</button>
+                <button onclick="selectAnswer(this, 'Полки', 'MRK')">кримськотатарськими ханами.</button>
+                <button onclick="selectAnswer(this, 'шляхта', 'MRK')">польською шляхтою</button>
+            </div>
+        </div>
+
+        <div class="question" id="question3">
+            <p><strong>3. Кого наслідує лідер зображений на малюнку?</strong></p>
+            <div class="image-placeholder">
+                <img src="UR_1918_2.png" alt="Ілюстрація">
+            </div>
+            <div class="option-buttons">
+                <button onclick="selectAnswer(this, 'Самар', 'style')">московських дворян</button>
+                <button onclick="selectAnswer(this, 'Скрпд', 'style')">козацьку старшину</button>
+                <button onclick="selectAnswer(this, 'модерн', 'style')">польскушляхту</button>
+            </div>
+        </div>
+
+        <button onclick="checkAnswers()">Перевірити відповіді</button>
+
+        <div class="password-block" id="passwordBlock">
+            <p>Пароль для наступного рівня: <strong id="password"></strong></p>
+        </div>
+        <footer>
+            © 2024 Історична гра. Усі права захищені.
+        </footer>
+    </div>
+
+    <script>
+        function setTheme(theme) {
+            if (theme === 'light') {
+                document.documentElement.style.setProperty('--bg-color', '#f4f4f9');
+                document.documentElement.style.setProperty('--text-color', '#333');
+                document.documentElement.style.setProperty('--accent-color', '#007bff');
+            } else if (theme === 'dark') {
+                document.documentElement.style.setProperty('--bg-color', '#333');
+                document.documentElement.style.setProperty('--text-color', '#f4f4f9');
+                document.documentElement.style.setProperty('--accent-color', '#ff9800');
+            }
+        }
+
+        let selectedPresident = '';
+        let selectedYear = '';
+
+        function selectAnswer(button, answer, questionType) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => btn.classList.remove('selected'));
+            button.classList.add('selected');
+
+            if (questionType === 'president') {
+                selectedPresident = answer;
+            } else if (questionType === 'year') {
+                selectedYear = answer;
+            }
+        }
+
+        function checkAnswers() {
+            const answer1 = document.getElementById('answer1').value.trim();
+
+            if (answer1 === '1648-1764' && selectedPresident === 'шляхта', 'MRK' && selectedYear === 'Скрпд', 'style') {
+                document.getElementById('password').textContent = 'В цьому тесті це кінець. Поки що';
+                document.getElementById('passwordBlock').style.display = 'block';
+            } else {
+                alert('Не всі відповіді правильні. Спробуйте ще раз!');
+            }
+        }
+    </script>
+</body>
+</html>

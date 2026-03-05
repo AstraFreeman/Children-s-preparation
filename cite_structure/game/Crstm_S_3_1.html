@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Історична гра</title>
+    <style>
+        :root {
+            --bg-color: #e3f2fd;
+            --text-color: #0f0a01;
+            --accent-color: #7b7a29;
+            --card-bg: #c6bd50;
+            --card-shadow: rgba(49, 3, 3, 0.2);
+            --correct-bg: #e4a562;
+            --incorrect-bg: #cdd5ff;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background-image: url('Crstm_SB_2.jpg'); /* Замінити на реальне посилання на новорічний фон */
+            background-size: cover;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+
+        .container {
+            max-width: 800px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 8px var(--card-shadow);
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            background: rgba(206, 206, 234, 0.9);
+        }
+
+        .image-placeholder img {
+            border-radius: 8px;
+            max-width: 100%;
+        }
+
+        .password-block {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid var(--accent-color);
+            border-radius: 5px;
+            background-color: #7685c9;
+            display: none;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            font-family: 'Arial', sans-serif;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #d6c347;
+        }
+
+        button.selected {
+            background-color: #cdcb38;
+            color: white;
+        }
+
+        .sortable {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sortable li {
+            background-color: #bdbbfb;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+            cursor: move;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .sortable .number {
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .sortable.correct {
+            background-color: var(--correct-bg);
+        }
+
+        .sortable.incorrect {
+            background-color: var(--incorrect-bg);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Історична гра: Зимова версія</h1>
+        <div class="theme-selector">
+            <button onclick="setTheme('light')">Світла тема</button>
+            <button onclick="setTheme('dark')">Темна тема</button>
+        </div>
+
+        <div class="question" id="question1">
+            <p><strong>1. Після остаточної ліквідації гетьманства для управління Лівобережною Україною царською владою було створено:</strong></p>
+            <p> Малоросійський приказ</p>
+            <p> Малоросійську колегію.</p>
+            <p> Таємну канцелярію </p>
+            <input type="text" id="answer1" placeholder="Введіть текст (не приказ)">
+        </div>
+
+        <div class="question" id="question2">
+            <p><strong>2. Укажіть ім'я кошового отамана Запорозької Січі.</strong></p>
+            <div class="option-buttons">
+                <button onclick="selectAnswer(this, 'Автономія', 'MRK')">Василь-Костянтин Острозький</button>
+                <button onclick="selectAnswer(this, 'Полки', 'MRK')">Іван Виговський</button>
+                <button onclick="selectAnswer(this, 'отаман', 'MRK')">Кость Гордієнко</button>
+            </div>
+        </div>
+
+        <div class="question" id="question3">
+            <p><strong>3. Чому почалося повстання С. Палія?</strong></p>
+            <div class="image-placeholder">
+                <img src="Crstm_SI_3_1.jpg" alt="Ілюстрація">
+            </div>
+            <div class="option-buttons">
+                <button onclick="selectAnswer(this, 'Самар', 'style')">обмеження поляками прав Січі</button>
+                <button onclick="selectAnswer(this, 'класицизму', 'style')">невиплатою поляками зарплати козакам</button>
+                <button onclick="selectAnswer(this, 'Палій', 'style')">ліквідацією поляками полкового устрою</button>
+            </div>
+        </div>
+
+        <button onclick="checkAnswers()">Перевірити відповіді</button>
+
+        <div class="password-block" id="passwordBlock">
+            <p>Пароль для наступного рівня: <strong id="password"></strong></p>
+        </div>
+        <footer>
+            © 2024 Історична гра. Усі права захищені.
+        </footer>
+    </div>
+
+    <script>
+        function setTheme(theme) {
+            if (theme === 'light') {
+                document.documentElement.style.setProperty('--bg-color', '#f4f4f9');
+                document.documentElement.style.setProperty('--text-color', '#333');
+                document.documentElement.style.setProperty('--accent-color', '#007bff');
+            } else if (theme === 'dark') {
+                document.documentElement.style.setProperty('--bg-color', '#333');
+                document.documentElement.style.setProperty('--text-color', '#f4f4f9');
+                document.documentElement.style.setProperty('--accent-color', '#ff9800');
+            }
+        }
+
+        let selectedPresident = '';
+        let selectedYear = '';
+
+        function selectAnswer(button, answer, questionType) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => btn.classList.remove('selected'));
+            button.classList.add('selected');
+
+            if (questionType === 'president') {
+                selectedPresident = answer;
+            } else if (questionType === 'year') {
+                selectedYear = answer;
+            }
+        }
+
+        function checkAnswers() {
+            const answer1 = document.getElementById('answer1').value.trim();
+
+            if (answer1 === 'Малоросійську колегію' && selectedPresident === 'отаман', 'MRK' && selectedYear === 'Палій', 'style') {
+                document.getElementById('password').textContent = 'Кріпацтво';
+                document.getElementById('passwordBlock').style.display = 'block';
+            } else {
+                alert('Не всі відповіді правильні. Спробуйте ще раз!');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Історична гра</title>
+    <style>
+        :root {
+            --bg-color: #ff0000;
+            --text-color: #ffffff;
+            --accent-color: #8b0000;
+            --card-bg: #b22222;
+            --card-shadow: rgba(139, 0, 0, 0.5);
+            --correct-bg: #ff6347;
+            --incorrect-bg: #ff4500;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background-image: url('Crstm_SB_2.jpg'); /* Замінити на реальне посилання на новорічний фон */
+            background-size: cover;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 8px var(--card-shadow);
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--text-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            background: rgba(255, 99, 71, 0.8);
+        }
+
+        .image-placeholder img {
+            border-radius: 8px;
+            max-width: 100%;
+        }
+
+        .password-block {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid var(--accent-color);
+            border-radius: 5px;
+            background-color: var(--correct-bg);
+            display: none;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            font-family: 'Arial', sans-serif;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #ff6347;
+        }
+
+        button.selected {
+            background-color: #ff4500;
+            color: white;
+        }
+
+        .sortable {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sortable li {
+            background-color: #ff7f7f;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+            cursor: move;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sortable .number {
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .sortable.correct {
+            background-color: var(--correct-bg);
+        }
+
+        .sortable.incorrect {
+            background-color: var(--incorrect-bg);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #ffdab9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Історична гра: Зимова версія</h1>
+
+        <div class="question" id="question1">
+            <p><strong>1. За ініціативи князя О. Меншикова на засіданні Верховної таємної ради було вирішено запропонувати російській імператриці</strong></p>
+            <p>1. поки ще з турками до розриву не дійшло, до тих місць, ради приласкання тамтешнього народу, обрати персону гідну і вірну з малоросіян в гетьмани...  </p>
+            <p>2. суди між народом малоросійським відправляти їм самим...» </p>           
+            <input type="text" id="answer1" placeholder="Введіть прізвище">
+        </div>
+
+        <div class="question" id="question2">
+            <p><strong>2. Укажіть період гетьманування К. Розумовського</strong></p>
+            <ul class="sortable" id="sequence">
+                <li id="item1" draggable="true"><span class="number">1</span> «…вирішили Ми взяти під державу Російську півострів Кримський... Сповіщаючи мешканців тих місць цим Нашим Маніфестом про таку переміну їхнього буття, обіцяємо ставитися до них нарівні з іншими Нашими підданими…»</li>
+                <li id="item2" draggable="true"><span class="number">2</span> «На початку року граф П. Рум’янцев прибув у Глухів. Першим його кроком стало проведення ревізії людей, худоби, землі, споруд. Її результати, узагальнені майже в тисячі томах, отримали назву «Генерального опису Малоросії».</li>
+                <li id="item3" draggable="true"><span class="number">3</span> «Ми захотіли… оголосити всім вірнопідданим, що Запорозька Січ остаточно зруйнована, з викоріненням на майбутнє назви запорозьких козаків за образу імператорської величності…»</li>
+                <li id="item4" draggable="true"><span class="number">4</span> «…За кілька днів після приєднання козацького головнокомандувача Мазепи до шведів князь Меншиков на чолі війська пішов на Батурин, резиденцію гетьмана… Здобувши місто силою, князь віддав усе живе мечу й вогню…»</li>
+            </ul>
+        </div>
+
+        <div class="question" id="question3">
+            <p><strong>3. Для кого історичного регіону України характерний цей елемент звичаєвого права?</strong></p>
+            <div class="image-placeholder">
+                <img src="Crstm_SI_4_2.jpg" alt="Ілюстрація">
+            </div>
+            <div class="option-buttons">
+                <button onclick="selectAnswer(this, 'Волинь', 'style')">Лівобережжя</button>
+                <button onclick="selectAnswer(this, 'Київщина', 'style')">Правобережжя</button>
+                <button onclick="selectAnswer(this, '23поділ', 'style')">Другого та Третього</button>
+            </div>
+        </div>
+
+        <button onclick="checkAnswers()">Перевірити відповіді</button>
+
+        <div class="password-block" id="passwordBlock">
+            <p>Пароль для наступного рівня: <strong id="password"></strong></p>
+        </div>
+
+        <footer>
+            © 2024 Історична гра. Усі права захищені.
+        </footer>
+    </div>
+
+    <script>
+        let selectedRegion = '';
+
+        function selectAnswer(button, answer, questionType) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => btn.classList.remove('selected'));
+            button.classList.add('selected');
+
+            if (questionType === 'style') {
+                selectedRegion = answer;
+            }
+        }
+
+        function enableDragAndDrop() {
+            const items = document.querySelectorAll('.sortable li');
+            items.forEach(item => {
+                item.addEventListener('dragstart', dragStart);
+                item.addEventListener('dragover', dragOver);
+                item.addEventListener('drop', drop);
+            });
+        }
+
+        function dragStart(event) {
+            event.dataTransfer.setData('text/plain', event.target.id);
+        }
+
+        function dragOver(event) {
+            event.preventDefault();
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            const draggedId = event.dataTransfer.getData('text/plain');
+            const draggedElement = document.getElementById(draggedId);
+            const targetElement = event.target.closest('li');
+
+            if (draggedElement && targetElement && draggedElement !== targetElement) {
+                const list = targetElement.parentElement;
+                const draggedIndex = Array.from(list.children).indexOf(draggedElement);
+                const targetIndex = Array.from(list.children).indexOf(targetElement);
+
+                if (draggedIndex < targetIndex) {
+                    list.insertBefore(draggedElement, targetElement.nextSibling);
+                } else {
+                    list.insertBefore(draggedElement, targetElement);
+                }
+            }
+        }
+
+        function highlightSequence() {
+            const sequence = Array.from(document.querySelectorAll('.sortable li')).map(li => li.id);
+            const correctSequence = ['item4', 'item2', 'item1', 'item3'];
+
+            sequence.forEach((id, index) => {
+                const element = document.getElementById(id);
+                if (id === correctSequence[index]) {
+                    element.style.backgroundColor = 'var(--correct-bg)';
+                } else {
+                    element.style.backgroundColor = 'var(--incorrect-bg)';
+                }
+            });
+        }
+
+        function checkAnswers() {
+            const answer1 = document.getElementById('answer1').value.trim();
+            const sequence = Array.from(document.querySelectorAll('.sortable li')).map(li => li.id);
+            const correctSequence = ['item4', 'item2', 'item1', 'item3'];
+
+            highlightSequence();
+
+            if (
+                answer1 === 'Апостол' && 
+                JSON.stringify(sequence) === JSON.stringify(correctSequence) &&
+                selectedRegion === '23поділ', 'style'
+            ) {
+                document.getElementById('password').textContent = 'Вам';
+                document.getElementById('passwordBlock').style.display = 'block';
+            } else {
+                alert('Не всі відповіді правильні. Спробуйте ще раз!');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', enableDragAndDrop);
+    </script>
+</body>
+</html>

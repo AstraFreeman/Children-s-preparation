@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Історична гра</title>
+    <style>
+        :root {
+            --bg-color: #f0f8ff;
+            --text-color: #002f6c;
+            --accent-color: #0056b3;
+            --card-bg: #87cefa;
+            --card-shadow: rgba(0, 0, 139, 0.2);
+            --correct-bg: #48d1cc;
+            --incorrect-bg: #ff6f61;
+            --selected-answer-bg: #add8e6;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background-image: url('Crstm_SB_2.jpg');
+            background-size: cover;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 8px var(--card-shadow);
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            background: #e6f7ff;
+        }
+
+        .password-block {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid var(--accent-color);
+            border-radius: 5px;
+            background-color: #4682b4;
+            display: none;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            font-family: 'Arial', sans-serif;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #003f88;
+        }
+
+        button.selected {
+            background-color: var(--selected-answer-bg);
+            color: var(--accent-color);
+        }
+
+        .sortable {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sortable li {
+            background-color: #b0e0e6;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+            cursor: move;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sortable .number {
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .sortable.correct li {
+            background-color: var(--correct-bg);
+        }
+
+        .sortable.incorrect li {
+            background-color: var(--incorrect-bg);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Історична гра: Зимова версія</h1>
+
+        <div class="question" id="question1">
+            <p><strong>1. Кріпосницькі відносини в Наддніпрянській Україні почалися</strong></p>
+            <input type="text" id="answer1" placeholder="Введіть дату (напр. 1783)">
+        </div>
+
+        <div class="question" id="question2">
+            <p><strong>2. Установіть послідовність ліквідації української автономії в XVIII ст</strong></p>
+            <ul class="sortable" id="sequence">
+                <li id="item1" draggable="true"><span class="number">1</span> початок діяльності Другої Малоросійської колегії</li>
+                <li id="item2" draggable="true"><span class="number">2</span> перший поділ Речі Посполитої</li>
+                <li id="item3" draggable="true"><span class="number">3</span> утворення Правління гетьманського уряду</li>
+                <li id="item4" draggable="true"><span class="number">4</span> початок гетьманування К. Розумовського</li>
+            </ul>
+        </div>
+
+        <div class="question" id="question3">
+            <p><strong>3. Людина на портреті була гетьманом, але яким?</strong></p>
+            <div class="image-placeholder">
+                <img src="Crstm_SI_1_4.jpg" alt="Ілюстрація">
+            </div>
+            <div class="option-buttons">
+                <button onclick="selectAnswer(this, 'Розумовський')">Останнім, це К. Розумовський</button>
+                <button onclick="selectAnswer(this, 'Вишневецький')">Першим, це Дмитро Вишневецький</button>
+                <button onclick="selectAnswer(this, 'Мазепа')">Іван Мазепа, рубіжний гетьман</button>
+            </div>
+        </div>
+
+        <button onclick="checkAnswers()">Перевірити відповіді</button>
+
+        <div class="password-block" id="passwordBlock">
+            <p>Пароль для наступного рівня: <strong id="password"></strong></p>
+        </div>
+
+        <footer>
+            © 2024 Історична гра. Усі права захищені.
+        </footer>
+    </div>
+
+    <script>
+        let selectedAnswer = '';
+
+        function selectAnswer(button, answer) {
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => btn.classList.remove('selected'));
+            button.classList.add('selected');
+
+            selectedAnswer = answer;
+        }
+
+        function enableDragAndDrop() {
+            const items = document.querySelectorAll('.sortable li');
+            items.forEach(item => {
+                item.addEventListener('dragstart', dragStart);
+                item.addEventListener('dragover', dragOver);
+                item.addEventListener('drop', drop);
+            });
+        }
+
+        function dragStart(event) {
+            event.dataTransfer.setData('text/plain', event.target.id);
+        }
+
+        function dragOver(event) {
+            event.preventDefault();
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            const draggedId = event.dataTransfer.getData('text/plain');
+            const draggedElement = document.getElementById(draggedId);
+            const targetElement = event.target.closest('li');
+
+            if (draggedElement && targetElement && draggedElement !== targetElement) {
+                const list = targetElement.parentElement;
+                const draggedIndex = Array.from(list.children).indexOf(draggedElement);
+                const targetIndex = Array.from(list.children).indexOf(targetElement);
+
+                if (draggedIndex < targetIndex) {
+                    list.insertBefore(draggedElement, targetElement.nextSibling);
+                } else {
+                    list.insertBefore(draggedElement, targetElement);
+                }
+            }
+        }
+
+        function checkAnswers() {
+            const answer1 = document.getElementById('answer1').value.trim();
+            const sequence = Array.from(document.querySelectorAll('.sortable li')).map(li => li.id);
+            const correctSequence = ['item3', 'item4', 'item1', 'item2'];
+
+            const isSequenceCorrect = JSON.stringify(sequence) === JSON.stringify(correctSequence);
+
+            const sequenceElement = document.getElementById('sequence');
+            sequenceElement.classList.toggle('correct', isSequenceCorrect);
+            sequenceElement.classList.toggle('incorrect', !isSequenceCorrect);
+
+            const allAnswersCorrect = (
+                answer1 === '1783' && 
+                isSequenceCorrect &&
+                selectedAnswer === 'Розумовський'
+            );
+
+            if (allAnswersCorrect) {
+                document.getElementById('password').textContent = 'Автономія';
+                document.getElementById('passwordBlock').style.display = 'block';
+            } else {
+                alert('Не всі відповіді правильні. Спробуйте ще раз!');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', enableDragAndDrop);
+    </script>
+</body>
+</html>
