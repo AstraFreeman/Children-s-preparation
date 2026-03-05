@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100 ігор з історії</title>
+  <style>
+    /* Заголовок */
+    #title {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 36px;
+      color: #8B0000; /* Бордовий */
+      margin-top: 20px;
+      text-shadow: 2px 2px #e5e5e5;
+    }
+
+    /* Основні стилі для персонажа */
+    #assistant {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 150px;
+      height: auto;
+      z-index: 1000;
+      cursor: pointer;
+      transition: top 1s ease, left 1s ease; /* Плавна анімація */
+    }
+
+    #assistant-image {
+      width: 100%;
+    }
+
+    /* Контент розділів */
+    .section {
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      background-color: #f7f2e9; /* Пастельний фон */
+      border: 1px solid #e4d7c3; /* Пастельна рамка */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: #5d5d5d;
+    }
+
+    .links {
+      margin-top: 10px;
+    }
+
+    .links a {
+      display: block;
+      color: #007bff;
+      text-decoration: none;
+      margin: 5px 0;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    #welcome {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('image/story_A.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #welcome h1 {
+      font-size: 48px;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    #welcome p {
+      font-size: 24px;
+      margin: 10px 0;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    #welcome button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    #welcome button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Панель кнопок */
+    .control-buttons {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      z-index: 1200;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .control-buttons button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .control-buttons button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Медіа-запити для адаптивності */
+    @media (max-width: 768px) {
+      #title {
+        font-size: 28px;
+      }
+
+      #assistant {
+        width: 120px;
+      }
+
+      .section {
+        margin: 10px;
+        padding: 15px;
+      }
+
+      .control-buttons {
+        bottom: 10px;
+        left: 10px;
+        flex-direction: column;
+      }
+
+      .control-buttons button {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Заголовок -->
+  <div id="title">100 ІГОР З ІСТОРІЇ</div>
+ 
+  <div id="welcome">
+    <h1>Ласкаво просимо!</h1>
+    <p>100 ігор з історії – досліджуйте та навчайтесь!</p>
+    <button id="start-button">Почати</button>
+  </div>
+
+  <!-- Вставка персонажа -->
+  <div id="assistant" style="display: none;">
+    <img src="image/Sprut_Idle.gif" alt="Тітонька Півонія" id="assistant-image">
+  </div>
+
+  <!-- Панель кнопок -->
+  <div class="control-buttons">
+    <button id="toggle-assistant">Показати помічника</button>
+    <button id="fact-button">Факт!</button>
+    <button id="dance-button">Танець!</button>
+  </div>
+
+  <!-- Контент розділів -->
+
+  <div class="section">
+    <h2>Розділ 1: Давня історія</h2>
+    <div class="links">
+      <a href="compas.html">Переглянути New_Orlan_1</a>
+      <a href="compas.html">Переглянути New_Orlan_2</a>
+      <a href="compas.html">Переглянути New_Orlan_3</a>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Розділ 2: Русь-Україна</h2>
+    <div class="links">
+      <a href="Taxes_1.html">Переглянути Taxes_1</a>
+      <a href="compas.html">Переглянути Taxes_2</a>
+      <a href="compas.html">Переглянути Taxes_3</a>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Розділ 3: Козацтво</h2>
+    <div class="links">
+        <div class="info-links">
+            <h3>Інформаційні сторінки</h3>
+            <a href="New_Makako_Start_1.html" class="priority">📖 Переглянути "Як грати в Дата райз"</a>
+            <a href="New_Makako_Start_2.html" class="priority">📖 Переглянути "Звичаї та традиції"</a>
+            <a href="New_Makako_Start_3.html" class="priority">📖 Переглянути "Козацькі герої"</a>
+        </div>
+        <div class="game-links">
+            <h3>Ігрові файли</h3>
+            <a href="New_Makako_1.html" class="secondary">🎮 Грати "Дата райз"</a>
+            <a href="New_Makako_2.html" class="secondary">🎮 Грати "Козацький бій"</a>
+            <a href="New_Makako_3.html" class="secondary">🎮 Грати "Січова оборона"</a>
+        </div>
+    </div>
+</div>
+  <div class="section">
+    <h2>Розділ 4: Різдвяний, особливий</h2>
+    <div class="links">
+      <a href="Crstm_S_Main.html">Історичний квест по темі XVIII ст.</a>
+
+    </div>
+  </div>
+  <div class="section">
+    <h2>Розділ 5: Невода</h2>
+    <div class="links">
+      <a href="compas.html">Переглянути Nevoda_1</a>
+      <a href="compas.html">Переглянути Nevoda_2</a>
+      <a href="compas.html">Переглянути Nevoda_3</a>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Розділ 6: Шивафорнія</h2>
+    <div class="links">
+      <a href="compas.html">Переглянути Shivafornia_1</a>
+      <a href="compas.html">Переглянути Shivafornia_2</a>
+      <a href="compas.html">Переглянути Shivafornia_3</a>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Розділ 7: Місіпісі</h2>
+    <div class="links">
+      <a href="compas.html">Переглянути Misipici_1</a>
+      <a href="compas.html">Переглянути Misipici_2</a>
+      <a href="compas.html">Переглянути Misipici_3</a>
+    </div>
+  </div>
+
+  <script>
+    const assistant = document.getElementById('assistant');
+    const assistantImage = document.getElementById('assistant-image');
+    const toggleButton = document.getElementById('toggle-assistant');
+    const factButton = document.getElementById('fact-button');
+    const danceButton = document.getElementById('dance-button');
+    const welcomeScreen = document.getElementById('welcome');
+    const startButton = document.getElementById('start-button');
+    const title = document.getElementById('title');
+    const controlButtons = document.querySelector('.control-buttons');
+
+    // Приховуємо розділ привітання після натискання кнопки
+    startButton.addEventListener('click', () => {
+      welcomeScreen.style.display = 'none';
+      title.classList.remove('hidden');
+      controlButtons.classList.remove('hidden');
+    });
+
+    // Масив фактів
+    const facts = [
+      "У Стародавньому Єгипті винайшли першу зубну пасту.",
+      "Галілео Галілей створив телескоп у 1609 році.",
+      "Перший друкарський верстат з'явився в Китаї.",
+      "Олександр Македонський заснував понад 20 міст із назвою Александрія.",
+      "Вікінги першими дісталися до Північної Америки за 500 років до Колумба."
+    ];
+
+    // Випадкове посилання на сторінці
+    function getRandomLink() {
+      const links = document.querySelectorAll('.links a');
+      const randomIndex = Math.floor(Math.random() * links.length);
+      return links[randomIndex].href;
+    }
+
+    // Показати/приховати помічника
+    toggleButton.addEventListener('click', () => {
+      if (assistant.style.display === 'none') {
+        assistant.style.display = 'block';
+        toggleButton.textContent = 'Прибрати помічника';
+      } else {
+        assistant.style.display = 'none';
+        toggleButton.textContent = 'Показати помічника';
+      }
+    });
+
+    // Перехід за випадковим посиланням
+    assistant.addEventListener('click', () => {
+      const randomLink = getRandomLink();
+      alert('Ось, спробуй це!');
+      window.location.href = randomLink;
+    });
+
+    // Танець
+    danceButton.addEventListener('click', () => {
+      assistantImage.src = "image/Sprut_Dance.gif";
+      setTimeout(() => {
+        assistantImage.src = "image/Sprut_Idle.gif";
+      }, 5000); // 5 секунд анімації
+    });
+
+    // Показати випадковий факт
+    factButton.addEventListener('click', () => {
+      const randomFact = facts[Math.floor(Math.random() * facts.length)];
+      alert(`Цікавий факт: ${randomFact}`);
+    });
+
+    // Плавне переміщення помічника
+    function moveAssistant() {
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const assistantWidth = assistant.offsetWidth;
+      const assistantHeight = assistant.offsetHeight;
+
+      const x = Math.random() * (windowWidth - assistantWidth);
+      const y = Math.random() * (windowHeight - assistantHeight);
+
+      assistantImage.src = "image/Sprut_Move.gif";
+      assistant.style.left = `${x}px`;
+      assistant.style.top = `${y}px`;
+
+      setTimeout(() => {
+        assistantImage.src = "image/Sprut_Idle.gif";
+      }, 2000);
+    }
+
+    setInterval(moveAssistant, 15000); // Рух кожні 15 секунд
+  </script>
+</body>
+</html>
