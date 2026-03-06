@@ -1,0 +1,157 @@
+form_id,timestamp,type,number,block_name,link,sender
+1,2024-10-13 12:15,intro_test,0,,https://forms.gle/hhUvdNQsyvYYNdA66,Корнієнко Сергій
+2,2024-10-13 13:36,other,,,https://forms.gle/QL2hswmKFo6NKs5P7,Корнієнко Сергій
+3,2024-10-20 15:41,other,,,https://forms.gle/SsUmsxAJazsU8TMc8,Корнієнко Сергій
+4,2024-10-20 15:45,seminar,1,Тест 1,https://forms.gle/MXba9euKt7uiirCQ9,Корнієнко Сергій
+5,2024-10-20 15:45,seminar,1,Тест 1,https://forms.gle/KjLVEhqrHw7K1YVZ6,Корнієнко Сергій
+6,2024-10-20 15:45,seminar,1,Тест 1,https://forms.gle/LR2Au2g1eCeX6Hmx9,Корнієнко Сергій
+7,2024-10-20 15:45,seminar,1,Тест 1,https://forms.gle/53WxPDrKyyNUcJwV7,Корнієнко Сергій
+8,2024-10-20 15:45,seminar,1,Тест 1,https://forms.gle/q9yiHkcdYSUqvEkn8,Корнієнко Сергій
+9,2024-10-20 15:45,seminar,1,Тест 1,https://forms.gle/wSqRpo64zRvz4mR77,Корнієнко Сергій
+10,2024-10-27 15:03,seminar,2,5 % семінар 2 %,https://forms.gle/UjbdYhW7xv36BySdA,Корнієнко Сергій
+11,2024-10-27 15:03,seminar,2,5 % семінар 2 %,https://forms.gle/uvnJ691jmqvCWDBw7,Корнієнко Сергій
+12,2024-10-27 15:03,seminar,2,5 % семінар 2 %,https://forms.gle/rMmsS9x7M571ZYsF7,Корнієнко Сергій
+13,2024-10-27 15:03,seminar,2,5 % семінар 2 %,https://forms.gle/dM3kLTkRMZKZLpRF7,Корнієнко Сергій
+14,2024-10-27 15:03,seminar,2,5 % семінар 2 %,https://forms.gle/KDGxkDZT5ad8SGMv9,Корнієнко Сергій
+15,2024-11-03 15:18,seminar,3,,https://forms.gle/QQSHVXQTRS3FowCf6,Корнієнко Сергій
+16,2024-11-03 15:25,seminar,3,Частина 3,https://forms.gle/d5GaUjce4xfgZsMT7,Корнієнко Сергій
+17,2024-11-03 15:25,seminar,3,Частина 3,https://forms.gle/auPgK8gc553NsJTq8,Корнієнко Сергій
+18,2024-11-03 15:25,seminar,3,Частина 3,https://forms.gle/2RAzi6AJQvbJTVwu8,Корнієнко Сергій
+19,2024-11-03 16:01,modular_control,1,,https://forms.gle/TshYYg3K2UYTPKCQ9,Корнієнко Сергій
+20,2024-11-10 13:32,other,,5,https://forms.gle/iq4T6frdKiioRWq9A,Корнієнко Сергій
+21,2024-11-10 13:32,other,,5,https://forms.gle/uXhZrLQLDYAS4Foa6,Корнієнко Сергій
+22,2024-11-10 13:32,other,,5,https://forms.gle/imfjkKPGV1WS7G7E8,Корнієнко Сергій
+23,2024-11-10 13:32,other,,5,https://forms.gle/HdZLypkJeEtZwzEw9,Корнієнко Сергій
+24,2024-11-10 13:32,other,,5,https://forms.gle/WWrg8kqM8NkhKKed8,Корнієнко Сергій
+25,2024-11-10 14:16,other,,,https://forms.gle/aeofnSZ6whuUUroD6,Корнієнко Сергій
+26,2024-11-10 15:05,seminar,5,5 (повтор),https://forms.gle/UaQfxK58tWFhpLUu7,Корнієнко Сергій
+27,2024-11-10 15:05,seminar,5,5 (повтор),https://forms.gle/V3qo1jsRUJkb1yg86,Корнієнко Сергій
+28,2024-11-10 15:05,seminar,5,5 (повтор),https://forms.gle/s5zeVGQaqnDF3Wc96,Корнієнко Сергій
+29,2024-11-10 15:05,seminar,5,5 (повтор),https://forms.gle/3cH45HLg22WdA1HN7,Корнієнко Сергій
+30,2024-11-10 15:05,seminar,5,5 (повтор),https://forms.gle/ko9jNChxKck4vxf7A,Корнієнко Сергій
+31,2024-11-17 13:45,other,,,https://forms.gle/ZubbWxasvxFADLhh6,Корнієнко Сергій
+32,2024-11-17 15:04,seminar,6,5,https://forms.gle/tHzs9aDN2Vurtp2a9,Корнієнко Сергій
+33,2024-11-17 15:04,seminar,6,5,https://forms.gle/WoTELZjHa25Adpcq7,Корнієнко Сергій
+34,2024-11-17 15:04,seminar,6,5,https://forms.gle/Afz7NWR34P1XJabX7,Корнієнко Сергій
+35,2024-11-17 15:04,seminar,6,5,https://forms.gle/CjMH8hBHBdP6L4iX6,Корнієнко Сергій
+36,2024-11-17 15:04,seminar,6,5,https://forms.gle/ZyFQ1J2RuDNQV16W7,Корнієнко Сергій
+37,2024-11-17 15:19,seminar,6,,https://forms.gle/b1mP5dHQTqbiY5Lq6,Корнієнко Сергій
+38,2024-11-24 12:10,lecture_quiz,8,1,https://forms.gle/HCkQ8KYXz79t3gzW7,Корнієнко Сергій
+39,2024-11-24 12:40,seminar,8,2 % семінар 8 %,https://forms.gle/XLApDXnNj5fRMdVJ8,Корнієнко Сергій
+40,2024-11-24 13:05,seminar,8,3 % семінар 8 %,https://forms.gle/QbFDcBCjK3e5uKgT6,Корнієнко Сергій
+41,2024-11-24 13:05,seminar,8,3 % семінар 8 %,https://forms.gle/phR49SMYHL7gkQir9,Корнієнко Сергій
+42,2024-11-24 13:05,seminar,8,3 % семінар 8 %,https://forms.gle/P5GH9eGKqHXGAQzf8,Корнієнко Сергій
+43,2024-11-24 13:43,seminar,9,,https://forms.gle/ErmqF1sygDvAtQzU8,Корнієнко Сергій
+44,2024-11-24 13:45,seminar,9,2 % семінар 9 %,https://forms.gle/cBt8QWpcRN6ABnZo8,Корнієнко Сергій
+45,2024-11-24 13:45,seminar,9,2 % семінар 9 %,https://forms.gle/XEfb5y7v9GrJys6F7,Корнієнко Сергій
+46,2024-11-24 13:45,seminar,9,2 % семінар 9 %,https://forms.gle/2JWB8uj7sYvLviTJ8,Корнієнко Сергій
+47,2024-11-24 13:45,seminar,9,2 % семінар 9 %,https://forms.gle/vr4n6R9CKqGcnhQM9,Корнієнко Сергій
+48,2024-11-24 15:04,seminar,7,1 % Семінар 7 %,https://forms.gle/KrsVGBAmwmmCWWiG7,Корнієнко Сергій
+49,2024-11-24 15:04,seminar,7,1 % Семінар 7 %,https://forms.gle/dVdjDU5i2Fe1hRmXA,Корнієнко Сергій
+50,2024-11-24 15:04,seminar,7,1 % Семінар 7 %,https://forms.gle/hFqo7YhZZhhXgtC39,Корнієнко Сергій
+51,2024-11-24 15:04,seminar,7,1 % Семінар 7 %,https://forms.gle/RNVgm92oyD92DJ8b8,Корнієнко Сергій
+52,2024-12-01 14:12,seminar,10,,https://forms.gle/xgxTywZFjr48riAu7,Корнієнко Сергій
+53,2024-12-01 14:41,seminar,10,,https://forms.gle/Zv6W2HAzU1wYE3AA9,Корнієнко Сергій
+54,2024-12-01 15:06,seminar,8,,https://forms.gle/iqTWMhZobcmKPHQy9,Корнієнко Сергій
+55,2024-12-01 15:06,seminar,8,,https://forms.gle/sqVdivyUPY1ET9uKA,Корнієнко Сергій
+56,2024-12-01 15:06,seminar,8,,https://forms.gle/JGkhst9JX6kE5EgP6,Корнієнко Сергій
+57,2024-12-01 15:06,seminar,8,,https://forms.gle/cadDH97rkLf5heAZ7,Корнієнко Сергій
+58,2024-12-01 15:06,seminar,8,,https://forms.gle/PYYZxEH2K4fGbBNA9,Корнієнко Сергій
+59,2024-12-01 15:39,modular_control,2,,https://forms.gle/Df22hhEWZwofU56e6,Корнієнко Сергій
+60,2024-12-08 13:59,lecture_quiz,12,,https://forms.gle/gVRHJ4ua6UCDNPcQA,Корнієнко Сергій
+61,2024-12-08 14:54,seminar,8,Частина 1,https://forms.gle/JhLsqiqdR8BRa2iN7,Корнієнко Сергій
+62,2024-12-08 14:54,seminar,8,Частина 1,https://forms.gle/6Mxfrx7vpGF3CkNy9,Корнієнко Сергій
+63,2024-12-08 14:54,seminar,8,Частина 1,https://forms.gle/iTDCS3gmWVdovfw99,Корнієнко Сергій
+64,2024-12-08 14:54,seminar,8,Частина 1,https://forms.gle/GrSBgkbokV8N74em8,Корнієнко Сергій
+65,2024-12-08 14:54,seminar,8,Частина 1,https://forms.gle/Hkh15HsXAb8cXGXW9,Корнієнко Сергій
+66,2024-12-15 13:38,lecture_quiz,13,,https://forms.gle/fRSQFPn3nnRGvVf98,Корнієнко Сергій
+67,2024-12-15 15:12,seminar,11,Chapter 1,https://forms.gle/czzHSZZuS89X1azD6,Корнієнко Сергій
+68,2024-12-15 15:12,seminar,11,Chapter 1,https://forms.gle/y5BdEcg69tTz1RPs8,Корнієнко Сергій
+69,2024-12-15 15:12,seminar,11,Chapter 1,https://forms.gle/M8q5Fiz4R1uPf8iA7,Корнієнко Сергій
+70,2024-12-15 15:12,seminar,11,Chapter 1,https://forms.gle/TzcRKDSrNNWVRs4V8,Корнієнко Сергій
+71,2024-12-15 15:12,seminar,11,Chapter 1,https://forms.gle/2WroTxk6QJKoH1Sr5,Корнієнко Сергій
+72,2024-12-22 15:03,seminar,12,1 % Семінар 12 %,https://forms.gle/k3ogxCsVd3xFehV18,Корнієнко Сергій
+73,2024-12-22 15:03,seminar,12,1 % Семінар 12 %,https://forms.gle/6xRPqxotZp25HZ3j6,Корнієнко Сергій
+74,2024-12-22 15:03,seminar,12,1 % Семінар 12 %,https://forms.gle/q2iaujFrp4PEhG6b7,Корнієнко Сергій
+75,2024-12-22 15:03,seminar,12,1 % Семінар 12 %,https://forms.gle/b8fBif1a6QgshogK6,Корнієнко Сергій
+76,2024-12-22 15:03,seminar,12,1 % Семінар 12 %,https://forms.gle/4YsTm7SUrqs33veb6,Корнієнко Сергій
+77,2024-12-22 15:03,seminar,12,1 % Семінар 12 %,https://forms.gle/2gocT22bTvphMuba9,Корнієнко Сергій
+78,2024-12-22 15:03,seminar,12,1 % Семінар 12 %,https://forms.gle/x7M7r2uvf7kHt9iKA,Корнієнко Сергій
+79,2024-12-29 15:15,seminar,13,,https://forms.gle/ZQB9R86PZAdFVX8f6,Корнієнко Сергій
+80,2024-12-29 15:34,modular_control,3,,https://forms.gle/8jPpYidFFz7s1Wbe9,Корнієнко Сергій
+81,2025-01-05 14:54,seminar,14,Part 1,https://forms.gle/W3i8MJH3WTYEboiS9,Корнієнко Сергій
+82,2025-01-05 14:54,seminar,14,Part 1,https://forms.gle/9GUw2Xze8aUQHvG39,Корнієнко Сергій
+83,2025-01-05 14:54,seminar,14,Part 1,https://forms.gle/nUpVRLtk6nkDHAFv6,Корнієнко Сергій
+84,2025-01-05 14:54,seminar,14,Part 1,https://forms.gle/ymr3zoJwVvhMdzLD6,Корнієнко Сергій
+85,2025-01-05 14:54,seminar,14,Part 1,https://forms.gle/dNbHzBjkgqYH9grT9,Корнієнко Сергій
+86,2025-01-12 15:00,seminar,15,Частина 1,https://forms.gle/4911h5DTJayLna5p9,Корнієнко Сергій
+87,2025-01-12 15:00,seminar,15,Частина 1,https://forms.gle/yDiEfEeh7jbtMXXf6,Корнієнко Сергій
+88,2025-01-12 15:00,seminar,15,Частина 1,https://forms.gle/CfE55ZRAtE8gtRnQA,Корнієнко Сергій
+89,2025-01-12 15:00,seminar,15,Частина 1,https://forms.gle/rwj5L34TymevgzJU8,Корнієнко Сергій
+90,2025-01-19 14:03,seminar,16,1 % Семінар 16 %,https://forms.gle/gp7MAr1BRahUFYN86,Корнієнко Сергій
+91,2025-01-19 14:03,seminar,16,1 % Семінар 16 %,https://forms.gle/Lzn7sYzzGjFQeAmi7,Корнієнко Сергій
+92,2025-01-19 14:03,seminar,16,1 % Семінар 16 %,https://forms.gle/9g1PYS5kjJ2Z2A9k8,Корнієнко Сергій
+93,2025-01-19 15:00,seminar,17,α % Семінар 17 %,https://forms.gle/KcgTu7V2eXpP5p8B9,Корнієнко Сергій
+94,2025-01-19 15:00,seminar,17,α % Семінар 17 %,https://forms.gle/pQk77GWxWPsAFcTo7,Корнієнко Сергій
+95,2025-01-19 15:00,seminar,17,α % Семінар 17 %,https://forms.gle/VHPoNeJao9L9oH8v6,Корнієнко Сергій
+96,2025-01-19 15:00,seminar,17,α % Семінар 17 %,https://forms.gle/e7rwYXUvBVoKvWbm6,Корнієнко Сергій
+97,2025-01-19 15:00,seminar,17,α % Семінар 17 %,https://forms.gle/QEnGCDTfEqi6qVaj8,Корнієнко Сергій
+98,2025-01-26 14:44,seminar,18,1 % Семінар 18 %,https://forms.gle/H7mdRtY2uwgUZkM39,Корнієнко Сергій
+99,2025-01-26 14:44,seminar,18,1 % Семінар 18 %,https://forms.gle/XrTgx61TqmsmvCkB8,Корнієнко Сергій
+100,2025-01-26 14:44,seminar,18,1 % Семінар 18 %,https://forms.gle/m7zpvRYdAaFTemty5,Корнієнко Сергій
+101,2025-01-26 15:15,modular_control,3,,https://forms.gle/GWZ2whLagjjdGKjb8,Корнієнко Сергій
+102,2025-02-02 13:38,seminar,19,Частина Аметист,https://forms.gle/ig9sBaxQafsHPUbi9,Корнієнко Сергій
+103,2025-02-02 13:38,seminar,19,Частина Аметист,https://forms.gle/8oHroXn1uhqsYoxz9,Корнієнко Сергій
+104,2025-02-02 13:38,seminar,19,Частина Аметист,https://forms.gle/WNYnS52jji3ww6Ya7,Корнієнко Сергій
+105,2025-02-02 13:38,seminar,19,Частина Аметист,https://forms.gle/tJYXd4ng3gTaStW49,Корнієнко Сергій
+106,2025-02-02 14:50,seminar,20,Частина Ахіл,https://forms.gle/nvHkgGsygv14XV958,Корнієнко Сергій
+107,2025-02-02 14:50,seminar,20,Частина Ахіл,https://forms.gle/TmPFJEh1KF4tSZGx7,Корнієнко Сергій
+108,2025-02-02 14:50,seminar,20,Частина Ахіл,https://forms.gle/Q2TiKXXg9UDQ5r4F9,Корнієнко Сергій
+109,2025-02-02 14:50,seminar,20,Частина Ахіл,https://forms.gle/yubLaQXoc6BAdhgD8,Корнієнко Сергій
+110,2025-02-02 14:50,seminar,20,Частина Ахіл,https://forms.gle/niMzXJ1XefR4fLD56,Корнієнко Сергій
+111,2025-02-09 15:05,seminar,21,альфа % Семінар 21  %,https://forms.gle/gvSZTE6ebNRhiNdm8,Корнієнко Сергій
+112,2025-02-09 15:05,seminar,21,альфа % Семінар 21  %,https://forms.gle/cvtbrp9QcxvHMPft9,Корнієнко Сергій
+113,2025-02-09 15:05,seminar,21,альфа % Семінар 21  %,https://forms.gle/hxRfGDBFdFzpE3VS8,Корнієнко Сергій
+114,2025-02-09 15:05,seminar,21,альфа % Семінар 21  %,https://forms.gle/hXML5jxCVNscZVAe8,Корнієнко Сергій
+115,2025-02-09 15:05,seminar,21,альфа % Семінар 21  %,https://forms.gle/u81ddEBHU4zsyGrS7,Корнієнко Сергій
+116,2025-02-16 13:37,seminar,22,1 % Семінар 22-23 %,https://forms.gle/yqqbzEasKRvCtj51A,Корнієнко Сергій
+117,2025-02-16 13:37,seminar,22,1 % Семінар 22-23 %,https://forms.gle/2rGz17nqimhmEDup7,Корнієнко Сергій
+118,2025-02-16 13:37,seminar,22,1 % Семінар 22-23 %,https://forms.gle/S65NXoovLrY9zYg66,Корнієнко Сергій
+119,2025-02-16 13:37,seminar,22,1 % Семінар 22-23 %,https://forms.gle/jeVB9qNZDDFLP3H79,Корнієнко Сергій
+120,2025-02-16 13:37,seminar,22,1 % Семінар 22-23 %,https://forms.gle/vRXsqXMXqcfyTfVo6,Корнієнко Сергій
+121,2025-02-16 13:37,seminar,22,1 % Семінар 22-23 %,https://forms.gle/BEHYhxfEt238ta477,Корнієнко Сергій
+122,2025-02-23 15:04,seminar,24,1 % Семінар 24 %,https://forms.gle/oYj1iG2MVnjgSLZf6,Корнієнко Сергій
+123,2025-02-23 15:04,seminar,24,1 % Семінар 24 %,https://forms.gle/UbFspG3jNR48zkXPA,Корнієнко Сергій
+124,2025-02-23 15:04,seminar,24,1 % Семінар 24 %,https://forms.gle/ZiNS7UREUbJdbM4i7,Корнієнко Сергій
+125,2025-02-23 15:04,seminar,24,1 % Семінар 24 %,https://forms.gle/QUuoeTjVHgE5UUDQ6,Корнієнко Сергій
+126,2025-02-23 15:42,modular_control,4,,https://forms.gle/mHSRqofoKnZeXnKw6,Корнієнко Сергій
+127,2025-03-02 15:02,seminar,25,Айстра,https://forms.gle/cwicnVsgdQCuAEdTA,Корнієнко Сергій
+128,2025-03-02 15:02,seminar,25,Айстра,https://forms.gle/5kUKktNDhaLm8MCY7,Корнієнко Сергій
+129,2025-03-02 15:02,seminar,25,Айстра,https://forms.gle/yfUjGV2G1YcvfUwB6,Корнієнко Сергій
+130,2025-03-02 15:02,seminar,25,Айстра,https://forms.gle/3MuCU6tQW1deA5cbA,Корнієнко Сергій
+131,2025-03-09 14:59,seminar,26,1 % Семінар 26 %,https://forms.gle/QkHz6TqtLCuPxen6A,Корнієнко Сергій
+132,2025-03-09 14:59,seminar,26,1 % Семінар 26 %,https://forms.gle/WDfbSegTZB3XYa7M7,Корнієнко Сергій
+133,2025-03-09 14:59,seminar,26,1 % Семінар 26 %,https://forms.gle/DrefENX45h1nqgSW7,Корнієнко Сергій
+134,2025-03-09 14:59,seminar,26,1 % Семінар 26 %,https://forms.gle/bkTW3fb5NmA3guh5A,Корнієнко Сергій
+135,2025-03-16 13:51,seminar,27,Акація % Семінар 27 %,https://forms.gle/1u7BuxLQB9qjD5K16,Корнієнко Сергій
+136,2025-03-16 13:51,seminar,27,Акація % Семінар 27 %,https://forms.gle/EbhyDnVxhsY4ZnGA8,Корнієнко Сергій
+137,2025-03-16 13:51,seminar,27,Акація % Семінар 27 %,https://forms.gle/wuFfTFUyNs8Gc1pt7,Корнієнко Сергій
+138,2025-03-16 13:51,seminar,27,Акація % Семінар 27 %,https://forms.gle/JgaoLLM3C7SLq7CKA,Корнієнко Сергій
+139,2025-03-16 15:05,seminar,28,Один % Семінар 28 %,https://forms.gle/2CbbeY9m94tTprRb6,Корнієнко Сергій
+140,2025-03-16 15:05,seminar,28,Один % Семінар 28 %,https://forms.gle/9QYdkQg5JqHCVVyC9,Корнієнко Сергій
+141,2025-03-16 15:05,seminar,28,Один % Семінар 28 %,https://forms.gle/hFegk5fRHLgMZHco9,Корнієнко Сергій
+142,2025-03-16 15:05,seminar,28,Один % Семінар 28 %,https://forms.gle/XY1kz7nC1BZCfCGz5,Корнієнко Сергій
+143,2025-03-16 15:05,seminar,28,Один % Семінар 28 %,https://forms.gle/Lm3Pg4pV4rRXdRBY8,Корнієнко Сергій
+144,2025-03-23 15:06,seminar,29,Айстра % Семінар 29 %,https://forms.gle/9r2U4BAcSk1bGnAb8,Корнієнко Сергій
+145,2025-03-23 15:06,seminar,29,Айстра % Семінар 29 %,https://forms.gle/EdTi5PyB1CnWtRU6A,Корнієнко Сергій
+146,2025-03-23 15:06,seminar,29,Айстра % Семінар 29 %,https://forms.gle/9eBcjPwvF2AfDRJS8,Корнієнко Сергій
+147,2025-03-23 15:06,seminar,29,Айстра % Семінар 29 %,https://forms.gle/9gXngaZYKfXs8JVZA,Корнієнко Сергій
+148,2025-03-30 15:12,seminar,30,,https://forms.gle/Anmm6WwonEA4eb5H9,Корнієнко Сергій
+149,2025-03-30 15:12,seminar,30,,https://forms.gle/oXRwRRrydL8gpVJS6,Корнієнко Сергій
+150,2025-03-30 15:12,seminar,30,,https://forms.gle/k4gR7Cikpr6cDvuR9,Корнієнко Сергій
+151,2025-03-30 15:12,seminar,30,,https://forms.gle/wrzXQSqdbs72QDZD9,Корнієнко Сергій
+152,2025-03-30 15:51,modular_control,5,,https://forms.gle/zZ94NJCnCdoXtYau5,Корнієнко Сергій
+153,2025-04-13 12:03,lecture_quiz,35,Частина Права,https://forms.gle/QyMXRb1KeYgq4CWs5,Корнієнко Сергій
+154,2025-04-13 12:03,lecture_quiz,35,Частина Права,https://forms.gle/eaX7E4gqso5UpTN19,Корнієнко Сергій
+155,2025-04-13 13:35,lecture_quiz,36,Частина Права,https://forms.gle/v2KTAvpBaNUUALGBA,Корнієнко Сергій
+156,2025-04-13 13:35,lecture_quiz,36,Частина Права,https://forms.gle/1fH6gC7xCaBPJEUt8,Корнієнко Сергій

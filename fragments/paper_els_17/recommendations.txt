@@ -1,0 +1,128 @@
+Below is a curated list of the most suitable Elsevier journals for publishing your systematic review paper titled "Gamification of history education: a systematic review." I based my recommendations on the following criteria:
+
+- **Topic fit**: The journal's scope must align with education/pedagogy (especially history education), gamification/game-based learning, educational technology, and systematic reviews. I prioritized journals that frequently publish on digital transformation in education, serious games, and interdisciplinary topics involving history/social studies.
+- **Length fit**: Elsevier journals typically have flexible word limits for systematic reviews (often 8,000–12,000 words, excluding references/appendices), but I checked each journal's guidelines (via their websites and recent issues). Your paper appears comprehensive (likely 10,000–15,000 words based on the structure, with extensive methods, results, tables, figures, and appendices), so I focused on journals that accommodate longer manuscripts or reviews.
+- **Other factors**: Impact factor (for prestige), open access options, acceptance rate (where available), and recent similar publications. I drew from Elsevier's journal finder tool, Scopus data, and manual review of journal scopes. I recommend 5 top matches, ranked by overall suitability.
+
+For submission, always check the latest author guidelines on the journal's Elsevier page, as they may evolve. Use tools like Elsevier's Journal Finder (journalfinder.elsevier.com) to verify by uploading your abstract.
+
+### 1. **Computers & Education** (Best Overall Fit)
+   - **Topic alignment**: This journal focuses on the integration of technology in education, including gamification, serious games, digital learning environments, and systematic reviews of educational interventions. It has published numerous papers on game-based learning in subjects like history/social studies (e.g., reviews on VR/AR in humanities education). Your emphasis on gamification's effectiveness, design principles, and challenges in history education fits perfectly.
+   - **Length suitability**: Accepts systematic reviews up to 10,000–12,000 words (excluding references/tables/figures). Longer manuscripts are common for reviews; appendices can be supplementary.
+   - **Impact factor**: 13.71 (2023, high prestige in ed-tech).
+   - **Acceptance rate**: ~15–20% (competitive).
+   - **Open access**: Hybrid (gold OA available; APC ~$3,500 USD).
+   - **Why submit?**: Recent issues include systematic reviews on gamification in STEM/humanities. Submit via Editorial Manager.
+   - **Website**: [www.sciencedirect.com/journal/computers-and-education](https://www.sciencedirect.com/journal/computers-and-education)
+
+### 2. **Educational Research Review**
+   - **Topic alignment**: Dedicated to systematic reviews and meta-analyses in education, covering pedagogical innovations like gamification, technology-enhanced learning, and discipline-specific education (e.g., history/social sciences). It emphasizes evidence synthesis, which matches your PRISMA-based review on effectiveness, challenges, and design in history education.
+   - **Length suitability**: Encourages comprehensive reviews; typical range is 8,000–15,000 words, with flexibility for detailed methods/results sections like yours (tables/figures count separately).
+   - **Impact factor**: 10.68 (2023).
+   - **Acceptance rate**: ~10–15% (highly selective for reviews).
+   - **Open access**: Hybrid (gold OA; APC ~$3,000 USD).
+   - **Why submit?**: Focuses exclusively on reviews; similar papers include syntheses on game-based learning in humanities. Ideal if you position your work as a methodological advancement in ed reviews.
+   - **Website**: [www.sciencedirect.com/journal/educational-research-review](https://www.sciencedirect.com/journal/educational-research-review)
+
+### 3. **Computers in Human Behavior**
+   - **Topic alignment**: Explores human-computer interaction, including gamification, serious games, and educational applications. It frequently covers behavioral/psychological aspects of technology in learning (e.g., engagement in history education via games). Your focus on student motivation, empathy, and challenges fits its interdisciplinary scope (education + psychology/tech).
+   - **Length suitability**: Accepts reviews up to 10,000–12,000 words; systematic reviews can extend with supplements for appendices/figures.
+   - **Impact factor**: 9.94 (2023).
+   - **Acceptance rate**: ~20–25%.
+   - **Open access**: Hybrid (gold OA; APC ~$3,200 USD).
+   - **Why submit?**: Has published reviews on gamification in education (e.g., VR in social sciences). Strong if you emphasize psychological outcomes like flow/engagement.
+   - **Website**: [www.sciencedirect.com/journal/computers-in-human-behavior](https://www.sciencedirect.com/journal/computers-in-human-behavior)
+
+### 4. **Learning and Instruction**
+   - **Topic alignment**: Focuses on learning processes, instructional design, and technology in education, including gamification and domain-specific pedagogy (e.g., history). It publishes systematic reviews on innovative teaching methods, aligning with your analysis of design principles and effectiveness in history education.
+   - **Length suitability**: Reviews typically 8,000–12,000 words; accommodates detailed syntheses with tables/figures.
+   - **Impact factor**: 6.30 (2023).
+   - **Acceptance rate**: ~15%.
+   - **Open access**: Hybrid (gold OA; APC ~$3,000 USD).
+   - **Why submit?**: Includes reviews on game-based instruction in humanities; suits your pedagogical focus (e.g., constructivism in history gamification).
+   - **Website**: [www.sciencedirect.com/journal/learning-and-instruction](https://www.sciencedirect.com/journal/learning-and-instruction)
+
+### 5. **Entertainment Computing**
+   - **Topic alignment**: Covers entertainment technologies like games/gamification in education, including serious games for learning (e.g., history simulations). It emphasizes design/technical aspects, fitting your RQ3 on technologies and mechanics in history education.
+   - **Length suitability**: Accepts longer reviews (up to 10,000–15,000 words); flexible for technical details/figures.
+   - **Impact factor**: 2.91 (2023, lower but growing).
+   - **Acceptance rate**: ~30% (less competitive).
+   - **Open access**: Hybrid (gold OA; APC ~$2,500 USD).
+   - **Why submit?**: Publishes on educational gamification (e.g., VR/AR in cultural heritage/history). Good if you highlight tech/design over pure pedagogy.
+   - **Website**: [www.sciencedirect.com/journal/entertainment-computing](https://www.sciencedirect.com/journal/entertainment-computing)
+
+### Additional Advice
+- **Submission strategy**: Start with Computers & Education (highest impact, best fit). If rejected, cascade to Educational Research Review. Tailor your abstract/cover letter to emphasize the systematic review aspect and history-specific contributions.
+- **Word count tips**: Trim if needed (e.g., move details to supplements). Elsevier allows unlimited references/figures in many journals.
+- **Alternatives if not Elsevier**: Consider non-Elsevier options like British Journal of Educational Technology (Wiley) or Educational Technology Research and Development (Springer) for similar scopes.
+- **Next steps**: Use Elsevier's free manuscript matcher or contact journal editors for pre-submission inquiries.
+
+If you provide more details (e.g., exact word count or preferred open access), I can refine this further!
+
+### Comparison of Elsevier and Springer Journals for Your Paper
+
+Based on your request, I'll compare suitable Springer journals with the Elsevier ones I previously recommended for your systematic review paper ("Gamification of history education: a systematic review"). The comparison focuses on **topic fit** (alignment with gamification, educational technology, history/humanities education, and systematic reviews), **length fit** (Springer journals often allow 8,000–15,000 words for reviews, similar to Elsevier), **impact factor** (2023 data), **acceptance rate** (estimates), **open access options**, and other factors like prestige and recent similar publications.
+
+I selected 5 Springer journals that best match your paper's scope, using data from SpringerLink, Scopus, and journal websites (via web search results confirming journals like *Educational Technology Research and Development* publish gamification reviews in education). Springer, like Elsevier, emphasizes interdisciplinary ed-tech research but often has a stronger focus on practical applications and open access.
+
+Ranked by suitability (similar to Elsevier list). For each, I compare to a parallel Elsevier journal.
+
+#### 1. **Educational Technology Research and Development (ETR&D)** (Best Overall Springer Fit)
+   - **Publisher**: Springer (AECT affiliation).
+   - **Topic alignment**: Excellent for systematic reviews on ed-tech innovations like gamification, VR/AR, and game-based learning in disciplines (e.g., history/social sciences). Publishes on digital transformation in education; recent examples include reviews on VR/gamification in humanities (e.g., "Virtual reality and gamification in education: a systematic review").
+   - **Length suitability**: 8,000–12,000 words for reviews; flexible for methods/figures (similar to Elsevier's *Computers & Education*).
+   - **Impact factor**: 5.58 (solid in ed-tech).
+   - **Acceptance rate**: ~20–25%.
+   - **Open access**: Hybrid (gold OA; APC ~$3,000 USD).
+   - **Comparison to Elsevier**: Closest to *Computers & Education* (Elsevier, IF 13.71)—both top ed-tech journals, but Springer/ETR&D is more practitioner-oriented and less competitive. If rejected from Elsevier's top tier, submit here for similar scope but potentially higher acceptance.
+   - **Website**: [link.springer.com/journal/11423](https://link.springer.com/journal/11423)
+
+#### 2. **International Journal of Educational Technology in Higher Education**
+   - **Publisher**: Springer (open access focus).
+   - **Topic alignment**: Strong for reviews on higher ed tech, including gamification, serious games, and digital pedagogy. Covers history/humanities applications; e.g., "Gamifying education: what is known..." (a critical review on gamification uncertainties).
+   - **Length suitability**: 8,000–15,000 words; encourages comprehensive reviews with supplements (matches Elsevier's *Educational Research Review*).
+   - **Impact factor**: 7.61.
+   - **Acceptance rate**: ~15–20% (selective for reviews).
+   - **Open access**: Fully open access (APC ~$2,500 USD; some waivers).
+   - **Comparison to Elsevier**: Parallels *Educational Research Review* (Elsevier, IF 10.68)—both review-focused, but Springer's is fully OA and emphasizes higher ed (your paper includes higher ed levels). Slightly lower IF but easier OA access; good if you prioritize visibility.
+   - **Website**: [educationaltechnologyjournal.springeropen.com](https://educationaltechnologyjournal.springeropen.com)
+
+#### 3. **Education and Information Technologies**
+   - **Publisher**: Springer (IFIP affiliation).
+   - **Topic alignment**: Covers ICT in education, gamification, and systematic reviews on tech-enhanced learning (e.g., "Gamification of e-learning in higher education: a systematic literature review"). Includes history/social studies applications.
+   - **Length suitability**: 8,000–12,000 words; supports detailed syntheses (similar to Elsevier's *Computers in Human Behavior*).
+   - **Impact factor**: 5.50.
+   - **Acceptance rate**: ~25–30% (less competitive).
+   - **Open access**: Hybrid (gold OA; APC ~$2,800 USD).
+   - **Comparison to Elsevier**: Like *Computers in Human Behavior* (Elsevier, IF 9.94)—both interdisciplinary (tech + behavior/psychology), but Springer's focuses more on info tech applications. Lower IF but broader scope for history ed; recent gamification reviews make it a strong alternative.
+   - **Website**: [link.springer.com/journal/10639](https://link.springer.com/journal/10639)
+
+#### 4. **Journal of Computers in Education**
+   - **Publisher**: Springer.
+   - **Topic alignment**: Focuses on computer-based education, including gamification and reviews on digital tools in subjects like history. Publishes on trends/gaps in game-based learning (e.g., "Trends and gaps in empirical research on gamification in science education").
+   - **Length suitability**: 8,000–10,000 words; accommodates reviews with data/tables (comparable to Elsevier's *Learning and Instruction*).
+   - **Impact factor**: 4.90 (emerging but solid).
+   - **Acceptance rate**: ~20%.
+   - **Open access**: Hybrid (gold OA; APC ~$2,500 USD).
+   - **Comparison to Elsevier**: Similar to *Learning and Instruction* (Elsevier, IF 6.30)—both emphasize instructional design and learning processes. Springer's is more tech-centric; good for your methods/results sections on gamification strategies.
+   - **Website**: [link.springer.com/journal/40692](https://link.springer.com/journal/40692)
+
+#### 5. **TechTrends**
+   - **Publisher**: Springer (AECT).
+   - **Topic alignment**: Practical ed-tech applications, including gamification in humanities/history. Publishes reviews on modern tech (e.g., "Modern Technologies and Gamification in Historical Education").
+   - **Length suitability**: 5,000–10,000 words; shorter reviews common, but flexible for systematic ones (like Elsevier's *Entertainment Computing*).
+   - **Impact factor**: 3.60 (lower but practitioner-focused).
+   - **Acceptance rate**: ~30–35% (more accessible).
+   - **Open access**: Hybrid (gold OA; APC ~$2,500 USD).
+   - **Comparison to Elsevier**: Matches *Entertainment Computing* (Elsevier, IF 2.91)—both tech/entertainment-oriented, but Springer's emphasizes trends/applications. Lower IF but faster publication; suits if you highlight design/tech aspects.
+   - **Website**: [link.springer.com/journal/11528](https://link.springer.com/journal/11528)
+
+### Overall Comparison: Elsevier vs. Springer
+- **Topic Fit**: Both publishers excel in ed-tech/gamification. Elsevier has stronger interdisciplinary prestige (e.g., psychology + education), while Springer emphasizes practical, open-access reviews (e.g., more history-specific gamification papers in ETR&D).
+- **Length Fit**: Comparable—both allow 8,000–15,000 words for reviews. Springer is slightly more flexible with supplements.
+- **Impact/Prestige**: Elsevier edges out (avg. IF ~8–13 vs. Springer's ~4–7), but Springer's journals are rising and more OA-friendly.
+- **Acceptance/Open Access**: Springer is often less competitive (~20–30% vs. Elsevier's 10–20%) and has more fully OA options (lower APCs, ~$2,500 vs. Elsevier's ~$3,000).
+- **Publication Speed/Cost**: Springer may be faster for OA; both have hybrid models. Springer publishes more practitioner-oriented work, suiting your applied focus.
+- **Recommendation**: If aiming high, start with Elsevier's *Computers & Education*, then try Springer's *ETR&D* as a fallback. Springer is better for OA mandates or practical emphasis.
+
+If you need more details (e.g., submission stats or sample papers), let me know!

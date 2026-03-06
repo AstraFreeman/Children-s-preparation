@@ -1,0 +1,164 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: ssk_thes.aux
+The style file: bath.bst
+A level-1 auxiliary file: printpratsi.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: chapter1.aux
+A level-1 auxiliary file: chapter2.aux
+A level-1 auxiliary file: chapter3.aux
+A level-1 auxiliary file: conc.aux
+A level-1 auxiliary file: appendix.aux
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated field_info (elt_size=4) to 16132 items from 5000.
+Database file #1: bibliography.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Repeated entry---line 3922 of file bibliography.bib
+ : @inproceedings{13Humpire2022
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3940 of file bibliography.bib
+ : @article{14Forsyth2023
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3944 of file bibliography.bib
+ : @inproceedings{15Slater2022
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3976 of file bibliography.bib
+ : @inproceedings{17Manzanares2019
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4158 of file bibliography.bib
+ : @inproceedings{20Erandaru2014
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4197 of file bibliography.bib
+ : @inproceedings{21Ghulamani2017
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4233 of file bibliography.bib
+ : @article{35Fernandez2023
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4238 of file bibliography.bib
+ : @article{36Scholz2021
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4301 of file bibliography.bib
+ : @incollection{46Stirling2022
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4315 of file bibliography.bib
+ : @article{48Moketar2021
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4364 of file bibliography.bib
+ : @inproceedings{50Lye2013
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4392 of file bibliography.bib
+ : @inproceedings{51Ardito2007
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4413 of file bibliography.bib
+ : @inproceedings{53Perez2014
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4435 of file bibliography.bib
+ : @incollection{54Gibson2007
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4461 of file bibliography.bib
+ : @inproceedings{55Squire2004
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4479 of file bibliography.bib
+ : @inproceedings{6Czerwinski2018
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4499 of file bibliography.bib
+ : @article{8Yu2014
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4514 of file bibliography.bib
+ : @inproceedings{9Lin2018
+ :                        ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 4597 of file bibliography.bib
+ : @conference{Alfred 
+ :                    Daniel2023,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 5108 of file bibliography.bib
+ : @article{Briseño 
+ :                   Senosiain2021161,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 7551 of file bibliography.bib
+ : @article{Navas 
+ :                Romero2025,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 8662 of file bibliography.bib
+ : @article{Villena 
+ :                  Taranilla2022608,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8761 of file bibliography.bib
+ : @article{Whiting2016
+ :                     ,
+I'm skipping whatever remains of this entry
+Warning--there's a number but no volume in Bonwell1991
+Warning--can't use both volume and number fields in Bozic2024538
+Warning--empty booktitle in Buckley2018
+Warning--empty year in Constructivism
+Warning--missing publisher in Graham20151
+Warning--there's a number but no volume in Hernandez2017
+`journal' is a missing field, not a string, for entry KitchenhamCharters2007
+while executing---line 2489 of file bath.bst
+Warning--empty journal in KitchenhamCharters2007
+Warning--empty booktitle in Lokshyna2018302
+Warning--there's a number but no volume in Martynets202428
+Warning--missing publisher in GRADE
+Warning--missing publisher in Wright-Maley2018603
+Warning--empty booktitle in Zamkova2023299
+You've used 253 entries,
+            5506 wiz_defined-function locations,
+            2877 strings with 87157 characters,
+and the built_in function-call counts, 230170 in all, are:
+= -- 21768
+> -- 8627
+< -- 35
++ -- 3248
+- -- 2951
+* -- 21822
+:= -- 30446
+add.period$ -- 1102
+call.type$ -- 253
+change.case$ -- 2342
+chr.to.int$ -- 260
+cite$ -- 268
+duplicate$ -- 16943
+empty$ -- 17209
+format.name$ -- 3573
+if$ -- 48637
+int.to.chr$ -- 12
+int.to.str$ -- 1
+missing$ -- 2660
+newline$ -- 1511
+num.names$ -- 1070
+pop$ -- 4597
+preamble$ -- 1
+purify$ -- 1792
+quote$ -- 0
+skip$ -- 10099
+stack$ -- 0
+substring$ -- 8328
+swap$ -- 12734
+text.length$ -- 33
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2535
+warning$ -- 12
+while$ -- 1484
+width$ -- 0
+write$ -- 3817
+(There were 24 error messages)

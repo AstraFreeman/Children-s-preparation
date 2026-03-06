@@ -1,0 +1,125 @@
+\babel@toc {english}{}
+\contentsline {chapter}{ABSTRACT}{2}{chapter*.1}%
+\babel@toc {ukrainian}{}
+\babel@toc {english}{}
+\contentsline {chapter}{LIST OF TABLES}{14}{section*.2}%
+\contentsline {chapter}{LIST OF ILLUSTRATIONS}{16}{section*.3}%
+\contentsline {chapter}{INTRODUCTION}{18}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}\textsc {Theoretical foundations of training future specialists using digital history}}{25}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Digital history in pedagogical research}{25}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Methodology of the systematic review}{25}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Results of the systematic review}{28}{subsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.2.1}Characteristics of included studies}{28}{subsubsection.1.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.1.2.2}Study findings}{29}{subsubsection.1.1.2.2}%
+\contentsline {subsection}{\numberline {1.1.3}Cross-cutting analysis of outcomes}{30}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Analysis and implications}{32}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Conclusions to Section 1.1}{33}{subsection.1.1.5}%
+\contentsline {section}{\numberline {1.2}Gamification in history education: definitions, effectiveness, and design principles}{33}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Background and rationale}{34}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Methodology}{34}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Definitional analysis}{35}{subsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.3.1}Prevalence of definitional ambiguity}{35}{subsubsection.1.2.3.1}%
+\contentsline {subsubsection}{\numberline {1.2.3.2}Conceptual approaches}{36}{subsubsection.1.2.3.2}%
+\contentsline {subsection}{\numberline {1.2.4}Characteristics of the evidence base}{38}{subsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.4.1}Geographic distribution}{38}{subsubsection.1.2.4.1}%
+\contentsline {subsubsection}{\numberline {1.2.4.2}Temporal distribution and research evolution}{39}{subsubsection.1.2.4.2}%
+\contentsline {subsubsection}{\numberline {1.2.4.3}Publication types and database coverage}{40}{subsubsection.1.2.4.3}%
+\contentsline {subsubsection}{\numberline {1.2.4.4}Education levels}{41}{subsubsection.1.2.4.4}%
+\contentsline {subsubsection}{\numberline {1.2.4.5}Game types and technological formats}{41}{subsubsection.1.2.4.5}%
+\contentsline {subsubsection}{\numberline {1.2.4.6}Research designs}{42}{subsubsection.1.2.4.6}%
+\contentsline {subsubsection}{\numberline {1.2.4.7}Sample sizes and statistical power}{43}{subsubsection.1.2.4.7}%
+\contentsline {subsubsection}{\numberline {1.2.4.8}Theoretical frameworks}{43}{subsubsection.1.2.4.8}%
+\contentsline {subsubsection}{\numberline {1.2.4.9}Comparison with gamification in other domains}{44}{subsubsection.1.2.4.9}%
+\contentsline {subsection}{\numberline {1.2.5}Effectiveness findings}{45}{subsection.1.2.5}%
+\contentsline {subsubsection}{\numberline {1.2.5.1}Outcome types measured}{45}{subsubsection.1.2.5.1}%
+\contentsline {subsubsection}{\numberline {1.2.5.2}Overall direction of effects}{45}{subsubsection.1.2.5.2}%
+\contentsline {subsubsection}{\numberline {1.2.5.3}Student engagement and motivation}{46}{subsubsection.1.2.5.3}%
+\contentsline {subsubsection}{\numberline {1.2.5.4}Learning outcomes}{47}{subsubsection.1.2.5.4}%
+\contentsline {subsubsection}{\numberline {1.2.5.5}Flow and immersion}{48}{subsubsection.1.2.5.5}%
+\contentsline {subsubsection}{\numberline {1.2.5.6}Historical thinking skills}{48}{subsubsection.1.2.5.6}%
+\contentsline {subsubsection}{\numberline {1.2.5.7}Affective outcomes and attitudes toward history}{49}{subsubsection.1.2.5.7}%
+\contentsline {subsection}{\numberline {1.2.6}Implementation challenges}{49}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.7}Game design elements and technological platforms}{51}{subsection.1.2.7}%
+\contentsline {subsubsection}{\numberline {1.2.7.1}Game design element taxonomy}{51}{subsubsection.1.2.7.1}%
+\contentsline {subsubsection}{\numberline {1.2.7.2}Technological platforms}{53}{subsubsection.1.2.7.2}%
+\contentsline {subsubsection}{\numberline {1.2.7.3}Instructional design strategies}{54}{subsubsection.1.2.7.3}%
+\contentsline {subsection}{\numberline {1.2.8}Design principles}{54}{subsection.1.2.8}%
+\contentsline {subsection}{\numberline {1.2.9}Conclusions to Section 1.2}{56}{subsection.1.2.9}%
+\contentsline {section}{\numberline {1.3}Methodological quality of gamification research in history education}{57}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Rationale for quality assessment}{57}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}The MRQS framework}{58}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Quality assessment results}{60}{subsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.3.1}Overall MRQS distribution}{60}{subsubsection.1.3.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.3.2}Item-level prevalence}{60}{subsubsection.1.3.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3.3}MRQS by study characteristics}{61}{subsubsection.1.3.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.3.4}Risk-of-bias results}{61}{subsubsection.1.3.3.4}%
+\contentsline {subsection}{\numberline {1.3.4}LLM validation of quality assessment}{62}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Definitional practices and quality}{63}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}Detailed bias analysis by category}{64}{subsection.1.3.6}%
+\contentsline {subsubsection}{\numberline {1.3.6.1}Sample size limitations}{64}{subsubsection.1.3.6.1}%
+\contentsline {subsubsection}{\numberline {1.3.6.2}Research design concerns}{65}{subsubsection.1.3.6.2}%
+\contentsline {subsubsection}{\numberline {1.3.6.3}Measurement and assessment issues}{65}{subsubsection.1.3.6.3}%
+\contentsline {subsubsection}{\numberline {1.3.6.4}Confounding variables and external validity}{66}{subsubsection.1.3.6.4}%
+\contentsline {subsubsection}{\numberline {1.3.6.5}Implementation fidelity}{66}{subsubsection.1.3.6.5}%
+\contentsline {subsection}{\numberline {1.3.7}Implications for the field}{67}{subsection.1.3.7}%
+\contentsline {subsection}{\numberline {1.3.8}Proposed reporting checklist}{68}{subsection.1.3.8}%
+\contentsline {subsection}{\numberline {1.3.9}Conclusions to Section 1.3}{69}{subsection.1.3.9}%
+\contentsline {section}{\numberline {1.4}Gamification and digital competence: implementation through DigComp 2.0}{69}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}The DigComp 2.0 framework}{69}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Mapping gamification to DigComp 2.0}{70}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Implementation guidelines}{73}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Conclusions to Section 1.4}{75}{subsection.1.4.4}%
+\contentsline {section}{\numberline {1.5}Conclusions to Chapter 1}{76}{section.1.5}%
+\contentsline {chapter}{\numberline {2}\textsc {Experimental methodology}}{78}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Organisation of the pedagogical experiment}{78}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Institutional context}{78}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}The National Multi-Subject Test (NMT)}{78}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Participants}{81}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Research design}{82}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Timeline}{83}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Course structure}{84}{subsection.2.1.6}%
+\contentsline {section}{\numberline {2.2}Assessment tools and data collection}{87}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Google Forms quizzes}{87}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Creative quiz naming conventions}{87}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Viber chat log}{88}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Gamification design: the HistoryLikeGame platform}{89}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Platform overview}{89}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Structure and content}{89}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Question types and interaction design}{90}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Design rationale}{92}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Alignment with design principles}{92}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Supplementary gamification tools}{93}{subsection.2.3.6}%
+\contentsline {section}{\numberline {2.4}Wartime education context}{94}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Impact of armed conflict on education}{94}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Multi-channel resilience architecture}{95}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Implications for course design}{96}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Data analysis methods}{96}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Data processing pipeline}{96}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Data flow architecture}{100}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Statistical methods}{100}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Limitations of the data}{101}{subsection.2.5.4}%
+\contentsline {chapter}{\numberline {3}\textsc {Results and discussion}}{103}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Baseline stage results}{103}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Initial enrollment and group formation}{103}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Introductory assessment}{104}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Formative stage results}{104}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Seminar performance analysis}{104}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Individual learning trajectories}{108}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Modular control results}{111}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Attendance and wartime context analysis}{112}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Absence patterns}{112}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Wartime context}{114}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Course timeline overview}{117}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Discussion}{117}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Interpretation of findings in context of the systematic reviews}{118}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Pre-gamification vs post-gamification comparison}{118}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Wartime education implications}{123}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Limitations}{126}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Comparison with MRQS quality criteria}{128}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}Comparison with the gamification evidence base}{129}{subsection.3.4.6}%
+\contentsline {subsection}{\numberline {3.4.7}Implications for digital history methodology}{131}{subsection.3.4.7}%
+\contentsline {subsection}{\numberline {3.4.8}Future research directions}{132}{subsection.3.4.8}%
+\contentsline {chapter}{CONCLUSION}{134}{chapter*.46}%
+\setcounter {tocdepth}{1}
+\contentsline {chapter}{BIBLIOGRAPHY}{139}{section*.47}%
+\contentsline {chapter}{\numberline {A}\textsc {Appendices}}{178}{appendix.A}%

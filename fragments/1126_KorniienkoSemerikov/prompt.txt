@@ -1,0 +1,102 @@
+You are an expert academic researcher in educational technology methodology and research synthesis. Your task is to write a complete methodological research paper in LaTeX format, section by section, based on data from a published systematic review on gamification in history education.
+
+## CONTEXT
+
+I have published a systematic review titled "Gamification of history education: a systematic review" (Korniienko & Semerikov, 2024) that synthesized 74 studies. The full LaTeX source (paper.tex), bibliography (references.bib), extracted data for each study (study_1.json through study_80.json, where 6 were excluded yielding 74 included), aggregated statistics (aggregate_stats_verified.json, all_studies.json, summary_stats.txt), risk of bias assessments (risk_of_bias_table.csv, rob_table_rows.tex), study characteristics (characteristics_table.csv, characteristics_table_rows.tex), distribution data (country_distribution.csv, education_level_distribution.csv, yearly_distribution.csv, eligibility_summary.csv), verification data (study_claims_catalog.json, verification_report.txt), and Python processing scripts are all available in the project knowledge.
+
+## NEW PAPER OBJECTIVE
+
+Using ONLY the data already extracted and reported in the systematic review (no new primary data collection), write a methodological/meta-scientific paper with the working title:
+
+**"Methodological Quality and Reporting Practices in Gamification Research for History Education: A Critical Methodological Analysis"**
+
+## RESEARCH QUESTIONS FOR THE NEW PAPER
+
+RQ1: What are the prevailing methodological designs in gamification research for history education, and how do they distribute across time, geography, education level, and game type?
+
+RQ2: What is the quality of measurement and reporting practices across included studies, as assessed by a Methodological Reporting Quality Score (MRQS)?
+
+RQ3: What patterns of risk of bias emerge across the three adapted ROBIS domains, and what study-level characteristics are associated with higher or lower methodological quality?
+
+RQ4: To what extent do conceptual and definitional practices (or their absence) correlate with methodological rigor?
+
+RQ5: What is the reliability of using large language models (GPT-4o, Claude 3.5 Sonnet) for automated risk-of-bias assessment and data extraction in educational technology systematic reviews?
+
+## CRITICAL INSTRUCTIONS
+
+### Data Analysis Requirements
+Before writing EACH section, you MUST:
+1. Search the project knowledge files thoroughly — read paper.tex, references.bib, all relevant JSON files (study_1.json through study_80.json), CSV files, and summary statistics
+2. Extract exact numbers, percentages, statistical values, and citations from these files
+3. Cross-reference claims against the data in aggregate_stats_verified.json, characteristics_table.csv, risk_of_bias_table.csv, and the individual study JSON files
+4. Use the verification_report.txt and study_claims_catalog.json to ensure accuracy
+5. Think deeply and extensively (use maximum thinking effort) about the analytical implications before generating text
+
+### MRQS Construction
+For RQ2, construct a Methodological Reporting Quality Score by coding each of the 74 studies on these 10 binary items (0 or 1), using data extractable from the study JSON files, characteristics_table.csv, risk_of_bias_table.csv, and paper.tex:
+
+1. Sample size explicitly reported
+2. Sample size ≥ 30 (adequate for basic parametric statistics)
+3. Control or comparison group present
+4. Validated measurement instruments used (or reliability reported)
+5. Effect sizes or standardized measures reported
+6. Pre-post or longitudinal design (not single-point measurement)
+7. Inferential statistics reported (not purely descriptive)
+8. Explicit definition of gamification/GBL/serious games provided
+9. Theoretical framework explicitly stated
+10. Study limitations explicitly discussed
+
+Each study receives a score 0–10. Tabulate all 74 scores and compute descriptive statistics. Cross-tabulate MRQS with study-level variables.
+
+### Writing Style Requirements
+- Write in formal academic English appropriate for a Q1 educational technology journal
+- Do NOT use AI-typical phrases: "delve into", "it is worth noting", "landscape", "tapestry", "multifaceted", "in the realm of", "shed light on", "robust", "holistic", "leverage" (as a verb), "novel insights", "pave the way", "underscores the importance"
+- Use precise, measured language with appropriate hedging
+- Cite sources using \citet{} and \citep{} natbib commands
+- All citations must come from references.bib — verify each BibTeX key exists in the file
+- Use \label{} and \ref{} for all cross-references
+- Include actual computed numbers, not placeholders — if a number cannot be determined from the data, state this explicitly and flag it for manual verification with [VERIFY: description]
+
+### LaTeX Requirements
+- Use the elsarticle document class (same as the original paper)
+- Generate complete, compilable LaTeX for each section
+- Generate any new BibTeX entries needed for methodological references (CONSORT, ROBIS, Cohen's kappa, etc.) — output these separately
+- Create all tables using LaTeX tabular/table environments
+- Describe all figures with enough detail that they can be created from the data provided
+
+### Section-by-Section Protocol
+You will produce the paper in this exact sequence. After completing each section, STOP and wait for my explicit confirmation to continue. Present each section as a complete, compilable LaTeX fragment.
+
+**Section sequence:**
+1. Preamble, title page, abstract, and keywords
+2. Section 1: Introduction (with subsections)
+3. Section 2: Methods (2.1 Data source, 2.2 MRQS framework, 2.3 Risk-of-bias re-analysis, 2.4 LLM validation protocol, 2.5 Statistical analysis)
+4. Section 3: Results — RQ1 (methodological design distribution)
+5. Section 3: Results — RQ2 (MRQS analysis)
+6. Section 3: Results — RQ3 (risk of bias patterns)
+7. Section 3: Results — RQ4 (definitions and quality)
+8. Section 3: Results — RQ5 (LLM validation)
+9. Section 4: Discussion
+10. Section 5: Conclusion (including proposed reporting checklist)
+11. References, appendices, supplementary materials
+
+For EACH section, follow this protocol:
+- State which project knowledge files you are consulting
+- Present your analytical reasoning before the LaTeX output
+- Output the complete LaTeX for that section
+- Output any new BibTeX entries needed
+- List any items requiring manual verification [VERIFY: ...]
+- STOP and ask: "Section [N] complete. Shall I proceed to Section [N+1]?"
+
+## BEGIN
+
+Start with Section 1: Preamble, title page, abstract, and keywords. 
+
+Before writing, thoroughly analyze:
+- paper.tex (for document class, packages, formatting conventions)
+- All CSV files for aggregate statistics needed in the abstract
+- risk_of_bias_table.csv for overall quality statistics
+- aggregate_stats_verified.json for verified numerical claims
+- summary_stats.txt for key summary statistics
+
+Think extensively about how to frame this paper as a distinct methodological contribution that complements rather than duplicates the systematic review. The abstract must contain specific numbers derived from your analysis of the project knowledge files.

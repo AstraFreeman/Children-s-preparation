@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+\pgfplotstableread{figures/score_distribution_data.csv}\datatable
+\begin{axis}[
+    width=0.95\textwidth,
+    height=7cm,
+    xlabel={Seminar number},
+    ylabel={Mean score (\%) $\pm$ SD},
+    ymin=0, ymax=120,
+    xmin=0, xmax=41,
+    grid=major,
+    grid style={gray!30},
+    xtick={1,5,10,15,20,25,30,35,40},
+]
+\addplot[ybar, fill=blue!40, draw=blue!70!black, bar width=0.6,
+    error bars/.cd, y dir=both, y explicit]
+    table[x=seminar, y=mean_pct, y error=sd_pct] {\datatable};
+\end{axis}
+\end{tikzpicture}
