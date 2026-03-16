@@ -1,0 +1,86 @@
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  instbox/.style={rounded corners=6pt, thick, minimum width=6.0cm, minimum height=8.0cm, align=center},
+  iheader/.style={font=\small\bfseries, align=center},
+  isubt/.style={font=\scriptsize, align=center, text=gray!60!black},
+  iitem/.style={font=\scriptsize, align=left},
+  linkbox/.style={rounded corners=4pt, fill=yellow!15, draw=yellow!60, thick,
+    minimum width=3.8cm, minimum height=4.0cm, align=center},
+  botbox/.style={rounded corners=3pt, thick, minimum width=4.5cm, minimum height=0.9cm,
+    font=\scriptsize, align=center},
+]
+
+% === MRQS box (left) ===
+\node[instbox, draw=green!50!black, fill=green!12] (mrqs) at (-5.0, 0) {};
+\node[iheader, text=green!50!black] at (-5.0, 3.5) {MRQS};
+\node[isubt] at (-5.0, 2.8) {Reporting quality};
+\node[isubt] at (-5.0, 2.2) {10 binary items};
+\node[isubt] at (-5.0, 1.7) {Codable from data};
+
+\node[iitem, text width=4.8cm] at (-5.0, -0.3) {%
+  \textbf{M1} Sample size reported\\
+  \textbf{M2} $n \geq 30$\\
+  \textbf{M3} Control group\\
+  \textbf{M4} Validated instruments\\
+  \textbf{M5} Effect sizes\\
+  \textbf{M6} Pre-post design\\
+  \textbf{M7} Inferential statistics\\
+  \textbf{M8} Explicit definition\\
+  \textbf{M9} Theoretical framework\\
+  \textbf{M10} Limitations discussed
+};
+
+% === Adapted ROBIS box (right) ===
+\node[instbox, draw=orange!50!black, fill=orange!12] (robis) at (5.0, 0) {};
+\node[iheader, text=orange!50!black] at (5.0, 3.5) {Adapted ROBIS};
+\node[isubt] at (5.0, 2.8) {Risk of bias};
+\node[isubt] at (5.0, 2.2) {3 domains $\times$ 2 questions};
+\node[isubt] at (5.0, 1.7) {Judgment-based};
+
+\node[iitem, text width=4.8cm] at (5.0, -0.1) {%
+  \textbf{D1} Participant selection\\
+  \hspace{1em}Q1: Selection criteria\\
+  \hspace{1em}Q2: Representativeness\\[6pt]
+  \textbf{D2} Data collection\\
+  \hspace{1em}Q3: Instrument validity\\
+  \hspace{1em}Q4: Analysis methods\\[6pt]
+  \textbf{D3} Interpretation\\
+  \hspace{1em}Q5: Conclusion consistency\\
+  \hspace{1em}Q6: Limitations discussed
+};
+
+% === Center overlap zone ===
+\node[linkbox] (overlap) at (0, 0) {};
+\node[font=\scriptsize\bfseries, text=yellow!50!black] at (0, 1.6) {Inter-linkages};
+
+\node[font=\scriptsize, align=center] at (0, 0.7) {%
+  M4 $\longleftrightarrow$ Q3\\[2pt]
+  {\tiny (instrument validation)}};
+
+\node[font=\scriptsize, align=center] at (0, -0.4) {%
+  M10 $\longleftrightarrow$ Q6\\[2pt]
+  {\tiny (limitations)}};
+
+\node[font=\tiny, text=gray!60!black, align=center] at (0, -1.5) {Same construct,\\different assessment};
+
+% Connecting arrows
+\draw[thick, green!50!black, -{Stealth[length=4pt]}] (-1.9, 0.7) -- (-1.05, 0.7);
+\draw[thick, orange!50!black, -{Stealth[length=4pt]}] (1.9, 0.7) -- (1.05, 0.7);
+\draw[thick, green!50!black, -{Stealth[length=4pt]}] (-1.9, -0.4) -- (-1.05, -0.4);
+\draw[thick, orange!50!black, -{Stealth[length=4pt]}] (1.9, -0.4) -- (1.05, -0.4);
+
+% === Bottom distinction boxes ===
+\node[botbox, draw=green!50!black, fill=green!8] at (-5.0, -4.8) {``Is it reported?''\\(binary: 0/1)};
+\node[botbox, draw=orange!50!black, fill=orange!8] at (5.0, -4.8) {``Is it adequate?''\\(judgment: low/high/unclear)};
+
+% Arrows from main boxes to bottom boxes
+\draw[thick, green!50!black, -{Stealth[length=4pt]}] (-5.0, -4.0) -- (-5.0, -4.3);
+\draw[thick, orange!50!black, -{Stealth[length=4pt]}] (5.0, -4.0) -- (5.0, -4.3);
+
+\end{tikzpicture}%
+}% end resizebox
+\caption{Complementarity of the MRQS and adapted ROBIS instruments. The MRQS assesses reporting completeness (binary presence/absence), while the adapted ROBIS assesses risk of bias (evaluative judgment). Two item--question pairs (M4/Q3, M10/Q6) target the same construct from different assessment perspectives, enabling comparison of reporting quality and methodological risk.}
+\label{fig:mrqs-robis-complementarity}
+\end{figure}

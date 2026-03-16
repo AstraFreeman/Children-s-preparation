@@ -1,0 +1,201 @@
+\documentclass[review]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\modulolinenumbers[5]
+
+\journal{Education and Information Technologies}
+
+\bibliographystyle{elsarticle-num}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Gamification-enhanced history education under wartime conditions: a six-month study of an NMT preparatory course in Ukraine}
+
+\author[kdpu]{Serhii S. Korniienko\corref{cor1}}
+\ead{korniienko@kdpu.edu.ua}
+
+\author[kdpu]{Serhiy O. Semerikov}
+
+\cortext[cor1]{Corresponding author}
+\address[kdpu]{Kryvyi Rih State Pedagogical University, 54 Gagarin Ave, Kryvyi Rih, 50086, Ukraine}
+
+\begin{abstract}
+This study documents a six-month implementation of gamification-enhanced history education in an NMT (National Multi-Subject Test) preparatory course in Ukraine during the ongoing armed conflict (October 2024 -- April 2025). Twenty-three students participated in a distance learning course comprising 40 lectures, 40 seminars with 156 Google Forms quizzes, 7 modular controls, and 23 interactive gamification modules on the HistoryLikeGame platform. A systematic chat log analysis identified 400 messages, including 33 absence reports predominantly caused by infrastructure disruptions (internet failures: 24\%; power outages: 9\%) -- conditions characteristic of wartime education. Analysis of quiz response data across 36 seminars and 7 modular controls revealed mean scores ranging from 33.3\% to 94.2\%, with 90 named participants tracked across assessments. The study addresses critical gaps identified in two prior systematic reviews: (1) definitional ambiguity in 85.1\% of gamification studies, and (2) high risk of bias in 83.8\% of studies per MRQS assessment. By providing comprehensive documentation of the implementation process, data collection, and analysis pipeline, this study contributes to improving the methodological quality of gamification research in history education while offering unique insights into wartime education resilience.
+\end{abstract}
+
+\begin{keyword}
+gamification \sep history education \sep wartime education \sep distance learning \sep NMT preparation \sep Ukraine \sep systematic review \sep MRQS
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\section{Introduction}
+
+Gamification -- the application of game design elements to non-game contexts \citep{Deterding2011} -- has attracted growing research attention in education. However, two recent systematic reviews have identified critical gaps in the evidence base for gamification in history education. A review of 74 studies \citep{KorniienkoSemerikov2024} found that only 14.9\% provided explicit definitions of gamification, while a quality assessment using the Mixed Methods Research Quality Synthesis (MRQS) framework \citep{Korniienko2025mrqs} revealed that 83.8\% of studies exhibited a high risk of bias. The most prevalent weaknesses included small sample sizes (60.8\% with $N<50$), lack of randomisation (89.2\%), and insufficient reporting of operational definitions (85.1\%).
+
+These reviews established that the field urgently needs studies that prioritise transparent reporting, comprehensive documentation, and ecological validity. Furthermore, a PRISMA-guided systematic review of digital history in pedagogical research \citep{Korniienko2025cte} identified only six studies meeting rigorous inclusion criteria, confirming the nascent state of this research area.
+
+The present study responds to these identified needs by documenting a gamification-enhanced history education course conducted under a uniquely challenging context: wartime distance education in Ukraine. Since Russia's full-scale invasion on February 24, 2022, Ukrainian educational institutions have operated under conditions of regular missile and drone attacks, infrastructure disruptions, and population displacement. These conditions create both methodological challenges and unique research opportunities, as they represent an extreme case of the implementation contexts that gamification research has largely neglected.
+
+\subsection{Research objectives}
+
+This study aims to:
+\begin{enumerate}
+\item Document the implementation of a gamification-enhanced NMT preparatory course in Ukrainian history;
+\item Analyse student performance trajectories across the course period;
+\item Characterise the wartime factors affecting educational continuity;
+\item Self-assess the study's methodological quality against MRQS criteria.
+\end{enumerate}
+
+
+\section{Theoretical framework}
+
+\subsection{Gamification in history education}
+
+Our systematic review of 74 studies \citep{KorniienkoSemerikov2024} identified four distinct conceptual approaches to gamification: structural (adding game elements to existing content), content (transforming content to be more game-like), full (comprehensive integration of game mechanics), and game-based learning (using complete games as pedagogical tools). The review found that the majority of studies (70.3\%) reported positive effects on engagement, while effectiveness evidence for learning outcomes was more mixed (51.4\% positive, 37.8\% no significant difference, 10.8\% negative/mixed).
+
+Six evidence-based design principles were synthesised: historical authenticity, narrative integration, progressive difficulty, immediate feedback, social elements, and multiple modalities.
+
+\subsection{Digital competence framework}
+
+The European Digital Competence Framework (DigComp 2.0) \citep{Vuorikari2016} provides a reference for aligning gamification activities with digital competence development. Titova et al. \citep{Titova2025cte} demonstrated that gamified history education can simultaneously address all five DigComp competence areas.
+
+
+\section{Methods}
+
+\subsection{Context and participants}
+
+The study was conducted at the Centre for Pre-University Training and Education (CDPO) of Kryvyi Rih State Pedagogical University, Ukraine. Twenty-three students enrolled in an NMT preparatory course for Ukrainian History between October 2024 and April 2025. Enrollment was rolling, with three distinct phases: initial formation (11 students, October), gradual expansion (6 students, November), and late enrollment (6 students, January--April).
+
+\subsection{Course design}
+
+The six-month course comprised:
+\begin{itemize}
+\item 40 lectures delivered via Zoom with recordings shared through Viber;
+\item 40 seminars with 156 Google Forms quizzes featuring creative thematic naming (gemstones, Greek mythology, flowers, trees, minerals);
+\item 5 mandatory modular controls;
+\item 23 interactive quiz modules on the HistoryLikeGame web platform (introduced December 1, 2024; subsequently expanded to 62 modules with 13 game types);
+\item Supplementary resources from Wordwall (introduced March 27, 2025) and external educational websites.
+\end{itemize}
+
+\subsection{Data sources}
+
+Three primary data sources were analysed:
+\begin{enumerate}
+\item \textbf{Viber chat log}: 940 lines, 400 parsed messages including enrollment events, absence reports, assessment links, and wartime-related communications.
+\item \textbf{Google Forms response data}: CSV and XLSX files from 13 seminars (25--39), containing timestamps, scores (in ``X/Y'' format), and participant names.
+\item \textbf{HistoryLikeGame platform}: 23 HTML-based quiz modules with drag-and-drop and text-input interactions (experimental period version; the current platform includes 62 modules with diverse game types).
+\end{enumerate}
+
+\subsection{Analysis pipeline}
+
+A Python-based analysis pipeline was developed comprising six modules: chat parser, assessment timeline extractor, response analyser, attendance tracker, gamification cataloguer, and figure generator. All scripts are available in the study's repository.
+
+
+\section{Results}
+
+\subsection{Assessment overview}
+
+The chat log analysis identified 156 Google Forms links distributed across seminar quizzes (133, 85.3\%), lecture quizzes (7, 4.5\%), modular controls (6, 3.8\%), and other forms (10, 6.4\%). Twenty-eight seminars were identified spanning the full course period.
+
+\subsection{Score analysis}
+
+Response data from 13 seminars (Table~\ref{tab:scores}) revealed:
+\begin{itemize}
+\item Mean scores ranging from 33.3\% (Seminar 30, $N=1$) to 83.3\% (Seminar 32, $N=3$);
+\item Higher participation in later seminars (Seminar 37: $N=15$; Seminar 39: $N=12$), likely reflecting proximity to the NMT examination;
+\item Seventeen uniquely identified participants across the datasets;
+\item Substantial individual variability (SD up to 24.35 in Seminar 37).
+\end{itemize}
+
+\begin{table}[htbp]
+\centering
+\caption{Descriptive statistics for seminar quiz scores}
+\label{tab:scores}
+\small
+\begin{tabular}{@{}rrrrrr@{}}
+\toprule
+\textbf{Seminar} & \textbf{N} & \textbf{Mean\%} & \textbf{Median\%} & \textbf{SD} & \textbf{Max pts.} \\
+\midrule
+25 & 6  & 77.1 & 90.6 & 8.91 & 32 \\
+26 & 3  & 67.8 & 66.7 & 4.51 & 30 \\
+27 & 2  & 43.4 & 43.4 & 3.54 & 15 \\
+28 & 1  & 43.5 & 43.5 & --   & 46 \\
+29 & 3  & 65.2 & 77.3 & 4.62 & 22 \\
+30 & 1  & 33.3 & 33.3 & --   & 33 \\
+31 & 12 & 80.8 & 92.3 & --   & -- \\
+32 & 3  & 83.3 & 82.1 & 2.52 & 28 \\
+33 & 7  & 73.8 & 83.7 & 11.35 & 43 \\
+35 & 3  & 79.2 & 87.5 & 2.31 & 16 \\
+36 & 5  & 59.6 & 45.7 & 10.64 & 46 \\
+37 & 15 & 50.7 & 47.8 & 24.35 & 90 \\
+39 & 12 & 63.5 & 67.8 & 18.11 & 87 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Attendance and wartime context}
+
+Thirty-three absence reports were classified: internet problems (24.2\%), family circumstances (24.2\%), unspecified (24.2\%), power outages (9.1\%), health (9.1\%), and late arrival (9.1\%). Infrastructure-related absences (internet + power: 33.3\%) were directly attributable to wartime conditions.
+
+The instructor's explicit safety guidance (``Your safety is the most important [...] if in doubt, go to a shelter'') and the course's multi-channel design (Zoom, Viber, Google Drive, Google Forms, HistoryLikeGame) ensured educational continuity despite regular disruptions.
+
+
+\section{Discussion}
+
+\subsection{Addressing the quality gap}
+
+This study was explicitly designed to address the methodological weaknesses identified in our systematic reviews. Table~\ref{tab:mrqs} presents a self-assessment against MRQS criteria.
+
+\begin{table}[htbp]
+\centering
+\caption{MRQS self-assessment}
+\label{tab:mrqs}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Domain} & \textbf{Rating} & \textbf{Key limitation} \\
+\midrule
+Research design & Moderate & No randomisation/control \\
+Sampling & Moderate & Small $N$, no power analysis \\
+Data collection & Low risk & Systematic pipeline \\
+Data analysis & Low risk & Appropriate methods \\
+Reporting & Low risk & Comprehensive documentation \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Wartime education resilience}
+
+The multi-channel approach demonstrated resilience through redundancy: when any single channel failed (instructor internet, student power outage), alternatives remained available. The static HTML architecture of HistoryLikeGame proved particularly robust, requiring minimal bandwidth.
+
+\subsection{Limitations}
+
+Response data cover only 13 of 40 seminars; sample sizes are small and variable; the single-group design precludes causal inference; and rolling enrollment complicates cohort-level analysis.
+
+
+\section{Conclusion}
+
+This study provides one of the most comprehensively documented implementations of gamification in history education, addressing critical gaps in definitional clarity, methodological transparency, and ecological validity. The wartime context offers unique insights into educational resilience under infrastructure stress. Future research should replicate these methods with larger samples and controlled designs.
+
+
+\section*{Data availability}
+
+The analysis pipeline code, parsed datasets, and generated figures are available in the study's repository. Raw Google Forms response data are available upon reasonable request.
+
+\section*{Declaration of competing interest}
+
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\section*{Acknowledgements}
+
+The authors thank the Centre for Pre-University Training and Education of Kryvyi Rih State Pedagogical University for facilitating this study, and the students who participated in the course under challenging wartime conditions.
+
+\bibliography{../bibliography}
+
+\end{document}

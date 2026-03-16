@@ -1,0 +1,25 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.blg
+*.bbl
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.xmpdata
+pdfa.xmpi
+
+# Compiled PDF (large, regenerable)
+ssk_thes.pdf
+
+# Backup files
+*.bak
+
+# Analysis intermediate files
+analysis/doi_cache.json
+analysis/full_metadata_cache.json
+analysis/parsed_chat.csv

@@ -1,0 +1,154 @@
+\conc{
+
+This dissertation addressed the scientific problem of developing a methodology for teaching
+digital history to future professionals.
+The following main results were obtained.
+
+\begin{enumerate}
+
+\item A PRISMA-guided systematic review of empirical pedagogical studies on digital history
+was conducted, identifying only 6 studies meeting rigorous inclusion criteria from an initial
+pool of 46 Scopus records \cite{Korniienko2025cte}.
+All 6 studies reported positive engagement effects (100\%), but none operated under wartime
+conditions, none documented a multi-tool resilience architecture, and none spanned more than
+a single semester of iterative implementation.
+This finding establishes the nascent state of digital history pedagogy as a research field.
+
+\item A comprehensive systematic review of gamification in history education was performed,
+synthesising evidence from 74 studies \cite{KorniienkoSemerikov2024}.
+The review revealed: (a)~severe definitional ambiguity, with only 14.9\% of studies providing
+an explicit definition of gamification \cite{Deterding2011};
+(b)~predominantly positive effects on engagement (70.3\%) and learning outcomes (51.4\%;
+$d\,{=}\,0.28$--$0.61$, concentrated on factual recall), consistent with broader gamification
+meta-analyses \cite{SailerHomner2020, BaiHewHuang2020};
+(c)~six evidence-based design principles --- historical authenticity, narrative integration,
+progressive difficulty, immediate feedback, social elements, and multiple modalities;
+(d)~a four-type taxonomy of digital history approaches (archival-analytical,
+creative-productive, collaborative-communicative, immersive-experiential).
+
+\item A methodological quality assessment of the 74 gamification studies was conducted using
+the MRQS framework \cite{Korniienko2025mrqs}, revealing that 83.8\% exhibited high risk of
+bias, with a mean MRQS of 4.31/10 (SD\,=\,1.93, range 0--9).
+An LLM validation approach demonstrated that automated risk-of-bias scoring achieves only
+slight inter-rater agreement ($\kappa\,{=}\,-0.04$ to $0.21$ per the \citealt{LandisKoch1977}
+scale), while factual data extraction achieves high reliability (82--97\%), establishing
+a hybrid human--LLM model for educational research synthesis \cite{TamimMMRQG2021, Page2021}.
+
+\item Implementation guidelines for gamification in history education were developed based
+on the synthesis of both systematic reviews and aligned with all five areas of the European
+Digital Competence Framework (DigComp~2.0) \cite{Vuorikari2016, Titova2025cte}.
+Eight evidence-grounded guidelines operationalise the six design principles through
+discipline-specific DigComp adaptations --- the first DigComp-2.0-aligned implementation
+framework in the history-education gamification literature.
+A 12-item reporting checklist aligned with CONSORT/PRISMA standards \cite{Schulz2010CONSORT,
+Page2021} addresses the field's documented transparency gap.
+
+\item A seven-month pedagogical experiment was designed and implemented at the Centre for
+Pre-University Training and Education of Kryvyi Rih State Pedagogical University
+(October~2024 -- May~2025), serving 23~students across 40~lectures, 40~seminars with
+156~Google Forms quizzes, and 7~modular controls \cite{Korniienko2025aredu}.
+Three distinct enrollment waves (October, November, January--April) confirmed
+\citeauthor{Siemens2004}'s open-network connectivist model~\cite{Siemens2004} in practice.
+
+\item A Python-based data analysis pipeline was developed comprising 6 modules (chat log
+parsing, assessment timeline extraction, score analysis, attendance tracking, gamification
+cataloguing, and figure generation), enabling deterministic and reproducible processing of
+all collected data.
+This directly addresses the reproducibility gap identified by the MRQS audit, where 90.5\%
+of the 74 reviewed studies provided insufficient replication detail \cite{Korniienko2025mrqs}.
+
+\item The HistoryLikeGame interactive gamification platform was developed through an iterative
+design-based research trajectory \cite{Reeves2003, Korniienko2024hlg}:
+v1 (December~2024: 23~quiz modules, 205~KB) $\to$ v2 (current: 62 modules, 13~game types,
+9~historical periods, 10~A-Frame AR scenes, $\approx$869~KB total with $\approx$88\,KB shared
+infrastructure).
+This constitutes the first documented practitioner DBR cycle in the digital history pedagogy
+literature, and the platform's offline-capable lightweight architecture is a directly
+transferable design principle for conflict-affected and low-bandwidth educational environments.
+
+\item Longitudinal assessment (36 seminars, 7 modular controls) documented a topic-specificity
+pattern: single-period assessments peaked at 94.2\% (Seminar~13) versus 33.3\% for
+comprehensive NMT-format assessments (Seminar~30).
+Modular controls traced a U-shaped arc (MC2: 84.6\% $\to$ MC5: 63.8\% $\to$ MC7: 74.3\%),
+with a format-controlled pre--post gap of 1.6\,pp at the lower bound of the field's
+$d\,{=}\,0.28$--$0.61$ distribution.
+Four persistent trajectory clusters were identified (consistent mastery 37.5\%, topic-variable
+25\%, persistent struggle 25\%, progressive decline 12.5\%), confirming that gamification
+did not reduce performance heterogeneity \cite{SailerHomner2020, BaiHewHuang2020}.
+
+\item The five-layer wartime resilience architecture empirically demonstrated its
+effectiveness: 33 documented absences (57.5\% attributable to external causes ---
+internet: 24.2\%, family: 24.2\%, power: 9.1\%) coincided with stable modular control
+participation ($N\,{=}\,7$--$27$ across all 7 controls spanning 7~months), confirming that
+the asynchronous-first, minimal-bandwidth design prevented any single infrastructure failure
+from blocking assessment completion \cite{Burde2017, UNESCO2023, Martynets202428,
+Zamkova2023299}.
+The engagement floor --- 17 of 23 enrolled students (73.9\%) in at least one post-gamification
+assessment --- confirms that the core cohort remained connected throughout despite wartime
+disruption \cite{Hlianenko2024}.
+
+\item The course simultaneously instantiated all four digital history approach types
+(archival-analytical: 156 NMT-format quizzes; collaborative-communicative: 400+ Viber
+messages; immersive-experiential: 62 game modules; creative-productive: thematic quiz naming)
+and empirically anchored all five DigComp~2.0 competence areas \cite{Vuorikari2016},
+defining a \emph{digital history methodology model}: a multi-approach, theoretically grounded
+(TPACK, ZPD, SDT, Flow Theory), infrastructure-adaptive system that treats digital tools not
+as supplements but as the primary medium through which historical learning, assessment, and
+community are delivered \cite{Ertmer1999, Humeniuk2022113, Nunez202329}.
+
+\end{enumerate}
+
+\item The concept of \textit{reward-bridged learning} (RBL) was proposed as a distinct,
+previously untheorised position on the game integration spectrum (Figure~\ref{fig:gamification-spectrum}),
+occupying the space between game-based learning and serious games where the
+directionality of integration is reversed: educational micro-tasks (quizzes, knowledge checks)
+are embedded as optional bonus pathways within entertainment games, incentivised through
+in-game rewards \cite{RBL2025}. RBL is distinguished from tangential learning \cite{frith2021}
+(implicit, self-directed) and stealth learning \cite{ShuteFormative2008} (hidden education) by
+being explicit, voluntary, and reward-driven. This extends \citeauthor{Deterding2011}'s~\cite{Deterding2011}
+foundational taxonomy by identifying a class of interventions where the \textit{game} is primary
+and \textit{education} is the added element --- the conceptual inverse of gamification.
+
+\end{enumerate}
+
+\textbf{Scientific problems addressable by these results.}
+The documented digital history methodology model and its empirical validation directly address
+three interconnected scientific problems: (a)~the absence of theoretically grounded,
+empirically tested frameworks for technology-enhanced history education, particularly in
+conflict-affected contexts; (b)~the methodological quality deficit in gamification research
+(83.8\% high risk of bias), addressable through the MRQS instrument, LLM validation protocol,
+and reporting checklist; (c)~the digital competence development gap in Ukrainian
+history education, addressable through the DigComp-aligned implementation guidelines and the
+freely accessible HistoryLikeGame platform.
+
+\textbf{Future research directions.}
+\begin{enumerate}
+\item \textit{Anonymous learning analytics and substitution hypothesis testing}: Adding privacy-preserving, opt-in session analytics to HistoryLikeGame~v3 (anonymised \texttt{localStorage} records with no personal identifiers or background transmission) to confirm or refute whether the post-gamification voluntary seminar decline ($N$: 12.9$\to$5.6) reflects modality substitution or disengagement --- the most consequential unresolved question from the present study \cite{KoivistoHamari2019, Sailer2017}.
+\item \textit{Quasi-experimental controlled comparison}: A 2026--2027 implementation
+across two parallel CDPO course sections (with and without gamification) to enable causal
+inference, satisfying the MRQS criterion M8 currently unmet by 68.9\% of the 74-study
+corpus \cite{Schulz2010CONSORT, creswell, KorniienkoSemerikov2024}.
+\item \textit{NMT outcome follow-up}: Linking CDPO enrollment records to the May~2025
+NMT examination results for the 23~enrolled students --- the first direct downstream
+outcome measure in the 74-study corpus \cite{Korniienko2025cte, Page2021}.
+\item \textit{Multi-institution scaling}: Expanding to 3--5 CDPO institutions across
+different Ukrainian oblasts (frontline, mid-country, western rear) to test the resilience
+architecture's generalisability across systematically varying infrastructure disruption
+profiles \cite{UNESCO2023, Striuk_2022, Cohen2005, Borenstein2009}.
+\item \textit{Phenomenographic study of wartime student experience}: Interview research
+with 8--10 consenting former participants to document the psychological and situational
+dimensions of gamified distance learning under armed conflict --- inaccessible to
+quantitative assessment data \cite{Ditlmann2025, Hamari2014, DichevDicheva2017,
+Zamkova2023299, Martynets202428}.
+\item \textit{Reward-bridged learning prototype}: Developing and empirically testing an
+RBL implementation for HistoryLikeGame~v3, where educational quiz completion unlocks
+bonus game content (additional levels, cosmetic rewards, leaderboard advantages) ---
+testing the theoretical prediction that entertainment-primary incentive structures
+produce higher voluntary engagement than education-primary ones \cite{RBL2025, Sailer2017}.
+\end{enumerate}
+
+The results of the dissertation have been implemented in the educational process of the
+Centre for Pre-University Training and Education of Kryvyi Rih State Pedagogical University.
+
+.
+}

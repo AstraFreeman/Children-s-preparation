@@ -1,0 +1,121 @@
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  elabel/.style={font=\scriptsize, align=center},
+  tierhead/.style={font=\small\bfseries, align=center, text=black!80},
+  annot/.style={font=\small, align=left, text width=5cm},
+]
+
+% === Pyramid geometry ===
+% Three trapezoids, each 3 cm tall, 0.12 cm gap between tiers.
+% Widths narrow toward the top: Components 18, Mechanics 12, Dynamics 7.
+
+\def\gap{0.12}
+
+% --- Components (bottom tier) ---
+\def\compBot{0}
+\def\compTop{3.0}
+\def\compBotHalf{9.0}
+\def\compTopHalf{6.0}
+
+\fill[gray!20, draw=gray!60, thick]
+  (-\compBotHalf, \compBot) --
+  (\compBotHalf, \compBot) --
+  (\compTopHalf, \compTop) --
+  (-\compTopHalf, \compTop) -- cycle;
+
+\node[tierhead] at (0, \compTop - 0.5) {COMPONENTS};
+\node[elabel] at (-3.0, 0.9) {Points / Rewards / Scoring\\(31)};
+\node[elabel] at (3.0, 0.9) {Feedback\\(17)};
+\node[font=\scriptsize, gray!60] at (0, 0.9) {\textbullet};
+
+% --- Mechanics (middle tier) ---
+\def\mechBot{3.12}
+\def\mechTop{6.12}
+\def\mechBotHalf{6.0}
+\def\mechTopHalf{3.5}
+
+\fill[orange!15, draw=orange!50, thick]
+  (-\mechBotHalf, \mechBot) --
+  (\mechBotHalf, \mechBot) --
+  (\mechTopHalf, \mechTop) --
+  (-\mechTopHalf, \mechTop) -- cycle;
+
+\node[tierhead] at (0, \mechTop - 0.5) {MECHANICS};
+
+% Row 1 of mechanics elements (lower part of tier)
+\node[elabel] at (-3.8, \mechBot + 0.8) {Collab./\\Competition\\(36)};
+\node[elabel] at (-1.3, \mechBot + 0.8) {Levels/\\Progression\\(35)};
+\node[elabel] at (1.3, \mechBot + 0.8)  {Quiz/\\Assessment\\(19)};
+\node[elabel] at (3.8, \mechBot + 0.8)  {Puzzles\\(18)};
+
+% Row 2 of mechanics elements (mid-height, well below header)
+\node[elabel] at (-1.5, \mechBot + 2.0) {Rules / Goals\\(18)};
+\node[elabel] at (1.5, \mechBot + 2.0)  {Time pressure\\(12)};
+
+% --- Dynamics (top tier) ---
+\def\dynBot{6.24}
+\def\dynTop{9.24}
+\def\dynBotHalf{3.5}
+\def\dynTopHalf{0.8}
+
+\fill[blue!22, draw=blue!50, thick]
+  (-\dynBotHalf, \dynBot) --
+  (\dynBotHalf, \dynBot) --
+  (\dynTopHalf, \dynTop) --
+  (-\dynTopHalf, \dynTop) -- cycle;
+
+\node[tierhead] at (0, \dynTop - 0.5) {DYNAMICS};
+
+% Dynamics elements — spread across lower portion of tier
+\node[elabel] at (-1.8, \dynBot + 0.9) {Narrative/\\Storytelling\\(44)};
+\node[elabel] at (1.8, \dynBot + 0.9)  {Exploration\\(29)};
+\node[elabel] at (0, \dynBot + 1.8)    {Role-playing\\(44)};
+
+% === Immersion/VR/AR — vertical bar on the right ===
+\def\barLeft{10.5}
+\def\barRight{12.5}
+
+\fill[green!12, draw=green!50!black, thick, rounded corners=3pt]
+  (\barLeft, \compBot) rectangle (\barRight, \dynTop);
+
+\node[font=\small\bfseries, align=center, rotate=90]
+  at ({(\barLeft+\barRight)/2}, {(\compBot+\dynTop)/2 + 0.6}) {Immersion / VR / AR};
+\node[font=\small\bfseries, align=center]
+  at ({(\barLeft+\barRight)/2}, {(\compBot+\dynTop)/2 - 1.4}) {(55)};
+
+% Dashed lines inside the bar aligned with tier boundaries
+\draw[dashed, gray!50] (\barLeft, \compTop + \gap/2) -- (\barRight, \compTop + \gap/2);
+\draw[dashed, gray!50] (\barLeft, \mechTop + \gap/2) -- (\barRight, \mechTop + \gap/2);
+
+% Connecting arrow from bar to pyramid (at mechanics tier mid-height)
+\def\connY{4.62}  % mid-height of mechanics tier
+% Right edge of mechanics trapezoid at connY: interpolate
+% mechBot=3.12, mechTop=6.12, mechBotHalf=6.0, mechTopHalf=3.5
+% fraction = (4.62-3.12)/(6.12-3.12) = 0.5 => halfwidth = 6.0 - 0.5*(6.0-3.5) = 4.75
+\draw[gray!50, thick, -{Stealth[length=3pt]}]
+  (\barLeft - 0.1, \connY) -- (4.85, \connY);
+\node[font=\scriptsize, gray!50, anchor=south] at ({(\barLeft - 0.1 + 4.85)/2}, \connY + 0.05) {cross-cutting};
+
+% === Annotation arrows ===
+
+% Arrow to Dynamics: "Dominant level in history education"
+\draw[thick, red!70!black, -{Stealth[length=5pt]}]
+  (-\compBotHalf - 0.6, 8.0) -- (-\dynBotHalf - 0.15, 7.6);
+\node[annot, anchor=east, text=red!70!black] at (-\compBotHalf - 0.8, 8.0)
+  {\textbf{Dominant level in}\\
+   \textbf{history education}};
+
+% Arrow to Components: "Dominant level in general gamification"
+\draw[thick, violet!70!black, -{Stealth[length=5pt]}]
+  (-\compBotHalf - 0.6, 1.2) -- (-\compBotHalf + 1.0, 1.2);
+\node[annot, anchor=east, text=violet!70!black] at (-\compBotHalf - 0.8, 1.2)
+  {\textbf{Dominant level in}\\
+   \textbf{general gamification}};
+
+\end{tikzpicture}%
+}% end resizebox
+\caption{Mapping of game design element categories onto the DMC hierarchy (Dynamics--Mechanics--Components). History education concentrates at the Dynamics level, inverting the typical distribution found in general gamification literature.}
+\label{fig:dmc-pyramid}
+\end{figure}

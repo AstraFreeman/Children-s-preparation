@@ -1,0 +1,674 @@
+{
+  "summary": {
+    "total_entries": 336,
+    "with_doi": 253,
+    "without_doi": 83,
+    "issues_found": 60,
+    "enrichments": 28,
+    "dois_discovered": 7,
+    "scopus_urls": 0
+  },
+  "issues": [
+    {
+      "key": "Semeniv2025",
+      "type": "author_mismatch",
+      "doi": "10.1002/wjs.70159",
+      "bib_author": "Semeniv, Solomia and others",
+      "cr_author": "Semeniv, Solomiia and Antoniv, Marta and Dzhemiliev, Ali and Kochis, Michael and Shabat, Galyna and Huivaniuk, Inesa and Danylyshyn, Maksym and Kuryk, Mariana and Ivanykovych, Taras and Chorna, Valeriia and Bielichenko, Svitlana and Potapova, Kateryna and Nikiforchin, Andrei and Kizub, Darya and Melnitchouk, Nelya",
+      "similarity": 0.132
+    },
+    {
+      "key": "18Shih201054",
+      "type": "title_mismatch",
+      "doi": "10.1109/DIGITEL.2010.27",
+      "bib_title": "2010 Third IEEE International Conference on Digital Game and Intelligent Toy Enhanced Learning",
+      "cr_title": "Designing a Role-Play Game for Learning Taiwan History and Geography",
+      "similarity": 0.259
+    },
+    {
+      "key": "21Ghulamani2017",
+      "type": "title_mismatch",
+      "doi": "10.1109/ICETAS.2017.8277898",
+      "bib_title": "2017 4th IEEE International Conference on Engineering Technologies and Applied Sciences (ICETAS)",
+      "cr_title": "Development of a game for history course of secondary school students",
+      "similarity": 0.327
+    },
+    {
+      "key": "22Nugroho2020149",
+      "type": "title_mismatch",
+      "doi": "10.1109/CENIM51130.2020.9297833",
+      "bib_title": "2020 International Conference on Computer Engineering, Network, and Intelligent Multimedia (CENIM)",
+      "cr_title": "Development of Educational Game for Indonesian History Lesson Focusing on Indonesia Pre-Literacy Relics “Prehistoria” for Grade X High School Student",
+      "similarity": 0.34
+    },
+    {
+      "key": "24Ghannem2019",
+      "type": "title_mismatch",
+      "doi": "10.1109/ICTA49490.2019.9144967",
+      "bib_title": "2019 7th International conference on ICT \\& Accessibility (ICTA)",
+      "cr_title": "Educational Computer Game for learning History: Impact on learners' level of knowledge and learners' satisfaction",
+      "similarity": 0.274
+    },
+    {
+      "key": "29Stiso20201165",
+      "type": "doi_not_found",
+      "doi": "10.22318/icls2020.1165",
+      "title": "Fostering Perspective-taking in History Students Through Board Games"
+    },
+    {
+      "key": "2Mahamarowi2023133",
+      "type": "title_mismatch",
+      "doi": "10.1109/ICSGRC57744.2023.10215483",
+      "bib_title": "2023 IEEE 14th Control and System Graduate Research Colloquium (ICSGRC)",
+      "cr_title": "3D Game-Based Approach to Learning Ancient Malay Heritage’s History",
+      "similarity": 0.246
+    },
+    {
+      "key": "30Zin2008",
+      "type": "title_mismatch",
+      "doi": "10.1109/ITSIM.2008.4631565",
+      "bib_title": "2008 International Symposium on Information Technology",
+      "cr_title": "Game based learning model for history courseware: A preliminary analysis",
+      "similarity": 0.222
+    },
+    {
+      "key": "30Zin2008",
+      "type": "author_mismatch",
+      "doi": "10.1109/ITSIM.2008.4631565",
+      "bib_author": "Zin, Nor Azan Mat and Wong, Seng Yue",
+      "cr_author": "Mz, Nor Azan and Sy, Wong",
+      "similarity": 0.154
+    },
+    {
+      "key": "35Fernandez2023",
+      "type": "title_mismatch",
+      "doi": "10.5944/ried.26.2.36246",
+      "bib_title": "Gamificación, pandemia y aprendizaje de la historia de las ideas. Experimentos en el contexto Core Currículum [Gamification, Pandemic and Learning the History of Ideas. Experiments in the Context of Core Curriculum]",
+      "cr_title": "Gamificación, pandemia y aprendizaje de la historia de las ideas. Experimentos en el contexto Core Currículum",
+      "similarity": 0.677
+    },
+    {
+      "key": "37Lewis202054",
+      "type": "title_mismatch",
+      "doi": "10.4324/9780429345616-4",
+      "bib_title": "Grand Theft Longboat: Using Video Games and Medievalism to Teach Medieval History",
+      "cr_title": "Grand Theft Longboat",
+      "similarity": 0.396
+    },
+    {
+      "key": "37Lewis202054",
+      "type": "year_mismatch",
+      "doi": "10.4324/9780429345616-4",
+      "bib_year": "2020",
+      "cr_year": "2019"
+    },
+    {
+      "key": "40Kuran2018",
+      "type": "title_mismatch",
+      "doi": "10.1109/ITHET.2018.8424767",
+      "bib_title": "2018 17th International Conference on Information Technology Based Higher Education and Training (ITHET)",
+      "cr_title": "History-Themed Games in History Education: Experiences on a Blended World History Course",
+      "similarity": 0.292
+    },
+    {
+      "key": "43ali2018indonesian",
+      "type": "year_mismatch",
+      "doi": "10.21512/jggag.v3i1.7234",
+      "bib_year": "2018",
+      "cr_year": "2021"
+    },
+    {
+      "key": "45Yu2016727",
+      "type": "title_mismatch",
+      "doi": "10.1109/IIAI-AAI.2015.199",
+      "bib_title": "2015 IIAI 4th International Congress on Advanced Applied Informatics",
+      "cr_title": "Jingnan Campaign© - Using Game-Based Assessment with the Mechanism of Strategy Games for History Teaching: System Development and Learning Evaluation",
+      "similarity": 0.166
+    },
+    {
+      "key": "47Clara2010156",
+      "type": "title_mismatch",
+      "doi": "10.1109/DIGITEL.2010.49",
+      "bib_title": "2010 Third IEEE International Conference on Digital Game and Intelligent Toy Enhanced Learning",
+      "cr_title": "Learning Chinese History through Digital Game",
+      "similarity": 0.259
+    },
+    {
+      "key": "52Lin2011265",
+      "type": "title_mismatch",
+      "doi": "10.1109/U-MEDIA.2011.22",
+      "bib_title": "2011 Fourth International Conference on Ubi-Media Computing",
+      "cr_title": "Online Interactive Game-Based Learning in High School History Education: Impact on Educational Effectiveness and Student Motivation",
+      "similarity": 0.2
+    },
+    {
+      "key": "54Gibson2007",
+      "type": "title_mismatch",
+      "doi": "10.4018/978-1-59904-304-3.ch013",
+      "bib_title": "Reliving the Revolution: Designing Augmented Reality Games to Teach Critical Thinking",
+      "cr_title": "Reliving the Revolution",
+      "similarity": 0.426
+    },
+    {
+      "key": "55Squire2004",
+      "type": "title_mismatch",
+      "doi": "10.4324/9781410611017",
+      "bib_title": "Replaying History:\nEngaging Urban Underserved Students in Learning World History Through Computer Simulation Games",
+      "cr_title": "Embracing Diversity in the Learning Sciences",
+      "similarity": 0.354
+    },
+    {
+      "key": "55Squire2004",
+      "type": "year_mismatch",
+      "doi": "10.4324/9781410611017",
+      "bib_year": "2004",
+      "cr_year": "2012"
+    },
+    {
+      "key": "58Shih2015173",
+      "type": "title_mismatch",
+      "doi": "10.4324/9781315766553",
+      "bib_title": "Sustaining mobile learning with pervasive game: An example of cultural history exploration",
+      "cr_title": "Sustaining Mobile Learning",
+      "similarity": 0.448
+    },
+    {
+      "key": "61Karsenti202027",
+      "type": "doi_not_found",
+      "doi": "10.26220/rev.3278",
+      "title": "Teaching history with the video game Assassin’s Creed: effective teaching practices and reported learning"
+    },
+    {
+      "key": "69Wong2017150",
+      "type": "title_mismatch",
+      "doi": "10.1109/ICALT.2017.69",
+      "bib_title": "2017 IEEE 17th International Conference on Advanced Learning Technologies (ICALT)",
+      "cr_title": "The Evaluation Study of Gamification Approach in Malaysian History Learning via Mobile Game Application",
+      "similarity": 0.348
+    },
+    {
+      "key": "73Wolfartsberger2011160",
+      "type": "title_mismatch",
+      "doi": "10.1109/VS-GAMES.2011.47",
+      "bib_title": "2011 Third International Conference on Games and Virtual Worlds for Serious Applications",
+      "cr_title": "Towards an Online Multiplayer Serious Game Providing a Joyful Experience in Learning Art History",
+      "similarity": 0.326
+    },
+    {
+      "key": "74Fendt2019",
+      "type": "title_mismatch",
+      "doi": "10.1109/CIG.2019.8847968",
+      "bib_title": "2019 IEEE Conference on Games (CoG)",
+      "cr_title": "Using Learning Games to Teach Texas Civil War History to Public Middle School Students",
+      "similarity": 0.198
+    },
+    {
+      "key": "7Natvig2004F-1",
+      "type": "title_mismatch",
+      "doi": "10.1109/FIE.2004.1408736",
+      "bib_title": "34th Annual Frontiers in Education, 2004. FIE 2004",
+      "cr_title": "\"Age of computers:\" an innovative combination of history and computer game elements for teaching computer fundamentals",
+      "similarity": 0.241
+    },
+    {
+      "key": "Alexov2023",
+      "type": "author_mismatch",
+      "doi": "10.32782/2786-8141/2023-3-1",
+      "bib_author": "Alexov, S. V. and Didyk, A. V.",
+      "cr_author": "Алексов, С.В. and Дідик, А.В.",
+      "similarity": 0.08
+    },
+    {
+      "key": "Clark2016",
+      "type": "title_mismatch",
+      "doi": "10.3102/0034654315582065",
+      "bib_title": "Digital Games, Design, and Learning: A Systematic Review and Meta-Analysis",
+      "cr_title": "Digital Games, Design, and Learning",
+      "similarity": 0.642
+    },
+    {
+      "key": "Flores-Bueno2021",
+      "type": "title_mismatch",
+      "doi": "10.17533/UDEA.RIB.V44N2E342687",
+      "bib_title": "The gamification in the development of information literacy from the perspective of university students; [La gamificación en el desarrollo de la alfabetización informacional desde la perspectiva de los estudiantes universitarios]",
+      "cr_title": "La gamificación en el desarrollo de la alfabetización informacional desde la perspectiva de los estudiantes universitarios",
+      "similarity": 0.699
+    },
+    {
+      "key": "Graham20151",
+      "type": "title_mismatch",
+      "doi": "10.1142/p981",
+      "bib_title": "Exploring big historical data: The historian’s macroscope",
+      "cr_title": "Exploring Big Historical Data",
+      "similarity": 0.674
+    },
+    {
+      "key": "Hickey2014",
+      "type": "year_mismatch",
+      "doi": "10.1080/0969594X.2015.1015404",
+      "bib_year": "2014",
+      "cr_year": "2015"
+    },
+    {
+      "key": "Ho2024139",
+      "type": "doi_not_found",
+      "doi": "10.6209/JORIES.202409_69(3).0005",
+      "title": "Exploring the Impact of Gamified Learning Portfolio on Student Engagement With Different Learning Motivations"
+    },
+    {
+      "key": "Joshi2021",
+      "type": "year_mismatch",
+      "doi": "10.2139/ssrn.4886322",
+      "bib_year": "2021",
+      "cr_year": "2024"
+    },
+    {
+      "key": "Martynets202428",
+      "type": "doi_not_found",
+      "doi": "10.26220/aca.5001",
+      "title": "The impact of the War on the Development of Higher Education in Ukraine: Experience for EU Countries"
+    },
+    {
+      "key": "Page2021",
+      "type": "author_mismatch",
+      "doi": "10.1136/bmj.n71",
+      "bib_author": "Page, Matthew J. and McKenzie, Joanne E. and Bossuyt, Patrick M. and others",
+      "cr_author": "Page, Matthew J and McKenzie, Joanne E and Bossuyt, Patrick M and Boutron, Isabelle and Hoffmann, Tammy C and Mulrow, Cynthia D and Shamseer, Larissa and Tetzlaff, Jennifer M and Akl, Elie A and Brennan, Sue E and Chou, Roger and Glanville, Julie and Grimshaw, Jeremy M and Hróbjartsson, Asbjørn and Lalu, Manoj M and Li, Tianjing and Loder, Elizabeth W and Mayo-Wilson, Evan and McDonald, Steve and McGuinness, Luke A and Stewart, Lesley A and Thomas, James and Tricco, Andrea C and Welch, Vivian A and Whiting, Penny and Moher, David",
+      "similarity": 0.193
+    },
+    {
+      "key": "Prieto-Andreu2024244",
+      "type": "title_mismatch",
+      "doi": "10.17583/remie.11765",
+      "bib_title": "How to Avoid Negative Effects when Gamifying in Education: Panoramic Review and Heuristic Approach towards an Instructional Model; [Cómo Evitar Efectos Negativos al Gamificar en Educación: Revisión Panorámica y Aproximación Heurística hacia un Modelo Instruccional]",
+      "cr_title": "Cómo Evitar Efectos Negativos al Gamificar en Educación: Revisión Panorámica y Aproximación Heurística hacia un Modelo Instruccional",
+      "similarity": 0.668
+    },
+    {
+      "key": "PrietoAndreu202073",
+      "type": "title_mismatch",
+      "doi": "10.14201/teri.20625",
+      "bib_title": "A systematic review about gamification, motivation and learning in high school; [Una revisiÓn sistemÁtica sobre gamificaciÓn, motivaciÓn y aprendizaje en universitarios]",
+      "cr_title": "Una revisión sistemática sobre gamificación, motivación y aprendizaje en universitarios",
+      "similarity": 0.685
+    },
+    {
+      "key": "Shiue2017460",
+      "type": "year_mismatch",
+      "doi": "10.1109/ICAMSE.2016.7840358",
+      "bib_year": "2017",
+      "cr_year": "2016"
+    },
+    {
+      "key": "UNESCO2023",
+      "type": "author_mismatch",
+      "doi": "10.54676/UZQV8501",
+      "bib_author": "{Global Education Monitoring Report Team}",
+      "cr_author": ", ",
+      "similarity": 0.0
+    },
+    {
+      "key": "Vuorikari2016",
+      "type": "doi_not_found",
+      "doi": "10.2791/11517",
+      "title": "DigComp 2.0: The Digital Competence Framework for Citizens. Update Phase 1: the Conceptual Reference Model"
+    },
+    {
+      "key": "petticrew2008systematic",
+      "type": "year_mismatch",
+      "doi": "10.1002/9780470754887",
+      "bib_year": "2008",
+      "cr_year": "2006"
+    },
+    {
+      "key": "38Mercik2024",
+      "type": "title_mismatch",
+      "doi": "10.5130/phrj.v31i0.8508",
+      "bib_title": "History on the Game Board: The Use of Board Games in Polish History\n   Education",
+      "cr_title": "History on the Game Board",
+      "similarity": 0.49
+    },
+    {
+      "key": "Berkling2013",
+      "type": "title_mismatch",
+      "doi": "10.1109/ICL.2013.6644642",
+      "bib_title": "2013 International Conference on Interactive Collaborative Learning (ICL)",
+      "cr_title": "Gamification of a Software Engineering course and a detailed analysis of the factors that lead to it's failure",
+      "similarity": 0.319
+    },
+    {
+      "key": "Colteli2015",
+      "type": "year_mismatch",
+      "doi": "10.1109/FIE.2014.7044156",
+      "bib_year": "2015",
+      "cr_year": "2014"
+    },
+    {
+      "key": "Diniz2017",
+      "type": "title_mismatch",
+      "doi": "10.1109/CHASE.2017.7",
+      "bib_title": "2017 IEEE/ACM 10th International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
+      "cr_title": "Using Gamification to Orient and Motivate Students to Contribute to OSS Projects",
+      "similarity": 0.28
+    },
+    {
+      "key": "Morales-Trujillo2021",
+      "type": "title_mismatch",
+      "doi": "10.1145/3427597",
+      "bib_title": "Gamification and SQL: An Empirical Study on Student Performance in a Database Course",
+      "cr_title": "Gamification and SQL",
+      "similarity": 0.385
+    },
+    {
+      "key": "Uskov2015",
+      "type": "year_mismatch",
+      "doi": "10.1109/FIE.2014.7044098",
+      "bib_year": "2015",
+      "cr_year": "2014"
+    },
+    {
+      "key": "Landers2014",
+      "type": "title_mismatch",
+      "doi": "10.1177/1046878114563660",
+      "bib_title": "Developing a Theory of Gamified Learning: Linking Serious Games and Gamification of Learning",
+      "cr_title": "Developing a Theory of Gamified Learning",
+      "similarity": 0.606
+    },
+    {
+      "key": "CookReed2015",
+      "type": "title_mismatch",
+      "doi": "10.1097/ACM.0000000000000786",
+      "bib_title": "Appraising the Quality of Medical Education Research Methods: The Medical Education Research Study Quality Instrument and the Newcastle-Ottawa Scale-Education",
+      "cr_title": "Appraising the Quality of Medical Education Research Methods",
+      "similarity": 0.55
+    },
+    {
+      "key": "Landers2019",
+      "type": "year_mismatch",
+      "doi": "10.1177/1046878118774385",
+      "bib_year": "2019",
+      "cr_year": "2018"
+    },
+    {
+      "key": "Carretero2017",
+      "type": "doi_not_found",
+      "doi": "10.2760/38842",
+      "title": "DigComp 2.1: The Digital Competence Framework for Citizens with eight proficiency levels and examples of use"
+    },
+    {
+      "key": "Vuorikari2022",
+      "type": "doi_not_found",
+      "doi": "10.2760/115376",
+      "title": "DigComp 2.2: The Digital Competence Framework for Citizens -- With new examples of knowledge, skills and attitudes"
+    },
+    {
+      "key": "Redecker2017",
+      "type": "doi_not_found",
+      "doi": "10.2760/159770",
+      "title": "European Framework for the Digital Competence of Educators: DigCompEdu"
+    },
+    {
+      "key": "Ovcharuk2023",
+      "type": "title_mismatch",
+      "doi": "10.1111/ejed.12589",
+      "bib_title": "Digital competence of Ukrainian educators in wartime: challenges and strategies",
+      "cr_title": "Impact of school lockdown on access to online instruction during the war in Ukraine",
+      "similarity": 0.185
+    },
+    {
+      "key": "Cosgrove2025",
+      "type": "doi_not_found",
+      "doi": "10.2760/0001149",
+      "title": "DigComp 3.0: European Digital Competence Framework -- Fifth Edition"
+    },
+    {
+      "key": "AndersonShattuck2012",
+      "type": "title_mismatch",
+      "doi": "10.3102/0013189X11428813",
+      "bib_title": "Design-based research: A decade of progress in education research?",
+      "cr_title": "Design-Based Research",
+      "similarity": 0.483
+    },
+    {
+      "key": "Bakker2018",
+      "type": "title_mismatch",
+      "doi": "10.4324/9780203701010",
+      "bib_title": "Design Research in Education: A Practical Guide for Early Career Researchers",
+      "cr_title": "Design Research in Education",
+      "similarity": 0.538
+    },
+    {
+      "key": "CohenManionMorrison2018",
+      "type": "year_mismatch",
+      "doi": "10.4324/9781315456539",
+      "bib_year": "2018",
+      "cr_year": "2017"
+    },
+    {
+      "key": "Dunlosky2013",
+      "type": "title_mismatch",
+      "doi": "10.1177/1529100612453266",
+      "bib_title": "Improving Students' Learning With Effective Learning Techniques: Promising Directions From Cognitive and Educational Psychology",
+      "cr_title": "Improving Students’ Learning With Effective Learning Techniques",
+      "similarity": 0.656
+    },
+    {
+      "key": "IfenthalerEseryel2012",
+      "type": "title_mismatch",
+      "doi": "10.1007/978-1-4614-3546-4",
+      "bib_title": "Assessment in Game-Based Learning: Foundations, Innovations, and Perspectives",
+      "cr_title": "Assessment in Game-Based Learning",
+      "similarity": 0.6
+    }
+  ],
+  "enrichments": [
+    {
+      "key": "Zhumbei2025",
+      "doi": "10.62486/latia2025345",
+      "add_volume": "3",
+      "add_pages": "345"
+    },
+    {
+      "key": "Semeniv2025",
+      "doi": "10.1002/wjs.70159",
+      "add_volume": "49",
+      "add_pages": "3410-3418",
+      "add_number": "12"
+    },
+    {
+      "key": "17Manzanares2019",
+      "doi": "10.21125/inted.2019.0565",
+      "add_volume": "1"
+    },
+    {
+      "key": "33Oceja2022419",
+      "doi": "10.34190/ecgbl.16.1.558",
+      "add_volume": "16",
+      "add_number": "1"
+    },
+    {
+      "key": "40Kuran2018",
+      "doi": "10.1109/ITHET.2018.8424767",
+      "add_pages": "1-8"
+    },
+    {
+      "key": "Flores-Bueno2021",
+      "doi": "10.17533/UDEA.RIB.V44N2E342687",
+      "add_pages": "e342687"
+    },
+    {
+      "key": "Hlianenko2024",
+      "doi": "10.31893/multirev.2024spe009",
+      "add_pages": "2024spe009"
+    },
+    {
+      "key": "Kivits2013",
+      "doi": "10.1155/2013/983721",
+      "add_number": "1"
+    },
+    {
+      "key": "Lampropoulos2024",
+      "doi": "10.3390/educsci14040367",
+      "add_pages": "367"
+    },
+    {
+      "key": "Maslova2021",
+      "doi": "10.4018/IJWLTT.293279",
+      "add_pages": "1-16"
+    },
+    {
+      "key": "Mercader2020",
+      "doi": "10.1007/s10639-020-10222-3",
+      "add_number": "6"
+    },
+    {
+      "key": "Oceja2022419",
+      "doi": "10.34190/ecgbl.16.1.558",
+      "add_number": "1"
+    },
+    {
+      "key": "Schulz2010CONSORT",
+      "doi": "10.1136/bmj.c332",
+      "add_number": "mar23 1"
+    },
+    {
+      "key": "Thomas2008",
+      "doi": "10.1186/1471-2288-8-45",
+      "add_number": "1"
+    },
+    {
+      "key": "Vovchasta2024",
+      "doi": "10.31893/multirev.2024spe070",
+      "add_pages": "2024spe070"
+    },
+    {
+      "key": "Colteli2015",
+      "doi": "10.1109/FIE.2014.7044156",
+      "add_pages": "1-4"
+    },
+    {
+      "key": "Hernandez2017",
+      "doi": "10.17013/risti.21.33-50",
+      "add_number": "21"
+    },
+    {
+      "key": "Morales-Trujillo2021",
+      "doi": "10.1145/3427597",
+      "add_pages": "1-29"
+    },
+    {
+      "key": "PageEtAl2021",
+      "doi": "10.1136/bmj.n71",
+      "add_pages": "n71"
+    },
+    {
+      "key": "Sanina2020",
+      "doi": "10.1016/j.compedu.2020.103813",
+      "add_pages": "103813"
+    },
+    {
+      "key": "Uskov2015",
+      "doi": "10.1109/FIE.2014.7044098",
+      "add_pages": "1-8"
+    },
+    {
+      "key": "SailerHomner2020",
+      "doi": "10.1007/s10648-019-09498-w",
+      "add_number": "1"
+    },
+    {
+      "key": "MarquesCruz2025",
+      "doi": "10.1017/rsm.2024.14",
+      "add_number": "1"
+    },
+    {
+      "key": "MaWang2020",
+      "doi": "10.1186/s40779-020-00238-8",
+      "add_number": "1"
+    },
+    {
+      "key": "PerryWhitmarsh2021",
+      "doi": "10.1186/s13643-021-01819-x",
+      "add_number": "1"
+    },
+    {
+      "key": "DiPumpo2025",
+      "doi": "10.1093/eurpub/ckaf072",
+      "add_volume": "35",
+      "add_pages": "1082-1086",
+      "add_number": "6"
+    },
+    {
+      "key": "Xia2025",
+      "doi": "10.1017/rsm.2025.10028",
+      "add_volume": "16",
+      "add_pages": "990-1004",
+      "add_number": "6"
+    },
+    {
+      "key": "BarrosoTristan2025",
+      "doi": "10.1057/s41599-025-06115-w",
+      "add_volume": "12",
+      "add_number": "1"
+    }
+  ],
+  "discoveries": [
+    {
+      "key": "11Ternblad2023115",
+      "discovered_doi": "10.22318/cscl2023.184792",
+      "bib_title": "Are Pairs More Attentive Towards Feedback Than Individuals? A Glance into Feedback Neglect for Middle-School Students Using an Educational Game in History",
+      "cr_title": "Are Pairs More Attentive Towards Feedback Than Individuals? A Glance Into Feedback Neglect for Middle-School Students Using an Educational Game in History",
+      "similarity": 1.0,
+      "year": "2023"
+    },
+    {
+      "key": "31DeAmicis2009451",
+      "discovered_doi": "10.1145/1690388.1690499",
+      "bib_title": "Game based technology to enhance the learning of history and cultural heritage",
+      "cr_title": "Game based technology to enhance the learning of history and cultural heritage",
+      "similarity": 1.0,
+      "year": "2009"
+    },
+    {
+      "key": "Bozic2024538",
+      "discovered_doi": "10.34190/ecel.23.1.2568",
+      "bib_title": "Technological Aspects of Gamification: Criteria for the Selection of Digital Tools and Platforms",
+      "cr_title": "Technological Aspects of Gamification: Criteria for the Selection of Digital Tools and Platforms",
+      "similarity": 1.0,
+      "year": "2024"
+    },
+    {
+      "key": "Castronovo2015",
+      "discovered_doi": "10.18260/p.23802",
+      "bib_title": "Design of a construction simulation educational game through a cognitive lens",
+      "cr_title": "Design of a Construction Simulation Educational Game Through a Cognitive Lens",
+      "similarity": 1.0,
+      "year": "2015"
+    },
+    {
+      "key": "Christiansson200593",
+      "discovered_doi": "10.1061/40794(179)9",
+      "bib_title": "Building management and ICT learning in civil engineering education",
+      "cr_title": "Building Management and ICT Learning in Civil Engineering Education",
+      "similarity": 1.0,
+      "year": "2005"
+    },
+    {
+      "key": "Mitchell2024184",
+      "discovered_doi": "10.34190/icer.1.1.3113",
+      "bib_title": "The Impact of Implementing Gamification Elements on Motivation, Engagement and Academic Achievement",
+      "cr_title": "The impact of Implementing Gamification Elements on Motivation, Engagement and Academic Achievement",
+      "similarity": 1.0,
+      "year": "2024"
+    },
+    {
+      "key": "Wang2025aera",
+      "discovered_doi": "10.3102/ip.25.2187595",
+      "bib_title": "MetaMate: Large Language Model to the Rescue of Automated Data Extraction for Educational Systematic Reviews",
+      "cr_title": "MetaMate: Large Language Model to the Rescue of Automated Data Extraction for Educational Systematic Reviews",
+      "similarity": 1.0,
+      "year": "2025"
+    }
+  ],
+  "scopus_url_removals": []
+}

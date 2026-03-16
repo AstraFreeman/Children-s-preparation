@@ -1,0 +1,63 @@
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.85\textwidth,
+    height=6.5cm,
+    ybar stacked,
+    bar width=28pt,
+    ylabel={Number of studies},
+    symbolic x coords={2004--2012, 2013--2017, 2018--2024},
+    xtick=data,
+    ymin=0, ymax=42,
+    enlarge x limits=0.3,
+    grid=major,
+    grid style={gray!30},
+    legend style={at={(0.5,-0.18)}, anchor=north, legend columns=-1, font=\small},
+    x tick label style={font=\small},
+    y tick label style={font=\small},
+    ylabel style={font=\small},
+]
+
+% Journal articles (bottom segment) — no automatic labels
+\addplot+[ybar, fill=blue!40, draw=blue!70!black] coordinates {
+    (2004--2012, 5)
+    (2013--2017, 8)
+    (2018--2024, 17)
+};
+
+% Conference papers and book chapters (top segment) — no automatic labels
+\addplot+[ybar, fill=orange!40, draw=orange!70!black] coordinates {
+    (2004--2012, 13)
+    (2013--2017, 11)
+    (2018--2024, 20)
+};
+
+% --- Manual labels inside journal segments (centred vertically) ---
+\node[font=\scriptsize, text=white, font=\scriptsize\bfseries] at (axis cs:2004--2012, 2.5) {5};
+\node[font=\scriptsize, text=white, font=\scriptsize\bfseries] at (axis cs:2013--2017, 4) {8};
+\node[font=\scriptsize, text=white, font=\scriptsize\bfseries] at (axis cs:2018--2024, 8.5) {17};
+
+% --- Manual labels inside conference segments (centred vertically) ---
+\node[font=\scriptsize, text=black] at (axis cs:2004--2012, 11.5) {13};
+\node[font=\scriptsize, text=black] at (axis cs:2013--2017, 13.5) {11};
+\node[font=\scriptsize, text=black] at (axis cs:2018--2024, 27) {20};
+
+% --- Totals above stacked bars ---
+\node[font=\scriptsize\bfseries, anchor=south] at (axis cs:2004--2012, 18.5) {n=18};
+\node[font=\scriptsize\bfseries, anchor=south] at (axis cs:2013--2017, 19.5) {n=19};
+\node[font=\scriptsize\bfseries, anchor=south] at (axis cs:2018--2024, 37.5) {n=37};
+
+% --- Journal proportion annotations below bars ---
+\node[font=\scriptsize\bfseries, text=blue!70!black] at (axis cs:2004--2012, -2.5) {28\%};
+\node[font=\scriptsize\bfseries, text=blue!70!black] at (axis cs:2013--2017, -2.5) {42\%};
+\node[font=\scriptsize\bfseries, text=blue!70!black] at (axis cs:2018--2024, -2.5) {46\%};
+\node[font=\scriptsize, text=gray!70] at (axis cs:2013--2017, -4.5) {journal proportion};
+
+\legend{Journal articles, Conference papers / book chapters}
+
+\end{axis}
+\end{tikzpicture}
+\caption{Evolution of publication types across three research periods: journal article proportions rising from 28\% (2004--2012) to 42\% (2013--2017) to 46\% (2018--2024), indicating gradual field maturation}
+\label{fig:publication-type-evolution}
+\end{figure}

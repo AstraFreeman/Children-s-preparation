@@ -1,0 +1,40 @@
+\begin{tikzpicture}[node distance=2cm]
+% Define styles
+\tikzstyle{box} = [rectangle, draw, text width=7cm, text centered, minimum height=1cm]
+\tikzstyle{sidebox} = [rectangle, draw, text width=5.5cm, text centered, minimum height=1cm]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+% Identification
+\node (identification) [box] {Records identified from Scopus (\textit{n}~=~46)};
+\node (duplicates) [sidebox, right=2.5cm of identification] {Duplicates removed (\textit{n}~=~1)};
+\draw [arrow] (identification) -- (duplicates);
+
+% Screening
+\node (screened) [box, below=1.5cm of identification] {Records screened (\textit{n}~=~45)};
+\node (excluded1) [sidebox, right=2.5cm of screened] {Records excluded (\textit{n}~=~28):\\ Pre-university: 11\\ Wrong intervention: 4\\ No empirical data: 13};
+\draw [arrow] (identification) -- (screened);
+\draw [arrow] (screened) -- (excluded1);
+
+% Eligibility
+\node (fulltext) [box, below=1.5cm of screened] {Reports sought for retrieval (\textit{n}~=~17)};
+\node (notretrieved) [sidebox, right=2.5cm of fulltext] {Reports not retrieved (\textit{n}~=~2)};
+\draw [arrow] (screened) -- (fulltext);
+\draw [arrow] (fulltext) -- (notretrieved);
+
+% Assessment
+\node (assessed) [box, below=1.5cm of fulltext] {Reports assessed for eligibility (\textit{n}~=~15)};
+\node (excluded2) [sidebox, right=2.5cm of assessed] {Reports excluded (\textit{n}~=~9):\\ Wrong timeframe: 2\\ Graduate only: 3\\ Insufficient detail: 2\\ Theoretical only: 2};
+\draw [arrow] (fulltext) -- (assessed);
+\draw [arrow] (assessed) -- (excluded2);
+
+% Included
+\node (included) [box, below=1.5cm of assessed, fill=gray!20] {Studies included in review (\textit{n}~=~6)};
+\draw [arrow] (assessed) -- (included);
+
+% Phase labels on left
+\node[rotate=90, anchor=south, font=\small\bfseries, gray] at ([xshift=-1.2cm]identification.west) {Identification};
+\node[rotate=90, anchor=south, font=\small\bfseries, gray] at ([xshift=-1.2cm]screened.west) {Screening};
+\node[rotate=90, anchor=south, font=\small\bfseries, gray] at ([xshift=-1.2cm]fulltext.west) {Retrieval};
+\node[rotate=90, anchor=south, font=\small\bfseries, gray] at ([xshift=-1.2cm]assessed.west) {Eligibility};
+\node[rotate=90, anchor=south, font=\small\bfseries, gray] at ([xshift=-1.2cm]included.west) {Included};
+\end{tikzpicture}

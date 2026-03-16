@@ -1,0 +1,985 @@
+======================================================================
+BIBLIOGRAPHY REFERENCE VERIFICATION REPORT
+======================================================================
+
+Total entries: 713
+Cited entries: 331
+Uncited entries: 382
+Cited but not in bib: 2
+  - Polat_2023
+  - Whiting2016
+
+DOIs checked: 572
+Valid DOIs: 545
+Broken DOIs (cited): 18
+Broken DOIs (uncited): 9
+Metadata mismatches: 34
+API errors: 0
+
+----------------------------------------------------------------------
+BROKEN DOIs — CITED ENTRIES (need fixing)
+----------------------------------------------------------------------
+
+Key: 29Stiso20201165
+  Broken DOI: 10.22318/icls2020.1165
+  Title: Fostering Perspective-taking in History Students Through Board Games
+  NO SUGGESTION FOUND
+
+Key: 61Karsenti202027
+  Broken DOI: 10.26220/rev.3278
+  Title: Teaching history with the video game Assassin’s Creed: effective teaching practices and reported learning
+  NO SUGGESTION FOUND
+
+Key: Calandra2005323
+  Broken DOI: 10
+  Title: The digital history and pedagogy project: Creating an interpretative/ pedagogical historical website
+  SUGGESTED DOI: 10.1016/j.iheduc.2005.09.007
+  CrossRef title: The digital history and pedagogy project: Creating an interpretative/pedagogical historical website
+  Similarity: 0.99
+
+Key: Ho2024139
+  Broken DOI: 10.6209/JORIES.202409_69(3).0005
+  Title: Exploring the Impact of Gamified Learning Portfolio on Student Engagement With Different Learning Motivations
+  NO SUGGESTION FOUND
+
+Key: Martynets202428
+  Broken DOI: 10.26220/aca.5001
+  Title: The impact of the War on the Development of Higher Education in Ukraine: Experience for EU Countries
+  NO SUGGESTION FOUND
+
+Key: Vuorikari2016
+  Broken DOI: 10.2791/11517
+  Title: DigComp 2.0: The Digital Competence Framework for Citizens. Update Phase 1: the Conceptual Reference Model
+  NO SUGGESTION FOUND
+
+Key: Zielezinski20141137
+  Broken DOI: https://www.researchgate.net/publication/286859873
+  Title: Recasting the textbook: Student creation of interactive digital history textbooks with primary source documents
+  NO SUGGESTION FOUND
+
+Key: Lan2023
+  Broken DOI: 10.3389/fmed.2023.1074888
+  Title: How about the evidence assessment tools used in education and management systematic reviews?
+  SUGGESTED DOI: 10.3389/fmed.2023.1160289
+  CrossRef title: How about the evidence assessment tools used in education and management systematic reviews?
+  Similarity: 1.00
+
+Key: Lai2024jama
+  Broken DOI: 10.1001/jamanetworkopen.2024.40854
+  Title: Assessing the Risk of Bias in Randomized Clinical Trials With Large Language Models
+  SUGGESTED DOI: 10.1001/jamanetworkopen.2024.12687
+  CrossRef title: Assessing the Risk of Bias in Randomized Clinical Trials With Large Language Models
+  Similarity: 1.00
+
+Key: Xia2025
+  Broken DOI: 10.1002/jrsm.1789
+  Title: Assessing risk of bias of cohort studies with large language models
+  SUGGESTED DOI: 10.1017/rsm.2025.10028
+  CrossRef title: Assessing risk of bias of cohort studies with large language models
+  Similarity: 1.00
+
+Key: Kim2025bmj
+  Broken DOI: 10.1136/bmjebm-2024-112928
+  Title: Novel AI applications in systematic review: GPT-4 assisted data extraction, analysis, review of bias
+  SUGGESTED DOI: 10.1136/bmjebm-2024-113066
+  CrossRef title: Novel AI applications in systematic review: GPT-4 assisted data extraction, analysis, review of bias
+  Similarity: 1.00
+
+Key: Purewal2025
+  Broken DOI: 10.1136/rapm-2024-106047
+  Title: Human versus artificial intelligence: evaluating ChatGPT's performance in conducting published systematic reviews with meta-analysis in chronic pain research
+  SUGGESTED DOI: 10.1136/rapm-2024-106358
+  CrossRef title: Human versus artificial intelligence: evaluating ChatGPT’s performance in conducting published systematic reviews with meta-analysis in chronic pain research
+  Similarity: 1.00
+
+Key: Landers2019
+  Broken DOI: 10.1177/1046878119871746
+  Title: Gamification Science, Its History and Future: Definitions and a Research Agenda
+  SUGGESTED DOI: 10.1177/1046878118774385
+  CrossRef title: Gamification Science, Its History and Future: Definitions and a Research Agenda
+  Similarity: 1.00
+
+Key: Carretero2017
+  Broken DOI: 10.2760/38842
+  Title: DigComp 2.1: The Digital Competence Framework for Citizens with eight proficiency levels and examples of use
+  NO SUGGESTION FOUND
+
+Key: Vuorikari2022
+  Broken DOI: 10.2760/115376
+  Title: DigComp 2.2: The Digital Competence Framework for Citizens -- With new examples of knowledge, skills and attitudes
+  NO SUGGESTION FOUND
+
+Key: Redecker2017
+  Broken DOI: 10.2760/159770
+  Title: European Framework for the Digital Competence of Educators: DigCompEdu
+  NO SUGGESTION FOUND
+
+Key: Cosgrove2025
+  Broken DOI: 10.2760/0001149
+  Title: DigComp 3.0: European Digital Competence Framework -- Fifth Edition
+  NO SUGGESTION FOUND
+
+Key: BlackWiliam1998
+  Broken DOI: 10.1080/7481
+  Title: Assessment and Classroom Learning
+  NO SUGGESTION FOUND
+
+----------------------------------------------------------------------
+BROKEN DOIs — UNCITED ENTRIES (remove from bib)
+----------------------------------------------------------------------
+
+Key: Gellner2021188
+  DOI: 10.34190/EEL.21.042
+  Title: Narratives in gamification: Considerations for support of digital literacy of the elderly
+
+Key: Granados2024249
+  DOI: 10.4438/1988-592X-RE-2024-405-634
+  Title: Gamification in the educational context: Challenges, potential and perspectives for implementation
+
+Key: LeeMolebash
+  DOI: 10
+  Title: Becoming digital: Using personal digital histories to engage teachers in contemporary understandings of teaching social studies
+
+Key: Lesley202353
+  DOI: 10
+  Title: Exploring the connections between disciplinary and digital literacies in history
+
+Key: Reyes2024
+  DOI: 10
+  Title: Interactive strategies for teaching history: The impact of Genially on motivation and learning; [Estrategias interactivas para la enseñanza de la Historia: El impacto de Genially en la motivación y el aprendizaje]
+
+Key: Tsai2024154
+  DOI: 10
+  Title: Bridging Literature and Code: Empowering Students to Explore Digital Humanities Through Generative AI
+
+Key: zenodo
+  DOI: 10.5281/zenodo.17186090
+  Title: systematic review digital history
+
+Key: Chachra201928
+  DOI: 10.16920/jeet/2019/v33i2/139302
+  Title: Use of Kahoot as a formative assessment tool in engineering education
+
+Key: Nguyen2023999
+  DOI: 10.6688/JISE.202309_39(5).0001
+  Title: An Educational Card Game Approach to Motivating the Learning of Software Engineering
+
+----------------------------------------------------------------------
+METADATA MISMATCHES (DOI resolves to different paper)
+----------------------------------------------------------------------
+
+Key: 18Shih201054 [CITED]
+  DOI: 10.1109/DIGITEL.2010.27
+  Bib title: 2010 Third IEEE International Conference on Digital Game and Intelligent Toy Enhanced Learning
+  CR title:  Designing a Role-Play Game for Learning Taiwan History and Geography
+  Similarity: 0.26
+
+Key: 21Ghulamani2017 [CITED]
+  DOI: 10.1109/ICETAS.2017.8277898
+  Bib title: 2017 4th IEEE International Conference on Engineering Technologies and Applied Sciences (ICETAS)
+  CR title:  Development of a game for history course of secondary school students
+  Similarity: 0.33
+
+Key: 22Nugroho2020149 [CITED]
+  DOI: 10.1109/CENIM51130.2020.9297833
+  Bib title: 2020 International Conference on Computer Engineering, Network, and Intelligent Multimedia (CENIM)
+  CR title:  Development of Educational Game for Indonesian History Lesson Focusing on Indonesia Pre-Literacy Relics “Prehistoria” for Grade X High School Student
+  Similarity: 0.34
+
+Key: 24Ghannem2019 [CITED]
+  DOI: 10.1109/ICTA49490.2019.9144967
+  Bib title: 2019 7th International conference on ICT \& Accessibility (ICTA)
+  CR title:  Educational Computer Game for learning History: Impact on learners' level of knowledge and learners' satisfaction
+  Similarity: 0.27
+
+Key: 2Mahamarowi2023133 [CITED]
+  DOI: 10.1109/ICSGRC57744.2023.10215483
+  Bib title: 2023 IEEE 14th Control and System Graduate Research Colloquium (ICSGRC)
+  CR title:  3D Game-Based Approach to Learning Ancient Malay Heritage’s History
+  Similarity: 0.25
+
+Key: 30Zin2008 [CITED]
+  DOI: 10.1109/ITSIM.2008.4631565
+  Bib title: 2008 International Symposium on Information Technology
+  CR title:  Game based learning model for history courseware: A preliminary analysis
+  Similarity: 0.22
+
+Key: 37Lewis202054 [CITED]
+  DOI: 10.4324/9780429345616-4
+  Bib title: Grand Theft Longboat: Using Video Games and Medievalism to Teach Medieval History
+  CR title:  Grand Theft Longboat
+  Similarity: 0.40
+
+Key: 40Kuran2018 [CITED]
+  DOI: 10.1109/ITHET.2018.8424767
+  Bib title: 2018 17th International Conference on Information Technology Based Higher Education and Training (ITHET)
+  CR title:  History-Themed Games in History Education: Experiences on a Blended World History Course
+  Similarity: 0.29
+
+Key: 45Yu2016727 [CITED]
+  DOI: 10.1109/IIAI-AAI.2015.199
+  Bib title: 2015 IIAI 4th International Congress on Advanced Applied Informatics
+  CR title:  Jingnan Campaign© - Using Game-Based Assessment with the Mechanism of Strategy Games for History Teaching: System Development and Learning Evaluation
+  Similarity: 0.17
+
+Key: 47Clara2010156 [CITED]
+  DOI: 10.1109/DIGITEL.2010.49
+  Bib title: 2010 Third IEEE International Conference on Digital Game and Intelligent Toy Enhanced Learning
+  CR title:  Learning Chinese History through Digital Game
+  Similarity: 0.26
+
+Key: 52Lin2011265 [CITED]
+  DOI: 10.1109/U-MEDIA.2011.22
+  Bib title: 2011 Fourth International Conference on Ubi-Media Computing
+  CR title:  Online Interactive Game-Based Learning in High School History Education: Impact on Educational Effectiveness and Student Motivation
+  Similarity: 0.20
+
+Key: 54Gibson2007 [CITED]
+  DOI: 10.4018/978-1-59904-304-3.ch013
+  Bib title: Reliving the Revolution: Designing Augmented Reality Games to Teach Critical Thinking
+  CR title:  Reliving the Revolution
+  Similarity: 0.43
+
+Key: 55Squire2004 [CITED]
+  DOI: 10.4324/9781410611017
+  Bib title: Replaying History:
+Engaging Urban Underserved Students in Learning World History Through Computer Simulation Games
+  CR title:  Embracing Diversity in the Learning Sciences
+  Similarity: 0.35
+
+Key: 58Shih2015173 [CITED]
+  DOI: 10.4324/9781315766553
+  Bib title: Sustaining mobile learning with pervasive game: An example of cultural history exploration
+  CR title:  Sustaining Mobile Learning
+  Similarity: 0.45
+
+Key: 69Wong2017150 [CITED]
+  DOI: 10.1109/ICALT.2017.69
+  Bib title: 2017 IEEE 17th International Conference on Advanced Learning Technologies (ICALT)
+  CR title:  The Evaluation Study of Gamification Approach in Malaysian History Learning via Mobile Game Application
+  Similarity: 0.35
+
+Key: 73Wolfartsberger2011160 [CITED]
+  DOI: 10.1109/VS-GAMES.2011.47
+  Bib title: 2011 Third International Conference on Games and Virtual Worlds for Serious Applications
+  CR title:  Towards an Online Multiplayer Serious Game Providing a Joyful Experience in Learning Art History
+  Similarity: 0.33
+
+Key: 74Fendt2019 [CITED]
+  DOI: 10.1109/CIG.2019.8847968
+  Bib title: 2019 IEEE Conference on Games (CoG)
+  CR title:  Using Learning Games to Teach Texas Civil War History to Public Middle School Students
+  Similarity: 0.20
+
+Key: 7Natvig2004F-1 [CITED]
+  DOI: 10.1109/FIE.2004.1408736
+  Bib title: 34th Annual Frontiers in Education, 2004. FIE 2004
+  CR title:  "Age of computers:" an innovative combination of history and computer game elements for teaching computer fundamentals
+  Similarity: 0.24
+
+Key: Jaskari202422 [uncited]
+  DOI: 10.4018/979-8-3693-0716-8.ch002
+  Bib title: One solution does not fit all: Reward-based and meaningful gamification in higher education
+  CR title:  One Solution Does Not Fit All
+  Similarity: 0.48
+
+Key: Lewis2021 [uncited]
+  DOI: 10.1145/3431924
+  Bib title: Hidden Town in 3D: Teaching and Reinterpreting Slavery Virtually at a Living History Museum
+  CR title:  Hidden Town in 3D
+  Similarity: 0.31
+
+Key: Lucadamo2024231 [uncited]
+  DOI: 10.4324/9781003327738-20
+  Bib title: The First World War Letters of H.J.C. Peirs:
+A Case Study of the Creation and Growth of a Collaborative, Pedagogy-Driven Digital History Project
+  CR title:  The First World War Letters of H.J.C. Peirs
+  Similarity: 0.46
+
+Key: 38Mercik2024 [CITED]
+  DOI: 10.5130/phrj.v31i0.8508
+  Bib title: History on the Game Board: The Use of Board Games in Polish History
+   Education
+  CR title:  History on the Game Board
+  Similarity: 0.49
+
+Key: Altman2013429 [uncited]
+  DOI: 10.1145/2467696.2467778
+  Bib title: The nuestra iowa project - creating a digital collection as a tool for history education
+  CR title:  The nuestra Iowa project
+  Similarity: 0.43
+
+Key: Begosso201927 [uncited]
+  DOI: 10.1145/3357419.3357426
+  Bib title: Simscrumf: A game for supporting the process of teaching Scrum
+  CR title:  SimScrumF
+  Similarity: 0.25
+
+Key: Berkling2013 [CITED]
+  DOI: 10.1109/ICL.2013.6644642
+  Bib title: 2013 International Conference on Interactive Collaborative Learning (ICL)
+  CR title:  Gamification of a Software Engineering course and a detailed analysis of the factors that lead to it's failure
+  Similarity: 0.32
+
+Key: Diniz2017 [CITED]
+  DOI: 10.1109/CHASE.2017.7
+  Bib title: 2017 IEEE/ACM 10th International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)
+  CR title:  Using Gamification to Orient and Motivate Students to Contribute to OSS Projects
+  Similarity: 0.28
+
+Key: DosSantos2019437 [uncited]
+  DOI: 10.1145/3350768.3352490
+  Bib title: Cleangame: Gamifying the identification of code smells
+  CR title:  CleanGame
+  Similarity: 0.29
+
+Key: McCrindle2013 [CITED]
+  DOI: 10.1007/978-3-642-39194-1_2
+  Bib title: Educational Inclusiveness through Ludic Engagement and Digital Creativity
+  CR title:  Shaping an Integrating Kitchen Space with Gesture-Based Control System
+  Similarity: 0.18
+
+Key: Morales-Trujillo2021 [CITED]
+  DOI: 10.1145/3427597
+  Bib title: Gamification and SQL: An Empirical Study on Student Performance in a Database Course
+  CR title:  Gamification and SQL
+  Similarity: 0.38
+
+Key: Simons2019301 [uncited]
+  DOI: 10.4324/9780429353048-21
+  Bib title: #Dhsiyearmodels: Models for DH at liberal arts colleges and four-year institutions
+  CR title:  #DHSIYearModels
+  Similarity: 0.31
+
+Key: MarquesCruz2025 [CITED]
+  DOI: 10.1002/jrsm.1751
+  Bib title: Reported methodological quality of medical systematic reviews: Development of an assessment tool (ReMarQ) and meta-research study
+  CR title:  Narrative reanalysis: A methodological framework for a new brand of reviews
+  Similarity: 0.29
+
+Key: DiPumpo2025 [CITED]
+  DOI: 10.1093/eurpub/ckaf057
+  Bib title: Evaluation of a large language model (ChatGPT) versus human researchers in assessing risk-of-bias and community engagement levels: a systematic review use-case analysis
+  CR title:  Estimating the potential health economic value of introducing universal opt-out testing for HIV in emergency departments in Italy
+  Similarity: 0.26
+
+Key: Ovcharuk2023 [CITED]
+  DOI: 10.1111/ejed.12576
+  Bib title: Digital competence of Ukrainian educators in wartime: challenges and strategies
+  CR title:  Academics' motivation for joining an educational leadership training programme and their perceived effectiveness: Insights from an EU‐China cooperative project
+  Similarity: 0.35
+
+Key: AndersonShattuck2012 [CITED]
+  DOI: 10.3102/0013189X11428813
+  Bib title: Design-based research: A decade of progress in education research?
+  CR title:  Design-Based Research
+  Similarity: 0.48
+
+----------------------------------------------------------------------
+BROKEN URLs — CITED ENTRIES
+----------------------------------------------------------------------
+
+Key: 75trajano2014using
+  URL: https://catalogo.sandamaso.es/EITRecord/97169948
+  Status: -1
+  Error: <urlopen error timed out>
+
+Key: Ahlfeld2021493
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85106334748&doi=10.1080%2f01930826.2021.1906570&partnerID=40&md5=d4f05268c023fbf46412b20faca8ea00
+  Status: 308
+  Error: None
+
+Key: Calandra2005323
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-27844483375&doi=10.1016\%2fj.iheduc.2005.09.007&partnerID=40&md5=a8d38f410a0bffde1b2e41091d4aa72a
+  Status: 308
+  Error: None
+
+Key: Castronovo2015
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-84941997346&partnerID=40&md5=beb233c13cd65fd9d11c6e1f65fe32ba
+  Status: 308
+  Error: None
+
+Key: Christiansson200593
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-27144462056&partnerID=40&md5=d3cd20eed1381e9c1cca56e956c4b8a4
+  Status: 308
+  Error: None
+
+Key: Ethier202311
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85182310096&doi=10.1515%2f9783111253275-002&partnerID=40&md5=935695694c7f82ed32f7c6b2f3f22173
+  Status: 308
+  Error: None
+
+Key: Flores-Bueno2021
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85106580185&doi=10.17533%2fUDEA.RIB.V44N2E342687&partnerID=40&md5=3aed79fdb8a5782940d01ab6b1ee6652
+  Status: 308
+  Error: None
+
+Key: Graham200810
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-40549123953&doi=10.1111%2fj.1467-9345.2008.00476.x&partnerID=40&md5=27276aa4d4bf0d821a314412e4f80b30
+  Status: 308
+  Error: None
+
+Key: Graham20151
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85056177959&doi=10.1142\%2fp981&partnerID=40&md5=496cb9eef08f3095e4f8d7362876d093
+  Status: 308
+  Error: None
+
+Key: Guitert2023245
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85149962787&doi=10.1007%2f978-3-031-24193-2_10&partnerID=40&md5=3b6722fe5046e48d8a05d6b2f4528ac2
+  Status: 308
+  Error: None
+
+Key: Hlianenko2024
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85200228740&doi=10.31893\%2fmultirev.2024spe009&partnerID=40&md5=45cb4113baac7eaed2bc6ed59c2ac084
+  Status: 308
+  Error: None
+
+Key: Kivits2013
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-84890014674&doi=10.1155%2f2013%2f983721&partnerID=40&md5=70cb131a6261670a9b7d6ee29d78cc08
+  Status: 308
+  Error: None
+
+Key: Lee2014159
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-84901605919&doi=10.1016\%2fj.jssr.2014.02.005&partnerID=40&md5=9e7fe104c881f07bdc122cd4987dd20b
+  Status: 308
+  Error: None
+
+Key: Lokshyna2018302
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85048378359&partnerID=40&md5=c0b0b62c85f3f3bbfaf8aadb3f29d1bb
+  Status: 308
+  Error: None
+
+Key: Lucchesi2019
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85095709781&doi=10.1515\%2fiph-2019-0004&partnerID=40&md5=008612758b25c582d35f58f6c03670c3
+  Status: 308
+  Error: None
+
+Key: Luther20106571
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-77955005681&doi=10.1016%2fj.sbspro.2010.04.067&partnerID=40&md5=35cb9c384bde57ea4af0777f97c23883
+  Status: 308
+  Error: None
+
+Key: Manfra2008223
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85008796766&doi=10.1080%2f15391523.2008.10782530&partnerID=40&md5=049473b67874103ca7bafd42d6727bd7
+  Status: 308
+  Error: None
+
+Key: Martynets202428
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85199397665&doi=10.26220\%2faca.5001&partnerID=40&md5=23fd53dfbf9e1863340ac1b1fb9c8988
+  Status: 308
+  Error: None
+
+Key: Maslova2021
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85122382322&doi=10.4018%2fIJWLTT.293279&partnerID=40&md5=cd51dedc9af0c73bab612ca58ee8d9b7
+  Status: 308
+  Error: None
+
+Key: Mitchell2024184
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85216108694&partnerID=40&md5=37cc3d9ef22f8a5ec022a84a405b1ee5
+  Status: 308
+  Error: None
+
+Key: Nunez202329
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85181722049&doi=10.33423%2fjhetp.v23i19.6674&partnerID=40&md5=d01cff0edb2496cfd04b20265b5fab2c
+  Status: 308
+  Error: None
+
+Key: Osuna-Acedo202189
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85143716597&doi=10.1007%2f978-3-030-67314-7_6&partnerID=40&md5=bbe05e391f9b88bf89d45e03bd8a8868
+  Status: 308
+  Error: None
+
+Key: Petr2007629
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-84869809389&partnerID=40&md5=acc3f929682b47fc7dd609d1263ca277
+  Status: 308
+  Error: None
+
+Key: Prensky2001
+  URL: https://web.archive.org/web/20051030115757/https://marcprensky.com/writing/Prensky\%20-\%20Ch3-Digital\%20Game-Based\%20Learning.pdf
+  Status: 404
+
+Key: Prieto-Andreu2024244
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85196867454&doi=10.17583%2fremie.11765&partnerID=40&md5=592916f0431a2067761f6732fdedacb1
+  Status: 308
+  Error: None
+
+Key: PrietoAndreu202073
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85079214622&doi=10.14201%2fteri.20625&partnerID=40&md5=d015bf5d244f5d15ae98b2ba64193936
+  Status: 308
+  Error: None
+
+Key: Sebring2012229
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-84876561376&doi=10.1386%2ftear.10.2-3.229_1&partnerID=40&md5=2933e880960b0947e28818ef23216456
+  Status: 308
+  Error: None
+
+Key: Shiue2017460
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85015231138&doi=10.1109%2fICAMSE.2016.7840358&partnerID=40&md5=53b0036d82cd9346ad06334eb6043479
+  Status: 308
+  Error: None
+
+Key: Sunkara2024203
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85206087633&doi=10.1007%2f978-3-031-72437-4_12&partnerID=40&md5=d56cd2cf5ad3aab6083eebcb94740650
+  Status: 308
+  Error: None
+
+Key: Torgerson202237
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85144178206&doi=10.1111%2fhith.12276&partnerID=40&md5=b14e3f2135d920c522deefe5cc770c5a
+  Status: 308
+  Error: None
+
+Key: Voogt20161
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85000360851&partnerID=40&md5=8cf8a9b20447a7f367259076bae56665
+  Status: 308
+  Error: None
+
+Key: Vovchasta2024
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85216683760&doi=10.31893\%2fmultirev.2024spe070&partnerID=40&md5=594c683c9c266c785c6fa3eec83aac1d
+  Status: 308
+  Error: None
+
+Key: Zamkova2023299
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85185835130&doi=10.22616\%2fRRD.29.2023.042&partnerID=40&md5=cc4a7d06fdfb684b36fb5f00653b1a59
+  Status: 308
+  Error: None
+
+Key: Zielezinski20141137
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-84937687780&partnerID=40&md5=c11106d219d96fbdd2a258444dfeaf2b
+  Status: 308
+  Error: None
+
+Key: dimensions
+  URL: https://app.dimensions.ai/discover/publication
+  Status: 202
+  Error: None
+
+Key: Block2021371
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85108189306&doi=10.1353\%2fjwh.2021.0029&partnerID=40&md5=ac767a0a9e85c1f583daa4f72b9ec3b1
+  Status: 308
+  Error: None
+
+Key: Bordalejo2025
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-105014985127&partnerID=40&md5=bca8a6cbbd6a829bf500386cb695a52e
+  Status: 308
+  Error: None
+
+Key: Buckley2018
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85057436987&doi=10.18687\%2fLACCEI2018.1.1.377&partnerID=40&md5=1d4c76def37a7a26372f15396db5f3be
+  Status: 308
+  Error: None
+
+Key: Gasca-Hurtado2021382
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85122075289&doi=10.1109\%2fRITA.2021.3137372&partnerID=40&md5=24d853ff48f351d6dda08b9cecdd7110
+  Status: 308
+  Error: None
+
+Key: Nygren201478
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-84919384824&partnerID=40&md5=b170ea312b536d11c69f7a5aaa2a81e5
+  Status: 308
+  Error: None
+
+Key: Reeves20033
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-12744274266&doi=10.1007\%2fBF02940850&partnerID=40&md5=f9d969cfbba69186d3b39d898262a989
+  Status: 308
+  Error: None
+
+Key: Sanina2020
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85078668957&doi=10.1016\%2fj.compedu.2020.103813&partnerID=40&md5=2f0a6486cb42bd1b6e06f6ca75b68737
+  Status: 308
+  Error: None
+
+Key: Wright-Maley2018603
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-85046502168&doi=10.1002\%2f9781119100812.ch23&partnerID=40&md5=6e93df8cd94d673f866c841f68eef5df
+  Status: 308
+  Error: None
+
+----------------------------------------------------------------------
+UNCITED ENTRIES (382 total)
+----------------------------------------------------------------------
+
+  10.1007/978-3-030-00623-5_11
+  10.1007/978-3-030-92182-8_26
+  10.1145/3555858.3555912
+  2012
+  2014
+  2015
+  2017
+  2019
+  2020
+  2021
+  2022
+  2023
+  2024
+  26Dias2021
+  Abd-Alrazaq2024
+  Abdraimova2025113
+  Al-Azawi20193
+  AlBalawi2015279
+  Aldalur2024
+  AlfredDaniel2023
+  Algayres202083
+  Alhammad2018131
+  Alhumairi202422
+  Ali202367
+  Aljedaani202420
+  All_titels
+  Alsayer2023
+  Alshammari2025
+  Altman2013429
+  Alvear2021343
+  Annunziata2024264
+  Antunes2019665
+  Anwar2024
+  Arif2019177
+  Armand2013753
+  Aslan2025
+  Avila-Alvarado202320
+  Bachtiar2018266
+  Baeva2018782
+  Ball2009198
+  Barbosa20249139
+  BarbosaMonteiro2021154
+  Bautista
+  Bedwell2023
+  Begosso201927
+  Berkling2014144
+  Berkling2015
+  Berkling2016274
+  Berkling2019245
+  BerklingThomas2013
+  Bernik2017711
+  Berti202047
+  Billeaudeaux2023154
+  Binter2022487
+  Blanco2023
+  Blick2024
+  Bonfadelli2013289
+  Bonilla-Rivas2020126
+  Bonilla-Rivas202174
+  Brennan
+  BrisenoSenosiain2021161
+  Brown
+  Bucchiarone20211
+  Bucchiarone2023291
+  Bucchiarone2023342
+  Burman2018297
+  Burnham2006
+  CALDERON201836
+  Cagnazzo20232
+  Calabrese2024291
+  CalderonRuiz2016
+  Calderón201659
+  Calderón2018154
+  Call2021423
+  Carrion20181
+  Carrion201955
+  Castro2020
+  Castro2021163
+  Cerinšek2013441
+  Cerioli202418
+  Chachra201928
+  Chadha2022
+  Chalermsook2022
+  Chamorro-Atalaya2023301
+  Cheiran2017328
+  Chimunja2019794
+  Clarke2019
+  Clarke2022
+  Coleborne2011674
+  Conte202183
+  Cooper20231
+  Corrigan201349
+  Córdova2024
+  Daniel20071279
+  Darmawan2025343
+  DeSousaMonteiro20161145
+  DeSouzaCastro2022
+  Dettling2020169
+  DiNardo2024
+  DiPietro2019218
+  DosSantos2019437
+  Duke2019
+  Ebert202215
+  Enoch2015216
+  Ertmer199947
+  Farooq202260341
+  Farré202434
+  Fasolino202426
+  Fatimah20232445
+  Feichas2023369
+  Figg2015663
+  Figg20181215
+  Figg2018227
+  Flores2023541
+  Furtado2019233
+  Furtado2020
+  Furtado2021
+  Fuster-Guilló2019
+  Gallagher2023643
+  Gamarra2023151
+  Garaccione2023460
+  Garaccione2024
+  Garaccione2024580
+  Garaccione202476
+  García-Holgado2019793
+  García2022147
+  Garstki2022177
+  Gasca-Hurtado20181
+  Gasca-Hurtado2019244
+  Gasca-Hurtado2021
+  Gasca-Hurtado2024
+  Gasca-Hurtado2024263
+  Gatti2019667
+  Gaziano2019127
+  Gellner2021188
+  Gensheimer20201
+  Ghazinour2018140
+  Gomez-Alvarez2016
+  Gomez-Jaramillo201885
+  Gondova2016591
+  Granados2024249
+  Grande2023386
+  Gruber2024274
+  Gupta2025102
+  Hacaloglu2022
+  Haddaway2018ROSES
+  Haendler201924
+  Haendler2020318
+  Haendler2020602
+  Hare2023
+  Hastomo20241572
+  Hentschel201829
+  Heričko2021124
+  Hernandez2017a
+  Herpers201549
+  Hickey2008350
+  Hidayat2022142
+  Hof2017
+  Hopf2024375
+  Hsueh20231150
+  Hu201893
+  Huang2024
+  Huh2016
+  Hussain2023330
+  Huvila2023793
+  Huynh2021924
+  IbarraERBE2017
+  Ibrahim2019
+  Imre2020430
+  Inkermann20242855
+  Iquira2021534
+  ItoSS2018
+  Ivanova20191445
+  Jackson2019
+  Jackson2019373
+  Jaskari202422
+  Jensen2021251
+  Jitsupa2022643
+  John202051
+  John20221942
+  John2024
+  Joshi2021108
+  Kalua2020
+  Kasahara201992
+  Kasinathan2018139
+  Kazanidis2018245
+  Kelly2022
+  Kelly2022211
+  Khaldi2023
+  Kharbouch2025
+  Khasianov2017127
+  Khasianov2018163
+  Kheirkhahzadeh2016327
+  Kim2015208
+  Kitano202546
+  Koh2013233
+  KoivistHamari2019
+  Kolpondinos20179
+  Kumalasari2024
+  Kučak2023469
+  Lai2024
+  Larenas2018116
+  Lazareva2021383
+  Lee202410529
+  LeeMolebash
+  Lefers2016354
+  Leist202446
+  Lelli2020844
+  Lesley202353
+  Lewis2021
+  Li2024
+  Liu202283
+  Liu202493
+  Locastre2023417
+  Lopez-Fernandez2021103120
+  Lopez-Fernandez202474045
+  Lorgat2024373
+  Lucadamo2024231
+  Maidenbaum2015341
+  Makarova2019474
+  Maksum2025
+  Malhotra2020
+  Mallas2019227
+  Mannsfeld201389
+  Marabesi201912
+  Martinelli
+  Martínez-Ortiz20191108
+  Marín20181679
+  Marín2020174
+  Marín20211473
+  Materazzo20231
+  Matitaputty2024430
+  Mattila2018144
+  Mawad202086
+  Maxim2020
+  Maxim2023
+  Mazouak2019267
+  Mazouak20192802
+  McGinn20189
+  Meechandee2025
+  Meißner2024198
+  Menz2013526
+  Mercader20205133
+  Middleton2014192
+  Millan202251
+  Mills202586
+  Moallem2006167
+  Mohamad20181325
+  Mokhtari2021
+  Monteiro2021
+  Monteiro2022
+  Monteiro2022450
+  MoreiraParrales2024
+  Motala2013821
+  Moutinho202122
+  Muenster20231105
+  Muñoz20235
+  Mårell-Olsson202169
+  Naik2019
+  Narasareddygari20191130
+  NavasRomero2025
+  Neto2019129
+  Nguyen2023999
+  Nightingale2007543
+  Novikov2018369
+  Nowostawski20181641
+  Nurhasanah2025
+  Nyameino2019147
+  Nyameino2020227
+  Nyanchoka2019
+  Nyanchoka2020
+  Oberhauser201956
+  Olivindo2021143
+  Oo2023693
+  Ouhbi2020202
+  Oulamine2025
+  Owen2017313
+  Pambudi201957
+  Peixoto2015
+  Pendle201410
+  Pepple20221216
+  Pescador20192
+  Pollini2024590
+  Pombo2023
+  Poulova2021773
+  Prasetya2019192
+  Prasetya2020437
+  Qu2014
+  Quinde20181314
+  Rababaah2021126
+  RamosAguiar2020229
+  Ren20231808
+  Ren202338
+  Reyes2024
+  Rimanelli2019235
+  Rocha202095
+  Rodrigues2018
+  Rousouliotis2024
+  Rozhenko2021457
+  Ruscanu20221437
+  Ruth2021
+  SantAnaVanErven2023
+  Scholze2022113
+  Schrum20222382
+  SerraoMarinato2020
+  Sharma2019600
+  Shawalludin2024119
+  Shehadeh2017541
+  Shi2023
+  Shilov202192
+  Shiue20176445
+  Siiman2017148
+  Simons2019301
+  Singer20125
+  Singh202436
+  Skalka2020980
+  Soares2022242
+  Soo201846
+  Soobraydoo2023421
+  Souza2017
+  Souza2017276
+  Speth202325
+  Stoffová2020761
+  Straubinger202434
+  Su201610013
+  SuCH2016
+  Surry2005327
+  Syn2020909
+  Takbiri2019
+  Tariq2021379
+  Thomas2013778
+  Tonhão2023358
+  Trinidad201831
+  Tsai2024154
+  Tsunoda201813
+  Tsunoda2018638
+  Udjaja2018
+  Unkelos-Shpigel2016122
+  VOSviewer
+  Vanessa2024444
+  Vapiwala2022942
+  Varava2021
+  Vasyliuk2021161
+  Villagra2020
+  Villalustre-Martínez2024
+  VillenaTaranilla2022608
+  Vives2022745
+  Vos2019613
+  Vos2020291
+  Wang2016319
+  Wang2020
+  Wang2020283
+  Wang2025437
+  Watson2019211
+  Wilkinson202293
+  Wilson201619
+  Wilson201980
+  Woodring2023
+  Xie201515
+  Yamani202114
+  Yang20211599
+  Yin2020211
+  Yoshigami20192435
+  Yudicheva2023129
+  Yudicheva202424
+  Zahedi2021441
+  Zapata-Rivera2023
+  Zapata2018407
+  Zivkovic20231497
+  Zweifel20171103
+  cnstrc2
+  deVasconcelos2018207
+  fridlund
+  info:doi/10.2196/18644
+  salmi
+  teach_metodldy
+  trnds_ped
+  wht_cnstrctv
+  zenodo
+  Çubukçu2017120
+  Çulha202212
+  Şahin2025205
+
+======================================================================
+END OF REPORT
+======================================================================

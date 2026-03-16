@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.95\textwidth,
+    height=5cm,
+    xlabel={Month (Oct 2024 -- May 2025)},
+    xticklabels={Oct, Nov, Dec, Jan, Feb, Mar, Apr, May},
+    xtick={0,31,61,92,123,151,182,212},
+    yticklabels={Other, Lecture, Intro, Modular, Seminar},
+    ytick={0,1,2,3,4},
+    grid=major,
+    grid style={gray!30},
+    legend style={at={(0.5,-0.22)}, anchor=north, font=\scriptsize, legend columns=3, fill=white, fill opacity=0.9, draw opacity=1, text opacity=1},
+    ymin=-0.5, ymax=4.8,
+    xmin=-5, xmax=230,
+]
+\addplot[only marks, mark=o, mark size=2pt, blue] coordinates {(19,4) (26,4) (33,4) (40,4) (47,4) (54,4) (61,4) (68,4) (75,4) (82,4) (89,4) (96,4) (103,4) (110,4) (117,4) (124,4) (131,4) (138,4) (145,4) (152,4) (159,4) (166,4) (173,4) (180,4)};
+\addlegendentry{Seminar (24)}
+\addplot[only marks, mark=square*, mark size=2pt, red] coordinates {(33,3) (61,3) (89,3) (145,3) (180,3) (208,3) (222,3)};
+\addlegendentry{Modular (7)}
+\addplot[only marks, mark=triangle*, mark size=2pt, green!60!black] coordinates {(12,2)};
+\addlegendentry{Intro (1)}
+\addplot[only marks, mark=diamond, mark size=2pt, orange] coordinates {(19,1) (26,1) (33,1) (40,1) (47,1) (61,1) (82,1) (89,1) (96,1) (103,1) (110,1) (117,1) (124,1) (131,1) (138,1) (145,1) (152,1) (159,1) (166,1) (173,1) (180,1)};
+\addlegendentry{Lecture (21)}
+\addplot[only marks, mark=diamond*, mark size=2pt, orange!80!red] coordinates {(54,1) (68,1) (75,1)};
+\addlegendentry{Lect.\ quiz (3)}
+\addplot[only marks, mark=x, mark size=2pt, gray] coordinates {(12,0) (19,0) (40,0) (47,0)};
+\addlegendentry{Other (4)}
+\draw[dashed, gray] (axis cs:11,-0.5) -- (axis cs:11,4.8) node[above, font=\tiny, text=gray] {Start};
+\draw[dashed, gray] (axis cs:61,-0.5) -- (axis cs:61,4.8) node[above, font=\tiny, text=gray] {Gamification};
+\end{axis}
+\end{tikzpicture}

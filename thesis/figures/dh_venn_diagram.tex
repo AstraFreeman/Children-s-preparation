@@ -1,0 +1,47 @@
+\begin{tikzpicture}
+  % Larger geometry: circles further apart with bigger radius
+  \def\radius{3.5cm}
+  \def\sep{2.0cm}
+  \coordinate (H) at (90:\sep);   % History — top
+  \coordinate (D) at (210:\sep);  % Digital Humanities — bottom left
+  \coordinate (P) at (330:\sep);  % Pedagogy — bottom right
+
+  % Draw filled circles with transparency
+  \begin{scope}[opacity=0.12]
+    \fill[blue] (H) circle (\radius);
+    \fill[red] (D) circle (\radius);
+    \fill[green!70!black] (P) circle (\radius);
+  \end{scope}
+
+  % Draw circle outlines
+  \draw[thick, blue!80!black] (H) circle (\radius);
+  \draw[thick, red!80!black] (D) circle (\radius);
+  \draw[thick, green!60!black] (P) circle (\radius);
+
+  % Main domain labels (outside circles, pushed further out)
+  \node[font=\bfseries, blue!80!black] at (90:5.2cm)
+    {\begin{tabular}{c}History\\[-2pt]\scriptsize\textit{historical thinking,}\\[-3pt]\scriptsize\textit{source analysis,}\\[-3pt]\scriptsize\textit{disciplinary knowledge}\end{tabular}};
+  \node[font=\bfseries, red!80!black] at (210:5.4cm)
+    {\begin{tabular}{c}Digital\\Humanities\\[-2pt]\scriptsize\textit{computational methods,}\\[-3pt]\scriptsize\textit{digital tools, data literacy}\end{tabular}};
+  \node[font=\bfseries, green!60!black] at (330:5.4cm)
+    {\begin{tabular}{c}Pedagogy\\[-2pt]\scriptsize\textit{learning theories,}\\[-3pt]\scriptsize\textit{assessment,}\\[-3pt]\scriptsize\textit{instructional design}\end{tabular}};
+
+  % Pairwise intersection labels — pushed deep into outer petals
+  % History ∩ DH = "Digital History (research)" — upper-left petal
+  \node[font=\small\itshape, text width=2.4cm, align=center]
+    at ($(H)!0.5!(D) + (150:1.8cm)$) {Digital History\\(research)};
+
+  % History ∩ Pedagogy = "History Education" — upper-right petal
+  \node[font=\small\itshape, text width=2.4cm, align=center]
+    at ($(H)!0.5!(P) + (30:1.8cm)$) {History\\Education};
+
+  % DH ∩ Pedagogy = "Digital Pedagogy" — bottom petal
+  \node[font=\small\itshape, text width=2.4cm, align=center]
+    at ($(D)!0.5!(P) + (270:1.8cm)$) {Digital\\Pedagogy};
+
+  % Central triple intersection — the thesis focus
+  \node[font=\bfseries\small, text width=2.6cm, align=center,
+        fill=yellow!30, rounded corners=3pt, inner sep=4pt,
+        draw=yellow!60!black, thin]
+    at (0,0) {Digital History\\Pedagogy};
+\end{tikzpicture}

@@ -1,0 +1,90 @@
+\begin{tikzpicture}
+\pgfplotstableread{figures/enrollment_curve_data.csv}\datatable
+\begin{groupplot}[
+  group style={
+    group size=1 by 3,
+    xlabels at=edge bottom,
+    xticklabels at=edge bottom,
+    vertical sep=0.6cm,
+  },
+  width=0.90\textwidth,
+  xmin=-5, xmax=200,
+  xtick={0,31,61,92,123,151,182},
+  grid=major,
+  grid style={gray!20},
+]
+
+% ── Lane 1 (top): Cumulative enrollment step function ──
+\nextgroupplot[
+  height=4cm,
+  ylabel={N enrolled},
+  ymin=0, ymax=25,
+]
+\addplot[const plot, thick, green!60!black, fill=green!10]
+  table[x=day, y=count] {\datatable} \closedcycle;
+% Gamification introduction marker
+\draw[dashed, red, thick] (axis cs:61,0) -- (axis cs:61,25);
+\node[font=\scriptsize, red, fill=white, inner sep=1pt] at (axis cs:61,20) {HLG};
+
+% ── Lane 2 (middle): Assessment events ──
+\nextgroupplot[
+  height=5.5cm,
+  ylabel={Assessment type},
+  ymin=-0.8, ymax=4.5,
+  yticklabels={Intro, Lecture, Modular, Seminar},
+  ytick={0,1,2,3},
+  legend style={at={(0.5,-0.12)}, anchor=north, font=\scriptsize, legend columns=4},
+]
+% HLG introduction line
+\draw[red, thick, dashed] (axis cs:61,-0.8) -- (axis cs:61,4.5);
+% Wordwall introduction line
+\draw[purple, dashed] (axis cs:177,-0.8) -- (axis cs:177,4.5);
+% Seminar events
+\addplot[only marks, mark=o, mark size=2.5pt, blue] coordinates {
+  (19,3) (26,3) (33,3) (40,3) (47,3) (54,3) (61,3)
+  (68,3) (75,3) (82,3) (89,3) (96,3) (103,3) (110,3)
+  (117,3) (124,3) (131,3) (138,3) (145,3) (152,3)
+  (159,3) (166,3) (173,3) (180,3)
+};
+\addlegendentry{Seminar (24)}
+% Modular control events
+\addplot[only marks, mark=square*, mark size=3pt, red] coordinates {
+  (33,2) (61,2) (89,2) (117,2) (145,2) (180,2)
+};
+\addlegendentry{Modular (6)}
+% Lecture events
+\addplot[only marks, mark=triangle*, mark size=3pt, orange] coordinates {
+  (12,1) (54,1) (68,1) (75,1) (194,1)
+};
+\addlegendentry{Lecture}
+% Intro test
+\addplot[only marks, mark=diamond*, mark size=3pt, gray] coordinates {(12,0)};
+\addlegendentry{Intro test}
+
+% ── Lane 3 (bottom): Phase blocks ──
+\nextgroupplot[
+  height=2.5cm,
+  ylabel={Phase},
+  ymin=0, ymax=1,
+  yticklabels={},
+  ytick={},
+  xticklabels={Oct, Nov, Dec, Jan, Feb, Mar, Apr},
+]
+% Phase 1: Baseline (Oct 12 -- Nov 3) = day 11 to 33
+\fill[blue!20] (axis cs:11,0) rectangle (axis cs:33,1);
+\node[font=\scriptsize] at (axis cs:22,0.5) {Baseline};
+% Phase 2: Pre-gamification (Nov 10 -- Nov 30) = day 40 to 60
+\fill[yellow!25] (axis cs:40,0) rectangle (axis cs:60,1);
+\node[font=\scriptsize] at (axis cs:50,0.5) {Pre-gamif.};
+% Phase 3 marker: HLG Introduction (Dec 1) = day 61
+\draw[red, ultra thick] (axis cs:61,0) -- (axis cs:61,1);
+\node[font=\scriptsize, red, above] at (axis cs:61,1) {$\bigstar$ HLG};
+% Phase 4: Post-gamification (Dec 2 -- Apr 13) = day 62 to 195
+\fill[green!15] (axis cs:62,0) rectangle (axis cs:195,1);
+\node[font=\scriptsize] at (axis cs:128,0.5) {Post-gamification};
+% Wordwall marker (Mar 27 = day 177)
+\draw[purple, thick] (axis cs:177,0) -- (axis cs:177,1);
+\node[font=\tiny, purple, above] at (axis cs:177,1) {WW};
+
+\end{groupplot}
+\end{tikzpicture}

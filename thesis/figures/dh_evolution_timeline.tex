@@ -1,0 +1,110 @@
+\begin{tikzpicture}
+\begin{axis}[
+  width=\textwidth,
+  height=13cm,
+  date coordinates in=x,
+  xticklabel={\year},
+  xtick={1960-01-01, 1970-01-01, 1980-01-01, 1990-01-01, 2000-01-01, 2010-01-01, 2020-01-01},
+  xticklabel style={font=\small},
+  xmin=1958-01-01, xmax=2028-01-01,
+  ymin=-2.2, ymax=3.0,
+  ytick=\empty,
+  axis x line=middle,
+  axis y line=none,
+  x axis line style={->, thick, gray!70},
+  enlarge x limits=0.01,
+  clip=false
+]
+
+% === Era background shading ===
+\fill[blue!6] (axis cs:1958-01-01,-2.2) rectangle (axis cs:1990-01-01,3.0);
+\fill[red!5] (axis cs:1990-01-01,-2.2) rectangle (axis cs:2008-06-01,3.0);
+\fill[green!5] (axis cs:2008-06-01,-2.2) rectangle (axis cs:2018-06-01,3.0);
+\fill[orange!5] (axis cs:2018-06-01,-2.2) rectangle (axis cs:2028-01-01,3.0);
+
+% === Era labels — top, left-aligned within each band ===
+\node[font=\footnotesize\itshape, blue!70!black, anchor=west] at (axis cs:1959-01-01,2.75) {Cliometrics era};
+\node[font=\footnotesize\itshape, red!70!black, anchor=west] at (axis cs:1991-01-01,2.75) {CHNM founding era};
+\node[font=\footnotesize\itshape, green!50!black, anchor=west] at (axis cs:2009-01-01,2.75) {DH expansion};
+\node[font=\footnotesize\itshape, orange!70!black, anchor=west] at (axis cs:2019-01-01,2.75) {Pedagogical turn};
+
+% === Thin vertical era dividers ===
+\draw[dashed, gray!30] (axis cs:1990-01-01,-2.2) -- (axis cs:1990-01-01,2.55);
+\draw[dashed, gray!30] (axis cs:2008-06-01,-2.2) -- (axis cs:2008-06-01,2.55);
+\draw[dashed, gray!30] (axis cs:2018-06-01,-2.2) -- (axis cs:2018-06-01,2.55);
+
+% === Milestone dots on axis ===
+\addplot[only marks, mark=*, mark size=4pt, blue!80!black] coordinates {(1964-01-01,0)};
+\addplot[only marks, mark=*, mark size=4pt, blue!80!black] coordinates {(1974-01-01,0)};
+\addplot[only marks, mark=square*, mark size=4pt, red!70!black] coordinates {(1994-01-01,0)};
+\addplot[only marks, mark=square*, mark size=4pt, red!70!black] coordinates {(2006-01-01,0)};
+\addplot[only marks, mark=triangle*, mark size=4.5pt, green!60!black] coordinates {(2012-01-01,0)};
+\addplot[only marks, mark=triangle*, mark size=4.5pt, green!60!black] coordinates {(2015-06-01,0)};
+\addplot[only marks, mark=diamond*, mark size=4.5pt, orange!80!black] coordinates {(2020-01-01,0)};
+\addplot[only marks, mark=diamond*, mark size=4.5pt, orange!80!black] coordinates {(2022-01-01,0)};
+\addplot[only marks, mark=pentagon*, mark size=5.5pt, black, fill=black!70] coordinates {(2025-06-01,0)};
+
+% ==================================================================
+% ABOVE the axis — 3 levels: 0.5, 1.2, 1.9
+% Each level has entries spaced >= 20 years apart to avoid overlap.
+%
+%   Level 1.9:  1964                                         2025
+%   Level 1.2:                            2012
+%   Level 0.5:            1994                      2020
+% ==================================================================
+
+% 1964 — level 1.9 (top)
+\draw[thin, gray!50] (axis cs:1964-01-01,0) -- (axis cs:1964-01-01,1.9);
+\node[above, text width=2.5cm, align=center, font=\scriptsize]
+  at (axis cs:1964-01-01,1.9) {1964\\Cliometrics\\(Fogel)};
+
+% 1994 — level 0.5 (low)
+\draw[thin, gray!50] (axis cs:1994-01-01,0) -- (axis cs:1994-01-01,0.5);
+\node[above, text width=2.8cm, align=center, font=\scriptsize]
+  at (axis cs:1994-01-01,0.5) {1994\\H-Net /\\Valley of the Shadow};
+
+% 2012 — level 1.2 (mid)
+\draw[thin, gray!50] (axis cs:2012-01-01,0) -- (axis cs:2012-01-01,1.2);
+\node[above, text width=2.5cm, align=center, font=\scriptsize]
+  at (axis cs:2012-01-01,1.2) {2012\\Computational\\Turn (Berry)};
+
+% 2020 — level 0.5 (low), 26 years from 1994
+\draw[thin, gray!50] (axis cs:2020-01-01,0) -- (axis cs:2020-01-01,0.5);
+\node[above, text width=2.8cm, align=center, font=\scriptsize]
+  at (axis cs:2020-01-01,0.5) {2020\\State of the Field\\(Romein et al.)};
+
+% 2025 — level 1.9 (top), 61 years from 1964
+\draw[thin, gray!50] (axis cs:2025-06-01,0) -- (axis cs:2025-06-01,1.9);
+\node[above, text width=2.5cm, align=center, font=\scriptsize\bfseries]
+  at (axis cs:2025-06-01,1.9) {2025\\This\\dissertation};
+
+% ==================================================================
+% BELOW the axis — 3 levels: -0.5, -1.2, -1.9
+%
+%   Level -0.5:   1974                          2015
+%   Level -1.2:                  2006                       2022
+%   Level -1.9:   (empty)
+% ==================================================================
+
+% 1974 — level -0.5 (shallow)
+\draw[thin, gray!50] (axis cs:1974-01-01,0) -- (axis cs:1974-01-01,-0.5);
+\node[below, text width=2.8cm, align=center, font=\scriptsize]
+  at (axis cs:1974-01-01,-0.5) {1974\\\textit{Time on the Cross}\\(Fogel \& Engerman)};
+
+% 2006 — level -1.2 (deep)
+\draw[thin, gray!50] (axis cs:2006-01-01,0) -- (axis cs:2006-01-01,-1.2);
+\node[below, text width=3cm, align=center, font=\scriptsize]
+  at (axis cs:2006-01-01,-1.2) {2006\\\textit{Digital History}\\(Cohen \& Rosenzweig)};
+
+% 2015 — level -0.5 (shallow), 41 years from 1974
+\draw[thin, gray!50] (axis cs:2015-06-01,0) -- (axis cs:2015-06-01,-0.5);
+\node[below, text width=2.8cm, align=center, font=\scriptsize]
+  at (axis cs:2015-06-01,-0.5) {2015\\Historian's Macroscope\\(Graham et al.)};
+
+% 2022 — level -1.2 (deep), 16 years from 2006
+\draw[thin, gray!50] (axis cs:2022-01-01,0) -- (axis cs:2022-01-01,-1.2);
+\node[below, text width=2.5cm, align=center, font=\scriptsize]
+  at (axis cs:2022-01-01,-1.2) {2022\\DH Primer\\(Guiliano)};
+
+\end{axis}
+\end{tikzpicture}

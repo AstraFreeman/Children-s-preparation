@@ -1,0 +1,93 @@
+% PhD Thesis: Digital history teaching methodology for future professionals
+% Korniienko S.S., 2026
+% Kryvyi Rih State Pedagogical University
+% Speciality: 011 -- Educational (Pedagogical) Sciences
+% UDC [004.9+930]::378.147
+
+% Page target: 157-216 pages main text (6.5-9 author's sheets)
+
+\documentclass[14pt]{extreport}
+
+\usepackage{kdpustyle}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{dateplot, groupplots}
+\usetikzlibrary{shapes, arrows, arrows.meta, positioning, calc, decorations.pathreplacing}
+
+\pagestyle{fancy}
+
+\usepackage{bibentry}
+\newcommand{\citecomplete}[1]{%
+  \nobibliography*
+  \bibentry{#1}.}
+
+% Prevent long Ukrainian compound words from overflowing margins
+\tolerance=1000
+\emergencystretch=3em
+\hfuzz=2pt
+
+% Graphics path for figures
+\graphicspath{{figures/}{analysis/}}
+
+%-------------------------------------------
+%%%%% PRELIMINARY PAGES %%%%%
+%-------------------------------------------
+
+\title{Digital history teaching methodology for future professionals}
+
+\author{Serhii S. Korniienko}
+\date{2026}
+\supervisor{Serhiy O. Semerikov}
+\supervisortitle{Doctor of Educational Sciences, Professor, Senior Researcher}
+
+%-------------------------------------------
+
+\begin{document}
+
+\include{printpratsi}
+
+\maketitle
+\setcounter{page}{2}
+
+%%%% ABSTRACT
+\include{abstract}
+
+\makeabstract
+\tableofcontents
+
+%\clearpage \phantomsection \addcontentsline{toc}{chapter}{LIST OF TABLES} \listoftables
+%\clearpage \phantomsection \addcontentsline{toc}{chapter}{LIST OF ILLUSTRATIONS} \listoffigures
+
+%%%% INTRODUCTION
+\include{intro}
+
+\makeintro
+
+%%%%% MAIN TEXT %%%%%
+\begin{mainf}
+
+\include{chapter1} % Theoretical Foundations
+
+\include{chapter2} % Experimental Methodology
+
+\include{chapter3} % Results and Discussion
+
+\end{mainf}
+
+%%%% CONCLUSIONS
+\include{conc}
+
+\makeconc
+
+%%%%% BIBLIOGRAPHY %%%%%
+\begin{bibliof}
+\bibliography{bibliography}
+\end{bibliof}
+
+%%%% APPENDICES
+\include{appendix}
+
+\end{document}
