@@ -1,4 +1,4 @@
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \resizebox{0.85\textwidth}{!}{%
 \begin{tikzpicture}[
@@ -30,7 +30,7 @@
   node[lbl, pos=0.6, anchor=north east] {no training budget}
   (teach);
 \draw[arr] (teach) to[bend right=12]
-  node[lbl, pos=0.4, anchor=north] {no TPACK to adapt}
+  node[lbl, pos=0.4, anchor=north, yshift=-8pt] {no TPACK to adapt}
   (curr);
 \draw[arr] (curr) to[bend right=12]
   node[lbl, pos=0.6, anchor=north west] {rigid format}
@@ -53,11 +53,8 @@
   at (-1.5, -5.2) {2nd-order};
 \node[mixedorder, minimum height=0.6cm, text width=2cm, font=\scriptsize]
   at (1.5, -5.2) {Mixed};
-\node[font=\scriptsize, text=gray!60, anchor=west] at (3.2, -5.2)
-  {(Ertmer, 1999)};
-
 \end{tikzpicture}%
 }% end resizebox
-\caption{Barrier interaction model: reinforcing cycles among five implementation barrier categories. First-order barriers (blue) involve external resources and infrastructure; second-order barriers (orange) involve knowledge, beliefs, and institutional culture; student heterogeneity (purple) crosses both orders. The central ``implementation threshold'' denotes the minimum resource--training--support level below which gamification cannot succeed regardless of design quality.}
+\caption{Barrier interaction model: reinforcing cycles among five implementation barrier categories. The first-order/second-order distinction follows \citeauthor{Ertmer1999}~\cite{Ertmer1999}: first-order barriers (blue) involve external resources and infrastructure; second-order barriers (orange) involve knowledge, beliefs, and institutional culture; student heterogeneity (purple) crosses both orders. The central ``implementation threshold'' denotes the minimum resource--training--support level below which gamification cannot succeed regardless of design quality.}
 \label{fig:barrier-interaction-model}
 \end{figure}

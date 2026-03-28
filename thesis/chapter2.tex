@@ -1,32 +1,22 @@
-\chpt{Experimental methodology} \label{ch:methodology}
+\chpt{Organisation and instruments of the experimental study of digital history methodology} \label{ch:methodology}
 
 \section{Organisation of the pedagogical experiment} \label{sec:organisation}
 
 \subsection{Institutional context}
 
-The pedagogical experiment was conducted at the Centre for Pre-University Training and Education (CDPO) of Kryvyi Rih State Pedagogical University (KDPU), Ukraine~\cite{KSPU}. CDPO offers preparatory courses for prospective university applicants preparing for the National Multi-Subject Test (NMT) -- Ukraine's standardised university entrance examination~\cite{Lokshyna2018302}. The Ukrainian History component of the NMT covers the entire school curriculum from ancient times to the present day, requiring comprehensive knowledge across all historical periods.
+The pedagogical experiment was conducted at the Centre for Pre-University Training and Education (CDPO) of Kryvyi Rih State Pedagogical University (KDPU), Ukraine~\cite{KSPU}. CDPO offers preparatory courses for prospective university applicants preparing for the National Multi-Subject Test (NMT) -- Ukraine's standardised university entrance examination~\cite{Lokshyna2018302}. The Ukrainian History component of the NMT covers the entire school curriculum from ancient times to the present day, requiring knowledge across all historical periods.
 
 The course was delivered entirely via distance learning~\cite{Hlianenko2024, Zamkova2023299}, reflecting both the institutional adoption of online education since the COVID-19 pandemic and the ongoing security situation due to Russia's full-scale invasion of Ukraine, which began on February 24, 2022~\cite{Martynets202428, Vovchasta2024, Maslova2021}. The city of Kryvyi Rih, located in Dnipropetrovsk Oblast, experienced regular missile and drone attacks throughout the study period, directly affecting participants' ability to attend synchronous sessions~\cite{Zamkova2023299}.
 
-The research was conducted within the framework of the scientific topic ``ICT-based learning environment of the university as a factor of professional development of the future specialist'' (state registration No.~0120U101116, dated 26.02.2020). The course was organised according to the approved syllabus (``Робоча навчальна програма'') and calendar-thematic plan (``Календарно-тематичний план''), both archived in the repository's \texttt{Lecture material/} directory. The instructional structure comprised 40 lectures, 40 seminars, and 7 modular controls delivered over approximately seven months, following the standard CDPO preparatory course format~\cite{KSPU}.
+The research was conducted within the framework of the scientific topic ``ICT-based learning environment of the university as a factor of professional development of the future specialist'' (state registration No.~0120U101116, dated 26.02.2020). The course was organised according to the approved syllabus (``Робоча навчальна програма'') and calendar-thematic plan (``Календарно-тематичний план''), both archived in the repository's \texttt{Lecture material/} directory. The instructional structure comprised 40 lectures, 40 seminars, and 7 modular controls delivered over approximately seven months, following the standard CDPO preparatory course format~\cite{KSPU}. The full CDPO programme ran on weekends (Saturday--Sunday, 8:00--16:00), with Ukrainian History scheduled on Sundays from 12:00 to 16:20. Students thus attended history sessions after four hours of other preparatory subjects earlier in the day, creating a cumulative cognitive load that may have affected engagement and performance.
 
-The experimental design was directly informed by the author's prior theoretical and methodological work. Two systematic reviews~\cite{KorniienkoSemerikov2024, Korniienko2025aredu} established the evidence base for gamification in history education and identified five implementation archetypes. The MRQS quality assessment~\cite{Korniienko2025mrqs} revealed pervasive methodological weaknesses in the field (83.8\% of studies carried high risk of bias), motivating the present study's emphasis on transparent reporting and ecological validity. The DigComp alignment analysis~\cite{Titova2025cte} provided the digital competence framework, while the international context review~\cite{Korniienko2025cte} situated the experiment within global educational technology trends. These findings collectively shaped the six design principles operationalised in the experiment (Section~\ref{sec:principle-implications}).
+The experimental design was directly informed by the author's prior theoretical and methodological work. Two systematic reviews~\cite{KorniienkoSemerikov2024, Korniienko2025aredu} established the evidence base for gamification in history education and identified five implementation archetypes. The MRQS quality assessment~\cite{Korniienko2025mrqs} revealed pervasive methodological weaknesses in the field (Section~\ref{sec:qa-results}), motivating the present study's emphasis on transparent reporting and ecological validity. The DigComp alignment analysis~\cite{Titova2025cte} provided the digital competence framework, while the international context review~\cite{Korniienko2025cte} situated the experiment within global educational technology trends. These findings collectively shaped the six design principles operationalised in the experiment (historical authenticity, narrative integration, progressive difficulty, immediate feedback, social elements, and multiple modalities; Section~\ref{sec:design-principles}).
 
 \subsection{The National Multi-Subject Test (NMT)}
 
-The NMT replaced the earlier ZNO (External Independent Evaluation) system beginning in 2022, adapting Ukraine's university entrance assessment to wartime conditions~\cite{MON}. The NMT for Ukrainian History encompasses the complete school history curriculum and requires competencies in:
+The NMT replaced the earlier ZNO (External Independent Evaluation) system beginning in 2022, adapting Ukraine's university entrance assessment to wartime conditions~\cite{MON}. The NMT for Ukrainian History encompasses the complete school history curriculum and requires competencies ranging from factual recall and chronological sequencing to source analysis, causal reasoning, and comparative analysis across historical periods~\cite{Lokshyna2018302}. Table~\ref{tab:nmt-format} summarises the NMT question types, their cognitive demands, and the corresponding gamification elements used in this study.
 
-\begin{itemize}
-\item \textbf{Chronological knowledge}: Sequencing events across all historical periods from ancient times to the present;
-\item \textbf{Factual recall}: Identifying key figures, dates, treaties, and events;
-\item \textbf{Source analysis}: Interpreting primary sources including texts, maps, images, and statistical data;
-\item \textbf{Cause and effect}: Explaining causal relationships between historical events and processes;
-\item \textbf{Comparative analysis}: Identifying similarities and differences across historical periods and regions.
-\end{itemize}
-
-The test format includes multiple-choice questions, matching/correspondence tasks, chronological sequencing, and open-ended items~\cite{Lokshyna2018302}. Table~\ref{tab:nmt-format} summarises the NMT question types and their correspondence to the gamification elements used in this study.
-
-\begin{table}[htbp]
+\begin{table}[!h]
 \centering
 \caption{NMT question types and corresponding gamification elements}
 \label{tab:nmt-format}
@@ -36,7 +26,7 @@ The test format includes multiple-choice questions, matching/correspondence task
 \textbf{NMT question type} & \textbf{Cognitive demand} & \textbf{Gamification correspondence} \\
 \hline
 Multiple choice & Recognition, factual recall & Google Forms quiz blocks \\
-Matching/correspondence & Association, categorisation & HistoryLikeGame drag-and-drop \\
+Matching / correspondence & Association, categorisation & HistoryLikeGame drag-and-drop \\
 Chronological sequencing & Temporal reasoning & HistoryLikeGame drag-and-drop \\
 Source analysis & Interpretation, evaluation & Seminar source-based questions \\
 Open-ended & Recall, synthesis & HistoryLikeGame text input \\
@@ -48,22 +38,16 @@ The NMT competencies map systematically to Bloom's revised taxonomy~\cite{Clark2
 
 The NMT's digital format -- administered entirely via computer -- directly engages DigComp Area~1 (Information and data literacy) through source evaluation and Area~5 (Problem solving) through digital test navigation~\cite{Vuorikari2016, Cosgrove2025}. The gamified platform thus served a dual purpose: NMT content preparation and implicit digital competence development (Section~\ref{sec:digcomp}).
 
-The 2025 NMT was scheduled for May 14, 2025, providing the external deadline that shaped the course timeline and influenced student engagement patterns~\cite{Vuorikari2016}. The proximity of this deadline may have contributed to the observed variation in participation in later seminars (Section~\ref{ch:results}).
+The 2025 NMT was scheduled for May 14, 2025, providing the external deadline that shaped the course timeline and influenced student engagement patterns~\cite{Vuorikari2016}. The proximity of this deadline may have contributed to the observed variation in participation in later seminars (Chapter~\ref{ch:results}).
 
-Figure~\ref{fig:visual-sources} illustrates the visual source analysis component of the course materials, showing the type of historical portrait identification exercises that correspond to the NMT source analysis question format.
+Visual source analysis exercises (Figure~\ref{fig:visual-sources}, Appendix~\ref{app:F}) required instructor mediation to contextualise which depicted figures were core NMT content versus contrastive examples.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.7\textwidth]{posibnyk_4_visual_sources.jpg}
-\caption{Course material: visual source identification exercise featuring historical portraits of key Ukrainian figures (Mazepa, Hrushevskyi, Petliura, Stalin) with associated artifacts}
-\label{fig:visual-sources}
-\end{figure}
 
 \subsection{Participants}
 
 Twenty-three students enrolled in the NMT preparatory course for Ukrainian History during the study period. Enrolment was open and occurred on a rolling basis, with the complete enrollment timeline reconstructed from the Viber chat log join events (Table~\ref{tab:enrollment-detail}).
 
-\begin{table}[htbp]
+\begin{table}[!h]
 \centering
 \caption{Detailed enrollment timeline from chat log analysis}
 \label{tab:enrollment-detail}
@@ -93,36 +77,36 @@ The rolling enrollment pattern is typical for CDPO preparatory courses and refle
 
 The cumulative enrollment curve is visualised in Figure~\ref{fig:enrollment} (Section~\ref{sec:baseline}), showing the step-function pattern characteristic of open-access preparatory courses.
 
-The sample size of N=23 warrants methodological contextualisation. The systematic review (Section~\ref{sec:evidence-base}) found that the median sample size across gamification studies in history education was N=33.5, with substantial variation (range: 8--1,031). Several methodologically rigorous studies operated with comparable or smaller samples~\cite{Yin2018, CohenManionMorrison2018}. The present study prioritises ecological validity -- the experiment took place within an authentic educational programme, not an artificial laboratory setting~\cite{WangHannafin2005, AndersonShattuck2012}. This design-based research approach~\cite{Bakker2018} treats the naturalistic setting as a strength rather than a limitation, enabling observation of genuine pedagogical dynamics including the wartime disruptions that constitute an essential contextual variable. Furthermore, as~\cite{WangHannafin2005} argue, DBR studies typically work with intact groups in real settings, where the research question concerns not ``does it work?'' but ``how does it work, for whom, and under what conditions?'' --- questions that require rich contextual data rather than large-N statistical power. The individual trajectory analysis (Section~\ref{sec:formative}) demonstrates the analytical possibilities afforded by detailed longitudinal tracking of each participant across 36 assessment points.
+The sample size of N=23 warrants methodological contextualisation. The systematic review (Section~\ref{sec:evidence-base}) found that the median sample size across gamification studies in history education was N=33.5, with substantial variation (range: 8--1,031). Several methodologically rigorous studies operated with comparable or smaller samples~\cite{Yin2018, CohenManionMorrison2018}. The present study prioritises ecological validity~-- the experiment took place within an authentic educational programme, not an artificial laboratory setting~-- and the design-based research rationale for this choice is detailed in Section~\ref{sec:design-justification}. The individual trajectory analysis (Section~\ref{sec:formative}) demonstrates the analytical possibilities afforded by detailed longitudinal tracking of each participant across 36 assessment points.
 
-Ethical considerations: As the study employed an ex post facto design~\cite{creswell, ary} analysing data collected during regular educational activities (not designed as research), no separate informed consent for research participation was required under the Law of Ukraine ``On Education''~\cite{ZakonOsvita2017}. All data were anonymised using the purpose-built \texttt{anonymize\_names.py} script, which replaced participant names with consistent pseudonyms across all data files. Student names were used only for internal trajectory analysis and replaced with initials or codes in all publications and presentations. The research adhered to the ethical principles outlined by~\cite{CohenManionMorrison2018} for educational research involving routine pedagogical data. All original data sources --- Viber chat log exports, Google Forms response files (XLSX/CSV), Zoom recordings, and HistoryLikeGame source code --- are preserved in the research repository, enabling full reproducibility of the analysis pipeline described in Section~\ref{sec:data-analysis}.
+Ethical considerations: As the study employed an ex post facto design~\cite{creswell, ary} analysing routine pedagogical data, no separate informed consent was required under the Law of Ukraine ``On Education''~\cite{ZakonOsvita2017}. All participant names were replaced with consistent pseudonyms; student identities appear as initials or codes in all publications~\cite{CohenManionMorrison2018}. All original data sources are preserved in the research repository, enabling full reproducibility of the analysis pipeline (Section~\ref{sec:data-analysis}).
 
 \subsection{Research design}
 
-\subsubsection{Design justification}
+\textbf{Design justification.} \label{sec:design-justification}
 
 The study employed an ex post facto single-group repeated-measures design~\cite{creswell, ary}, situated within the design-based research (DBR) paradigm~\cite{WangHannafin2005, AndersonShattuck2012, Bakker2018}. This methodological choice was determined by three contextual constraints:
 
 \begin{enumerate}
 \item \textbf{Ethical and institutional constraints.} The educational context did not permit random assignment to treatment and control groups, as all enrolled students were entitled to the same educational services~\cite{Sanina2020}. Creating a ``no-gamification'' control group would have been ethically problematic in a high-stakes NMT preparation context~\cite{CampbellStanley1963, ShadishCookCampbell2002};
-\item \textbf{Ecological validity priority.} The primary interest was in documenting the implementation process and tracking performance over time within a real educational setting, consistent with the DBR emphasis on naturalistic intervention~\cite{Reeves20033, WangHannafin2005}. The systematic review identified that only 31.1\% of gamification studies in history education include control groups (Section~\ref{sec:evidence-base}), and the MRQS analysis revealed that 83.8\% carry high risk of bias (Section~\ref{sec:qa-results}). The present study addresses this limitation through transparent reporting rather than artificial experimental control;
+\item \textbf{Ecological validity priority.} The primary interest was in documenting the implementation process and tracking performance over time within a real educational setting, consistent with the DBR emphasis on naturalistic intervention~\cite{Reeves2003, WangHannafin2005}. The systematic review identified that only 31.1\% of gamification studies in history education include control groups (Section~\ref{sec:evidence-base}), and the MRQS analysis revealed a predominantly high bias rate (Section~\ref{sec:qa-results}). The present study addresses this limitation through transparent reporting rather than artificial experimental control;
 \item \textbf{Wartime context.} The ongoing armed conflict introduced variables (power outages, missile alerts, internet disruptions, forced displacement) that could not be controlled experimentally but constituted important contextual and moderating factors~\cite{Martynets202428, UNESCO2023, Burde2017, Kirk2007}.
 \end{enumerate}
 
-This design aligns with the acknowledged need in the field (Section~\ref{sec:mrqs}) for studies that prioritise ecological validity and comprehensive documentation over artificial experimental control~\cite{Korniienko2025mrqs, Hamari2014, DichevDicheva2017}. As~\cite{AndersonShattuck2012} note, design-based research is particularly appropriate when the intervention is deeply embedded in its context and cannot be meaningfully separated from it. The iterative nature of DBR --- where findings from early implementation cycles inform subsequent design refinements --- is reflected in the phased introduction of gamification elements: the initial HistoryLikeGame deployment (December~1, 2024) was followed by the later addition of Wordwall (March~27, 2025), representing a second design iteration informed by observed engagement patterns~\cite{Bakker2018}.
+The MRQS analysis (Section~\ref{sec:mrqs}) documented that 83.8\% of gamification studies in history education exhibit high risk of bias, partly due to the prevalence of uncontrolled designs~\cite{Korniienko2025mrqs}. The present study does not resolve this limitation but compensates through transparent reporting: all instruments, data, and analytical code are documented and reproducible~\cite{Hamari2014, DichevDicheva2017}. As \citeauthor{AndersonShattuck2012}~\cite{AndersonShattuck2012} note, design-based research is appropriate when the intervention is embedded in its context and cannot be meaningfully separated from it. The iterative nature of DBR~-- where findings from early implementation cycles inform subsequent design refinements~-- is reflected in the phased introduction of gamification elements. The initial HistoryLikeGame deployment (December~1, 2024) was followed by the introduction of Wordwall (December~27, 2024) as a trial alternative to Google Forms~\cite{Bakker2018}.
 
-The methodological position adopted here follows~\citeauthor{Yin2018}'s~\cite{Yin2018} argument that single-case designs are appropriate when the case is ``revelatory'' --- representing a situation previously inaccessible to research. The intersection of gamified history education, wartime distance learning, and NMT preparation constitutes such a revelatory case, as no prior study has examined gamification under comparable conditions of sustained armed conflict~\cite{Burde2017, Kirk2007}.
+The methodological position adopted here follows~\citeauthor{Yin2018}'s~\cite{Yin2018} argument that single-case designs are appropriate when the case is ``revelatory''~-- representing a situation previously inaccessible to research. The intersection of gamified history education, wartime distance learning, and NMT preparation represents such a revelatory case, as no prior study has examined gamification under comparable conditions of sustained armed conflict~\cite{Burde2017, Kirk2007}.
 
-\subsubsection{Variable operationalisation}
+\textbf{Variable operationalisation.}
 
-Table~\ref{tab:variable-operationalization} presents the systematic operationalisation of all research variables, mapping each to its measurement instrument and the thesis section where it is analysed. Following \citeauthor{CohenManionMorrison2018}, each theoretical construct is linked to an observable, measurable indicator. The distinction between moderating and confounding variables is critical: enrollment timing and topic difficulty can be accounted for analytically, whereas self-selection bias (voluntary enrollment) remains an acknowledged limitation.
+Table~\ref{tab:variable-operationalization} presents the systematic operationalisation of all research variables, mapping each to its measurement instrument and the thesis section where it is analysed. Following \citeauthor{CohenManionMorrison2018}~\cite{CohenManionMorrison2018}, each theoretical construct is linked to an observable, measurable indicator. The distinction between moderating and confounding variables is critical: enrollment timing and topic difficulty can be accounted for analytically, whereas self-selection bias (voluntary enrollment) remains an acknowledged limitation.
 
-\begin{table}[htbp]
+\begin{table}[!h]
 \centering
 \caption{Operationalisation of research variables}
 \label{tab:variable-operationalization}
-\small
-\begin{tabular}{p{1.8cm}p{2.5cm}p{3.2cm}p{2.2cm}p{1.8cm}}
+\footnotesize
+\begin{tabularx}{\textwidth}{X X X X l}
 \hline
 \textbf{Type} & \textbf{Variable} & \textbf{Operationalisation} & \textbf{Measurement} & \textbf{Section} \\
 \hline
@@ -135,35 +119,35 @@ Moderating & Enrollment timing & Phase 1/2/3 join date & Days since start & Tab~
 Moderating & Topic difficulty & NMT curriculum section 1--4 & Lecture grouping & \ref{sec:discussion} \\
 Confounding & Self-selection & Voluntary enrollment & Not controlled & Limitation \\
 \hline
-\end{tabular}
+\end{tabularx}
 \end{table}
 
-\subsubsection{Experimental logic model}
+\textbf{Experimental logic model.}
 
-Figure~\ref{fig:logic-model} presents the logic model connecting the theoretical foundations established in Chapter~1 to the intervention components described in this chapter and the measured outcomes analysed in Chapter~3. This model operationalises the design space framework from Section~\ref{sec:principle-implications}, showing how each theoretical construct informed specific intervention decisions.
+Figure~\ref{fig:logic-model} presents the logic model connecting the theoretical foundations established in Chapter~\ref{ch:theory} to the intervention components described in this chapter and the measured outcomes analysed in Chapter~\ref{ch:results}. This model operationalises the design space framework from Section~\ref{sec:principle-implications}, showing how each theoretical construct informed specific intervention decisions.
 
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \resizebox{\textwidth}{!}{%
 \input{figures/experimental_logic_model.tex}%
 }
-\caption{Experimental logic model: theoretical foundations (Chapter~1) $\to$ intervention design (Chapter~2) $\to$ measured outcomes (Chapter~3), with wartime context as moderating variable}
+\caption{Experimental logic model: theoretical foundations (Chapter~\ref{ch:theory}) $\to$ intervention design (Chapter~\ref{ch:methodology}) $\to$ measured outcomes (Chapter~\ref{ch:results}), with wartime context as moderating variable}
 \label{fig:logic-model}
 \end{figure}
 
 The logic model follows the programme theory approach~\cite{FunnellRogers2011}, making explicit the causal assumptions underlying the intervention. Each arrow represents a theoretically motivated design decision: SDT-informed autonomy is operationalised through voluntary game exploration; Flow-informed challenge--skill balance is implemented through progressive quiz difficulty; and the six design principles from Section~\ref{sec:design-principles} map directly to specific course components.
 
-\subsubsection{Threats to validity}
+\textbf{Threats to validity.}
 
 Following~\cite{ShadishCookCampbell2002}, the key threats to validity are acknowledged:
 
 \textbf{Internal validity.} Six threats are identified, following~\cite{CampbellStanley1963}:
 
 \begin{enumerate}
-\item \emph{History effects}: the wartime context (Section~\ref{sec:wartime-context}) introduced uncontrollable external events --- missile alerts, power outages, internet disruptions --- throughout the study period. These events affected different students at different times, making it impossible to attribute performance changes solely to the gamification intervention;
-\item \emph{Maturation}: students' historical knowledge naturally increased through coursework, NMT preparation materials, and independent study independent of gamification. The progressive improvement in quiz scores may reflect curricular learning rather than gamification effects;
+\item \emph{History effects}: the wartime context (Section~\ref{sec:wartime-context}) introduced uncontrollable external events~-- missile alerts, power outages, internet disruptions~-- throughout the study period. These events affected different students at different times, making it impossible to attribute performance changes solely to the gamification intervention;
+\item \emph{Maturation}: students' historical knowledge naturally increased through coursework, NMT preparation materials, and independent study independent of gamification. Additionally, history sessions were scheduled at the end of weekend-long CDPO programme days (Sunday 12:00--16:20, after four hours of other subjects), so cumulative fatigue may have depressed performance independently of content difficulty or gamification effects;
 \item \emph{Testing effects}: the administration of 40 seminars and 7 modular controls across seven months may have improved scores through practice with the quiz format itself rather than through content learning or gamification engagement;
-\item \emph{Instrumentation}: quiz format and scoring evolved across the course. Early seminars (1--24) used XLSX-format Google Forms with percentage-based scoring; later seminars (25+) used CSV-format exports with raw scores requiring recalculation. This instrumentation change is documented in Section~\ref{sec:data-analysis};
+\item \emph{Instrumentation}: students interacted with the same Google Forms interface throughout the course, but the data available to the researcher changed. For seminars~1--24, only aggregate scores were exported (per-seminar means without individual responses); from seminar~25 onward, individual-level responses were collected. This difference in data granularity limits individual trajectory analysis to the post-gamification period (Section~\ref{sec:data-analysis});
 \item \emph{Selection}: rolling enrollment (Table~\ref{tab:enrollment-detail}) means participants entered the study at different baseline points, with late enrollees experiencing fewer pre-gamification seminars. The three enrollment phases create systematic differences in exposure;
 \item \emph{Mortality}: substantial attrition was observed, with later seminars showing markedly lower participation (e.g., Seminar~28: N=1 vs. Seminar~17: N=27). Students who persisted may differ systematically from those who dropped out, potentially biasing the post-gamification results.
 \end{enumerate}
@@ -179,51 +163,36 @@ Following~\cite{ShadishCookCampbell2002}, the key threats to validity are acknow
 
 \noindent Generalisation to other populations, settings, or subjects requires systematic replication~\cite{CampbellStanley1963, ShadishCookCampbell2002}. The detailed documentation of context, implementation, and outcomes in this study is intended to support such future replication efforts.
 
-\textbf{Construct validity.} Gamification is operationalised through the HistoryLikeGame platform following the definition of~\cite{Deterding2011}: ``the use of game design elements in non-game contexts.'' This operationalisation was informed by the systematic review's analysis of how gamification has been defined and measured across 37 studies (Section~\ref{sec:evidence-base}). The MRQS self-assessment conducted for this study (Table~\ref{tab:self-assessment}) provides a structured evaluation of methodological quality against the same criteria applied to the reviewed literature, ensuring reflexive awareness of the study's own limitations.
-
-\subsubsection{Connection to the author's publications}
-
-The experimental design was systematically informed by the author's six publications, each contributing a distinct methodological or theoretical component:
-
-\begin{enumerate}
-\item \cite{KorniienkoSemerikov2024}: established the six design principles and five implementation archetypes that structured the intervention (Section~\ref{sec:design-principles}, Section~\ref{sec:archetypes});
-\item \cite{Korniienko2025mrqs}: provided the MRQS quality assessment framework, motivating transparent reporting of bias and limitations;
-\item \cite{Titova2025cte}: mapped gamification elements to DigComp~2.0 competence areas, informing the digital competence development strand (Section~\ref{sec:digcomp});
-\item \cite{Korniienko2025cte}: situated the experiment within the international context of educational technology adoption, establishing benchmarks for comparison;
-\item \cite{Korniienko2025aredu}: refined the archetype taxonomy through systematic analysis of 37 studies, identifying the ``Competitive Quizzer'' pattern that most closely matches the present implementation;
-\item \cite{Korniienko2024hlg}: documented the HistoryLikeGame platform design and copyright registration, establishing the technical foundation.
-\end{enumerate}
-
-This systematic connection between publications and experimental design ensures that the intervention is not an isolated pedagogical experiment but the culmination of a sustained research programme spanning theoretical analysis, methodological critique, and practical implementation. The design principles mapping in Table~\ref{tab:design-principles-impl} (Section~\ref{sec:discussion}) provides the detailed assessment of how each principle was realised in practice.
+\textbf{Construct validity.} Gamification is operationalised through the HistoryLikeGame platform following the canonical definition established in Section~\ref{sec:gamification-review}. This operationalisation was informed by the systematic review's analysis of how gamification has been defined and measured across 37 studies (Section~\ref{sec:evidence-base}). The MRQS self-assessment conducted for this study (Table~\ref{tab:self-assessment}) provides a structured evaluation of methodological quality against the same criteria applied to the reviewed literature, ensuring reflexive awareness of the study's own limitations.
 
 \subsection{Timeline}
 
-The course spanned approximately seven months, from October 12, 2024, to May 11, 2025 (the last modular control). Figure~\ref{fig:experimental-timeline} provides a two-panel visualisation of the experimental period, showing the cumulative enrollment growth alongside the distribution of assessment events across the four phases.
+Figure~\ref{fig:experimental-timeline} visualises the experimental period, showing cumulative enrollment alongside assessment events across four phases.
 
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \input{figures/experimental_timeline.tex}
-\caption{Experimental timeline: cumulative enrollment (top panel) and assessment events with phase structure (bottom panel). Dashed red line marks HistoryLikeGame introduction (Dec~1, 2024); dashed purple line marks Wordwall introduction (Mar~27, 2025).}
+\caption{Experimental timeline: cumulative enrollment (top panel) and assessment events with phase structure (bottom panel). Dashed red line marks HistoryLikeGame introduction (Dec~1, 2024). The course spanned October~12, 2024 -- May~14, 2025, comprising 40 lectures, 40 seminars with Google Forms quizzes, and 7 modular controls.}
 \label{fig:experimental-timeline}
 \end{figure}
 
 The following phases were identified, with aggregate statistics computed from the assessment data (Section~\ref{sec:data-analysis}):
 
-\textbf{Phase 1: Baseline (October 12 -- November 3, 2024).} The course commenced with introductory lectures covering ancient Ukrainian history (Lectures~1--5) and an introductory test to establish baseline knowledge levels. Three seminars (1--3) and the first modular control were administered during this phase. The Zoom video conferencing platform served as the primary synchronous teaching tool, with sessions typically scheduled on Sundays~\cite{Hlianenko2024}. The Viber chat group was established as the communication channel for resource sharing, announcements, and file distribution. Phase~1 statistics: 3~seminars, average participation N$\approx$14.3, mean score 66.7\%. The relatively high participation during this phase reflects the initial commitment of the early enrollees (11~students by October~25).
+\textbf{Phase 1: Baseline (October 12 -- November 3, 2024).} The course commenced with Lectures~1--5 covering the Cossack era (XVI--XVII centuries) and an introductory test to establish baseline knowledge levels. The starting period reflected the original NMT scope; the Ministry of Education expanded the examination to cover all of Ukrainian history only at the end of October~2024, after the course had already begun. Three seminars (1--3) and the first modular control were administered during this phase. The Zoom video conferencing platform served as the primary synchronous teaching tool, with sessions typically scheduled on Sundays~\cite{Hlianenko2024}. The Viber chat group was established as the communication channel for resource sharing, announcements, and file distribution. Phase~1 statistics: 3~seminars, average participation N$\approx$14.3, mean score 66.7\%. The relatively high participation during this phase reflects the initial commitment of the early enrollees (11~students by October~25).
 
-\textbf{Phase 2: Formative stage without gamification (November 10 -- November 30, 2024).} Regular instruction continued with Lectures~6--10 (covering the Lithuanian-Polish period and the Cossack era) and Seminars~4--8~\cite{Bonwell1991}. The course established its rhythm of Sunday sessions combining lectures with seminar quizzes administered via Google Forms. Six additional students enrolled during this phase (N=12--17 cumulative), representing word-of-mouth recruitment. The second modular control was administered on December~1, 2024. Phase~2 statistics: 5~seminars, average participation N$\approx$15.8, mean score 71.3\%. This phase serves as the primary pre-gamification baseline for comparison with Phase~4, as the course format was otherwise identical.
+\textbf{Phase 2: Formative stage without gamification (November 10 -- November 30, 2024).} Regular instruction continued with Lectures~6--10 (covering the Lithuanian-Polish period and the Cossack era) and Seminars~4--8~\cite{Bonwell1991}. The course established its rhythm of Sunday sessions combining lectures with seminar quizzes administered via Google Forms. Six additional students enrolled during this phase (N=12--17 cumulative). The second modular control was administered on December~1, 2024. Phase~2 statistics: 5~seminars, average participation N$\approx$15.8, mean score 71.3\%. This phase serves as the primary pre-gamification baseline for comparison with Phase~4, as the course format was otherwise identical.
 
-\textbf{Phase 3: Introduction of gamification (December 1, 2024).} The gamified platform HistoryLikeGame was introduced as a supplementary resource, implementing gamification as the use of game design elements in non-game contexts~\cite{Deterding2011}. Students were encouraged to explore the ``Historical Quest'' section. Additional digital tools for history education, including VR/AR applications \cite{Alexov2023} and interactive multimedia \citeauthor{Ho2024139}~\cite{Ho2024139}, were considered but not deployed due to bandwidth constraints in the wartime context. The Wordwall platform was later introduced (March 27, 2025) as an additional gamification tool.
+\textbf{Phase 3: Introduction of gamification (December 1, 2024).} The gamified platform HistoryLikeGame was introduced as a supplementary resource, implementing the gamification approach defined in Section~\ref{sec:gamification-review}. Students were encouraged to explore the ``Historical Quest'' section. Additional digital tools for history education, including VR/AR applications \cite{Alexov2023} and interactive multimedia~\cite{Ho2024139}, were considered but not deployed due to bandwidth constraints in the wartime context. The Wordwall platform was introduced on December~27, 2024 as a trial alternative to Google Forms for quiz delivery.
 
-\textbf{Phase 4: Formative stage with gamification (December 2024 -- May 2025).} The course continued with an enriched methodology integrating traditional lectures, Google Forms seminars, modular controls, and the gamified platform~\cite{KorniienkoSemerikov2024, Titova2025cte}. Additional weekday sessions were organised in December to compensate for schedule disruptions~\cite{Martynets202428}. Five further modular controls (3--7) were administered. Phase~4 statistics: 16~post-gamification seminars, average participation N$\approx$7.1, mean score 64.3\%.
+\textbf{Phase 4: Formative stage with gamification (December 2024 -- May 2025).} The course continued with an enriched methodology integrating traditional lectures, Google Forms seminars, modular controls, and the gamified platform~\cite{KorniienkoSemerikov2024, Titova2025cte}. Additional weekday sessions were organised in December to compensate for schedule disruptions~\cite{Martynets202428}. Five further modular controls (3--7) were administered. Phase~4 statistics: 16~post-gamification seminars, average participation N$\approx$7.1 (including Seminars~9--24 that fall within Phase~4 but precede the data-format transition), mean score 64.3\%. The narrower Seminar~25--39 subset, which uses individual-level CSV data, yields $\bar{\textit{N}}\!=\!5.6$ (Section~\ref{sec:scoring}).
 
-A notable confounding factor is the declining participation rate across phases: average N dropped from 15.8 (Phase~2) to 7.1 (Phase~4). Multiple factors may explain this decline: increasing NMT curriculum difficulty in later historical periods, student fatigue over a seven-month course, competition with other NMT subjects for study time, and wartime disruptions affecting regular attendance. This trend complicates direct pre-post comparison of gamification effects and is analysed through individual trajectory tracking rather than aggregate means in Section~\ref{sec:discussion}. The timeline visualisation in Figure~\ref{fig:experimental-timeline} makes this pattern clearly visible through the juxtaposition of enrollment growth (top lane) against assessment event density (middle lane) and phase structure (bottom lane).
+The most consequential empirical pattern is the declining voluntary participation rate: average seminar N dropped from 15.8 (Phase~2) to 7.1 (Phase~4). Crucially, mandatory modular control participation remained relatively stable (N=7--27 across all 7~controls), indicating that students did not leave the course but reduced their engagement with voluntary formative assessments. Without platform-level analytics~-- HistoryLikeGame collects no usage data by design (Section~\ref{sec:limitations})~-- it is impossible to determine whether this decline reflects modality substitution (students shifting from quizzes to the gamified platform), increasing topic difficulty, cumulative fatigue over a seven-month weekend course, or genuine disengagement. This question is identified as the primary unresolved issue for future research in Section~\ref{sec:future-research}. The individual trajectory analysis in Section~\ref{sec:discussion} addresses the decline through per-student tracking rather than aggregate means.
 
 \subsection{Course structure}
 
 The course comprised five integrated instructional components~\cite{Bonwell1991, Tamim2011, Flores-Bueno2021}, summarised in Table~\ref{tab:course-components}:
 
-\begin{table}[htbp]
+\begin{table}[!h]
 \centering
 \caption{Overview of course components}
 \label{tab:course-components}
@@ -232,8 +201,8 @@ The course comprised five integrated instructional components~\cite{Bonwell1991,
 \hline
 \textbf{Component} & \textbf{Count} & \textbf{Mode} & \textbf{Assessment} \\
 \hline
-Lectures & 38 & Synchronous (Zoom) & Video recordings shared \\
-Seminars & 30 & Quiz-based (Google Forms) & 133 quiz blocks \\
+Lectures & 40 & Synchronous (Zoom) & Video recordings shared \\
+Seminars & 40 & Quiz-based (Google Forms) & 156 quiz blocks \\
 Modular controls & 7 & Mandatory (Google Forms) & 7 control forms \\
 Gamification modules & 23 & Self-paced (HTML) & Self-assessment (Section~\ref{sec:platform-evolution}) \\
 Supplementary & -- & Asynchronous (Drive) & Worksheets, PDFs \\
@@ -241,14 +210,7 @@ Supplementary & -- & Asynchronous (Drive) & Worksheets, PDFs \\
 \end{tabular}
 \end{table}
 
-Figure~\ref{fig:nmt-structure} shows the gamified NMT structure poster used to introduce students to the course format.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.6\textwidth]{posibnyk_1_nmt_structure.jpg}
-\caption{Gamified NMT structure poster (``Know the Test'') used in the course to introduce the NMT examination format illustrating the test structure through a gamified infographic format}
-\label{fig:nmt-structure}
-\end{figure}
+The gamified NMT structure poster (Figure~\ref{fig:nmt-structure}, Appendix~\ref{app:F}) was used to introduce students to the examination format.
 
 \textbf{Lectures.} The course curriculum was originally designed to cover Ukrainian history from the second half of the 16th century onward, following the initially announced NMT examination scope.  The 40~lectures were organised into four thematic modules according to the syllabus:
 
@@ -259,11 +221,11 @@ Figure~\ref{fig:nmt-structure} shows the gamified NMT structure poster used to i
 \item \textbf{Module~IV} (Lectures 30--38): Ukrainian lands 1939--1991 and independence -- World War~II, postwar Soviet Ukraine, the dissident movement, restoration of independence (1991), and contemporary Ukraine. Lectures~35--38 served as NMT examination practice and cross-period thematic reviews (architecture, culture, prominent figures).
 \end{enumerate}
 
-At the end of October 2024, the Ministry of Education and Science of Ukraine announced that the NMT would cover the \emph{entire} Ukrainian history curriculum rather than only the period from the late 17th century onward, as originally expected.  To address this expanded scope, lectures on ancient and medieval Ukrainian history -- from the earliest settlements through Kyivan Rus', the Galicia-Volhynia Kingdom, and the Lithuanian-Polish period -- were incorporated into the course starting from Lecture~6. These supplementary lectures correspond to the HistoryLikeGame platform's first thematic section (periods~1--3) and ensured comprehensive coverage despite the mid-course curriculum expansion.
+At the end of October 2024, the Ministry of Education and Science of Ukraine announced that the NMT would cover the \emph{entire} Ukrainian history curriculum rather than only the period from the late 17th century onward, as originally expected.  To address this expanded scope, lectures on ancient and medieval Ukrainian history -- from the earliest settlements through Kyivan Rus', the Galicia-Volhynia Kingdom, and the Lithuanian-Polish period -- were incorporated into the course starting from Lecture~6. These supplementary lectures correspond to the HistoryLikeGame platform's first thematic section (periods~1--3) and ensured full coverage despite the mid-course curriculum expansion.
 
-Each lecture was delivered via Zoom with screen sharing of presentation slides. All lectures were recorded and the videos were shared through the Viber chat group, ensuring asynchronous access for students unable to attend live sessions~\cite{Bonwell1991, Tamim2011}. Supplementary worksheets were distributed via Google Drive and direct chat file sharing.
+Each lecture was delivered via Zoom with screen sharing of PowerPoint presentations containing primarily stylised test items (textbook content transformed into SmartArt diagrams) and, less frequently, informational materials from the course textbook. All lectures were recorded and the videos were shared through the Viber chat group, ensuring asynchronous access for students unable to attend live sessions~\cite{Bonwell1991, Tamim2011}. Supplementary worksheets were distributed via Google Drive and direct chat file sharing.
 
-\textbf{Seminars.} The 40 seminars were the core formative assessment component~\cite{Hattie2009, Hickey2014}, each comprising multiple Google Forms quiz blocks (typically 3--7 blocks per seminar, as detailed in Appendix~A). The seminar structure evolved throughout the course:
+\textbf{Seminars.} The 40 seminars were the core formative assessment component~\cite{Hattie2009, Hickey2015}, each comprising multiple Google Forms quiz blocks (typically 3--7 blocks per seminar, as detailed in Appendix~\ref{app:A}). The seminar structure evolved throughout the course:
 
 \begin{itemize}
 \item Early seminars (1--8) used simple numbering (``Блок 1'', ``Блок 2'') or Roman numerals;
@@ -273,20 +235,20 @@ Each lecture was delivered via Zoom with screen sharing of presentation slides. 
 
 \textbf{Modular controls.} Seven mandatory modular controls were administered at regular intervals, each covering the content of 5--8 preceding lectures~\cite{Hattie2009}. The mandatory nature of these assessments (emphasised in the chat log with phrases like ``ОБОВ'ЯЗКОВО до виконання'' -- ``Mandatory for completion'') distinguished them from the voluntary seminar quizzes and provided standardised checkpoints across the course.
 
-\textbf{Total assessment volume.} The 156 Google Forms links identified in the chat log represent a substantial assessment workload~\cite{Hattie2009}. Assuming each form contained an average of 5--10 questions, the total question pool across all forms may be estimated at 780--1,560 individual questions, providing comprehensive coverage of the Ukrainian history curriculum.
+\textbf{Total assessment volume.} The 156 Google Forms links identified in the chat log represent a substantial assessment workload~\cite{Hattie2009}. Assuming each form contained an average of 5--10 questions, the total question pool across all forms may be estimated at 780--1,560 individual questions, covering the full Ukrainian history curriculum.
 
 \textbf{Instructional materials.} The course was supported by an extensive repository of materials: over 50 PowerPoint presentations covering all 40 lecture topics, 9 practicum worksheets (.docx format), a detailed syllabus and calendar plan, and textbook page images for reference. All materials were distributed through the Viber chat group and Google Drive, ensuring persistent asynchronous access.
 
-\textbf{Video documentation.} All 41 Zoom sessions were recorded, producing a comprehensive video archive. The Zoom chat logs from each session were preserved as \texttt{chat.txt} files, providing timestamped records of in-session interactions and resource sharing.
+\textbf{Video documentation.} All 40 Zoom sessions were recorded, producing a complete video archive. The Zoom chat logs from each session were preserved as \texttt{chat.txt} files, providing timestamped records of in-session interactions and resource sharing.
 
-\textbf{Data collection overview.} Figure~\ref{fig:data-flow} presents the data collection and processing pipeline, showing how three independent data streams -- Viber chat log, Google Forms responses, and HistoryLikeGame module analysis -- converge through purpose-built Python scripts into the unified dataset analysed in Chapter~3 (Section~\ref{sec:data-analysis}).
+\textbf{Data collection overview.} Figure~\ref{fig:data-flow} presents the data collection and processing pipeline, showing how three independent data streams -- Viber chat log, Google Forms responses, and HistoryLikeGame module analysis -- converge through purpose-built Python scripts into the unified dataset analysed in Chapter~\ref{ch:results} (Section~\ref{sec:data-analysis}). The complete source code for the analysis pipeline is documented in Appendix~\ref{app:E}.
 
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \resizebox{0.95\textwidth}{!}{%
 \input{figures/data_collection_flow.tex}%
 }
-\caption{Data collection and processing pipeline: three source streams converge through automated analysis scripts into the 8~TikZ figures and statistical summaries presented in Chapter~3}
+\caption{Data collection and processing pipeline: three source streams converge through automated analysis scripts into the 8~TikZ figures and statistical summaries presented in Chapter~\ref{ch:results}}
 \label{fig:data-flow}
 \end{figure}
 
@@ -298,46 +260,51 @@ Each lecture was delivered via Zoom with screen sharing of presentation slides. 
 \item \emph{HistoryLikeGame} $\to$ Multiple modalities (13 game types) + Narrative integration (period-based structure);
 \item \emph{Creative quiz naming} $\to$ Narrative (thematic framing of assessment, Section~\ref{sec:quiz-naming}).
 \end{itemize}
-This mapping demonstrates that the intervention was not an ad hoc addition of game elements but a theoretically grounded implementation of the design framework derived from the systematic review (Section~\ref{sec:principle-implications}).
+This mapping demonstrates that the intervention operationalises the design framework derived from the systematic review (Section~\ref{sec:principle-implications}), with each course component traceable to a specific evidence-based principle.
 
 \subsection{Theoretical framework for the experiment}
 
 \textbf{Self-Determination Theory (SDT).} Course components were aligned with the three SDT needs (Section~\ref{sec:theory}):
 
 \begin{itemize}
-\item \emph{Autonomy}: students chose whether to explore HistoryLikeGame modules, which quiz blocks to complete beyond the mandatory modular controls, and when to access asynchronous materials. The self-paced nature of the gamified platform --- available 24/7 without deadlines --- maximised autonomy support;
-\item \emph{Competence}: immediate feedback in Google Forms quizzes (automatic scoring upon submission) and progressive difficulty scaffolding across seminars (from basic recall in Seminars~1--8 to NMT-format questions in Seminars~37--39) supported the development of perceived competence. The HistoryLikeGame platform provided additional competence feedback through visual completion indicators;
-\item \emph{Relatedness}: the Viber community facilitated peer interaction through shared resources, encouragement messages, and collective engagement with course material. The instructor's regular posting of motivational messages and quiz results fostered a sense of belonging (Figure~\ref{fig:gamification-theory}).
+\item \emph{Autonomy}: students chose whether to explore HistoryLikeGame modules, which quiz blocks to complete beyond the mandatory modular controls, and when to access asynchronous materials. The self-paced nature of the gamified platform~-- available 24/7 without deadlines~-- maximised autonomy support;
+\item \emph{Competence}: automated quiz scoring upon submission (Section~\ref{sec:assessment-rationale}) and progressive difficulty scaffolding across seminars (from basic recall in Seminars~1--8 to NMT-format questions in Seminars~37--39) supported the development of perceived competence. The HistoryLikeGame platform provided additional competence feedback through visual completion indicators;
+\item \emph{Relatedness}: the Viber community facilitated peer interaction through shared resources, encouragement messages, and collective engagement with course material. The instructor's regular posting of motivational messages and quiz results cultivated a sense of belonging (Figure~\ref{fig:gamification-theory}).
 \end{itemize}
 
-\textbf{Design archetype alignment.} The systematic review (Section~\ref{sec:archetypes}) identified five implementation archetypes in gamification for history education: Competitive Quizzer, Narrative Explorer, Simulation Builder, Collaborative Historian, and Hybrid Integrator. The present implementation most closely aligns with the ``Competitive Quizzer'' archetype, characterised by quiz-based mechanics with scoring and performance feedback. However, a deliberate design decision distinguishes this implementation from the archetype's typical interpersonal competition pattern: \textit{competition was exclusively digital} --- students competed against game mechanics (matching accuracy, drag-and-drop precision) and timers (countdown challenges in Canvas physics and Three.js modules), never against each other through leaderboards or peer rankings. This choice was informed by the systematic review's finding that collaborative structures show more consistently positive effects than interpersonal competition~\cite{Hamari2014, KorniienkoSemerikov2024}, and by the wartime context where competitive pressure could exacerbate rather than alleviate stress. The integration of narrative elements (thematic quiz naming from Seminar~17 onwards, period-based platform structure across 9 historical periods) and multiple interaction modalities (13 game types in HistoryLikeGame including drag-and-drop, text input, image matching, and card sorting) introduces substantial ``Hybrid Integrator'' elements, reflecting the principle interaction patterns described in Section~\ref{sec:principle-interactions}. This hybrid positioning addresses the systematic review's finding that purely quiz-based implementations tend to produce smaller effect sizes than those integrating multiple game elements~\cite{KorniienkoSemerikov2024}.
+\textbf{Design archetype alignment.} The systematic review (Section~\ref{sec:archetypes}) identified five implementation archetypes in gamification for history education: Competitive Quizzer, Narrative Explorer, Simulation Builder, Collaborative Historian, and Hybrid Integrator. The present implementation most closely aligns with the ``Competitive Quizzer'' archetype, characterised by quiz-based mechanics with scoring and performance feedback. However, a deliberate design decision distinguishes this implementation from the archetype's typical interpersonal competition pattern: \textit{competition was exclusively digital}. Students competed against game mechanics (matching accuracy, drag-and-drop precision) and timers (countdown challenges in Canvas physics and Three.js modules), never against each other through leaderboards or peer rankings. This was a principled pedagogical decision by the author, not merely a statistical optimisation: in a preparatory course where students face existential stress from wartime conditions, interpersonal competition risks transforming a supportive learning environment into an additional source of anxiety. The systematic review's finding that collaborative structures show more consistently positive effects than interpersonal competition~\cite{Hamari2014, KorniienkoSemerikov2024} confirmed rather than motivated this choice. The integration of narrative elements (thematic quiz naming from Seminar~17 onwards, period-based platform structure across 9 historical periods) and multiple interaction modalities (13 game types including drag-and-drop, text input, image matching, and card sorting) introduces substantial ``Hybrid Integrator'' elements. This reflects the principle interaction patterns described in Section~\ref{sec:principle-interactions}. This hybrid positioning addresses the systematic review's finding that purely quiz-based implementations tend to produce smaller effect sizes than those integrating multiple game elements~\cite{KorniienkoSemerikov2024}.
 
 \textbf{TPACK integration.} The TPACK domains (Section~\ref{sec:dh-review}) map to the experiment as follows:
 
 \begin{itemize}
-\item \emph{Content Knowledge (CK)}: the NMT Ukrainian history curriculum spanning four thematic sections --- ancient/medieval, early modern, 19th--early 20th century, and modern --- covering approximately 1,000 years of history across 40 lecture topics;
+\item \emph{Content Knowledge (CK)}: the NMT Ukrainian history curriculum spanning four thematic sections~-- ancient/medieval, early modern, 19th--early 20th century, and modern~-- covering the complete scope of Ukrainian history (from the earliest human settlements on Ukrainian territory, approximately 5,000 years, including 1,200 years of Ukrainian statehood) across 40 lecture topics;
 \item \emph{Pedagogical Knowledge (PK)}: formative assessment through repeated low-stakes quizzing with immediate feedback~\cite{Hattie2009}, scaffolded difficulty progression, and the integration of summative modular controls at regular intervals;
 \item \emph{Technological Knowledge (TK)}: Zoom for synchronous lecture delivery with screen sharing, Google Forms for structured assessment and data collection, HistoryLikeGame for gamified self-paced practice, Viber for community management and resource distribution, and Google Drive for asynchronous material storage.
 \end{itemize}
 
-\noindent The intersection of these three domains --- TPACK proper --- defines the digital history teaching methodology operationalised in this experiment: NMT content delivered through digital platforms using gamified formative assessment strategies.
+\noindent In practice, TPACK means that the course taught Ukrainian history (CK) through Zoom, Google Forms, and HistoryLikeGame (TK), using repeated quizzes with instant feedback and scaffolded difficulty (PK).
 
-\textbf{DigComp 2.0 alignment.} Section~\ref{sec:digcomp} proposed history-specific interpretations of all five DigComp areas and mapped them to course activities with proficiency levels (Table~\ref{tab:digcomp-mapping}). Table~\ref{tab:digcomp-chapter2} operationalises this mapping at the level of specific experimental instruments, showing how each course component simultaneously serves NMT preparation and digital competence development~\cite{Vuorikari2016, Cosgrove2025}.
+\paragraph{Role distribution: lectures as content source, gamification as retrieval practice.}
+A deliberate asymmetry underlies the course design: the HistoryLikeGame platform and the Google Forms quizzes contain exclusively assessment and practice tasks~-- multiple-choice items, drag-and-drop matching, chronological sequencing, card solitaire puzzles~-- but no expository theoretical content. All historical knowledge is introduced through Zoom lectures (40~sessions), supplemented by textbook excerpts and visual source materials shared via Google~Drive. The gamified components therefore function not as a teaching medium but as a \emph{retrieval practice} mechanism~\cite{RoedigerButler2011}: they consolidate and strengthen knowledge previously acquired from lectures by requiring students to recall, apply, and reorganise that knowledge under game-like conditions.
 
-\begin{table}[htbp]
+This design is grounded in the testing effect literature, which demonstrates that the act of retrieving information from memory produces stronger long-term retention than additional study of the same material~\cite{Dunlosky2013, RoedigerButler2011}. Within the TPACK framework, the asymmetry maps onto a clear division: Content Knowledge is delivered through the lecture channel (CK~$\times$~PK), while Technological Knowledge operationalises the testing effect through interactive digital formats (PK~$\times$~TK). The platform's value is therefore contingent on prior lecture attendance: without the theoretical foundation provided by lectures, the quiz and game tasks reduce to uninformed guessing. This dependency is evidenced by the score trajectories documented in Chapter~\ref{ch:results} (Section~\ref{sec:formative}), where students who joined the course mid-semester consistently scored lower on topics covered before their enrollment, despite having access to the same platform modules.
+
+\textbf{DigComp 2.0 alignment.} Section~\ref{sec:digcomp} proposed history-specific operationalisations of all five DigComp areas (Table~\ref{tab:digcomp-mapping}). Table~\ref{tab:digcomp-chapter2} operationalises that mapping at the level of specific experimental instruments, complementing the theoretical framework in Chapter~\ref{ch:theory} with concrete course-level evidence~\cite{Vuorikari2016, Cosgrove2025}.
+
+\begin{table}[!h]
 \centering
 \caption{Operationalisation of DigComp~2.0 areas in the experimental design. Proficiency levels follow \citeauthor{Carretero2017}'s DigComp~2.1 scale~\cite{Carretero2017}: Foundation (1--2), Intermediate (3--4), Advanced (5--6).}
 \label{tab:digcomp-chapter2}
 \small
-\begin{tabular}{@{}p{2.8cm}p{4.8cm}p{2.5cm}p{2cm}@{}}
+\begin{tabular}{@{}p{2.8cm}p{4.5cm}p{2.8cm}p{2cm}@{}}
 \toprule
 \textbf{DigComp area} & \textbf{Course implementation} & \textbf{Instrument} & \textbf{Prof.\ level} \\
 \midrule
-1.\ Information \& data literacy & Evaluating historical sources in digital format (maps, portraits, documents); distinguishing primary vs.\ secondary sources across 156 quiz blocks; navigating multi-form assessment sequences & Google Forms seminars & Found.--Interm.\ (1--4) \\
+1.\ Information \& data literacy & Evaluating historical sources in digital format (maps, portraits, documents); distinguishing primary vs.\ secondary sources across quiz blocks (Table~\ref{tab:quiz-distribution}); navigating multi-form assessment sequences & Google Forms seminars & Found.--Interm.\ (1--4) \\
 \midrule
-2.\ Communication \& collaboration & Viber group interactions (400 messages): absence notifications, resource sharing, peer support; gamified naming conventions fostering community identity & Viber chat; chat log analysis & Interm.\ (3--4) \\
+2.\ Communication \& collaboration & Viber group interactions (400 messages): absence notifications, resource sharing, peer support; gamified naming conventions building community identity & Viber chat; chat log analysis & Interm.\ (3--4) \\
 \midrule
-3.\ Digital content creation & Interacting with 13 game types (drag-and-drop, text input, Canvas physics, Three.js 3D, card games, AR); structured quiz responses across varied formats & HistoryLikeGame (62 modules) & Found.\ (1--2) \\
+3.\ Digital content creation & Producing structured quiz responses (text input, matching, sequencing) across varied digital formats; the weakest area~-- students consume rather than create digital content on the platform & Google Forms; HLG & Found.\ (1--2) \\
 \midrule
 4.\ Safety & Learning under active armed conflict: managing power outages, internet disruptions, air-raid alerts; instructor safety guidance (``go to a shelter''); balancing participation with physical well-being & Chat records; attendance log & Interm.--Adv.\ (3--6) \\
 \midrule
@@ -346,25 +313,25 @@ This mapping demonstrates that the intervention was not an ad hoc addition of ga
 \end{tabular}
 \end{table}
 
-\noindent The wartime dimension (Area~4) merits special emphasis. Standard DigComp implementations~\cite{Vuorikari2016, Cosgrove2025} address digital safety as device protection and data privacy. In this experiment, safety competence was operationalised under conditions no existing framework was designed to measure: students navigated online learning while managing real physical threats, developing what Section~\ref{sec:digcomp} identifies as a dimension absent from all prior DigComp implementations~\cite{UNESCO2023, Ovcharuk2023}. This elevated the proficiency level for Area~4 to Intermediate--Advanced (3--6), the highest across all five areas --- a direct consequence of the wartime educational context.
+\noindent The wartime dimension (Area~4) merits special emphasis. Standard DigComp implementations~\cite{Vuorikari2016, Cosgrove2025} address digital safety as device protection and data privacy. In this experiment, safety competence was operationalised under conditions no existing framework was designed to measure: students navigated online learning while managing real physical threats, developing what Section~\ref{sec:digcomp} identifies as a dimension absent from all prior DigComp implementations~\cite{UNESCO2023, Ovcharuk2023}. This elevated the proficiency level for Area~4 to Intermediate--Advanced (3--6), the highest across all five areas~-- a direct consequence of the wartime educational context.
 
 \section{Assessment tools and data collection} \label{sec:assessment}
 
-The design of assessment instruments in this study was grounded in the formative assessment tradition, which Black and Wiliam's~\cite{BlackWiliam1998} landmark review established as producing substantial learning gains through frequent, structured feedback. The systematic review in Chapter~1 revealed that only 21.6\% of gamification studies in history education used validated instruments (Section~\ref{sec:evidence-base}), and 83.8\% of the reviewed studies carried a high risk of bias (Section~\ref{sec:qa-results}). Assessment serves as the methodological bridge between the theoretical design principles established in Chapter~1 (Sections~\ref{sec:design-principles}--\ref{sec:principle-interactions}) and the empirical outcomes reported in Chapter~3 (Section~\ref{sec:formative}). Following the outcome measurement hierarchy identified in Section~\ref{sec:effectiveness} (Figure~\ref{fig:outcome-taxonomy}), the instruments described below target engagement and knowledge acquisition --- the two most frequently measured and most readily operationalised outcome categories. This section documents \emph{what} instruments were used and \emph{why} particular design decisions were made; Section~\ref{sec:data-analysis} describes \emph{how} the collected data were processed into analytical outputs.
+The design of assessment instruments in this study was grounded in the formative assessment tradition, which Black and Wiliam's~\cite{BlackWiliam1998} landmark review established as producing substantial learning gains through frequent, structured feedback. The systematic review in Chapter~\ref{ch:theory} revealed that few gamification studies in history education used validated instruments (Section~\ref{sec:evidence-base}), and the high rate of bias documented in Section~\ref{sec:qa-results} persisted across the reviewed literature. The assessment instruments connect the design principles from Chapter~\ref{ch:theory} to the outcomes in Chapter~\ref{ch:results}. Following the outcome measurement hierarchy identified in Section~\ref{sec:effectiveness} (Figure~\ref{fig:outcome-taxonomy}), the instruments described below target engagement and knowledge acquisition~-- the two most frequently measured and most readily operationalised outcome categories. This section documents \emph{what} instruments were used and \emph{why} particular design decisions were made; Section~\ref{sec:data-analysis} describes \emph{how} the collected data were processed into analytical outputs.
 
 \subsection{Assessment design rationale} \label{sec:assessment-rationale}
 
 \paragraph{NMT format alignment.}
-Quiz items were intentionally designed to mirror the structure and cognitive demands of the National Multi-Subject Test (NMT) in Ukrainian History (Table~\ref{tab:nmt-format}). This alignment decision is grounded in washback effect theory~\cite{AldersonWall1993}, which posits that high-stakes examinations exert a backward influence on teaching and learning activities. By replicating NMT question types --- multiple choice, matching, chronological sequencing, and source analysis --- the formative quizzes served a dual purpose: assessing content knowledge while simultaneously developing test-taking competences. This operationalises the historical authenticity design principle identified in Section~\ref{sec:principle-grounding}.
+Quiz items were designed to replicate the NMT question types (Table~\ref{tab:nmt-format}), grounded in washback effect theory~\cite{AldersonWall1993}: high-stakes examinations exert a backward influence on teaching, so the formative quizzes simultaneously assessed content knowledge and developed test-taking competences.
 
 \paragraph{Formative assessment cycle.}
-Each quiz implemented a rapid formative feedback cycle: attempt $\to$ immediate automated scoring $\to$ score display $\to$ next attempt. This cycle supports the SDT competence need~\cite{RyanDeci2000} (Section~\ref{sec:theory}) by providing clear performance indicators, leverages the testing effect whereby retrieval practice strengthens long-term retention~\cite{RoedigerButler2011, Dunlosky2013}, and aligns with Hattie and Timperley's~\cite{HattieTimperley2007} feedback model at the task and process levels. The immediate feedback delivery also satisfies a precondition for flow states~\cite{Csikszentmihalyi1990} through difficulty calibration across quiz blocks.
+Each quiz implemented a rapid formative feedback cycle: attempt $\to$ immediate automated scoring $\to$ score display $\to$ next attempt. This cycle supports the SDT competence need~\cite{RyanDeci2000} (Section~\ref{sec:theory}) by providing clear performance indicators, draws on the testing effect whereby retrieval practice strengthens long-term retention~\cite{RoedigerButler2011, Dunlosky2013}, and aligns with Hattie and Timperley's~\cite{HattieTimperley2007} feedback model at the task and process levels. The immediate feedback delivery also satisfies a precondition for flow states~\cite{Csikszentmihalyi1990} through difficulty calibration across quiz blocks.
 
 \paragraph{MRQS-informed transparency.}
 The assessment design choices documented in this section were informed by the reporting standards identified through the Modified Review Quality Scoring tool (Section~\ref{sec:reporting-checklist}). Specifically, the MRQS Tier~1 item~T1 (instrument validation and description) motivated the explicit documentation of each instrument's format, scoring procedure, and theoretical basis.
 
 \paragraph{Outcome measurement scope.}
-This study measures \emph{engagement} (participation rates, attendance patterns) and \emph{knowledge acquisition and retention} (quiz scores, modular control results, iterative mastery trajectories) --- the two outcome categories at the top of the ease-of-measurement hierarchy (Figure~\ref{fig:outcome-taxonomy}, Section~\ref{sec:effectiveness}). The distinction between acquisition and retention is methodologically important: the assessment design targets not only initial \textit{knowledge acquisition} (whether students can recall facts after a lecture) but also \textit{knowledge retention and application} (whether students can apply that knowledge in subsequent comprehensive assessments and across extended time intervals). The seven-month longitudinal design with 7 modular controls and the iterative re-attempt mechanism (Section~\ref{sec:formative}) operationalise this distinction: students who mastered content through repeated quiz attempts (e.g., Danylo~T.'s seven-attempt progression from 18.9\% to 94.4\%) demonstrated retained knowledge on a different NMT-format assessment two weeks later (82.8\%), providing evidence of durable learning rather than transient recall~\cite{RoedigerButler2011, Dunlosky2013}. The study does not directly measure higher-order historical thinking or attitudinal change, though self-assessment data provide indirect evidence (Table~\ref{tab:self-assessment} in Chapter~3). This scope is consistent with the majority of reviewed studies and reflects the practical constraints of wartime online education (Section~\ref{sec:wartime-context}).
+This study measures \emph{engagement} (participation rates, attendance patterns) and \emph{knowledge acquisition and retention} (quiz scores, modular control results, iterative mastery trajectories)~-- the two outcome categories at the top of the ease-of-measurement hierarchy (Figure~\ref{fig:outcome-taxonomy}, Section~\ref{sec:effectiveness}). The distinction between acquisition and retention is methodologically important: the assessment design targets not only initial \textit{knowledge acquisition} (whether students can recall facts after a lecture) but also \textit{knowledge retention and application} (whether students can apply that knowledge in subsequent comprehensive assessments and across extended time intervals). The seven-month longitudinal design with 7 modular controls and the iterative re-attempt mechanism (Section~\ref{sec:formative}) operationalise this distinction, although individual trajectories may reflect external factors (private tutoring, independent study) that the course design cannot isolate~\cite{RoedigerButler2011, Dunlosky2013}. The study does not directly measure higher-order historical thinking or attitudinal change, though self-assessment data provide indirect evidence (Table~\ref{tab:self-assessment} in Chapter~\ref{ch:results}). This scope is consistent with the majority of reviewed studies and reflects the practical constraints of wartime online education (Section~\ref{sec:wartime-context}).
 
 \subsection{Google Forms quizzes}
 
@@ -372,17 +339,17 @@ Google Forms served as the primary assessment and data collection platform~\cite
 
 \begin{itemize}
 \item Questions aligned with the NMT examination format, including multiple choice, matching (correspondence), chronological sequencing, and source analysis (see Section~\ref{sec:quiz-alignment});
-\item Automatic scoring with the ``X / Y'' format (points achieved / maximum points), where both the achieved score and the maximum are displayed to the student --- supporting self-regulated learning through competence feedback~\cite{NicolMacfarlane2006, Hattie2009};
+\item Automatic scoring with the ``X / Y'' format (points achieved / maximum points), where both the achieved score and the maximum are displayed to the student~-- supporting self-regulated learning through competence feedback~\cite{NicolMacfarlane2006, Hattie2009};
 \item Immediate feedback upon submission, leveraging the testing effect whereby retrieval practice strengthens long-term retention~\cite{RoedigerButler2011, Dunlosky2013};
 \item Timestamp recording for each response, enabling temporal analysis of submission patterns;
-\item Optional name field (introduced from Seminar~26 onwards, with ``Напишіть своє прізвище та ім'я'' --- ``Write your surname and name'').
+\item Optional name field (``Напишіть своє прізвище та ім'я''~-- ``Write your surname and name''), present in all quizzes from Seminar~1. The field was optional~-- no quiz question was mandatory~-- and served a utilitarian purpose: institutional grade tracking. The phrasing ``write your surname and name'' rather than a simple ``surname, name'' label was chosen to discourage joke entries (e.g., historical figure names), though no such cases were observed.
 \end{itemize}
 
-The introduction of the name field from Seminar~26 was a deliberate design-based research iteration (Section~\ref{sec:organisation}): the first 25~seminars collected only aggregate score data, which proved insufficient for tracking individual learning trajectories. This transition from anonymous to identified responses represents a shift from aggregate XLSX data (multi-sheet format, Seminars~1--24) to individual-level CSV data (single-form export, Seminars~25--39), with significant implications for the granularity of analysis possible in Chapter~3.
+\noindent A key data limitation arose from the export format: Seminars~1--24 were exported as multi-sheet XLSX files preserving only aggregate scores, while Seminars~25--39 were exported as single-form CSV files with individual-level responses. This difference in export granularity~-- not in the quiz design itself~-- restricts individual trajectory analysis to the later period (Chapter~\ref{ch:results}).
 
-The 156 quiz forms were distributed as follows (extracted from the chat log analysis):
+The 156 quiz forms were distributed as follows (extracted from the chat log analysis). Note that 6 of the 7 modular controls were distributed as Google Forms links in the Viber chat; MC7 data were collected through the same platform but its link was shared via a separate channel:
 
-\begin{table}[htbp]
+\begin{table}[!h]
 \centering
 \caption{Distribution of Google Forms quizzes by type}
 \label{tab:quiz-distribution}
@@ -400,35 +367,35 @@ Other (incl. intro test) & 10 & 6.4\% \\
 \end{tabular}
 \end{table}
 
-Table~\ref{tab:instrument-specs} provides a comprehensive specification of each instrument type, including the theoretical basis for its design and the level of data granularity it produces.
+Table~\ref{tab:instrument-specs} specifies each instrument type, including the theoretical basis for its design and the level of data granularity it produces.
 
-\begin{table}[htbp]
+\begin{table}[!h]
 \centering
 \caption{Assessment instrument specifications}
 \label{tab:instrument-specs}
-\small
-\begin{tabular}{p{2.2cm}cp{1.8cm}p{1.8cm}p{2.2cm}p{2.0cm}}
+\footnotesize
+\begin{tabularx}{\textwidth}{X c X X X X}
 \hline
 \textbf{Instrument} & \textbf{N} & \textbf{Format} & \textbf{Scoring} & \textbf{Theoretical basis} & \textbf{Data level} \\
 \hline
 Seminar quiz & 133 & Multi-block / Single form & Auto ``X/Y'' & Formative~\cite{BlackWiliam1998}; SDT competence & Aggregate $\to$ Individual \\
 Lecture quiz & 7 & Single form & Auto ``X/Y'' & Testing effect~\cite{RoedigerButler2011} & Aggregate \\
-Modular control & 6 & Comprehensive & Manual + Auto & Summative; Bloom taxonomy & Individual \\
+Modular control & 6 & Compre\-hensive & Manual + Auto & Summative; Bloom taxonomy & Individual \\
 Intro test & 1 & Diagnostic & Auto & Baseline~\cite{Hattie2009} & Not preserved \\
-Other & 9 & Various & Various & --- & Various \\
+Other & 9 & Various & Various &~-- & Various \\
 \hline
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{Quiz item design and NMT alignment} \label{sec:quiz-alignment}
 
-The quiz items were designed to progress through increasing cognitive demands following Bloom's revised taxonomy, mirroring the NMT item structure described in Table~\ref{tab:nmt-format}. At the recognition level, multiple-choice items assess factual recall; matching and chronological sequencing items require analysis and application of historical relationships; source analysis items demand synthesis and evaluation. This progression across quiz blocks creates what Csikszentmihalyi~\cite{Csikszentmihalyi1990} terms the ``flow channel'' --- a gradual increase in challenge that maintains engagement by matching difficulty to developing competence (Section~\ref{sec:theory}).
+The quiz items were designed to progress through increasing cognitive demands following Bloom's revised taxonomy, mirroring the NMT item structure described in Table~\ref{tab:nmt-format}. At the recognition level, multiple-choice items assess factual recall; matching and chronological sequencing items require analysis and application of historical relationships; source analysis items demand synthesis and evaluation. This progression across quiz blocks creates what Csikszentmihalyi~\cite{Csikszentmihalyi1990} terms the ``flow channel''~-- a gradual increase in challenge that maintains engagement by matching difficulty to developing competence (Section~\ref{sec:theory}).
 
 The multi-block format within each seminar (typically 4--5 blocks) operationalises the DMC mechanics level (Section~\ref{sec:dmc-mapping}): each block functions as a micro-challenge with its own score, contributing to an overall seminar score. This structure provides multiple feedback points within a single assessment session, consistent with the formative feedback principles of Shute~\cite{ShuteFormative2008}, who found that frequent, low-stakes feedback produces larger learning gains than infrequent, high-stakes assessment. The maximum possible scores varied considerably across seminars (range: 5--131 points, see Section~\ref{sec:scoring}), reflecting the different number and difficulty of items per seminar topic.
 
 Figure~\ref{fig:assessment-taxonomy} presents a hierarchical classification of all 156~assessment instruments, illustrating the formative--summative distinction and the data format evolution from aggregate to individual-level collection.
 
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \resizebox{\textwidth}{!}{\input{figures/assessment_taxonomy}}
 \caption{Hierarchical taxonomy of assessment instruments (N=156), showing the formative--summative distinction and data format evolution from XLSX aggregate (Seminars~1--24) to CSV individual-level (Seminars~25--39)}
@@ -453,11 +420,11 @@ A distinctive feature of the course's gamification approach~\cite{Deterding2011,
 \item \textbf{Simple numbering}: Various seminars (Блок 1--5)
 \end{itemize}
 
-This naming practice exemplifies \emph{content gamification}~\cite{SEABORN201514} --- the use of game-inspired framing to enhance the learning experience without altering the underlying assessment content~\cite{Titova2025cte, KorniienkoSemerikov2024}. In Landers'~\cite{Landers2014} theory of gamified learning, creative naming operates as a \emph{mediational} effect: the thematic framing enhances learner attitudes (engagement, curiosity), which in turn mediate learning behaviour and outcomes. Each naming theme creates a micro-narrative context, operationalising the narrative/theme design principle identified in Section~\ref{sec:principle-grounding} and illustrating how even minimal game elements can shift the affective experience of assessment. The parsed chat data (Section~\ref{sec:attendance}) confirm positive student reactions to the naming schemes, with participants occasionally referencing theme names in group discussion.
+This naming practice exemplifies \emph{content gamification}~\cite{SEABORN201514}~-- the use of game-inspired framing to enhance the learning experience without altering the underlying assessment content~\cite{Titova2025cte, KorniienkoSemerikov2024}. In Landers'~\cite{Landers2014} theory of gamified learning, creative naming operates as a \emph{mediational} effect: the thematic framing enhances learner attitudes (engagement, curiosity), which in turn mediate learning behaviour and outcomes. Each naming theme creates a micro-narrative context, operationalising the narrative/theme design principle identified in Section~\ref{sec:principle-grounding} and illustrating how even minimal game elements can shift the affective experience of assessment. The parsed chat data (Section~\ref{sec:attendance}) confirm positive student reactions to the naming schemes, with participants occasionally referencing theme names in group discussion.
 
 \subsection{Viber chat log as data source}
 
-The Viber messenger group served as the primary communication channel for the course~\cite{Vovchasta2024}. Unlike researcher-constructed instruments (quizzes, surveys), the chat log constitutes an \emph{unobtrusive} data source~\cite{CohenManionMorrison2018}: messages were generated naturally as part of the course's operational communication, without any researcher prompting or structured elicitation. This naturalistic quality provides ecological validity that complements the structured quiz data.
+The Viber messenger group served as the primary communication channel for the course. Unlike researcher-constructed instruments (quizzes, surveys), the chat log is an \emph{unobtrusive} data source~\cite{CohenManionMorrison2018}: messages were generated naturally as part of the course's operational communication, without any researcher prompting or structured elicitation. This naturalistic quality complements the structured quiz data by capturing authentic communication patterns.
 
 \paragraph{Data collection protocol.}
 The chat log was exported in plain text format from Viber, preserving timestamps (date, time), sender names, and message content. Automated parsing (Section~\ref{sec:organisation}) extracted 400~structured messages over the study period October~12, 2024 -- May~11, 2025. Participant names were anonymised using a deterministic hashing procedure to enable individual tracking while protecting privacy.
@@ -468,23 +435,17 @@ The chat data provided six categories of information:
 \begin{itemize}
 \item \textbf{Enrollment timeline}: 28 join events for 23 unique participants (some joined multiple times after being removed and re-added);
 \item \textbf{Absence reports}: 33 messages reporting inability to attend, with classified reasons (internet 24\%, family 24\%, unspecified 24\%, power 9\%, health 9\%, late 9\%);
-\item \textbf{Assessment links}: All 156 Google Forms links shared during the course, verified against the quiz exports;
+\item \textbf{Assessment links}: All Google Forms links shared during the course (Table~\ref{tab:quiz-distribution}), verified against the quiz exports;
 \item \textbf{Teaching materials}: 51 file shares (worksheets, presentations) and 46 video shares (lecture recordings);
-\item \textbf{Gamification introductions}: Links to HistoryLikeGame platform (December 1, 2024; December 29, 2024) and Wordwall (March 27, 2025);
+\item \textbf{Gamification introductions}: Links to HistoryLikeGame platform (December 1, 2024; December 29, 2024) and Wordwall (December 27, 2024);
 \item \textbf{Wartime context}: Messages about power outages, internet disruptions, air raid alerts, and safety advisories~\cite{Martynets202428, UNESCO2023}.
 \end{itemize}
 
 \paragraph{Data integrity.}
-The 400~parsed messages represent the methodologically relevant subset of total group communication. All 156~quiz links were cross-verified against Google Forms exports to ensure completeness. The chat data feed three distinct analyses in Chapter~3: enrollment dynamics (Figure~\ref{fig:enrollment}), attendance patterns (Section~\ref{sec:attendance}), and the assessment timeline.
+The 400~parsed messages represent the methodologically relevant subset of total group communication. All quiz links were cross-verified against Google Forms exports to ensure completeness. The chat data feed three distinct analyses in Chapter~\ref{ch:results}: enrollment dynamics (Figure~\ref{fig:enrollment}), attendance patterns (Section~\ref{sec:attendance}), and the assessment timeline.
 
 Figure~\ref{fig:data-matrix} presents the data collection matrix, mapping data types to study phases and indicating the level of granularity available in each cell.
 
-\begin{figure}[htbp]
-\centering
-\resizebox{\textwidth}{!}{\input{figures/data_collection_matrix}}
-\caption{Data collection matrix: data types (rows) mapped to study phases (columns). Green = individual-level data, yellow = aggregate data, gray = not available. The XLSX-to-CSV transition marks the shift from aggregate to individual-level quiz score data.}
-\label{fig:data-matrix}
-\end{figure}
 
 \subsection{Scoring, feedback, and data quality} \label{sec:scoring}
 
@@ -492,23 +453,17 @@ Figure~\ref{fig:data-matrix} presents the data collection matrix, mapping data t
 Quiz scores were generated automatically by Google Forms' built-in scoring engine. Each item was assigned a point value, and the total score was reported in the ``X~/~Y'' string format (achieved~/~maximum). For modular controls, a hybrid approach was used: objective items (multiple choice, matching) were auto-scored, while open-ended items were manually graded by the instructor. Score data were exported in two formats depending on the period: multi-sheet XLSX files (Seminars~1--24) containing aggregate statistics, and single-sheet CSV files (Seminars~25--39) containing individual-level responses.
 
 \paragraph{Feedback timing and theoretical grounding.}
-All quizzes provided immediate feedback upon submission --- students saw their score within seconds of completing the form. In Hattie and Timperley's~\cite{HattieTimperley2007} four-level feedback model, this operates primarily at the \emph{task level} (correctness of response) and \emph{process level} (strategies used to approach the task). The immediate delivery satisfies the SDT competence need~\cite{RyanDeci2000} (Section~\ref{sec:theory}) by providing timely information about one's effectiveness, and constitutes one of the preconditions for flow states~\cite{Csikszentmihalyi1990}. Van der Kleij et al.'s~\cite{VanDerKleij2015} meta-analysis of feedback in computer-based environments supports the effectiveness of immediate elaborated feedback for procedural knowledge tasks, which characterises the majority of the quiz items in this study. This aligns with the broader assessment-in-game-based-learning framework proposed by Ifenthaler et al.~\cite{IfenthalerEseryel2012}, who argue that embedded assessment should be unobtrusive and aligned with the learning activity itself.
+The immediate scoring described above (Section~\ref{sec:assessment-rationale}) operates primarily at the \emph{task level} (correctness of response) and \emph{process level} (strategies used to approach the task) in Hattie and Timperley's~\cite{HattieTimperley2007} four-level feedback model. The immediate delivery satisfies the SDT competence need~\cite{RyanDeci2000} (Section~\ref{sec:theory}) by providing timely information about one's effectiveness, and is one of the preconditions for flow states~\cite{Csikszentmihalyi1990}. Van der Kleij et al.'s~\cite{VanDerKleij2015} meta-analysis of feedback in computer-based environments supports the effectiveness of immediate elaborated feedback for procedural knowledge tasks, which characterises the majority of the quiz items in this study. This aligns with the broader assessment-in-game-based-learning framework proposed by Ifenthaler et al.~\cite{IfenthalerEseryel2012}, who argue that embedded assessment should be unobtrusive and aligned with the learning activity itself.
 
 \paragraph{Score normalisation.}
 The maximum possible scores varied substantially across seminars (range: 5--131 points), reflecting differences in the number of items and topic complexity. To enable cross-seminar comparison, all raw scores were normalised to percentages ($\text{score}_\% = X / Y \times 100$). The normalisation procedure and its statistical implications are detailed in Section~\ref{sec:data-analysis}.
 
 \paragraph{Data completeness and respondent progression.}
-Figure~\ref{fig:respondent-progression} presents the number of respondents per seminar across the full study period. Respondent counts ranged from 1 (Seminars~28, 30) to 27 (Seminar~17), with a marked decline in the post-gamification period. The mean number of respondents was $\bar{N}=12.9$ in the pre-gamification period (Seminars~1--24) versus $\bar{N}=5.6$ in the post-gamification period (Seminars~25--39). This decline is attributable primarily to natural attrition in a voluntary preparatory course and the increasing difficulty of later historical periods, rather than to gamification effects (see Section~\ref{sec:discussion} for a full discussion of confounding factors).
+Figure~\ref{fig:respondent-progression} presents the number of respondents per seminar across the full study period. Respondent counts ranged from 1 (Seminars~28, 30) to 27 (Seminar~17), with a marked decline in the post-gamification period. The mean number of respondents was $\bar{\textit{N}}\!=\!12.9$ in the pre-gamification period (Seminars~1--24) versus $\bar{\textit{N}}\!=\!5.6$ in the post-gamification period (Seminars~25--39). This decline is attributable primarily to natural attrition in a voluntary preparatory course and the increasing difficulty of later historical periods, rather than to gamification effects (see Section~\ref{sec:discussion} for a full discussion of confounding factors).
 
-\begin{figure}[htbp]
-\centering
-\input{figures/respondent_progression}
-\caption{Number of respondents per seminar quiz. Blue bars = pre-gamification period (Seminars~1--24, $\bar{N}=12.9$); green bars = post-gamification period (Seminars~25--39, $\bar{N}=5.6$). Dashed vertical line marks the gamification introduction (December~1, 2024).}
-\label{fig:respondent-progression}
-\end{figure}
 
 \paragraph{Participant identification.}
-The anonymous early seminars (1--25) limit analysis to aggregate statistics, while the name field introduced from Seminar~26 enables individual trajectory tracking for the post-gamification period. This creates a data discontinuity: individual-level analyses (Section~\ref{sec:formative}) are restricted to Seminars~26--39, where 90~named participants contributed 358~data points. The design implications of this discontinuity --- and the deliberate decision to introduce it mid-course --- are discussed as a design-based research iteration in Section~\ref{sec:organisation}.
+The optional name field was present in all quizzes from Seminar~1, but the XLSX export format for Seminars~1--24 preserved only aggregate scores, discarding individual responses. From Seminar~25 onward, CSV exports retained individual-level data, enabling trajectory tracking for 90~named participants across 358~data points (Section~\ref{sec:formative}). This is an export limitation, not a quiz design change.
 
 The processing of these raw data sources into analytical outputs is detailed in Section~\ref{sec:data-analysis}.
 
@@ -516,9 +471,9 @@ The processing of these raw data sources into analytical outputs is detailed in 
 
 \subsection{Platform overview}
 
-HistoryLikeGame is an interactive web-based gamification platform developed specifically for this study~\cite{KorniienkoSemerikov2024, Titova2025cte}. The platform is hosted at \texttt{astrafreeman.github.io/HistoryLikeGame/} and employs a hub-and-spoke architecture: a central index page (Figure~\ref{fig:hlg-hub}) links to 62 interactive game modules spanning 9 historical periods, implemented using a shared CSS/JavaScript infrastructure layer ($\approx$88~KB) that provides consistent theming, navigation, accessibility controls, and game engine logic across all modules~\cite{Zainuddin20241261, Uskov2015}. The platform requires no software installation, account creation, or server-side processing, functioning entirely as client-side static HTML/CSS/JavaScript that can be accessed from any device with a web browser. An animated octopus assistant provides historical facts and navigational guidance throughout the platform.
+HistoryLikeGame is an interactive web-based gamification platform developed specifically for this study~\cite{KorniienkoSemerikov2024, Titova2025cte}. The platform is hosted at \texttt{astrafreeman.github.io/HistoryLikeGame/} and employs a hub-and-spoke architecture: a central index page (Figure~\ref{fig:hlg-hub}) links to 62 interactive game modules spanning 9 historical periods, implemented using a shared CSS/JavaScript infrastructure layer that provides consistent theming, navigation, accessibility controls, and game engine logic across all modules~\cite{Zainuddin20241261, Uskov2014}. The platform requires no software installation, account creation, or server-side processing, functioning entirely as client-side static HTML/CSS/JavaScript that can be accessed from any device with a web browser. An animated octopus assistant provides historical facts and motivational commentary throughout the platform.
 
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.75\textwidth]{hlg_hub.png}
 \caption{HistoryLikeGame platform hub page showing the 9 historical period cards, AR game section, embedded mini-game ($\beta$), and the octopus assistant mascot}
@@ -527,19 +482,19 @@ HistoryLikeGame is an interactive web-based gamification platform developed spec
 
 \subsection{Platform evolution} \label{sec:platform-evolution}
 
-The HistoryLikeGame platform underwent significant expansion during and after the study period. The experimental version~(v1), deployed on December~1, 2024, comprised 23 quiz modules organised into 5~sections plus an Omega comprehensive review, with a total code size of 205~KB. These modules used two interaction types: drag-and-drop matching and text input. The experimental data reported in Chapter~\ref{ch:results} are based exclusively on this version.
+The HistoryLikeGame platform underwent significant expansion during and after the study period. The experimental version~(v1), deployed on December~1, 2024, comprised 2 functional quiz modules plus a semi-functional Omega Christmas special edition, with a total code size of 205~KB. The working modules used two interaction types: drag-and-drop matching and text input. Critically, v1 received no functional modifications after its December~1 deployment: the platform remained unchanged throughout the entire experimental period (December 2024 -- April 2025), ensuring that all results reported in Chapter~\ref{ch:results} reflect a stable, unmodified intervention. Version control records confirm a 251-day development hiatus following the final experimental-period commit (February~2, 2025); v2 development commenced in October 2025, well after the course concluded.
 
-The current version~(v2), completed after the experimental period, expanded the platform to 62 modules across 9 historical periods plus bonus sections, incorporating 13~distinct game types including quiz-based exercises, Canvas physics games, Three.js 3D environments, card and board games, simulation, and AR experiences. The shared infrastructure layer was extracted and modularised ($\approx$88~KB of reusable CSS and JavaScript), accessibility features were added (theme switching, font scaling, motion reduction, high contrast), and documentation was provided for both players and developers. This chapter describes the current version~(v2) as it represents the practical contribution at the time of defence; Chapter~\ref{ch:results} specifies the experimental version where relevant.
+The current version~(v2), developed between October 2025 and March 2026~-- well after the experimental period concluded~-- expanded the platform to 62 modules across 9 historical periods plus bonus sections, incorporating 13~distinct game types including quiz-based exercises, Canvas physics games, Three.js 3D environments, card and board games, simulation, and AR experiences. The shared infrastructure layer was extracted and modularised, accessibility features were added (theme switching, font scaling, motion reduction, high contrast), and documentation was provided for both players and developers. This chapter describes the current version~(v2) as it represents the practical contribution at the time of defence; Chapter~\ref{ch:results} specifies the experimental version where relevant.
 
 \paragraph{Predecessor context.}
-The HistoryLikeGame platform was not the first gamification attempt within the course. An earlier prototype, ``\foreignlanguage{ukrainian}{100 ігор з історії}'' [100 Games in History] (preserved in the repository as \texttt{cite\_structure/}), employed a monolithic single-page architecture with embedded game sections and an animated octopus assistant. While this prototype demonstrated the feasibility of browser-based historical gamification, its limitations --- single-page architecture preventing modular navigation, no shared infrastructure layer, limited scalability beyond the initial game set --- motivated the hub-and-spoke redesign that became HistoryLikeGame. In design-based research terms~\cite{Adams2022119, WangHannafin2005}, this prototype constitutes Phase~0: a proof-of-concept whose practical shortcomings informed the subsequent design iterations.
+The HistoryLikeGame platform was not the first gamification attempt within the course. An earlier prototype, ``\foreignlanguage{ukrainian}{100 ігор з історії}'' [100 Games in History] (preserved in the repository as \texttt{cite\_structure/}), employed a monolithic single-page architecture with embedded game sections and an animated octopus assistant. While this prototype demonstrated the feasibility of browser-based historical gamification, its limitations~-- single-page architecture preventing modular navigation, no shared infrastructure layer, limited scalability beyond the initial game set~-- motivated the hub-and-spoke redesign that became HistoryLikeGame. In design-based research terms~\cite{Adams2022119, WangHannafin2005}, this prototype represents Phase~0: a proof-of-concept whose practical shortcomings informed the subsequent design iterations.
 
 \paragraph{Three-phase DBR narrative.}
 The platform evolution can be structured as three design-based research iterations~\cite{Bakker2018}, each responding to limitations revealed by the preceding phase:
 \begin{itemize}
-\item \emph{Phase~0} (pre-experiment): The \texttt{cite\_structure} prototype --- monolithic, with limited game-type diversity and no modular infrastructure. Revealed that a single-page approach cannot scale to cover multiple historical periods with diverse interaction types.
-\item \emph{Phase~1} (experimental, December~1, 2024): HistoryLikeGame~v1 --- 23 quiz modules, 2 interaction types (drag-and-drop, text input), 205~KB total. Validated that quiz-based gamification engages NMT preparatory learners, but demonstrated the need for broader modality coverage beyond recognition and recall tasks.
-\item \emph{Phase~2} (post-experimental): HistoryLikeGame~v2 --- 62 modules, 13 game types, extracted shared infrastructure (8~JavaScript modules: \texttt{accessibility.js}, \texttt{assistant.js}, \texttt{canvas-utils.js}, \texttt{game-engine.js}, \texttt{nav.js}, \texttt{quiz-engine.js}, \texttt{ui-utils.js}; 6~CSS files: \texttt{reset.css}, \texttt{theme.css}, \texttt{layout.css}, \texttt{components.css}, \texttt{animations.css}, \texttt{responsive.css}). Generalised infrastructure enables rapid addition of new game types and periods.
+\item \emph{Phase~0} (pre-experiment): The \texttt{cite\_structure} prototype~-- monolithic, with limited game-type diversity and no modular infrastructure. Revealed that a single-page approach cannot scale to cover multiple historical periods with diverse interaction types.
+\item \emph{Phase~1} (experimental, December~1, 2024; unchanged throughout the experimental period): HistoryLikeGame~v1~-- 2 functional quiz modules plus semi-functional Omega Christmas special, 2 interaction types (drag-and-drop, text input), 205~KB total. Validated that quiz-based gamification engages NMT preparatory learners, but demonstrated the need for broader modality coverage beyond recognition and recall tasks.
+\item \emph{Phase~2} (post-experimental, October 2025 -- March 2026): HistoryLikeGame~v2~-- 62 modules, 13 game types, extracted shared infrastructure (8~JavaScript modules: \texttt{accessibility.js}, \texttt{assistant.js}, \texttt{canvas-utils.js}, \texttt{game-engine.js}, \texttt{nav.js}, \texttt{quiz-engine.js}, \texttt{ui-utils.js}; 6~CSS files: \texttt{reset.css}, \texttt{theme.css}, \texttt{layout.css}, \texttt{components.css}, \texttt{animations.css}, \texttt{responsive.css}). Generalised infrastructure enables rapid addition of new game types and periods.
 \end{itemize}
 This iterative trajectory exemplifies the DBR principle that ``each iteration successively approximated the ideal''~\cite{Bakker2018}: each phase produced both a functional artefact and design knowledge that shaped the next iteration. The overall DBR framing of the study is described in Section~\ref{sec:organisation}.
 
@@ -547,7 +502,7 @@ This iterative trajectory exemplifies the DBR principle that ``each iteration su
 
 The platform comprises 62 game modules organised into 9 historical periods plus bonus sections (Table~\ref{tab:game-modules}), reflecting the principle of progressive difficulty~\cite{Clark2016, Connolly2012}. The period structure mirrors the chronological organisation of the NMT curriculum from ancient times to Ukrainian independence:
 
-\begin{table}[htbp]
+\begin{table}[!h]
 \centering
 \caption{Structure of the HistoryLikeGame platform (current version)}
 \label{tab:game-modules}
@@ -574,24 +529,24 @@ AR & Augmented reality & 3+ & A-Frame 3D scenes \\
 \end{tabular}
 \end{table}
 
-The distribution of modules reflects both the breadth of each historical period and the diversity of game types employed. Period~0 (Introduction) serves as an orientation section offering four distinct game types that collectively introduce the core historical timeline from Kyivan Rus to Ukrainian independence. The Christmas special section~($\alpha$, comprising the original 23 quiz modules from the experimental period) uses a grid-based unlock system with password progression. Each period-specific module employs a game type suited to its content: the Cossack era features a historical solitaire card game (Figure~\ref{fig:hlg-solitaire}), the Imperial period uses a bobble shooter with colour-coded historical categories, and the Soviet period employs a portrait puzzle with drag-and-drop fragments of historical figures. The complete per-module catalogue appears in Appendix~B (Table~\ref{tab:game-catalog}).
+The distribution of modules reflects both the breadth of each historical period and the diversity of game types employed. Period~0 (Introduction) serves as an orientation section offering four distinct game types that collectively introduce the core historical timeline from Kyivan Rus to Ukrainian independence. The Christmas special section~($\alpha$, comprising the original quiz modules from the experimental period, expanded to 23 in v2) uses a grid-based unlock system with password progression. Each period-specific module employs a game type suited to its content: the Cossack era features a historical solitaire card game (Figure~\ref{fig:hlg-solitaire}), the Imperial period uses a bobble shooter with colour-coded historical categories, and the Soviet period employs a portrait puzzle with drag-and-drop fragments of historical figures. The complete per-module catalogue appears in Appendix~\ref{app:B} (Table~\ref{tab:game-catalog}).
 
 \subsection{Game types and interaction design}
 
 Automated analysis of the platform modules (using the \texttt{catalog\_gamification.py} module of the data pipeline) identified six categories of game types with distinct cognitive demands and technological implementations~\cite{Prensky2001, Clark2016, Knutas2016}:
 
 \begin{enumerate}
-\item \textbf{Quiz-based} (23 modules in the $\alpha$ section): Drag-and-drop matching and text input exercises using the shared quiz engine. Drag-and-drop engages recognition memory and spatial reasoning~\cite{Bonwell1991, Qian2016, Lampropoulos2024}, while text input requires active recall for dates, names, and terminology~\cite{Connolly2012, Clark2016}. Figure~\ref{fig:hlg-quiz} shows a representative quiz module.
-\item \textbf{Canvas physics games} (5 modules): Block Buster (breakout/arkanoid), bobble shooter (Figure~\ref{fig:hlg-bobble}), apple catcher, compass navigation, and falling-answer quizzes. These use HTML5 Canvas for real-time physics simulation, requiring timing and spatial coordination alongside historical knowledge.
+\item \textbf{Canvas physics games} (4 modules): Block Buster (breakout/arkanoid), bobble shooter (Figure~\ref{fig:hlg-bobble}), apple catcher, and falling-answer quizzes. These use HTML5 Canvas for real-time physics simulation, requiring timing and spatial coordination alongside historical knowledge.
 \item \textbf{Three.js 3D environments} (2 modules): Chronobiy (Figure~\ref{fig:hlg-threejs}), a timeline-sorting battle game, and tower defence use Three.js for 3D rendering of historical scenarios with interactive gameplay.
 \item \textbf{Card and board games} (2 modules): Historical solitaire (Figure~\ref{fig:hlg-solitaire}) where cards represent events within thematic categories (Hetman politics, Military campaigns, Cultural life, International relations) that must be sorted chronologically. A separate introductory solitaire provides general practice.
-\item \textbf{Simulation and navigation} (3 modules): A caf\'{e} simulator set in the Independence period, a path-builder for ancient history, and a Wordwall-integrated revolution quiz. These employ varied interaction models from resource management to external platform embedding.
-\item \textbf{AR experiences} (3+ modules): Augmented reality scenes using A-Frame and AR.js, including Quebec, Toronto, and Yukon variants with 3D model interaction. These require a camera-equipped device and represent the highest infrastructure tier~\cite{1Barbatsis201159}.
+\item \textbf{Simulation and navigation} (2 modules): A caf\'{e} simulator set in the Independence period and a path-builder for ancient history. These employ varied interaction models from resource management to spatial navigation.
+\item \textbf{Quiz-based} (23 modules in the $\alpha$ section): Drag-and-drop matching and text input exercises using the shared quiz engine. Drag-and-drop engages recognition memory and spatial reasoning~\cite{Bonwell1991, Qian2016, Lampropoulos2024}, while text input requires active recall for dates, names, and terminology~\cite{Connolly2012, Clark2016}. Figure~\ref{fig:hlg-quiz} shows a representative quiz module.
+\item \textbf{AR experiences} (3+ modules): Augmented reality scenes using A-Frame and AR.js, including ``Quebec'', ``Toronto'', and ``Yukon'' variants (codenames) with 3D model interaction. These require a camera-equipped device and represent the highest infrastructure tier~\cite{1Barbatsis201159}.
 \end{enumerate}
 
 The technical characteristics of each game type category are summarised in Table~\ref{tab:game-detail}.
 
-\begin{table}[htbp]
+\begin{table}[!h]
 \centering
 \caption{Technical characteristics of HistoryLikeGame game type categories}
 \label{tab:game-detail}
@@ -602,14 +557,14 @@ The technical characteristics of each game type category are summarised in Table
 \hline
 Quiz (D\&D + text) & 23 & Shared quiz engine & Drag-and-drop matching, text recall \\
 Falling-answer & 3 & Shared game engine & Timed selection of falling items \\
-Canvas physics & 5 & HTML5 Canvas & Real-time physics, spatial coordination \\
+Canvas physics & 4 & HTML5 Canvas & Real-time physics, spatial coordination \\
 Three.js 3D & 2 & Three.js & 3D timeline sorting, tower defence \\
 Card/board & 2 & Canvas/DOM & Chronological card sorting by theme \\
-Simulation & 3 & Canvas/DOM/Wordwall & Resource management, path building \\
+Simulation & 2 & Canvas/DOM & Resource management, spatial navigation \\
 AR experiences & 3+ & A-Frame + AR.js & 3D model interaction via camera \\
 Puzzle & 1 & DOM drag-and-drop & Portrait fragment assembly \\
 \hline
-\multicolumn{2}{l}{\textbf{Total modules}} & \textbf{62} & \\
+\multicolumn{2}{l}{\textbf{Total modules}} & \textbf{60} & \\
 \hline
 \end{tabular}
 \end{table}
@@ -625,11 +580,11 @@ Each game type was selected to target specific NMT competencies at defined cogni
 \item \emph{Simulation}: Resource management and decision-making in historical scenarios $\rightarrow$ Evaluate and Create;
 \item \emph{AR experiences}: Spatial interaction with 3D historical models $\rightarrow$ Apply (novel modality).
 \end{itemize}
-This mapping extends the platform type $\times$ pedagogical affordance analysis from Section~\ref{sec:game-elements} (Figure~\ref{fig:platform-pedagogy-matrix}), where web-based platforms scored ``Strong'' on assessment integration, scalability, and cost-effectiveness --- directly justifying the HTML5/JavaScript technology choice. The progression from recognition-level quiz tasks to synthesis-level simulation mirrors the progressive complexity principle~\cite{Clark2016, Connolly2012}.
+This mapping extends the platform type $\times$ pedagogical affordance analysis from Section~\ref{sec:game-elements} (Figure~\ref{fig:platform-pedagogy-matrix}), where web-based platforms scored ``Strong'' on assessment integration, scalability, and cost-effectiveness~-- directly justifying the HTML5/JavaScript technology choice. The progression from recognition-level quiz tasks to synthesis-level simulation mirrors the progressive complexity principle~\cite{Clark2016, Connolly2012}.
 
-The shared infrastructure layer --- comprising 6~CSS files ($\approx$28~KB), 8~JavaScript modules ($\approx$49~KB), and 2~HTML templates ($\approx$11~KB) --- totals approximately 88~KB and is reused across all modules. The total platform code (HTML+CSS+JS) is approximately 869~KB, while data files (quiz questions, game configurations, assistant facts) add $\approx$1.5~MB, and multimedia assets (images, 3D models, audio) bring the full platform to approximately 76~MB. For the code-only portion, the platform remains exceptionally lightweight compared to other educational technology platforms~\cite{Zainuddin20241261}: the shared infrastructure layer that powers all game types is smaller than a single lecture slide image. This size advantage is critical in the wartime context, where bandwidth limitations frequently affect educational access~\cite{Martynets202428, Vovchasta2024}. The per-module catalogue with individual sizes appears in Appendix~B (Table~\ref{tab:game-catalog}).
+The shared infrastructure layer~-- comprising 6~CSS files ($\approx$28~KB), 8~JavaScript modules ($\approx$49~KB), and 2~HTML templates ($\approx$11~KB)~-- totals approximately 88~KB and is reused across all modules. The total platform code (HTML+CSS+JS) is approximately 869~KB, while data files (quiz questions, game configurations, assistant facts) add $\approx$1.5~MB, and multimedia assets (images, 3D models, audio) bring the full platform to approximately 76~MB. The implications of this lightweight architecture for wartime bandwidth constraints are discussed in Section~\ref{sec:wartime-context}. The per-module catalogue with individual sizes appears in Appendix~\ref{app:B} (Table~\ref{tab:game-catalog}). A known limitation is that the platform interface is not responsive: layouts are designed for desktop browsers and are not adapted for mobile devices or macOS Safari, which may restrict accessibility for some users.
 
-Each module provides immediate visual feedback upon interaction, using colour coding (green for correct, red for incorrect) and score tracking~\cite{Hattie2009}. The feedback mechanism aligns with the ``immediate feedback'' design principle identified in the systematic review (Section~\ref{sec:gamification-review})~\cite{KorniienkoSemerikov2024}.
+Each module provides visual feedback upon interaction through colour coding (green for correct, red for incorrect) and score tracking, aligning with the feedback design principle from the systematic review (Section~\ref{sec:gamification-review})~\cite{KorniienkoSemerikov2024, Hattie2009}.
 
 \subsection{Design rationale}
 
@@ -637,122 +592,76 @@ The platform's design was guided by the principles identified in Section~\ref{se
 
 \begin{itemize}
 \item \textbf{Historical authenticity}: All content was based on the NMT curriculum and verified historical facts~\cite{KorniienkoSemerikov2024, Christiansson200593};
-\item \textbf{Progressive complexity}: Periods follow the chronological structure of the course, from ancient history through independence, with the $\alpha$ section's Omega module providing a comprehensive challenge~\cite{Clark2016, Hamari2014, Laskowski2015};
-\item \textbf{Inclusivity and accessibility}: The platform implements inclusive design through a floating settings panel (Figure~\ref{fig:hlg-accessibility}) that provides theme switching (dark/light), font size scaling (A/A+/A++), motion reduction, and high-contrast mode --- accommodating diverse visual preferences, motor abilities, and sensory sensitivities~\cite{McCrindle2013}. All settings persist via \texttt{localStorage} and respect system-level preferences (\texttt{prefers-color-scheme}, \texttt{prefers-reduced-motion}, \texttt{prefers-contrast}). Static HTML delivery ensures minimal bandwidth requirements and universal device compatibility~\cite{Vuorikari2016, Zainuddin20241261};
-\item \textbf{Offline capability}: Once loaded, all game modules function entirely without network connectivity, as no server communication is required after initial page load. This is critical in the wartime context where internet connectivity is unreliable~\cite{Martynets202428, Vovchasta2024};
+\item \textbf{Progressive complexity}: The $\alpha$ section covers a single thematic period, with the Omega module providing a comprehensive challenge through diverse task formats (drag-and-drop, text input, mixed) rather than thematic breadth. Across the platform, periods follow the chronological structure of the course~\cite{Clark2016, Hamari2014, Laskowski2015};
+\item \textbf{Inclusivity and accessibility}: The platform implements inclusive design through a floating settings panel (Figure~\ref{fig:hlg-accessibility}) that provides theme switching (dark/light), font size scaling (A/A+/A++), motion reduction, and high-contrast mode~-- accommodating diverse visual preferences, motor abilities, and sensory sensitivities~\cite{McCrindle2013}. A known limitation: font size scaling applies to page-level text but does not affect text rendered within Canvas-based game elements (e.g., falling-answer blocks, bobble shooter labels), as these are drawn programmatically rather than styled via CSS. All settings persist via \texttt{localStorage} and respect system-level preferences (\texttt{prefers-color-scheme}, \texttt{prefers-reduced-motion}, \texttt{prefers-contrast}). Static HTML delivery ensures minimal bandwidth requirements and universal device compatibility~\cite{Vuorikari2016, Zainuddin20241261};
+\item \textbf{Offline capability}: This emerged as one of the platform's most significant features, albeit an unplanned one. Because all game logic executes client-side and no server communication occurs after initial page load, every module continues to function during network interruptions~-- a property that proved critical during wartime power outages and connectivity disruptions (Section~\ref{sec:wartime-context}). Students could load a module while connectivity was available and complete it later without internet access. The entire platform can also be saved locally for fully offline use, since it consists of static files with no server-side dependencies~\cite{Martynets202428, KorniienkoSemerikov2024};
 \item \textbf{Immediate feedback}: Instant visual feedback (colour-coded green/red responses, score tracking) supports self-regulated learning~\cite{Hattie2009, Connolly2012};
 \item \textbf{Low barrier to entry}: No registration, login, or software installation required~\cite{Prensky2001};
 \item \textbf{Documentation}: Player and developer guides are provided in both HTML and Markdown formats, enabling educators to understand, adapt, and extend the platform.
 \end{itemize}
 
 \paragraph{Theoretical grounding of design decisions.}
-Each design principle connects to an established theoretical framework identified in Chapter~1. Historical authenticity operationalises the disciplinary literacy approach, where game content must reflect genuine historical inquiry rather than trivialised narratives (Section~\ref{sec:principle-grounding}). Progressive complexity implements the challenge--skill balance central to Flow Theory~\cite{Csikszentmihalyi1990}: as learners progress through historical periods, both content difficulty and game mechanic complexity increase, maintaining the ``flow channel'' between boredom and anxiety. Inclusivity features (theme switching, font scaling, motion reduction, high contrast) operationalise the principle that gamified learning should be accessible ``regardless of gender, age, culture, experience or any disabilities''~\cite{McCrindle2013}. These features align with WCAG accessibility guidelines and DigComp Area~5 problem-solving competences~\cite{Vuorikari2016}, directly responding to the finding that accessibility barriers impede gamification adoption~\cite{Sunkara2024203, Gasca-Hurtado2021382}. Offline capability directly mitigates first-order (technical) barriers~\cite{Ertmer1999}, responding to the 40.5\% technical barrier rate identified in the systematic review (Figure~\ref{fig:barrier-frequency}). Immediate feedback combines behaviourist reinforcement with SDT competence need satisfaction~\cite{RyanDeci2000, Hattie2009}: colour-coded responses provide both extrinsic information and intrinsic competence signals. Low barrier to entry addresses second-order (attitudinal) barriers~\cite{Ertmer1999} by eliminating registration friction. Documentation supports the MRQS replicability standard~\cite{Korniienko2025mrqs}, enabling other researchers and educators to reproduce or adapt the platform.
+Each design principle connects to an established theoretical framework identified in Chapter~\ref{ch:theory}. Historical authenticity operationalises the disciplinary literacy approach, where game content must reflect genuine historical inquiry rather than trivialised narratives (Section~\ref{sec:principle-grounding}). Progressive complexity implements the challenge--skill balance central to Flow Theory (Section~\ref{sec:theory})~\cite{Csikszentmihalyi1990}: as learners progress through historical periods, both content difficulty and game mechanic complexity increase, maintaining the ``flow channel'' between boredom and anxiety. Inclusivity features (theme switching, font scaling, motion reduction, high contrast) operationalise the principle that gamified learning should be ``a fun, interactive and inclusive experience for students regardless of their gender, age, culture, experience or any disabilities''~\cite{McCrindle2013}. These features align with WCAG accessibility guidelines and DigComp Area~5 problem-solving competences~\cite{Vuorikari2016}, directly responding to the finding that accessibility barriers impede gamification adoption~\cite{Sunkara2024203, Gasca-Hurtado2021382}. Offline capability directly mitigates first-order (technical) barriers~\cite{Ertmer1999}, responding to the 40.5\% technical barrier rate identified in the systematic review (Figure~\ref{fig:barrier-frequency}). Immediate feedback combines behaviourist reinforcement with SDT competence need satisfaction~\cite{RyanDeci2000, Hattie2009}: colour-coded responses provide both extrinsic information and intrinsic competence signals. Low barrier to entry addresses second-order (attitudinal) barriers~\cite{Ertmer1999} by eliminating registration friction. Documentation supports the MRQS replicability standard~\cite{Korniienko2025mrqs}, enabling other researchers and educators to reproduce or adapt the platform.
 
 \paragraph{MDA framework mapping.}
-Following the Mechanics--Dynamics--Aesthetics framework~\cite{Hunicke2004} introduced in Section~\ref{sec:dmc-mapping}: the platform's \emph{mechanics} include drag-and-drop interaction, text input, physics collision detection, card sorting algorithms, and timer-based challenges. These mechanics generate \emph{dynamics} of score tracking, progressive unlock (the $\alpha$ section's password-gated grid), thematic grouping by historical period, and difficulty escalation. The intended \emph{aesthetics} --- the emotional responses experienced by learners --- encompass narrative engagement (period-based historical storytelling), challenge (progressive difficulty and timed elements), and discovery (exploring new game types across periods). This three-layer analysis ensures that low-level implementation decisions (mechanics) are traceable to the learning experience goals (aesthetics) through observable interaction patterns (dynamics).
+Following the Mechanics--Dynamics--Aesthetics framework~\cite{Hunicke2004} introduced in Section~\ref{sec:dmc-mapping}: the platform's mechanics (the game types described above) generate dynamics of score tracking, progressive unlock (the $\alpha$ section's password-gated grid), and difficulty escalation. The intended aesthetics encompass narrative engagement (period-based storytelling), challenge (progressive difficulty and timed elements), and discovery (exploring new game types across periods).
 
 \subsection{Alignment with design principles}
 
-The HistoryLikeGame platform was designed to implement the six evidence-based design principles identified in the systematic review (Section~\ref{sec:gamification-review})~\cite{KorniienkoSemerikov2024}. Table~\ref{tab:principle-alignment} maps each principle to specific platform features.
+The HistoryLikeGame platform was designed to implement the six evidence-based design principles identified in the systematic review (Section~\ref{sec:gamification-review})~\cite{KorniienkoSemerikov2024}, together with the eight DigComp-aligned implementation guidelines (Section~\ref{sec:guidelines}). Table~\ref{tab:principle-alignment} maps each guideline to its implementation in the experimental design. A complementary mapping at the quality compliance level appears in Section~\ref{sec:consolidated-alignment} (Table~\ref{tab:design-req-compliance}).
 
-\begin{table}[htbp]
+\begin{table}[!h]
 \centering
-\caption{Alignment of HistoryLikeGame platform with evidence-based design principles}
+\caption{Implementation of design principles and guidelines in the experimental design}
 \label{tab:principle-alignment}
 \small
-\begin{tabular}{p{3cm}p{4cm}p{5.5cm}}
+\begin{tabular}{p{0.5cm}p{3.2cm}p{4.5cm}p{4cm}}
 \hline
-\textbf{Design principle} & \textbf{Platform feature} & \textbf{Evidence from review} \\
-\hline
-Historical authenticity~\cite{KorniienkoSemerikov2024} & All content verified against NMT curriculum; factual accuracy maintained & Studies with accurate content reported stronger outcomes; 10.8\% reporting negatives linked to trivialisation~\cite{Prieto-Andreu2024244} \\
-\hline
-Narrative integration~\cite{Sailer2017} & Period-based structure following Ukrainian history chronologically; thematic quiz naming; octopus assistant providing historical facts & Quest-based structures aligned with historical investigation; strongest effects on affective outcomes~\cite{KorniienkoSemerikov2024} \\
-\hline
-Progressive difficulty~\cite{Clark2016} & Nine historical periods from ancient to independence; increasing game complexity from quizzes to 3D environments; Omega comprehensive review & Scaffolded challenges from recognition to analysis to synthesis supported sustained engagement~\cite{PrietoAndreu202073} \\
-\hline
-Immediate feedback~\cite{Hattie2009} & Colour-coded responses (green/red); instant score display; game-mechanic feedback (physics collisions, card placements) & Enabled iterative learning cycles; particularly effective for factual recall~\cite{Zhonggen2019} \\
-\hline
-Social elements~\cite{Qian2016} & Viber group sharing; peer support; community naming & Collaborative structures showed more consistently positive effects than competition~\cite{Hamari2014} \\
-\hline
-Multiple modalities~\cite{Tamim2011} & 13 game types: quiz, Canvas physics, Three.js 3D, card games, simulation, AR, puzzle; visual + textual + spatial + kinesthetic elements & Multimodal engagement addressed diverse learning preferences~\cite{Connolly2012} \\
-\hline
-\end{tabular}
-\end{table}
-
-Table~\ref{tab:principle-alignment} maps the six design principles from the systematic review. In addition, Section~\ref{sec:guidelines} formulated eight implementation guidelines that operationalise these principles through the DigComp framework. Table~\ref{tab:guidelines-impl} traces each guideline to its specific implementation in the experimental design.
-
-\begin{table}[htbp]
-\centering
-\caption{Implementation of Section~\ref{sec:guidelines} guidelines in the experimental design}
-\label{tab:guidelines-impl}
-\small
-\begin{tabular}{p{0.5cm}p{3.2cm}p{4cm}p{4.5cm}}
-\hline
-\textbf{\#} & \textbf{Guideline} & \textbf{Implementation} & \textbf{Evidence} \\
+\textbf{\#} & \textbf{Principle / Guideline} & \textbf{Implementation} & \textbf{Evidence} \\
 \hline
 1 & Clear learning objectives & NMT curriculum defines content; DigComp~2.0 areas frame digital competencies (Section~\ref{sec:organisation}) & 156 quizzes aligned to NMT format \\
 \hline
-2 & Progressive complexity & 9 historical periods from ancient to independence; Bloom's taxonomy scaffolding (Section~\ref{sec:game-elements}) & Game types progress: quiz $\to$ card $\to$ 3D $\to$ simulation \\
+2 & Historical authenticity~\cite{KorniienkoSemerikov2024} & All content verified against NMT curriculum; factual accuracy maintained & 0\% content complaints in 400 Viber messages; 10.8\% negatives in review linked to trivialisation~\cite{Prieto-Andreu2024244} \\
 \hline
-3 & Historical rigour & All content verified against NMT curriculum; factual accuracy maintained & 0\% content complaints in 400 Viber messages \\
+3 & Narrative integration~\cite{Sailer2017} & Period-based structure; thematic quiz naming (Section~\ref{sec:quiz-naming}); octopus assistant providing historical facts & Quest-based structures showed strongest affective outcomes~\cite{KorniienkoSemerikov2024} \\
 \hline
-4 & Multiple pathways & Required seminars + optional HLG modules + Omega comprehensive review & 62 modules across 13 game types \\
+4 & Progressive difficulty~\cite{Clark2016} & 9 historical periods; Bloom's taxonomy scaffolding; Omega comprehensive review & Game types progress: quiz $\to$ card $\to$ 3D $\to$ simulation~\cite{PrietoAndreu202073} \\
 \hline
-5 & Integrated assessment & Google Forms quizzes as both formative assessment and learning activities (Section~\ref{sec:assessment}) & Iterative mastery: e.g., Talash~D., 7 attempts \\
+5 & Immediate feedback~\cite{Hattie2009} & Colour-coded responses (green/red); instant score display; game-mechanic feedback & Enabled iterative learning cycles; effective for factual recall~\cite{Zhonggen2019} \\
 \hline
-6 & Inclusivity, accessibility, resilience & Theme switching, font scaling, motion reduction, high contrast; offline-capable; $<$30~KB per page (Section~\ref{sec:gamification-design}) & Five-layer resilience architecture (Figure~\ref{fig:resilience-architecture}) \\
+6 & Social elements~\cite{Qian2016} & Viber group sharing; peer support; creative quiz naming as community practice & Collaborative structures more consistently positive than competition~\cite{Hamari2014} \\
 \hline
-7 & Community through gamification & Creative quiz naming; Viber group sharing; thematic naming conventions (Section~\ref{sec:quiz-naming}) & 400 Viber messages; naming themes referenced by students \\
+7 & Multiple modalities~\cite{Tamim2011} & Required seminars + optional HLG modules; multiple game types; visual + textual + spatial elements & Multimodal engagement addressed diverse learning preferences~\cite{Connolly2012} \\
 \hline
-8 & Systematic documentation & Chat log, response files, platform source code, Python analysis pipeline preserved (Section~\ref{sec:data-analysis}) & Reproducible pipeline; all data in Appendix~B \\
+8 & Integrated assessment & Google Forms quizzes as both formative assessment and learning activities (Section~\ref{sec:assessment}) & Re-attempt mechanism across 156 quizzes \\
+\hline
+9 & Inclusivity and resilience & Theme switching, font scaling, motion reduction, high contrast; offline capability (Section~\ref{sec:gamification-design}) & Five-layer resilience architecture (Figure~\ref{fig:resilience-architecture}) \\
+\hline
+10 & Systematic documentation & Chat log, response files, platform source code, Python analysis pipeline (Section~\ref{sec:data-analysis}) & Reproducible pipeline; all data in Appendix~\ref{app:B} \\
 \hline
 \end{tabular}
 \end{table}
 
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.65\textwidth]{hlg_quiz.png}
-\caption{Quiz module interface (Christmas special, Section~$\alpha$): text input for dates, multiple-choice buttons for historical content, and image-based architectural style identification}
+\caption{Quiz module interface (light theme): button-based selection matching historical inventions to chronological periods, with three answer options per line. The platform supports light/dark theme switching via the accessibility settings panel.}
 \label{fig:hlg-quiz}
 \end{figure}
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.75\textwidth]{hlg_threejs.png}
-\caption{Chronobiy (``Time Slayer'') game: a timeline-sorting battle where players arrange historical events chronologically to defeat period-specific opponents. Built with Three.js for 3D visual effects}
-\label{fig:hlg-threejs}
-\end{figure}
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.75\textwidth]{hlg_solitaire.png}
-\caption{Historical solitaire: Cossack era card game with four thematic categories (Hetman politics, Military campaigns, Cultural life, International relations) requiring chronological sorting within each theme}
-\label{fig:hlg-solitaire}
-\end{figure}
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.65\textwidth]{hlg_bobble.png}
-\caption{Bobble Shooter: Imperial period game where coloured bubbles represent historical categories (Culture, Politics, Economy, Military affairs) and players match three or more to clear the field}
-\label{fig:hlg-bobble}
-\end{figure}
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.55\textwidth]{hlg_accessibility.png}
-\caption{Inclusivity settings panel of the HistoryLikeGame platform: theme switching (dark/light), font size scaling (A/A+/A++), reduced motion, and high-contrast mode. Settings persist via \texttt{localStorage} and respect system-level user preferences}
-\label{fig:hlg-accessibility}
-\end{figure}
 
 \subsection{Supplementary gamification tools}
 
 In addition to HistoryLikeGame, the course utilised multiple gamification modalities~\cite{Deterding2011, SEABORN201514}:
 \begin{itemize}
-\item \textbf{Wordwall}: An external interactive game platform, deployed for a single session on March~27, 2025 (Seminar~36, Period~6: Ukrainian Revolution). The embedded module (\texttt{viraska.html}) provided a matching exercise using Wordwall's visual interface. The pedagogical rationale for incorporating an external platform was twofold: it offered interaction modalities not available in HLG (timed competitive matching with animated feedback), and the deliberate platform diversity helps prevent gamification fatigue --- a risk identified in the literature for single-platform deployments~\cite{Lampropoulos2024, Bozic2024538}.
+\item \textbf{Wordwall}: An external interactive game platform, introduced on December~27, 2024 as a trial alternative to Google Forms for quiz delivery. The embedded module (\texttt{viraska.html}) provided a matching exercise using Wordwall's visual interface, offering interaction modalities not available in Google Forms (timed competitive matching with animated feedback)~\cite{Lampropoulos2024, Bozic2024538}.
 
-\item \textbf{Creative quiz naming}: As described in Section~\ref{sec:quiz-naming}, the systematic practice of assigning thematic, narrative-laden names to Google Forms quizzes transformed the assessment layer itself into a gamification element. This strategy applies the narrative integration principle (Section~\ref{sec:design-principles}) to non-game content: quiz titles such as ``Challenge of the Cossack Era'' or ``The Soviet Labyrinth'' frame each assessment as a quest rather than a test~\cite{Sailer2017}.
+\item \textbf{Creative quiz naming}: As described in Section~\ref{sec:quiz-naming}, the systematic practice of assigning thematic, narrative-laden names to Google Forms quizzes transformed the assessment layer itself into a gamification element. This strategy applies the narrative integration principle (Section~\ref{sec:design-principles}) to non-game content, framing each assessment as a thematic challenge rather than a routine test.
 
-\item \textbf{Historical memes}: Occasional, non-systematic sharing of history-themed memes in the Viber chat group. These served a community-building function~\cite{Qian2016} rather than a formal pedagogical one. Unlike the structured gamification elements above, meme sharing was informal and not tracked quantitatively --- a deliberate choice to maintain the organic social dynamics of the learning community without instrumentalising every interaction.
+\item \textbf{Historical memes}: Occasional, non-systematic sharing of history-themed memes in the Viber chat group. These served a community-building function~\cite{Qian2016} rather than a formal pedagogical one. Unlike the structured gamification elements above, meme sharing was informal and not tracked quantitatively~-- preserving the unstructured social dimension of the learning community.
 \end{itemize}
 
 
@@ -772,10 +681,10 @@ Since Russia's full-scale invasion on February 24, 2022, Ukrainian educational i
 \end{itemize}
 
 \paragraph{Quantitative evidence from the course.}
-The attendance log (Section~\ref{sec:attendance}) documents 33 absence notifications from 10 distinct participants. The breakdown by reported reason reveals: internet connectivity issues --- 8 (24.2\%), family circumstances --- 8 (24.2\%), unspecified --- 8 (24.2\%), power outages --- 3 (9.1\%), lateness --- 3 (9.1\%), and health --- 3 (9.1\%). Infrastructure-directly-attributable absences (internet + power) account for 11 cases (33.3\%), confirming that wartime infrastructure disruption is a primary barrier to participation. These data are analysed in full in Section~\ref{sec:attendance} (Table~\ref{tab:absence-reasons}, Figure~\ref{fig:absence}); here the focus is on the methodological implications for course design. The 33.3\% infrastructure-attributable rate aligns with the barrier distribution identified in the systematic review (Figure~\ref{fig:barrier-frequency}), where technical barriers constituted the largest category at 40.5\%.
+The attendance log (Section~\ref{sec:attendance}) documents 33 absence notifications from 10 distinct participants. The breakdown by reported reason reveals: internet connectivity issues~-- 8 (24.2\%), family circumstances~-- 8 (24.2\%), unspecified~-- 8 (24.2\%), power outages~-- 3 (9.1\%), lateness~-- 3 (9.1\%), and health~-- 3 (9.1\%). Infrastructure-directly-attributable absences (internet + power) account for 11 cases (33.3\%), confirming that wartime infrastructure disruption is a primary barrier to participation. These data are analysed in full in Section~\ref{sec:attendance} (Table~\ref{tab:absence-reasons}, Figure~\ref{fig:absence}); here the focus is on the methodological implications for course design. The 33.3\% infrastructure-attributable rate aligns with the barrier distribution identified in the systematic review (Figure~\ref{fig:barrier-frequency}), where technical barriers constituted the largest category at 40.5\%.
 
 \paragraph{Student voice.}
-The chat log preserves representative participant communications documenting the lived reality of wartime education. Power disruptions were reported directly: ``\foreignlanguage{ukrainian}{В мене зникло світло}'' [My power went out]. Internet instability was a recurring theme: ``\foreignlanguage{ukrainian}{Дуже поганий інтернет}'' [Very bad internet]. Family circumstances --- which in the wartime context may encompass displacement, caregiving for relatives affected by conflict, or security concerns --- were cited formally: ``\foreignlanguage{ukrainian}{Буду відсутня за сімейними обставинами}'' [I will be absent due to family circumstances]. These reports illustrate the cascade effects described in the barrier interaction model (Figure~\ref{fig:barrier-interaction-model}): a single infrastructure failure (e.g., power outage) disables multiple educational layers simultaneously.
+The chat log preserves representative participant communications documenting the lived reality of wartime education. Power disruptions were reported directly: ``\foreignlanguage{ukrainian}{В мене зникло світло}'' [My power went out]. Internet instability was a recurring theme: ``\foreignlanguage{ukrainian}{Дуже поганий інтернет}'' [Very bad internet]. Family circumstances~-- which in the wartime context may encompass displacement, caregiving for relatives affected by conflict, or security concerns~-- were cited formally: ``\foreignlanguage{ukrainian}{Буду відсутня за сімейними обставинами}'' [I will be absent due to family circumstances]. These reports illustrate the cascade effects described in the barrier interaction model (Figure~\ref{fig:barrier-interaction-model}): a single infrastructure failure (e.g., power outage) disables multiple educational layers simultaneously.
 
 \subsection{Multi-channel resilience architecture}
 
@@ -786,22 +695,16 @@ To maintain educational continuity under these conditions~\cite{Hlianenko2024, V
 \item \textbf{Communication layer (Viber)}: The messaging platform served as the persistent communication backbone. Viber messages could be received and sent even during brief connectivity windows, and the platform's offline caching ensured that messages posted during outages were delivered once connectivity resumed.
 \item \textbf{Content layer (Google Drive)}: All lecture materials, worksheets, and supplementary resources were stored on Google Drive and could be accessed asynchronously when connectivity was available. The Drive-based architecture meant that materials were available 24/7 regardless of whether the instructor was online.
 \item \textbf{Assessment layer (Google Forms)}: Quiz links remained active and accessible at any time, allowing students to complete assessments when their individual connectivity allowed, rather than requiring simultaneous online presence~\cite{Hattie2009}.
-\item \textbf{Gamification layer (HistoryLikeGame)}: The static HTML architecture of the platform (shared infrastructure: $\approx$88~KB; individual game pages typically under 30~KB each) meant that game modules could be loaded even on extremely slow connections~\cite{KorniienkoSemerikov2024, Titova2025cte}. Once loaded, the modules functioned entirely offline, requiring no further server communication. This made the gamification layer the most resilient component of the educational architecture, with graceful degradation: if multimedia assets failed to load, the core gameplay remained functional.
+\item \textbf{Gamification layer (HistoryLikeGame)}: The platform's lightweight static HTML architecture (Section~\ref{sec:gamification-design}) meant that game modules could be loaded even on extremely slow connections~\cite{KorniienkoSemerikov2024, Titova2025cte}. Once loaded, the modules functioned entirely offline, requiring no further server communication. Graceful degradation ensured that core gameplay remained functional even if multimedia assets failed to load.
 \end{enumerate}
 
-This multi-channel approach demonstrated resilience through redundancy~\cite{Tamim2011}: when any single channel failed (instructor internet, student power outage), alternatives remained available. The asynchronous nature of most course components meant that temporary disruptions did not result in permanent loss of educational access~\cite{Hlianenko2024, Zamkova2023299}. Figure~\ref{fig:digital-platforms} illustrates the digital platform integration resources used in the course.
+This multi-channel approach demonstrated resilience through redundancy~\cite{Tamim2011}: when any single channel failed (instructor internet, student power outage), alternatives remained available. The asynchronous nature of most course components meant that temporary disruptions did not result in permanent loss of educational access~\cite{Hlianenko2024, Zamkova2023299}. Beyond immediate course resilience, this architecture implicitly cultivated lifelong learning (LLL) competences. By distributing educational resources across multiple freely accessible platforms~-- each requiring independent navigation, account management, and self-directed engagement~-- the course modelled the distributed learning ecosystem that characterises contemporary self-directed professional development~\cite{UNESCO2023}. Students who navigated power outages by asynchronously accessing Google Drive materials or completing HistoryLikeGame modules offline were practising exactly the autonomous, technology-mediated learning behaviours that DigComp Area~5 (Problem solving) and the European LLL framework identify as essential for knowledge-society participation~\cite{Vuorikari2016}. Figure~\ref{fig:digital-platforms} illustrates the poster used to orient students to this ecosystem of digital platforms, emphasising the self-learning pathway: ``Plug In. Log On. Break the Surface at NMT.''
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.65\textwidth]{posibnyk_6_digital_platforms.jpg}
-\caption{Digital platform integration poster (``Plug In. Log On.'') showing the ecosystem of digital tools used in the course, showing the ecosystem of digital tools integrated into the course methodology}
-\label{fig:digital-platforms}
-\end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \resizebox{0.85\textwidth}{!}{\input{figures/resilience_architecture}}
-\caption{Five-layer resilience architecture of the course. Layers are ordered by infrastructure failure tolerance: outermost (synchronous Zoom) is most fragile; innermost (HistoryLikeGame, $\approx$88~KB, offline-capable) is most resilient. Bandwidth requirements decrease inward.}
+\caption{Five-layer resilience architecture of the course. Layers are ordered by infrastructure failure tolerance: outermost (synchronous Zoom) is most fragile; innermost (HistoryLikeGame, offline-capable) is most resilient. Bandwidth requirements decrease inward.}
 \label{fig:resilience-architecture}
 \end{figure}
 
@@ -812,13 +715,13 @@ The wartime context informed six specific design decisions, each traceable to th
 \begin{enumerate}
 \item \textbf{Asynchronous-first design.} All 40 lectures were recorded and shared via Google Drive (Layer~3), making synchronous attendance structurally optional rather than merely tolerated. This was necessary when real-time participation could not be guaranteed on any given day~\cite{Tamim2011, Hlianenko2024}. The overall course organisation reflecting this principle is described in Section~\ref{sec:organisation}.
 
-\item \textbf{Voluntary formative assessment.} Seminar quizzes were voluntary, in contrast to mandatory modular controls, accommodating students whose participation was disrupted by infrastructure failures or safety concerns~\cite{Hickey2014}. The scoring rationale is detailed in Section~\ref{sec:scoring}.
+\item \textbf{Voluntary formative assessment.} Seminar quizzes were voluntary, in contrast to mandatory modular controls, accommodating students whose participation was disrupted by infrastructure failures or safety concerns~\cite{Hickey2015}. The scoring rationale is detailed in Section~\ref{sec:scoring}.
 
-\item \textbf{Minimal-bandwidth gamification.} The HistoryLikeGame platform's static HTML architecture (shared infrastructure $\approx$88~KB; individual pages typically $<$30~KB) was a deliberate design response to bandwidth constraints, not merely a technical convenience. The platform is loadable on 2G connections and functions entirely offline after initial load~\cite{KorniienkoSemerikov2024}. The platform evolution through three DBR iterations is described in Section~\ref{sec:platform-evolution}.
+\item \textbf{Minimal-bandwidth gamification.} The HistoryLikeGame platform's static HTML architecture (Section~\ref{sec:gamification-design}) was a deliberate design response to bandwidth constraints. The platform is loadable on 2G connections and functions entirely offline after initial load~\cite{KorniienkoSemerikov2024}. The platform evolution through three DBR iterations is described in Section~\ref{sec:platform-evolution}.
 
-\item \textbf{Multi-channel redundancy.} The five-layer architecture (Figure~\ref{fig:resilience-architecture}) ensures that at least one educational pathway survives any single-point infrastructure failure~\cite{Vovchasta2024}. When the instructor's internet failed, Viber (Layer~2) provided scheduling updates; when students lost power, Google Drive materials (Layer~3) and offline HLG modules (Layer~5) remained accessible upon restoration.
+\item \textbf{Multi-channel redundancy.} The resilience architecture (Figure~\ref{fig:resilience-architecture}) ensures that at least one educational pathway survives any single-point infrastructure failure~\cite{Vovchasta2024}. When the instructor's internet failed, Viber provided scheduling updates; when students lost power, Google Drive materials and offline HLG modules remained accessible upon restoration.
 
-\item \textbf{Safety-first communication.} The instructor's explicit guidance --- ``Your safety is the most important thing [\ldots] if in doubt, go to a shelter'' --- established a course culture prioritising student well-being over academic performance metrics~\cite{UNESCO2023}. This safety-first stance is documented in the chat log and analysed in Section~\ref{sec:attendance}.
+\item \textbf{Safety-first communication.} The instructor's explicit guidance~-- ``Your safety is the most important thing [\ldots] if in doubt, go to a shelter''~-- established a course culture prioritising student well-being over academic performance metrics~\cite{UNESCO2023}. This safety-first stance is documented in the chat log and analysed in Section~\ref{sec:attendance}.
 
 \item \textbf{Rolling enrollment accommodation.} Late joiners had full access to all prior materials via Google Drive and could complete past assessments at their own pace. The asynchronous design imposed no penalty for late entry, an important consideration when displacement and infrastructure recovery timelines varied across participants~\cite{Zamkova2023299}. The enrollment patterns are analysed in Section~\ref{sec:baseline}.
 \end{enumerate}
@@ -857,34 +760,11 @@ The pipeline consists of six sequential modules, each addressing a specific aspe
 All figures are output as \texttt{.tex} files containing \texttt{tikzpicture} environments, included directly in the thesis via \texttt{\textbackslash input}.
 \end{enumerate}
 
-The pipeline is orchestrated by \texttt{run\_pipeline.py}, which executes all modules in sequence and generates a summary report (\texttt{ANALYSIS\_REPORT.md})~\cite{KitchenhamCharters2007}. The complete source code is available in the \texttt{thesis/analysis/} directory (see Appendix~D for the full module listing).
+The pipeline is orchestrated by \texttt{run\_pipeline.py}, which executes all modules in sequence and generates a summary report (\texttt{ANALYSIS\_REPORT.md})~\cite{KitchenhamCharters2007}. The complete source code is available in the \texttt{thesis/analysis/} directory (see Appendix~\ref{app:E} for the full module listing).
 
 \subsection{Data flow architecture}
 
-Figure~\ref{fig:pipeline-flow} illustrates the data flow through the analysis pipeline.
-
-\begin{figure}[htbp]
-\centering
-\begin{tabular}{ccc}
-\textbf{Data Sources} & $\rightarrow$ & \textbf{Processing Modules} \\
-\hline
-Chat log (940 lines) & $\rightarrow$ & \texttt{parse\_chat.py} \\
- & & $\downarrow$ \\
- & & \texttt{extract\_assessments.py} \\
- & & $\downarrow$ \\
-CSV/XLSX (40+ files) & $\rightarrow$ & \texttt{analyze\_responses.py} \\
- & & $\downarrow$ \\
-Chat log (parsed) & $\rightarrow$ & \texttt{track\_attendance.py} \\
- & & $\downarrow$ \\
-HTML files (23) & $\rightarrow$ & \texttt{catalog\_gamification.py} \\
- & & $\downarrow$ \\
-All CSVs & $\rightarrow$ & \texttt{generate\_figures.py} \\
-\end{tabular}
-\caption{Data flow through the analysis pipeline}
-\label{fig:pipeline-flow}
-\end{figure}
-
-The pipeline processes three independent data sources (chat log, response files, HTML game files) that converge through the figure generator, which draws on all preceding outputs to produce the visualisations presented in Chapter~\ref{ch:results}~\cite{creswell}.
+The pipeline processes three independent data sources (chat log, response files, HTML game files) that converge through the figure generator (Figure~\ref{fig:data-flow}), which draws on all preceding outputs to produce the visualisations presented in Chapter~\ref{ch:results}~\cite{creswell}.
 
 \subsection{Statistical methods}
 
@@ -899,10 +779,10 @@ Given the ex post facto design~\cite{creswell, ary} and the available data (resp
 \end{itemize}
 
 \paragraph{Justification for descriptive-only approach.}
-The exclusive reliance on descriptive statistics reflects four methodological constraints. First, sample sizes per seminar range from 1 to 27 (most $N<15$), making parametric distributional assumptions unverifiable. Second, observations are non-independent: the same 90 named participants contribute across 36 seminars (358 data points), creating a repeated-measures structure. Third, the ex post facto single-group design provides no control condition for between-group comparison --- consistent with the MRQS finding that 68.9\% of gamification studies in history education lack control groups~\cite{Korniienko2025mrqs}. Fourth, topic difficulty, format changes, and the mid-course introduction of mandatory name fields confound any pre/post division, making inferential tests potentially misleading.
+The exclusive reliance on descriptive statistics reflects four methodological constraints. First, sample sizes per seminar range from 1 to 27 (most $N<15$), making parametric distributional assumptions unverifiable. Second, observations are non-independent: the same 90 named participants contribute across 36 seminars (358 data points), creating a repeated-measures structure. Third, the ex post facto single-group design provides no control condition for between-group comparison~-- consistent with the MRQS finding that 68.9\% of gamification studies in history education lack control groups~\cite{Korniienko2025mrqs}. Fourth, topic difficulty, format changes, and the mid-course introduction of mandatory name fields confound any pre/post division, making inferential tests potentially misleading.
 
 \paragraph{Considered but rejected alternatives.}
-Mann--Whitney $U$ tests were considered for pre/post comparison but rejected because the two periods are not independent groups --- the same students participate across the boundary, and the confounds described above render $p$-values uninterpretable. Repeated-measures ANOVA was rejected because the number of assessments per student varies from 1 to 15, creating severe missing-data patterns incompatible with balanced designs. Effect sizes (Cohen's $d$) are reported where meaningful in the systematic review ($d=0.28$--$0.61$; Section~\ref{sec:effectiveness}), but computing single-group within-subject effect sizes requires stable baseline assumptions undermined by rolling enrollment and format changes~\cite{CohenManionMorrison2018}.
+Mann--Whitney $U$ tests were considered for pre/post comparison but rejected because the two periods are not independent groups~-- the same students participate across the boundary, and the confounds described above render $p$-values uninterpretable. Repeated-measures ANOVA was rejected because the number of assessments per student varies from 1 to 15, creating severe missing-data patterns incompatible with balanced designs. Effect sizes (Cohen's $d$) are reported where meaningful in the systematic review ($d=0.28$--$0.61$; Section~\ref{sec:effectiveness}), but computing single-group within-subject effect sizes requires stable baseline assumptions undermined by rolling enrollment and format changes~\cite{CohenManionMorrison2018}.
 
 \paragraph{Design-based research framing.}
 The descriptive approach is positioned as methodological strength within the design-based research tradition~\cite{Bakker2018, WangHannafin2005}: DBR prioritises ecological validity and rich contextual description over statistical generalisation~\cite{AndersonShattuck2012}. Individual trajectories, attendance patterns, and gamification cataloguing provide thick description of \emph{how} the methodology works in practice, rather than merely \emph{whether} it produces a statistically significant effect. This framing aligns with the overall research design described in Section~\ref{sec:organisation}.
@@ -915,7 +795,7 @@ Several limitations of the available data must be acknowledged~\cite{creswell, a
 \item Response data are available for 36 seminars (1--39, excluding 8 and 38) and all 7 modular controls, covering the full course. The pre-gamification data (Seminars 1--24) were recovered from multi-sheet XLSX files and aggregated at the per-student level, while post-gamification data (Seminars 25--39) retain full individual response detail~\cite{Korniienko2025mrqs}.
 \item Not all participants provided names in every form, limiting the ability to track complete individual trajectories~\cite{petticrew2008systematic, Kivits2013}.
 \item The number of respondents per seminar varied substantially (from 1 to 15), reflecting both attendance variation and the voluntary nature of some assessments~\cite{munn2018systematic}.
-\item The single-group design does not permit causal inferences about the effectiveness of gamification compared to a control condition~\cite{Hamari2014, DichevDicheva2017}. The rationale for this design and its statistical implications are discussed in Section~\ref{sec:data-analysis} above.
+\item The single-group design does not permit causal inferences about gamification effectiveness (Section~\ref{sec:organisation})~\cite{Hamari2014, DichevDicheva2017}.
 \item Chat log analysis captures only the communication in the Viber group; additional communication channels (direct messages, in-class verbal communication) are not captured~\cite{creswell}.
 \end{enumerate}
 
@@ -924,7 +804,7 @@ These limitations are consistent with the constraints identified in the methodol
 \subsection{Data validation and reproducibility} \label{sec:validation}
 
 \paragraph{Parsing accuracy.}
-The chat parser employs 12 Ukrainian month-name regular expressions and 15 message classification categories, producing 400 structured records from the 940-line source log. Classification accuracy was validated by manual coding of a random 10\% subset (40 messages), yielding agreement on all category assignments. Edge cases --- messages spanning multiple categories or containing non-standard date formats --- were resolved through iterative regex refinement~\cite{Thomas2008}.
+The chat parser employs 12 Ukrainian month-name regular expressions and 15 message classification categories, producing 400 structured records from the 940-line source log. Classification accuracy was validated by manual coding of a random 10\% subset (40 messages), yielding agreement on all category assignments. Edge cases~-- messages spanning multiple categories or containing non-standard date formats~-- were resolved through iterative regex refinement~\cite{Thomas2008}.
 
 \paragraph{Score processing validation.}
 Three distinct data formats were handled: CSV ``X/Y'' string parsing, XLSX numeric extraction, and multi-sheet XLSX aggregation. Pipeline output totals were verified against source file counts: 36 seminars (excluding 8 and 38), 7 modular controls, 358 individual trajectory data points, and 90 named participants. The max-score inference heuristic (counting question columns in early XLSX files) was cross-validated against seminars where explicit maximum scores were available, confirming consistency~\cite{ary}.
@@ -933,42 +813,24 @@ Three distinct data formats were handled: CSV ``X/Y'' string parsing, XLSX numer
 The analysis pipeline is fully deterministic: executing \texttt{python run\_pipeline.py} regenerates all CSV outputs and LaTeX figures from the raw data sources. All source data are preserved in the repository. Figures are LaTeX-native (TikZ/pgfplots with companion CSV data files), eliminating dependence on external plotting software. This approach directly addresses the MRQS finding that 90.5\% of reviewed gamification studies provide insufficient detail for replication~\cite{Korniienko2025mrqs}. The reporting standards follow the checklist framework proposed in Section~\ref{sec:reporting-checklist}.
 
 
-\section{Conclusions to Chapter 2} \label{sec:ch2-conclusions}
+\section{Consolidated design alignment} \label{sec:consolidated-alignment}
 
-Chapter~2 has presented the experimental methodology in a progressive structure: institutional context and research design (Section~\ref{sec:organisation}), assessment tools (Section~\ref{sec:assessment}), the gamification platform (Section~\ref{sec:gamification-design}), wartime context (Section~\ref{sec:wartime-context}), and data analysis methods (Section~\ref{sec:data-analysis}). The following principal findings emerge:
+The preceding chapters established four requirement categories: DigComp competence areas (Section~\ref{sec:digcomp}), six design principles (Section~\ref{sec:design-principles}), eight implementation guidelines (Section~\ref{sec:guidelines}), and six design requirements from the quality critique (Section~\ref{sec:implications-field}). The consolidated alignment matrix (Figure~\ref{fig:digcomp-alignment-matrix}, Appendix~\ref{app:F}) demonstrates that every DigComp area is addressed by at least one guideline, design principle, instrument, and empirical evidence source. Areas~1 (Information \& data literacy) and~5 (Problem solving) receive the densest coverage~-- four guidelines each~-- consistent with their centrality to quiz-based gamification in history education. Table~\ref{tab:design-req-compliance} maps each design requirement to its implementation.
 
-\begin{enumerate}
-\item \textbf{Experimental design.} A seven-month pedagogical experiment was conducted at the CDPO of Kryvyi Rih State Pedagogical University (October~2024 -- May~2025) with 23 enrolled students, comprising 40 lectures, 40 seminars with formative quizzes, and 7 modular controls. The ex post facto design-based research approach prioritises ecological validity and iterative refinement over experimental control~\cite{Bakker2018, AndersonShattuck2012}.
-
-\item \textbf{Assessment system.} 156 Google Forms quizzes across three NMT-aligned assessment tiers; creative quiz naming (Section~\ref{sec:quiz-naming}) operationalised the narrative integration principle~\cite{Sailer2017}.
-
-\item \textbf{HistoryLikeGame platform.} HistoryLikeGame evolved prototype $\to$ v1 (23~modules, December~2024) $\to$ v2 (62 modules, 13~game types, $\approx$88~KB shared infrastructure) for lightweight wartime deployment.
-
-\item \textbf{Theory--practice alignment.} Design decisions mapped to the six evidence-based principles (Section~\ref{sec:gamification-review}), SDT, Flow Theory, and the MDA framework, with game types scaffolded across Bloom's taxonomy levels (Section~\ref{sec:game-elements}).
-
-\item \textbf{Wartime resilience.} A five-layer architecture (Figure~\ref{fig:resilience-architecture}) maintained educational continuity through failure-tolerance stacking from synchronous to offline-capable layers; absence data (33 reports: internet 24.2\%, power 9.1\%) confirm wartime infrastructure as a primary participation barrier~\cite{Burde2017}.
-
-\item \textbf{Reproducible analysis pipeline.} A six-module Python pipeline processes all data deterministically with LaTeX-native figure generation, directly addressing the 90.5\% MRQS reproducibility gap~\cite{Korniienko2025mrqs}.
-
-\item \textbf{Methodological transparency.} The small-$N$ single-group repeated-measures design is explicitly justified for DBR; limitations are documented per MRQS recommendations~\cite{Page2021, Campbell2020}.
-\end{enumerate}
-
-\textbf{Compliance with the six design requirements.} Section~1.3.7 derived six design requirements from the quality critique. Table~\ref{tab:design-req-compliance} maps each requirement to its implementation in Chapter~2, demonstrating how the experimental design was structured to avoid replicating the corpus's documented weaknesses.
-
-\begin{table}[htbp]
+\begin{table}[!h]
 \centering
-\caption{Compliance of the experimental design with the six design requirements (Section~1.3.7)}
+\caption{Compliance of the experimental design with the six design requirements (Section~\ref{sec:implications-field})}
 \label{tab:design-req-compliance}
 \small
 \begin{tabular}{@{}p{0.4cm}p{4.2cm}p{4.5cm}p{3cm}@{}}
 \toprule
-\textbf{\#} & \textbf{Requirement} & \textbf{Implementation in Chapter~2} & \textbf{Section} \\
+\textbf{\#} & \textbf{Requirement} & \textbf{Implementation in Chapter~\ref{ch:methodology}} & \textbf{Section} \\
 \midrule
 1 & Explicit gamification definition & \citeauthor{Deterding2011}'s~\cite{Deterding2011} definition adopted; operationalised through HistoryLikeGame & \ref{sec:organisation} \\
 \midrule
 2 & Pre--post measurement with delayed post-test & 36 seminar assessments + 7 modular controls over 7~months; MC1 (pre) vs.\ MC2--7 (post); Sem.~39 as delayed retention measure & \ref{sec:assessment} \\
 \midrule
-3 & Validated or transparently described instruments & 156 Google Forms quizzes aligned to NMT format; reliability via repeated measures; instrument design documented & \ref{sec:assessment} \\
+3 & Validated or transparently described instruments & Google Forms quizzes aligned to NMT format; reliability via repeated measures; instrument design documented & \ref{sec:assessment} \\
 \midrule
 4 & Effect-size reporting & Effect sizes computed in Chapter~\ref{ch:results} (Cohen's $d$ for MC1--MC2 comparison; pre/post engagement ratios) & \ref{ch:results} \\
 \midrule
@@ -979,4 +841,11 @@ Chapter~2 has presented the experimental methodology in a progressive structure:
 \end{tabular}
 \end{table}
 
-\noindent These methodological foundations establish the conditions for Chapter~\ref{ch:results}, where baseline assessment, formative progression, attendance patterns, and gamification engagement are analysed within the theoretical framework established in Chapter~1.
+
+\section{Conclusions to Chapter 2} \label{sec:ch2-conclusions}
+
+Chapter~\ref{ch:methodology} presented the methodology for a seven-month pedagogical experiment (October~2024 -- May~2025, 23~students) at the CDPO of Kryvyi Rih State Pedagogical University, comprising 40 lectures, 40 seminars with 156 Google Forms quizzes, 7 modular controls, and the HistoryLikeGame platform. The ex post facto DBR approach~\cite{Bakker2018, AndersonShattuck2012} prioritises ecological validity over experimental control; limitations are documented per MRQS recommendations~\cite{Page2021, Campbell2020}.
+
+The experimental design implements the six evidence-based principles (Section~\ref{sec:gamification-review}) through NMT-aligned assessment, creative quiz naming~\cite{Sailer2017}, and 13 game types scaffolded across Bloom's taxonomy levels. The five-layer wartime resilience architecture (Figure~\ref{fig:resilience-architecture}) maintained educational continuity despite infrastructure disruptions (33 absence reports: internet 24.2\%, power 9.1\%)~\cite{Burde2017}. A six-module Python pipeline ensures reproducible data processing, addressing the 90.5\% MRQS reproducibility gap~\cite{Korniienko2025mrqs}. The consolidated alignment matrix (Figure~\ref{fig:digcomp-alignment-matrix}) confirms that all five DigComp areas, six design principles, and eight implementation guidelines are addressed.
+
+These methodological foundations establish the conditions for Chapter~\ref{ch:results}, where baseline assessment, formative progression, attendance patterns, and gamification engagement are analysed.

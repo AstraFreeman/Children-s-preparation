@@ -1,4 +1,4 @@
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[
@@ -74,13 +74,13 @@
 % EXTERNAL VALIDATION
 % ============================================================
 \node[valbox] (extval) at (2.5, -9.8) {%
-  \textbf{External validation --- Di~Pumpo et al.\ (2025):}\\
+  \textbf{External validation:}\\
   Custom GPTs assigned ``high risk'' at \textbf{half} the human rate (13.9\% vs.\ 25.0\%)\\
   --- same leniency direction in an independent domain};
 \draw[arr, draw=blue!40] (lex.south) -- (extval.north);
 
 \end{tikzpicture}%
 }% end resizebox
-\caption{Taxonomy of the 277 disagreements between GPT-4o and human-verified risk-of-bias assessments. Response-format mismatches (22.4\%) inflate measured disagreement without reflecting substantive differences. Among substantive disagreements, the dominant pattern is leniency bias: GPT-4o systematically applied less stringent criteria than human reviewers, consistent with independent findings by Di~Pumpo et~al.~(2025).}
+\caption{Taxonomy of the 277 disagreements between GPT-4o and human-verified risk-of-bias assessments. Response-format mismatches (22.4\%) inflate measured disagreement without reflecting substantive differences. Among substantive disagreements, the dominant pattern is leniency bias: GPT-4o systematically applied less stringent criteria than human reviewers, consistent with independent findings by \citeauthor{DiPumpo2025}~\cite{DiPumpo2025} (see Section~\ref{sec:llm-validation}).}
 \label{fig:disagreement-taxonomy}
 \end{figure}

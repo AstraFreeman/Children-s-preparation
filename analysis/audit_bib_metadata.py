@@ -71,7 +71,8 @@ def parse_bib(path):
         body = m.group(3)
 
         def extract_field(name):
-            pat = rf'{name}\s*=\s*(?:\{{((?:[^{{}}]|\{{[^{{}}]*\}})*)\}}|"([^"]*)"|(\d+))'
+            # Use word boundary to avoid matching 'booktitle' when searching for 'title'
+            pat = rf'(?<![a-zA-Z]){name}\s*=\s*(?:\{{((?:[^{{}}]|\{{[^{{}}]*\}})*)\}}|"([^"]*)"|(\d+))'
             fm = re.search(pat, body, re.IGNORECASE)
             if fm:
                 return (fm.group(1) or fm.group(2) or fm.group(3) or '').strip()

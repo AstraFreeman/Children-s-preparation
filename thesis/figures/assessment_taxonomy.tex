@@ -13,7 +13,7 @@
 ]
 
 % Root
-\node[rootbox] (root) at (0, 0) {Assessment Instruments\\(N=156)};
+\node[rootbox] (root) at (0, 0) {Assessment Instruments\\(\textit{N}\,=\,156)};
 
 % Level 1: Formative / Summative — increased vertical gap
 \node[formbox] (form) at (-4.5, -2.0) {\textbf{Formative} (140)};
@@ -30,14 +30,14 @@
 \draw[arr] (form.south) -- ++(0,-0.4) -| (lecq.north);
 
 % Seminar quiz sub-levels (data format evolution)
-\node[leafbox, fill=cyan!8] (xlsx) at (-8.8, -5.5) {Multi-block XLSX\\{\scriptsize Sem 1--24: aggregate}};
-\node[leafbox, fill=cyan!8] (csv) at (-4.8, -5.5) {Single-form CSV\\{\scriptsize Sem 25--39: individual}};
+\node[leafbox, fill=cyan!8] (xlsx) at (-9.5, -5.5) {Multi-block XLSX\\{\scriptsize Sem 1--24: aggregate}};
+\node[leafbox, fill=cyan!8] (csv) at (-4.0, -5.5) {Single-form CSV\\{\scriptsize Sem 25--39: individual}};
 
 \draw[arr] (semq.south) -- ++(0,-0.3) -| (xlsx.north);
 \draw[arr] (semq.south) -- ++(0,-0.3) -| (csv.north);
 
 % Transition annotation
-\draw[->, >=stealth, thick, green!50!black, dashed] (xlsx.east) -- node[above, font=\scriptsize\itshape, green!40!black] {Sem~26} (csv.west);
+\draw[->, >=stealth, thick, green!50!black, dashed] (xlsx.east) -- node[below, font=\scriptsize\itshape, green!40!black] {Sem~26} (csv.west);
 
 % Summative children — increased vertical gap
 \node[leafbox, fill=orange!8] (mc) at (2.3, -3.8) {\textbf{Modular controls} (6)\\{\scriptsize comprehensive, individual}};
@@ -47,7 +47,7 @@
 \draw[arr] (summ.south) -- ++(0,-0.4) -| (other.north);
 
 % Side annotations: placed BELOW the trees
-\node[annot, text=blue!60!black] at (-6.8, -6.8) {SDT competence\\feedback cycle (Sec~1.2)};
+\node[annot, text=blue!60!black] at (-6.75, -6.8) {SDT competence\\feedback cycle (Sec~1.2)};
 \node[annot, text=orange!60!black] at (4.5, -6.5) {Bloom higher-order\\assessment (Sec~1.2)};
 
 \end{tikzpicture}

@@ -10,7 +10,7 @@
     axis y line*=left,
     grid=major,
     grid style={gray!30},
-    legend style={at={(0.02,0.98)}, anchor=north west, font=\small},
+    legend style={at={(0.7,-0.25)}, anchor=north, legend columns=2, font=\small, draw=gray!50},
     xtick={1,5,10,15,20,25,30,35,40},
 ]
 % Vertical dashed line at gamification boundary
@@ -34,10 +34,10 @@
     ylabel={Number of respondents},
     ymin=0, ymax=30,
     xmin=0, xmax=41,
-    legend style={at={(0.98,0.98)}, anchor=north east, font=\small},
+    legend style={at={(0.2,-0.25)}, anchor=north, font=\small, draw=gray!50},
 ]
 % N bars
 \addplot[ybar, fill=green!20, draw=green!50!black, bar width=0.5, opacity=0.5] table[x=seminar, y=N] {\datatable};
-\addlegendentry{N respondents}
+\addlegendentry{\textit{N} respondents}
 \end{axis}
 \end{tikzpicture}

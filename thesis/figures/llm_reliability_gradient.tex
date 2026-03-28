@@ -1,4 +1,4 @@
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[
@@ -30,8 +30,8 @@
   at ([yshift=-1.4cm]t1.north) {82--100\%};
 \node[datapt] at ([yshift=-2.1cm]t1.north) {%
   \textbf{Present study:} 82--97\%\\pairwise (3~LLMs, metadata)\\[4pt]
-  \textbf{Kim et al.\ (2025):} 88.6\%\\concordance, data extraction\\[4pt]
-  \textbf{Purewal et al.\ (2025):} 100\%\\meta-analytic data pooling};
+  \textbf{\citeauthor{Kim2025bmj}~\cite{Kim2025bmj}:} 88.6\%\\concordance, data extraction\\[4pt]
+  \textbf{\citeauthor{Purewal2025}~\cite{Purewal2025}:} 100\%\\meta-analytic data pooling};
 
 % ============================================================
 % TIER 2 — yellow, medium height (5.5cm)
@@ -45,10 +45,10 @@
 \node[font=\normalsize\bfseries, text=yellow!50!black]
   at ([yshift=-1.6cm]t2.north) {$\kappa = 0.24$--$0.80+$};
 \node[datapt] at ([yshift=-2.3cm]t2.north) {%
-  \textbf{Lai et al.\ (2024):} $\kappa > 0.80$,\\84.5--89.5\% on 30 RCTs\\[4pt]
-  \textbf{Taneri (2025):} $\kappa = 0.51$\\Cochrane Reviews, RoB~2\\[4pt]
-  \textbf{Xia et al.\ (2025):} 80.8--83.3\%\\on 30 cohort studies\\[4pt]
-  \textbf{Kim et al.\ (2025):} $\kappa = 0.237$\\(human--human $\kappa = 0.094$)};
+  \textbf{\citeauthor{Lai2024jama}~\cite{Lai2024jama}:} $\kappa > 0.80$,\\84.5--89.5\% on 30 RCTs\\[4pt]
+  \textbf{\citeauthor{Taneri2025}~\cite{Taneri2025}:} $\kappa = 0.51$\\Cochrane Reviews, RoB~2\\[4pt]
+  \textbf{\citeauthor{Xia2025}~\cite{Xia2025}:} 80.8--83.3\%\\on 30 cohort studies\\[4pt]
+  \textbf{\citeauthor{Kim2025bmj}~\cite{Kim2025bmj}:} $\kappa = 0.237$\\(human--human $\kappa = 0.094$)};
 
 % ============================================================
 % TIER 3 — red, shortest (4.0cm)
@@ -95,6 +95,6 @@
 
 \end{tikzpicture}%
 }% end resizebox
-\caption{The task complexity gradient in LLM-assisted systematic review. LLM reliability decreases predictably from factual extraction (Tier~1) through structured risk-of-bias assessment on standardised designs (Tier~2) to adapted risk-of-bias assessment on heterogeneous educational studies (Tier~3). Data points from the present study (bold) are contextualised against published benchmarks. The gradient is driven by three interacting factors: tool standardisation, study design homogeneity, and question objectivity.}
+\caption{The task complexity gradient in LLM-assisted systematic review. LLM reliability decreases predictably from factual extraction (Tier~1) through structured risk-of-bias assessment on standardised designs (Tier~2) to adapted risk-of-bias assessment on heterogeneous educational studies (Tier~3). Data points from the present study (bold) are contextualised against published benchmarks. The gradient is driven by three interacting factors: tool standardisation, study design homogeneity, and question objectivity (see Section~\ref{sec:llm-validation}).}
 \label{fig:llm-reliability-gradient}
 \end{figure}

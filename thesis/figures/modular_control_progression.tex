@@ -10,7 +10,7 @@
     grid=major,
     grid style={gray!30},
     xtick={1,2,3,4,5,6,7},
-    legend style={at={(0.02,0.98)}, anchor=north west, font=\small},
+    legend style={at={(0.3,-0.28)}, anchor=north, font=\small, draw=gray!50},
 ]
 % Mean line with error bars
 \addplot[blue, thick, mark=o, mark size=2pt,
@@ -27,9 +27,9 @@
     ylabel={Number of respondents},
     ymin=0, ymax=30,
     xtick={1,2,3,4,5,6,7},
-    legend style={at={(0.98,0.85)}, anchor=north east, font=\small},
+    legend style={at={(0.7,-0.28)}, anchor=north, font=\small, draw=gray!50},
 ]
 \addplot[ybar, fill=green!20, draw=green!50!black, bar width=8pt, opacity=0.6] table[x=mc, y=N] {\datatable};
-\addlegendentry{N respondents}
+\addlegendentry{\textit{N} respondents}
 \end{axis}
 \end{tikzpicture}

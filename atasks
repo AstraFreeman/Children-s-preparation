@@ -1,0 +1,321 @@
+Additional task: Kyivan Rus quiz in Appendix B should  be indicated as  «доступний протягом                 експериментального періоду» грудень 2024 -квітень         2025 
+
+The same for Block Buster
+
+===================
+
+Augmented Reality section - these games were not used during experiment: consider it for future use, e.g., Чи не потрібно уточнити, що це не  для школярів, а для посвячених в тему студентів?
+
+Consider "Civic education with 5 colour variants" - «Кольорові» варіанти це шифри для імен студентів, адже фактично самі файли ідентичні структурно
+
+===================
+
+For each reference used, consider to extract BibTeX record by DOI from Crossref and fix issues in metadata if any. For references without DOI, check via MCPs.
+
+Telegram must be replaced on Viber
+
+Table 2.1: NMT question types and corresponding gamification elements has overlaps
+
+Replace all \citet{...}'s to the pair \citeauthor{...}'s~\cite{...}
+
+===================
+
+Regarding section 1.2: До речі, 74 із 80 стало через виключення, але за якими критеріям?
+
+===================
+
+Regarding "Three distinct enrollment waves (October, November, January–April) confirmed
+the open-network connectivist model [281] in practice.": Мене трохи хвилюють посилання після термінів. В наведеному випадку «open-network connectivist model» потребує уточнення хто автор цього терміну?
+
+===================
+
+Regarding "Figure 2.6: Hierarchical taxonomy of assessment instruments (N=156), showing the
+formative–summative distinction and data format evolution from XLSX aggregate (Sem-
+inars 1–24) to CSV individual-level (Seminars 25–39)" is too dense: increase height to avoid arrow/boxes overlap between 1st and 2nd rows
+
+"Figure 3.7: Complete course assessment timeline (October 2024 – May 2025)" is too wide - it out of page width. Move legend below figure
+
+===================
+
+Replace "the digital competence development gap in Ukrainian professional history education" to "the digital competence development gap in Ukrainian history education"
+
+Remove "(implementation certificate available upon request)"
+
+===================
+
+Regarding future directions, "Platform analytics and substitution hypothesis testing": Це зібрати сайт в простеньку програму із встановленням на комп’ютер? І додати туди черв’яка, щоб передавав інформацію про користувача
+
+===================
+
+Regarding "Figure 1.1: Evolution of digital history: from cliometrics to pedagogical turn (1964–2025).": are all references mentioned on it were really cited in the thesis? For missing, consider to add. 
+
+===================
+
+Is this statement inline with the thesis classifications? If yes or partially, consider to integrate:
+Як було встановлено, Цифрова історія є міждисциплінарним підходом, який широко представлений в спеціалізованій літературі, проте існуючі періодизації пропонуються за технічно-формальним критерієм, а тому ми пропонуємо періодизацію за критерієм предмету досліджень:
+    1. Статистичний – 1970-ті-2000-ті Digital history як інструмент обробки великої кількості типової інформації
+    2. Гуманітарний – 2000-ті-2010-ті звернення до особистості в історії, Цифрова історія виступає інструментом для альтернативного погляду на існуючі знання 
+    3. Постмодерний – 2010-ті-до сьогодні використання Digital history у нових сферах, наприклад, педагогіці, а також науково-популярній культурі
+
+===================
+
+
+Digital history pedagogy is the intersection of three scholarly domains: Не до кінця зрозуміло що із себе представляє Digital pedagogy.
+3 співпадіння, 2 згадки в тексті
+
+===================
+
+For "Table 1.1: Characteristics of included studies in the digital history systematic review": replace \cite for \citet. This table is completely wrong and contains wrong papers. Look for the systematic review #1 original sources and fix this and related issues. The same shit is for Table 1.2 - take both tables from original paper.
+
+===================
+
+Consider "Figure 1.4: Conceptual spectrum of game integration in history education: from struc-
+tural gamification to serious games": Ідея на майбутнє.
+Я вигадав ще один підвид між Game-based
+learning та Serious
+games: non-ed. Game + unobtrusive education
+Коли є розважальна гра і бонуси в грі даються за проходження коротких тестів.
+Можливо, це хтось вже десь описав - deeply search with MCPs and web search
+
+===================
+
+Regarding "Figure 1.5: Theoretical integration model: psychological foundations of gamification
+mechanisms and their expected learning outcomes": Навіть не знаю чи маю коментувати це, бо тут передача інформації, але невеличкий коментар:
+В своїх роботах я свідомо уникав змагання в класичному вимірі. Замагання було дійсно цифрове, тільки з механікою чи таймером.
+Не тільки здобуття, а і засвоєння знань - apply this comment to Chapter 2
+
+===================
+
+1.2.1.3. Gamification and historical thinking - Гадаю цей підпідпідрозділ можна скоротити до таблички, або навіть простої схеми
+
+===================
+
+Regarding "Chapter 2 presents a gamification-enhanced digital history course that: implements the
+eight guidelines from Section 1.4.5; targets all five DigComp areas with proficiency-level
+evaluation based on DigComp 2.1 [39]; addresses the six design requirements derived
+from the quality critique (Section 1.3.7); and is documented with sufficient methodolog-
+ical detail — including effect sizes, limitation discussion, and an explicit gamification
+definition — to address the reporting gaps that characterise the field. The wartime edu-
+cational context provides a naturalistic setting that tests both the integration model and
+the resilience dimension identified as absent from prior research.": Виглядає дуже презентабельно, я вже хочу подивитися як саме співпадає розділ 2 із тими вимогами цифрової грамотності, що були виділені раніше
+
+==================
+
+Check data of "Table 1.3: Studies providing explicit definitions of gamification or related terms (n=11 of
+74)" using the original systematic review 2
+
+=================
+
+Figure 3.7: Complete course assessment timeline (October 2024 – May 2025) -- Легенда закриває семінари
+
+=================
+
+Figure 1.2: Digital history pedagogy as the intersection of three scholarly domains. -- a lot of text is out of circles
+
+=================
+
+Table 1.1 contains the overlaps
+
+=================
+
+Figure 1.4 contains overlaps
+
+=================
+
+Korniienko papers references in \printpratsi and References. In the thesis body, attempt goto any of them lead not to related References item but to the thesis beginning where that paper listed in the Abstract.
+
+=================
+
+Figure 1.9
+Evolution of publication types across three research periods
+Я заплутався із цією таблицею. Аж зараз зрозумів, що це про збільшення кількості виключно journal article. Чи є необхідність настільки детально зупинятися на еволюції публікацій journal article?
+
+=================
+
+Figure 1.10: Cross-tabulation of education level and game type across 74 studies
+«Web: primary» із зеленою стрілкою проходить крізь «Web-based» чи допустимо це в академічному тексті?
+
+=================
+
+Figure 1.13: Ease-of-measurement hierarchy for gami_cation outcome types
+Накладання «difficulty » на колонку «Measurement approach» пропоную весь графік змістити вліво на сторінці, залишивши на місці стрілку від «Measurement approach» та «difficulty»
+
+=================
+
+Table 1.10:  Studies reporting statistically significant learning outcomes
+Колонка «Key statistic» не вміщається в один рядок. Значення  p = .026 розривається на наступний рядок. Компенсуй це рахунок проміжку між колонками Study та  n 
+
+=================
+
+Figure 1.14: Forest-plot summary of 16 studies reporting
+Відбувається перекривання тексту в декількох місцях. Розмісти « d=0:20: Kra_ [170] “large”» над «d=0:40: Hattie [122] “hinge point”». «Estimated e_ect size (Cohen’s d)» має недостатньо простору між школю графіка та поясненням внизу. Розшир простір між графіком та « Effect sizes estimated from reported statistics where possible … e.c.».
+Що означає символ після  «Lynch, Mallon and Connolly [193]»?
+
+=================
+
+БАГАТО ЗАПИТАНЬ
+Figure 1.15: Four causal pathways from gamification elements to learning outcomes
+«Path» перекривається блоками графіки, перемісти слово ліворуч, а графік праворч
+Чому тиск часу це один з варіантів розвитку роботи з джерелами? 
+Чому наявність дошки лідерів це гендерні диспропорції? Бачу покликання на дослідження нижче. 
+Як ліквідувати цей розрив?
+
+=================
+
+Figure 1.16:  Harm landscape of gami_cation in history education
+«COGNITIVE HARMS (13)» торкається до краю рамки, перемісти текст ліворуч трішки.
+
+=================
+
+Figure 1.17: Frequency distribution of implementation barrier
+Накладання  «50% threshold» на графік. Перемісти текст вище
+
+=================
+
+Figure 1.18: Implementation barrier–stakeholder responsibility matrix
+«Secondary responsibility» перекривається умовним позначенням  «Minimal role». Перемісти  «Primary responsibility» та «Secondary responsibility» вліво від «Minimal role»
+
+=================
+
+Figure 1.19: Barrier interaction model
+«no TPACK to adapt» має фон та перекриває  «Teacher preparation» та «Curriculum integration». Перемісти «no TPACK to adapt» нижче, збережі існуючі налаштування
+
+=================
+
+Figure 1.20: Mapping of game design element categories
+«Immersion / VR / AR» та «(55)» є одним блоком текст але не узгоджені. Текст перекриває число. 
+Крім того в мене враження, що піраміда на цьому рисунку змінює висоту при прокручуванні сторінки. Ви ж не додали анімацій для Figure? Чи це лише оптична ілюзія?
+
+=================
+
+Figure 1.24 Design principle emphasis across the five implementation archetypes
+Мені не подобається колір «Competitive Quizzer», коричневий кольору лайна. Заміни на будь-який інший який не зустрічається в таблиці, якщо не знайдеш підходящого, то залиш заливку білою
+
+=================
+
+Figure 1.26: Three-tier architecture of the MRQS instrument
+Текст пояснення до кожного блоку накладається. Можеш вільно перемістити текст пояснення праворуч, там достатньо місця. «CONSORT; Cochrane; GRADE» надто близько до графіку, перемісти його вище.
+
+=================
+
+Figure 1.29: Temporal divergence in MRQS item prevalence
+Легенда карти перекриває… я навіть не бачу що. 
+
+=================
+
+Figure 1.31: Signalling question-level analysis of risk-of-bias
+«0% favorable» накладається на графік. Легенда карти видається затісною, потрібно розширити рамку та додати пропуски між словами
+
+=================
+
+Figure 1.33: Taxonomy of the 277 disagreements
+Обґрунтуй посилання на автора в «External validation — Di Pumpo et al. (2025)». Поясни чи необхідно додавати посилання у форматі [1] в сам рисунок
+
+=================
+
+Figure 1.34: Interaction between de_nitional practices
+Блок «Risk of bias» накладається на рисунок. Чи варто це змінювати?
+
+=================
+
+Figure 1.35 уф, «Каскад валідності конструкції» це прямо жостко
+
+=================
+
+Table 1.17: Statistical power analysis
+Колонка «Status» зовсім не вміщається на сторінку. Спробуй звузити «Kraft benchmark» на 33%. Поясни чому в першій строчці «0.20 (“large”)», а у всіх інших лише «0.20»
+
+=================
+
+Figure 1.36: Bias interaction network
+«66.1% underpowered 90.5% no effect sizes» доторкається до ліній рисунка, розмісти текст праворуч від «Statistical Conclusion Validity». Розмісти «cannot distinguish treatment» над «Evidence certainty:
+Very Low» і відцентруй
+
+=================
+
+Figure 1.37: Evidence certainty assessment
+Пунктир від першого рядка не торкається блоків нижче.
+
+Figure 1.39: Priority tiers for the proposed reporting checklist
+Tier 1, Tier 2, Tier 3 накладаються одна на одного. Збільши висоту рисунка
+
+=================
+
+Table 2.1: NMT question types
+«Matching/correspondence»  це 2 слова « Matching» та  «correspondence» розділені косою лінією, ці 2 слова заходять на сусідню колонку
+
+=================
+
+Figure 2.1: Course material: visual source identification
+Потрібно згадати в тексті, що ці матеріали потребують пояснення. Так фото Сталіна не є обов’язковим до запам’ятовування в курсі НМТ і є прикладом що знати не потрібно, але на плакаті це не вказано
+
+=================
+
+Table 2.3: Operationalisation of research variables
+«Confounding» не вміщається в свою колонку
+
+=================
+
+Figure 2.2: Experimental logic model
+Хаос. Перша частина  «Theoretical Foundations (Ch 1)» доторкається до блоку  «Wartime Context», має ЖАХЛИВЕ накладання блоків, поясни мені кольорову палітру для цієї частини.«Wartime Context»,   зв’язана з  частина  «Measured Outcomes (Ch 3)» пунктирною стрілкою, яка проходить крізь три блоки чому? У всіх частинах є накладання блоків. Зверни увагу на збереження напрямів стрілок.
+
+=================
+
+Figure 2.3: Experimental timeline: cumulative enrollment
+Чому відрізняється від Figure 3.7: Complete course assessment timeline
+Це просто жесть. Я хочу плакати. Підписи блоків рисунків не на одному рівні. Вирівняй їх по лівому краю. Переглянь номери та кількість семінарів та лекцій. Їх кількість має бути близькою. Модульних контролів було більше. Перевір дату початку та дату закінчення. Заняття були в May. «Course material» це зображення  Посібник_4.jpg  та інші це останнє заняття, отже Intro має бути доповнене підсумковим заняттям. «Семінар 40.xlsx» також мають відображатися в травні. Що таке  «Phase»? я бачу нотний стан із трьома блоками  Baseline  Pre-gamif  Post-gamification і стрічкою місяців внизу, зараз воно важкочитаєме. «dashed purple line marks Wordwall introduction (Mar 27, 2025)» насправді Decmber, 27 2025 і це вже наступний курс
+
+=================
+
+Figure 2.5: Data collection and processing pipeline
+Текст не вміщається в блоки. Блоки перекриваються на перехресті
+
+Table 2.7: Assessment instrument speci_cations
+Слово «Comprehensive» не вміщаєтсья в колонку. Колонка  «Theoretical Basis» дуже близько до колонки  «Data level»
+
+Figure 2.6: Hierarchical taxonomy
+«Sem 26» накладається на блоки
+
+Figure 2.8: Number of respondents per seminar quiz
+Легенда перекриває графік. Значення накладаються на графік
+
+=================
+
+Figure 2.9 --- Зображення задовге - use PlayWright to extract better image
+
+=================
+
+Figure 2.10: Quiz module interface
+Вказати, що була альфа-версія зміни теми світла/темна  і воно читаєме, а не таке як на збраженні - use PlayWright to extract better image
+
+=================
+
+Figure 2.12 Надто довге зображення - use PlayWright to extract better image
+
+=================
+
+Figure 2.15
+Я вже не пам’ятаю про що воно було
+
+Figure 2.16
+Incroyable, impressionnant
+
+=================
+
+Figure 3.2  Score progression across all seminars
+Легенда майже торкається до графіка
+
+=================
+
+Figure 3.5: Modular control progression
+Легенда перекриває графік
+
+Figure 3.7: Complete course assessment timeline
+Легенда перекриває текст, що окреслює тривалість
+
+=================
+
+
+
+
+

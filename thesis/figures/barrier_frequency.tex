@@ -1,8 +1,8 @@
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-    width=0.85\textwidth,
+    width=0.75\textwidth,
     height=7cm,
     xbar,
     xlabel={Number of studies (n=74)},
@@ -33,11 +33,9 @@
       grid style={dashed, gray!60, line width=0.8pt},
     },
 ]
-\addplot[fill=gray!20, draw=gray!50] coordinates {
+\addplot[fill=blue!22, draw=blue!50] coordinates {
   (8,{Time constraints}) [8 (10.8\%)]
   (13,{Resource constraints}) [13 (17.6\%)]
-};
-\addplot[fill=blue!22, draw=blue!50] coordinates {
   (30,{Technical/Infrastructure}) [30 (40.5\%)]
   (38,{Pedagogical/Curriculum}) [38 (51.4\%)]
   (44,{Student-related}) [44 (59.5\%)]
@@ -45,7 +43,7 @@
 \end{axis}
 % 50% threshold annotation
 \node[font=\scriptsize, text=gray!70, anchor=south, rotate=90]
-  at (5.65, 5.8) {50\% threshold};
+  at (5.65, 7.2) {50\% threshold};
 \end{tikzpicture}
 \caption{Frequency distribution of implementation barrier categories across the 74-study corpus. The dashed line marks the 50\% threshold (n=37): student-related and pedagogical barriers constitute majority challenges, while resource and time constraints are reported by a minority of studies.}
 \label{fig:barrier-frequency}

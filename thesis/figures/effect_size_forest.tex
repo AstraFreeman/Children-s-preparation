@@ -1,4 +1,4 @@
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[
@@ -59,15 +59,15 @@
     (\xHattie, \yP-0.25) -- (\xHattie, \headerPrePost+0.20);
 
 % --- Benchmark labels at top (horizontal, no overlap) ---
-\node[font=\scriptsize, text=red!50!black, anchor=south west]
-    at (\xKraft+0.1, \headerPrePost+0.35)
-    {$d\!=\!0.20$: \citeauthor{Kraft2020}~\cite{Kraft2020} ``large''};
 \node[font=\scriptsize, text=blue!50!black, anchor=south west]
-    at (\xHattie+0.1, \headerPrePost+0.80)
+    at (\xHattie+0.1, \headerPrePost+0.35)
     {$d\!=\!0.40$: \citeauthor{Hattie2009}~\cite{Hattie2009} ``hinge point''};
+\node[font=\scriptsize, text=red!50!black, anchor=south west]
+    at (\xKraft+0.1, \headerPrePost+0.80)
+    {$d\!=\!0.20$: \citeauthor{Kraft2020}~\cite{Kraft2020} ``large''};
 % Small connector lines from labels to dashed lines
-\draw[red!50!black, thin] (\xKraft, \headerPrePost+0.20) -- (\xKraft+0.08, \headerPrePost+0.40);
-\draw[blue!50!black, thin] (\xHattie, \headerPrePost+0.20) -- (\xHattie+0.08, \headerPrePost+0.85);
+\draw[blue!50!black, thin] (\xHattie, \headerPrePost+0.20) -- (\xHattie+0.08, \headerPrePost+0.40);
+\draw[red!50!black, thin] (\xKraft, \headerPrePost+0.20) -- (\xKraft+0.08, \headerPrePost+0.85);
 
 % --- X-axis ---
 \draw[thick, ->] (\plotleft, \yP-0.45) -- (\plotright+0.4, \yP-0.45);
@@ -122,7 +122,7 @@
 \node[font=\scriptsize, anchor=west, text=gray!60] at (\xdot+0.3, \yD) {$n\!=\!66$};
 
 % 5. Yu et al. 2016, n=29, d=1.43
-\node[font=\small, anchor=east] at (\labelright, \yE) {\citeauthor{45Yu2016727}~\cite{45Yu2016727}};
+\node[font=\small, anchor=east] at (\labelright, \yE) {\citeauthor{45Yu2015727}~\cite{45Yu2015727}};
 \pgfmathsetmacro{\xdot}{1.43*\xscale}
 \pgfmathsetmacro{\rdot}{2.5 + 4.5*(sqrt(29)-sqrt(12))/(sqrt(103)-sqrt(12))}
 \fill[prepost] (\xdot, \yE) circle (\rdot pt);
@@ -151,7 +151,7 @@
 \node[font=\scriptsize, anchor=east, text=gray!60] at (\xdot-0.25, \yH) {$n\!=\!40$};
 
 % 9. Lynch et al. 2015, n=25, d~0.50 (approximate)
-\node[font=\small, anchor=east] at (\labelright, \yI) {\citeauthor{71lynch2015pedagogical}~\cite{71lynch2015pedagogical}\,\textsuperscript{$\dagger$}};
+\node[font=\small, anchor=east] at (\labelright, \yI) {\citeauthor{71lynch2015pedagogical}~\cite{71lynch2015pedagogical}\,\textsuperscript{*}};
 \pgfmathsetmacro{\xdot}{0.50*\xscale}
 \draw[prepost, thick] (\xdot-0.12, \yI-0.12) -- (\xdot+0.12, \yI+0.12);
 \draw[prepost, thick] (\xdot-0.12, \yI+0.12) -- (\xdot+0.12, \yI-0.12);
@@ -209,15 +209,8 @@
 \fill[controlled] (\xdot, \yP) circle (\rdot pt);
 \node[font=\scriptsize, anchor=west, text=gray!60] at (\xdot+0.3, \yP) {$n\!=\!38$};
 
-% --- Footnote ---
-\node[font=\scriptsize, text=gray!50, anchor=north west, text width=14cm]
-    at (\plotleft, \yP-1.0) {%
-    Effect sizes estimated from reported statistics where possible ($d = t/\sqrt{n}$ for paired designs); dot size proportional to sample size.
-    \textsuperscript{$\dagger$}\,Approximate placement; exact test statistic not reported.
-    $\rightarrow$\,Effect sizes exceeding $d = 1.5$.};
-
 \end{tikzpicture}%
 }% end resizebox
-\caption{Forest-plot summary of 16 studies reporting statistically significant learning outcomes, grouped by study design. Vertical benchmark lines indicate the threshold for ``large'' effects in scalable educational interventions ($d = 0.20$) proposed by \citeauthor{Kraft2020}~\cite{Kraft2020} and the ``hinge point'' ($d = 0.40$) identified by \citeauthor{Hattie2009}~\cite{Hattie2009}.}
+\caption{Forest-plot summary of 16 studies reporting statistically significant learning outcomes, grouped by study design. Vertical benchmark lines indicate the threshold for ``large'' effects in scalable educational interventions ($d = 0.20$) proposed by \citeauthor{Kraft2020}~\cite{Kraft2020} and the ``hinge point'' ($d = 0.40$) identified by \citeauthor{Hattie2009}~\cite{Hattie2009}. Effect sizes estimated from reported statistics where possible ($d = t/\sqrt{n}$ for paired designs); dot size proportional to sample size. *\,Approximate placement; exact test statistic not reported. $\rightarrow$\,Effect sizes exceeding $d = 1.5$.}
 \label{fig:effect-size-forest}
 \end{figure}

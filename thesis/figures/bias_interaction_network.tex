@@ -1,4 +1,4 @@
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \resizebox{0.9\textwidth}{!}{%
 \begin{tikzpicture}[
@@ -21,7 +21,7 @@
 
 % Diamond layout: top, right, bottom, left
 \node[statconc] (sc) at (0, 4.2) {Statistical\\Conclusion\\Validity};
-\node[annot, below=1pt of sc] (sc-a) {66.1\% underpowered\\90.5\% no effect sizes};
+\node[annot, right=4pt of sc] (sc-a) {66.1\% underpowered\\90.5\% no effect sizes};
 
 \node[internal] (iv) at (5.2, 0) {Internal\\Validity};
 \node[annot, below=1pt of iv] (iv-a) {31\% no control\\confounding, novelty};
@@ -40,7 +40,7 @@
   node[lbl, pos=0.45, anchor=south east] {wrong construct measured}
   (sc);
 \draw[arr] (cv) to[bend left=15]
-  node[lbl, pos=0.45, anchor=north east] {cannot distinguish treatment}
+  node[lbl, pos=0.5, anchor=south] {cannot distinguish treatment}
   (iv);
 \draw[arr] (iv) to[bend right=15]
   node[lbl, pos=0.45, anchor=north west] {cannot generalise valid effects}
@@ -58,6 +58,6 @@
 
 \end{tikzpicture}%
 }% end resizebox
-\caption{Bias interaction network: directed pathways between validity threats in the 74-study corpus. Each arrow represents a mechanism by which weakness in one validity type amplifies weakness in another. The co-occurrence of all four threats (43.2\% of studies rated high risk across all three ROBIS domains vs.\ 29.9\% expected under independence) produces cumulative evidence certainty of Very Low.}
+\caption{Bias interaction network: directed pathways between validity threats in the 74-study corpus. Each arrow represents a mechanism by which weakness in one validity type amplifies weakness in another. The co-occurrence of all four threats (43.2\% of studies rated high risk across all three ROBIS domains vs.\ 29.9\% expected under independence) produces cumulative evidence certainty of Very Low (see Section~\ref{sec:detailed-bias}).}
 \label{fig:bias-interaction-network}
 \end{figure}

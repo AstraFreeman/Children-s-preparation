@@ -1,4 +1,4 @@
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[
@@ -81,9 +81,7 @@
   (\barLeft, \compBot) rectangle (\barRight, \dynTop);
 
 \node[font=\small\bfseries, align=center, rotate=90]
-  at ({(\barLeft+\barRight)/2}, {(\compBot+\dynTop)/2 + 0.6}) {Immersion / VR / AR};
-\node[font=\small\bfseries, align=center]
-  at ({(\barLeft+\barRight)/2}, {(\compBot+\dynTop)/2 - 1.4}) {(55)};
+  at ({(\barLeft+\barRight)/2}, {(\compBot+\dynTop)/2}) {Immersion / VR / AR (55)};
 
 % Dashed lines inside the bar aligned with tier boundaries
 \draw[dashed, gray!50] (\barLeft, \compTop + \gap/2) -- (\barRight, \compTop + \gap/2);

@@ -1,4 +1,4 @@
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \begin{tikzpicture}[
     every node/.style={font=\small},
@@ -22,7 +22,8 @@
 \def\wE{4.0}   % Historical thinking
 
 % Fixed annotation positions
-\def\leftcol{-5.2}
+\def\chartcenter{-1.5}  % shift bars left
+\def\leftcol{-6.7}
 \def\rightcol{5.2}
 
 % Y positions (top to bottom)
@@ -39,12 +40,12 @@
     {Measurement approach};
 
 % --- Downward arrow (right margin, compact) ---
-\draw[-stealth, thick, black!50] (\rightcol + 2.0, \yA + 0.15) -- (\rightcol + 2.0, \yE - 0.15);
-\node[rotate=-90, anchor=south, font=\scriptsize, text=black!50] at (\rightcol + 2.2, {(\yA + \yE)/2})
+\draw[-stealth, thick, black!50] (\rightcol + 3.8, \yA + 0.15) -- (\rightcol + 3.8, \yE - 0.15);
+\node[rotate=-90, anchor=south, font=\scriptsize, text=black!50] at (\rightcol + 4.0, {(\yA + \yE)/2})
     {Difficulty};
 
 % --- Level 1: Engagement ---
-\node[level, fill=blue!22, minimum width=\wA cm] (L1) at (0, \yA)
+\node[level, fill=blue!22, minimum width=\wA cm] (L1) at (\chartcenter, \yA)
     {\textbf{Engagement}};
 \node[anchor=east, font=\scriptsize] at (\leftcol, \yA)
     {52 (70.3\%)};
@@ -52,7 +53,7 @@
     {Platform analytics, logs};
 
 % --- Level 2: Knowledge acquisition ---
-\node[level, fill=blue!12, minimum width=\wB cm] (L2) at (0, \yB)
+\node[level, fill=blue!12, minimum width=\wB cm] (L2) at (\chartcenter, \yB)
     {\textbf{Knowledge acquisition}};
 \node[anchor=east, font=\scriptsize] at (\leftcol, \yB)
     {45 (60.8\%)};
@@ -60,7 +61,7 @@
     {Pre/post tests, quizzes};
 
 % --- Level 3: Attitudes & satisfaction ---
-\node[level, fill=orange!12, minimum width=\wC cm] (L3) at (0, \yC)
+\node[level, fill=orange!12, minimum width=\wC cm] (L3) at (\chartcenter, \yC)
     {\textbf{Attitudes \& satisfaction}};
 \node[anchor=east, font=\scriptsize] at (\leftcol, \yC)
     {39 (52.7\%)};
@@ -68,7 +69,7 @@
     {Likert surveys, TAM};
 
 % --- Level 4: Motivation ---
-\node[level, fill=orange!18, minimum width=\wD cm] (L4) at (0, \yD)
+\node[level, fill=orange!18, minimum width=\wD cm] (L4) at (\chartcenter, \yD)
     {\textbf{Motivation}};
 \node[anchor=east, font=\scriptsize] at (\leftcol, \yD)
     {26 (35.1\%)};
@@ -76,7 +77,7 @@
     {Validated scales, interviews};
 
 % --- Level 5: Historical thinking ---
-\node[level, fill=red!15, minimum width=\wE cm] (L5) at (0, \yE)
+\node[level, fill=red!15, minimum width=\wE cm] (L5) at (\chartcenter, \yE)
     {\textbf{Historical thinking}};
 \node[anchor=east, font=\scriptsize] at (\leftcol, \yE)
     {14 (18.9\%)};

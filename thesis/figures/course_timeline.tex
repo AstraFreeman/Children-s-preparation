@@ -2,14 +2,14 @@
 \begin{axis}[
     width=0.95\textwidth,
     height=5cm,
-    xlabel={Month (Oct 2024 -- May 2025)},
     xticklabels={Oct, Nov, Dec, Jan, Feb, Mar, Apr, May},
     xtick={0,31,61,92,123,151,182,212},
     yticklabels={Other, Lecture, Intro, Modular, Seminar},
     ytick={0,1,2,3,4},
     grid=major,
     grid style={gray!30},
-    legend style={at={(0.5,-0.22)}, anchor=north, font=\scriptsize, legend columns=3, fill=white, fill opacity=0.9, draw opacity=1, text opacity=1},
+    legend to name=timelinelegend,
+    legend style={font=\scriptsize, legend columns=3, draw=gray!50},
     ymin=-0.5, ymax=4.8,
     xmin=-5, xmax=230,
 ]
@@ -27,5 +27,7 @@
 \addlegendentry{Other (4)}
 \draw[dashed, gray] (axis cs:11,-0.5) -- (axis cs:11,4.8) node[above, font=\tiny, text=gray] {Start};
 \draw[dashed, gray] (axis cs:61,-0.5) -- (axis cs:61,4.8) node[above, font=\tiny, text=gray] {Gamification};
+\draw[dashed, red!70!black] (axis cs:225,-0.5) -- (axis cs:225,4.8) node[above, font=\tiny, text=red!70!black] {NMT};
 \end{axis}
+\node[anchor=north] at ([yshift=-14mm]current axis.south) {\ref{timelinelegend}};
 \end{tikzpicture}

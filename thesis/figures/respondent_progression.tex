@@ -4,13 +4,13 @@
   width=0.95\textwidth,
   height=7cm,
   bar width=6pt,
-  ylabel={N respondents},
+  ylabel={\textit{N} respondents},
   xlabel={Seminar number},
   ymin=0, ymax=30,
   xtick={1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39},
   xmin=0, xmax=40,
   enlarge x limits=0.02,
-  legend style={at={(0.02,0.98)}, anchor=north west, font=\small},
+  legend style={at={(0.5,-0.18)}, anchor=north, legend columns=2, font=\small, draw=gray!50},
   ymajorgrids=true,
   grid style={gray!20},
   tick label style={font=\small},
@@ -38,13 +38,13 @@
 
 % Period mean lines
 \draw[densely dotted, blue!70, thick] (axis cs:0.5,12.9) -- (axis cs:24.5,12.9)
-  node[pos=0.15, above, font=\scriptsize, blue!70] {$\bar{N}=12.9$};
+  node[pos=0.15, above, font=\scriptsize, blue!70] {$\bar{\textit{N}}\!=\!12.9$};
 \draw[densely dotted, green!60!black, thick] (axis cs:24.5,5.6) -- (axis cs:39.5,5.6)
-  node[pos=0.85, above, font=\scriptsize, green!60!black] {$\bar{N}=5.6$};
+  node[pos=0.85, above, font=\scriptsize, green!60!black] {$\bar{\textit{N}}\!=\!5.6$};
 
 % Annotations
-\node[font=\scriptsize, above] at (axis cs:17,27) {N=27};
-\node[font=\scriptsize, below left] at (axis cs:28,1) {\scriptsize N=1};
+\node[font=\scriptsize, above, yshift=2pt] at (axis cs:17,27) {$\textit{N}\!=\!27$};
+\node[font=\scriptsize, right, xshift=3pt] at (axis cs:28,1) {$\textit{N}\!=\!1$};
 
 \end{axis}
 \end{tikzpicture}
